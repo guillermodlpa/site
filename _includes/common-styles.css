@@ -1,0 +1,10 @@
+a {
+    color: #888;
+    transition: color 0.25s ease;
+}
+a:hover {
+    color: #444;
+}
+h1, h2 {
+    font-weight: inherit;
+}

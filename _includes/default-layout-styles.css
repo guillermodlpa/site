@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Layout */
+main, header, footer {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header */
+header h1 {
+    font-family: Inconsolata, Courier, sans-serif;
+    margin-bottom: 0.3em;
+}
+header h3 {
+    font-family: Inconsolata, Courier, sans-serif;
+    color: #777;
+    margin-top: 0;
+}
+
+/* Main */
+main {
+    font-family: 'Open Sans', Courier, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+footer nav {
+    font-family: Inconsolata, Courier, sans-serif;
+    padding: 1rem 0;
+}
+footer nav a {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}

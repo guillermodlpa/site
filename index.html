@@ -1,0 +1,156 @@
+---
+layout: raw
+title: Guillermo de la Puente
+description: Guillermo de la Puente, engineering manager and developer. Worked at Splash in New York City and Madrid.
+---
+
+<style>
+    div, header {
+        display: flex;
+    }
+    body {
+        font-size: 16px;
+        font-family: Inconsolata, Courier, sans-serif;
+        line-height: 1.2;
+    }
+    #root {
+        position: relative;
+        width: 100vw;
+        overflow: scroll;
+    }
+
+    #main-container {
+        display: block;
+        flex-grow: 1;
+        padding: 2rem 10vw;
+        margin: 10vh 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+    #content-container {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    header {
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    h2, nav {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: 600px) {
+        #main-container {
+            padding: 2rem 5vw;
+        }
+        h1 {
+            font-size: 2.7rem;
+            margin-bottom: 1.5rem;
+        }
+        h2, nav {
+            font-size: 1.4rem;
+        }
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+    }
+    @media screen and (min-width: 980px) {
+        #main-container {
+            padding: 2rem 5vw;
+        }
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 2.5rem;
+        }
+        h2, nav {
+            font-size: 1.5rem;
+        }
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    nav a {
+        margin-right: 0.5rem;
+    }
+
+    /* ---------------- */
+    /* Loader           */
+    /* ---------------- */
+
+    #loader-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+    }
+    body.is-loading #loader-overlay {
+        opacity: 1;
+    }
+    #loader {
+        font-size: 5rem;
+        font-family: Courier, sans-serif;
+        color: rgba(0, 0, 0, 0.75);
+    }
+    #loader-inner {
+        animation: rotation 10s ease 0.25s infinite;
+    }
+    @keyframes rotation {
+        from {transform: rotateZ(0deg);}
+        to {transform: rotateZ(360deg);}
+    }
+</style>
+
+<div id="root">
+    <div id="main-container">
+        <div class="amazing-horizontal-bar"></div>
+        <div id="content-container">
+            <header>
+                <h1>Guillermo<br>de la Puente<br>Allott</h1>
+                <h2>Engineering manager. Software developer.</h2>
+            </header>
+
+            <nav>
+                <a href="https://github.com/gpuenteallott">GitHub</a>
+                <a href="https://linkedin.com/in/gpuenteallott">LinkedIn</a>
+                <a href="{{ 'blog' | prepend: site.baseurl }}">Blog</a>
+            </nav>
+        </div>
+        <div class="amazing-horizontal-bar"></div>
+    </div>
+
+    <div id="loader-overlay">
+        <div id="loader">&lt;<span id="loader-inner">+</span>&gt;</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function() {
+        var body = document.getElementsByTagName('body')[0];
+        body.classList.remove('is-loading');
+
+        setTimeout(function() {
+            var loaderOverlay = document.getElementById('loader-overlay');
+            loaderOverlay.remove();
+        }, 550);
+    };
+</script>

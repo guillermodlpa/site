@@ -3,8 +3,22 @@ title: Blog
 timezone: UTC
 collections:
   posts:
-    title: Posts
+    title: Blog
     output: true
   uploads:
     title: Uploads
     output: true
+
+defaults:
+- scope:
+    path: posts
+    type: posts
+  values:
+    layout: default
+    permalink: "/blog/"
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: default
+    permalink: "/blog/:title/"
