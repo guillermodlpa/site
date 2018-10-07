@@ -7,19 +7,14 @@
     <meta name="author" content="Guillermo de la Puente">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <style type="text/css">
       {% include reset-styles.css %}
       {% include common-styles.css %}
-      {% include default-layout-styles.css %}
       {% include amazing-horizontal-bar-styles.css %}
     </style>
   </head>
-  <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-    {% include footer.html %}
+  <body class="is-loading">
+    {{ content }}
   </body>
 </html>

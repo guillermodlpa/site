@@ -1,0 +1,14 @@
+.amazing-horizontal-bar {
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(90deg, #11c093, #4d53e0, #B161EC, #d233cf);
+    background-size: 600% 600%;
+    animation: AmazingBackground 25s ease infinite;
+}
+
+@keyframes AmazingBackground {
+    0%{background-position:85% 0%}
+    50%{background-position:0% 0%}
+    100%{background-position:85% 0%}
+}
