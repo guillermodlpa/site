@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <style type="text/css">{% include stylesheet-reset.css %}{% include default-layout-stylesheet.css %}</style>
   </head>
   <body>
-    <h1>Blog</h1>
-    <main>{{ content }}</main>
+    {% include header.html %}
+    <main>
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>
