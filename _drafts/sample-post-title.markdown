@@ -18,4 +18,4 @@ Steps:
 
 This technique is explained with great detail on the book [Demonstrating To Win!](https://www.amazon.com/Demonstrating-Win-Indespensible-Complex-Products/dp/0615477097) by [Bob Riefstahl](https://twitter.com/bobriefstahl), among countless other useful tricks on how to demonstrate complex software solutions. Thanks to [Will Foley](https://www.linkedin.com/in/will-foley-73b18213/), a coworker of mine at [Splash](https://splashthat.com/), for recommending it to me.
 
-I love using this technique on other contexts, besides demonstrating software products, like teaching or explaining ideas. Beginning to use this technique can be as simple as starting with "*I'm going to explain you \[idea\]*" and finishing with "*Now you know about \[idea\] and it's important because \[value\]*".
+I love using this technique on other contexts, besides demonstrating software products, like teaching or explaining ideas. Beginning to use this technique can be as simple as starting your explanations with "*I'm going to explain you \[idea\]*" and finishing with "*Now you know about \[idea\] and it's important because \[value\]*".
