@@ -1,18 +1,21 @@
 ---
 title: Tell-Show-Tell Method
-date: 2018-10-07 16:31:00 Z
+date: 2018-10-21 16:31:00 Z
+tags:
+- communication
+- demonstrating
 ---
 
-Since I've learned about the Tell-Show-Tell method, I've used it almost every day at work. Its beauty lies in its simplicity and applicability. Its a recipe for successfully articulating explanations that involve showing the usage of a product.
+Since I've learned about the Tell-Show-Tell method, I've used it almost every day at work. Its a recipe for successfully articulating explanations that involve showing the usage of a product. Its beauty lies in its simplicity and effectiveness.
 
-These are the steps:
+Steps:
 
-1. **Tell**. Explain what you're going to cover and why it matters to the listener.
+1. **Tell**. Explain what you're going to demonstrate.
 
 2. **Show**. Visually show the flow of the product.
 
-3. **Tell**. Restate what you just showed, deliver the benefit so it's clear why the listener should care.
+3. **Tell**. Restate what you just showed and deliver its value or benefit, so that it's clear why the listener should care.
 
 This technique is explained with great detail on the book [Demonstrating To Win!](https://www.amazon.com/Demonstrating-Win-Indespensible-Complex-Products/dp/0615477097) by [Bob Riefstahl](https://twitter.com/bobriefstahl), among countless other useful tricks on how to demonstrate complex software solutions. Thanks to [Will Foley](https://www.linkedin.com/in/will-foley-73b18213/), a coworker of mine at [Splash](https://splashthat.com/), for recommending it to me.
 
-The book is written for  
+I love using this technique on other contexts, besides demonstrating software products, like teaching or explaining ideas. Beginning to use this technique can be as simple as starting with "*I'm going to explain you \[idea\]*" and finishing with "*Now you know about \[idea\] and it's important because \[value\]*".
