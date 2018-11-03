@@ -11,14 +11,16 @@
     <style type="text/css">
       {% include styles/reset.css %}
       {% include styles/default.css %}
+      {% include styles/loader.css %}
       {% include styles/amazing-horizontal-bar.css %}
     </style>
   </head>
-  <body>
+  <body class="is-loading">
     {% include header.html headline=page.title  headline-href=page.permalink %}
     <main>
       {{ content }}
     </main>
     {% include footer.html %}
+    {% include loader.html %}
   </body>
 </html>

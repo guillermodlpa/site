@@ -1,0 +1,33 @@
+/* ---------------- */
+/* Loader           */
+/* ---------------- */
+
+#loader-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+body.is-loading #loader-overlay {
+    opacity: 1;
+}
+#loader {
+    display: flex;
+    font-size: 5rem;
+    font-family: Courier, sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+}
+#loader-inner {
+    animation: rotation 8s ease 0.25s infinite;
+}
+@keyframes rotation {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(3600deg);}
+}
