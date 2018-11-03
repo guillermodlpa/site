@@ -18,8 +18,17 @@
   <body>
     {% include header.html %}
     <main>
-      <p><time>{% if page.date != null %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</time></p>
+      {% if page.date != null %}
+        <p><time>{{ page.date | date: "%b %-d, %Y" }}</time></p>
+      {% endif %}
+
       {{ content }}
+
+      {% if page.date != null %}
+        <p style="margin-top:4rem;text-align:center">
+          <a href="https://tinyletter.com/guillermodelapuente">Subscribe</a>
+        </p>
+      {% endif %}
     </main>
     {% include footer.html %}
   </body>
