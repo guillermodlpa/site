@@ -88,38 +88,6 @@ permalink: /
     nav a {
         margin-right: 0.5rem;
     }
-
-    /* ---------------- */
-    /* Loader           */
-    /* ---------------- */
-
-    #loader-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 0.5s;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(255, 255, 255);
-    }
-    body.is-loading #loader-overlay {
-        opacity: 1;
-    }
-    #loader {
-        font-size: 5rem;
-        font-family: Courier, sans-serif;
-        color: rgba(0, 0, 0, 0.75);
-    }
-    #loader-inner {
-        animation: rotation 10s ease 0.25s infinite;
-    }
-    @keyframes rotation {
-        from {transform: rotateZ(0deg);}
-        to {transform: rotateZ(360deg);}
-    }
 </style>
 
 <div id="root">
@@ -139,20 +107,4 @@ permalink: /
         </div>
         <div class="amazing-horizontal-bar"></div>
     </div>
-
-    <div id="loader-overlay">
-        <div id="loader">&lt;<span id="loader-inner">+</span>&gt;</div>
-    </div>
 </div>
-
-<script type="text/javascript">
-    window.onload = function() {
-        var body = document.getElementsByTagName('body')[0];
-        body.classList.remove('is-loading');
-
-        setTimeout(function() {
-            var loaderOverlay = document.getElementById('loader-overlay');
-            loaderOverlay.remove();
-        }, 550);
-    };
-</script>

@@ -11,10 +11,12 @@
     <style type="text/css">
       {% include styles/reset.css %}
       {% include styles/index.css %}
+      {% include styles/loader.css %}
       {% include styles/amazing-horizontal-bar.css %}
     </style>
   </head>
   <body class="is-loading">
     {{ content }}
+    {% include loader.html %}
   </body>
 </html>
