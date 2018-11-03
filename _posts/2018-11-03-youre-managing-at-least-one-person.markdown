@@ -3,8 +3,6 @@ title: You're managing at least one person
 date: 2018-11-03 14:30:00 Z
 ---
 
-*Content to reflect*
-
 You're continuously managing one person. You manage their time, energy, motivation and frustration.
 
 This is the team you manage:
