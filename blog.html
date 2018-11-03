@@ -1,5 +1,6 @@
 ---
 title: Blog
+permalink: "/blog"
 layout: default
 ---
 
@@ -12,10 +13,21 @@ layout: default
 {% for post in site.posts %}
 <article>
     <h2 id="{{ post.title }}">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            {{post.title}}
+        </a>
     </h2>
-    <p><time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
-    <p>{{ post.excerpt }}</p>
+    <p>
+        <time>
+            {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+    </p>
+
+    <p>
+        <a class="a-body" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.excerpt | strip_html  }}
+        </a>
+    </p>
 </article>
 {% endfor %}
 

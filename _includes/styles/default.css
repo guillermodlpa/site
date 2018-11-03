@@ -2,6 +2,27 @@
     box-sizing: border-box;
 }
 
+/* Links */
+a {
+    color: #888;
+    transition: color 0.25s ease;
+}
+a:hover {
+    color: #444;
+}
+a.a-body {
+    color: #000;
+    text-decoration: inherit;
+}
+a.a-body:hover {
+    color: #888;
+}
+
+/* Reset font weights for headlines */
+h1, h2 {
+    font-weight: inherit;
+}
+
 /* Layout */
 main, header, footer {
     width: 100%;
@@ -22,12 +43,28 @@ header h3 {
     color: #777;
     margin-top: 0;
 }
+header h3 a {
+    text-decoration: none;
+}
 
 /* Main */
 main {
     font-family: 'Open Sans', Courier, sans-serif;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+main h1 {
+    font-family: Inconsolata, Courier, sans-serif;
+}
+main time {
+    color: #888;
+    transition: color 0.25s ease;
+}
+main p.p-time {
     margin-bottom: 3rem;
+}
+main p {
+    line-height: 1.75;
 }
 
 /* Footer */
