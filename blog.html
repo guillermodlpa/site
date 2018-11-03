@@ -1,0 +1,20 @@
+---
+title: Blog
+layout: default
+---
+
+<style>
+    article {
+        margin-bottom: 2.5rem;
+    }
+</style>
+
+{% for post in site.posts %}
+<article>
+    <h2 id="{{ post.title }}">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+    </h2>
+    <p><time>{{ post.date | date: "%b %-d, %Y" }}</time></p>
+    <p>{{ post.excerpt }}</p>
+</article>
+{% endfor %}
