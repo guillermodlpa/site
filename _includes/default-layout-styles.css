@@ -31,6 +31,9 @@ main {
 }
 
 /* Footer */
+footer {
+    margin-bottom: 1rem;
+}
 footer nav {
     font-family: Inconsolata, Courier, sans-serif;
     padding: 1rem 0;

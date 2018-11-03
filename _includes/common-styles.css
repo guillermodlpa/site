@@ -8,3 +8,6 @@ a:hover {
 h1, h2 {
     font-weight: inherit;
 }
+p {
+    line-height: 1.75;
+}
