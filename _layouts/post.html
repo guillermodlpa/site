@@ -16,9 +16,21 @@
     </style>
   </head>
   <body>
-    {% include header.html headline=page.title %}
+    {% include header.html headline="Blog" headline-href="/blog" %}
     <main>
+      <h1>{{ page.title }}</h1>
+
+      <p class="p-time">
+        <time>
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+      </p>
+
       {{ content }}
+
+      <p style="margin-top:4rem;text-align:center">
+        <a href="https://tinyletter.com/guillermodelapuente">Subscribe</a>
+      </p>
     </main>
     {% include footer.html %}
   </body>

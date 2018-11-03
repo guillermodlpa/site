@@ -29,6 +29,12 @@ main {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+main h1 {
+    font-family: Inconsolata, Courier, sans-serif;
+}
+main .p-time {
+    margin-bottom: 3rem;
+}
 
 /* Footer */
 footer {
