@@ -1,4 +1,4 @@
-a {
+a, time {
     color: #888;
     transition: color 0.25s ease;
 }

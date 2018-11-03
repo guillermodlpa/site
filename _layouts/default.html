@@ -18,6 +18,7 @@
   <body>
     {% include header.html %}
     <main>
+      <p><time>{% if page.date != null %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</time></p>
       {{ content }}
     </main>
     {% include footer.html %}
