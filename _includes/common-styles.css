@@ -5,6 +5,10 @@ a, time {
 a:hover {
     color: #444;
 }
+a.a-inherit, a.a-inherit:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
 h1, h2 {
     font-weight: inherit;
 }
