@@ -71,5 +71,5 @@ How could we make this email even more persuasive? Here are some thoughts:
 
 Learn more by watching Robert Caldini's video explaining the 6 principles of persuasion or reading his books.
 
-* Video: https://youtu.be/cFdCzN7RYbw
-* Book, *Influence: The Psychology of Persuasion*: https://www.goodreads.com/book/show/28815.Influence
+* Video: [https://youtu.be/cFdCzN7RYbw](https://youtu.be/cFdCzN7RYbw)
+* Book, *Influence: The Psychology of Persuasion*: [https://www.goodreads.com/book/show/28815.Influence](https://www.goodreads.com/book/show/28815.Influence)
