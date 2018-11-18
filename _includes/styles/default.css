@@ -63,8 +63,11 @@ main time {
 main p.p-time {
     margin-bottom: 3rem;
 }
-main p {
+main p, main li {
     line-height: 1.75;
+}
+main img {
+    max-width: 100%;
 }
 
 /* Footer */
