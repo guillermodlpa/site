@@ -1,6 +1,7 @@
 ---
 title: Your Expertise is Requested
 date: 2018-11-18 18:00:00 Z
+published: false
 ---
 
 LinkedIn showed an excellent example of applying persuasion techniques on the last email I received from them, in September 2018.
