@@ -1,7 +1,6 @@
 ---
 title: Your Expertise is Requested
 date: 2018-11-18 18:00:00 Z
-published: false
 ---
 
 LinkedIn showed an excellent example of applying persuasion techniques on the last email I received from them, in September 2018.
@@ -69,7 +68,7 @@ How could we make this email even more persuasive? Here are some thoughts:
 
 ## Resources
 
-Learn more by watching Robert Caldini's video explaining the 6 principles of persuasion or reading his books.
+Learn more by watching Robert Cialdini's video explaining the 6 principles of persuasion or reading his books.
 
 * Video: [https://youtu.be/cFdCzN7RYbw](https://youtu.be/cFdCzN7RYbw)
 * Book, *Influence: The Psychology of Persuasion*: [https://www.goodreads.com/book/show/28815.Influence](https://www.goodreads.com/book/show/28815.Influence)
