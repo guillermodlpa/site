@@ -49,7 +49,7 @@ To me, it's the most astonishing persuasion technique. Carefully read the follow
 
 > *To take part, please respond in the next few days as we will close the survey once we receive the desired number of qualified responses.*
 
-The ability to take action is limited both in time and quantity. Unless the user fills out the survey soon, they might loose the opportunity to do it.
+The ability to take action is limited both in time and quantity. Unless the user fills out the survey soon, they might lose the opportunity to do it.
 
 It's human nature that when something is limited, we want it even more. Moreover, we frequently want things only when they are scarce, not being interested if there was abundance.
 
