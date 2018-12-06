@@ -72,6 +72,9 @@ main img {
 main a {
     word-break: break-word; /* long links should wrap in multiple lines */
 }
+main h2 {
+    margin: 1.5em 0 0.83em 0; /* more margin on the top of post titles */
+}
 
 /* Footer */
 footer {
