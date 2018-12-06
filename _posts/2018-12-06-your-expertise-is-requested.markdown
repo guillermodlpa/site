@@ -39,7 +39,7 @@ Observe the seemingly innocent note:
 
 > *We thank you in advance for your participation!*
 
-he purpose of showing gratitude in advance is to encourage the reader to fulfill the request.
+The purpose of showing gratitude in advance is to encourage the reader to fulfill the request.
 
 The reciprocity principle makes us feel obliged to return back a favor, in this case, gratitude
 
