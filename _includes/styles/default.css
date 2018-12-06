@@ -63,8 +63,14 @@ main time {
 main p.p-time {
     margin-bottom: 3rem;
 }
-main p {
+main p, main li {
     line-height: 1.75;
+}
+main img {
+    max-width: 100%; /* images shouldn't be wider than post container */
+}
+main a {
+    word-break: break-word; /* long links should wrap in multiple lines */
 }
 
 /* Footer */
