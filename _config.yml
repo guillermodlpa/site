@@ -16,8 +16,12 @@ defaults:
     layout: default
     permalink: "/blog/"
 - scope:
-    path: ''
+    path: '' # all files in the project
     type: posts
   values:
     layout: post
     permalink: "/blog/:title/"
+- scope:
+    path: '' # all files in the project
+  values:
+    google_analytics_tracking_id: "UA-130643092-1"
