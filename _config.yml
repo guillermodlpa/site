@@ -21,3 +21,7 @@ defaults:
   values:
     layout: post
     permalink: "/blog/:title/"
+- scope:
+    path: ''
+  values:
+    google_analytics_tracking_id: UA-130643092-1
