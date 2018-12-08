@@ -41,7 +41,7 @@ Observe the seemingly innocent note:
 
 The purpose of showing gratitude in advance is to encourage the reader to fulfill the request.
 
-The reciprocity principle makes us feel obliged to return back a favor, in this case, gratitude
+The reciprocity principle makes us feel obliged to return back a favor, in this case, gratitude.
 
 ## Scarcity
 
@@ -51,7 +51,7 @@ To me, this one is the most astonishing persuasion technique. Carefully read the
 
 The ability to take action is limited both in time and quantity. Unless the user fills out the survey soon, they might lose the opportunity to do it.
 
-It is inherent to human nature wanting something more because of it being limited. Moreover, we frequently want things only when they are scarce, and don’t want them as much if such things are abundant.
+It's inherent to human nature wanting something more because of it being limited. Moreover, we frequently want things only when they are scarce, and don’t want them as much if such things are abundant.
 
 ## The catch
 
