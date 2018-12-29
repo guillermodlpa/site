@@ -2,6 +2,7 @@
 title: Blog
 permalink: "/blog"
 layout: default
+show_subscribe_button: 1
 ---
 
 <style>
@@ -31,6 +32,4 @@ layout: default
 </article>
 {% endfor %}
 
-<p style="margin-top:4rem;text-align:center">
-    <a href="https://tinyletter.com/guillermodelapuente">Subscribe</a>
-</p>
+{% include bottom-actions.html %}
