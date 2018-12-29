@@ -10,18 +10,14 @@ collections:
     output: true
 defaults:
 - scope:
-    path: posts
-    type: posts
-  values:
-    layout: default
-    permalink: "/blog/"
-- scope:
     path: ''
     type: posts
   values:
     layout: post
     permalink: "/blog/:title/"
+    show_subscribe_button: 1
 - scope:
     path: ''
   values:
     google_analytics_tracking_id: UA-130643092-1
+    subscribe_url: https://tinyletter.com/guillermodelapuente
