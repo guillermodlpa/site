@@ -1,6 +1,6 @@
 ---
 title: About priorities
-date: 2019-01-12 10:58:00 Z
+date: 2019-01-15 10:00:00 Z
 ---
 
 How often have you seen companies working on the wrong things? How often innovation has taken resources over the main value proposition of the business, causing it to fail? My answer: too frequently.
