@@ -1,5 +1,5 @@
 ---
-title: Meditation
+title: Passage Meditation
 date: 2019-03-31 15:33:00 Z
 ---
 
