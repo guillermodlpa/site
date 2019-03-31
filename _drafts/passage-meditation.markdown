@@ -5,6 +5,8 @@ date: 2019-03-31 15:33:00 Z
 
 Training my mind through meditation has enabled me to find calm more easily, slow down my pace, dissolve stress and boost my confidence on achieving my resolutions. It's been one of the biggest life improvements I've recently had. But not every meditation style resonates with me. It was when I read [Passage Meditation by Eknath Easwaran](https://en.wikipedia.org/wiki/Passage_Meditation) that I found the right method for me. It may be the right method for you as well.
 
+![IMG_2660-7b3a47.jpeg](/uploads/IMG_2660-7b3a47.jpeg)
+
 # The Passage
 
 Meditation consists on training the mind to focus. In order to help, we use an anchor, something to help us hold the attention. On passage meditation, we use an inspirational passage as our anchor. It could be any text, as long as it's uplifting and helps us connect with the best version of ourselves. We become what we meditate on. Spiritual passages can serve this purpose magnificently. The meditation process  consists on slowly and silently repeating the memorized passage in our minds.
@@ -44,3 +46,5 @@ It helps a lot to have a special place for meditation in your house or room. Add
 # Reference
 
 If you're interested in learning more about this type of meditation, I encourage you to read [Passage Meditation](https://en.wikipedia.org/wiki/Passage_Meditation). I hope it helps you to gain focus and find calm.
+
+![IMG_2662.jpeg](/uploads/IMG_2662.jpeg)
