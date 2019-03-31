@@ -7,7 +7,7 @@ Training my mind through meditation has enabled me to find calm more easily, slo
 
 # The Passage
 
-Meditation consists on training the mind to focus. In order to help, we use an anchor, something to help us hold the attention. On passage meditation, we use an inspirational passage as our anchor. It could be any text, as long as it's uplifting and helps us connect with the best version of ourselves. Spiritual passages can serve this purpose magnificently. The meditation process  consists on slowly and silently repeating the memorized passage in our minds.
+Meditation consists on training the mind to focus. In order to help, we use an anchor, something to help us hold the attention. On passage meditation, we use an inspirational passage as our anchor. It could be any text, as long as it's uplifting and helps us connect with the best version of ourselves. We become what we meditate on. Spiritual passages can serve this purpose magnificently. The meditation process  consists on slowly and silently repeating the memorized passage in our minds.
 
 The passage I normally use is the Prayer of Saint Francis of Assisi:
 
