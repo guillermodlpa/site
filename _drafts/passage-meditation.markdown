@@ -33,7 +33,7 @@ Note that Lord here can mean different things for different individuals. For me,
 
 Starting the day with meditation will be a gift to yourself. It will also enable it to become a habit, necessary to experience the its benefits. Before starting, I set an alarm with a smooth sound to let me know that 15 minutes have passed, marking the end of my meditation.
 
-The mind repeats the passage silently, focusing on every word, one by one, very slowly. There's no rush. The slower, the harder it will be to stay focused, but also the benefit will be bigger.
+The mind repeats the passage silently, focusing on every word, one by one, very slowly. There's no rush. The slower, the harder it will be to stay focused, but also the benefit will be bigger. As the author says, "concentrate on every word and let the words slip one after another into your consciousness like pearls falling into a clear pond".
 
 The posture should be comfortable, sitting erect. I prefer to sit on a chair as it's less demanding for the body than being cross-legged on the floor.
 
