@@ -3,7 +3,7 @@ title: Passage Meditation
 date: 2019-03-31 15:33:00 Z
 ---
 
-Training my mind through meditation has enabled me to find calm more easily, slow down the pace, dissolve stress and boost my confidence in order to achieve my resolutions. It's been one of the biggest life improvements I've made recently. But not every meditation style resonates with me. It was when I read [*Passage Meditation* by Eknath Easwaran](https://en.wikipedia.org/wiki/Passage_Meditation) that I found the right method for me. It might be the right method for you as well.
+Training my mind through meditation has enabled me to find calm more easily, slow down the pace, dissolve stress and boost my confidence in order to achieve my resolutions. It's been one of the biggest life improvements I've made recently. But not every meditation style resonates with me. It was when I read *[Passage Meditation](https://en.wikipedia.org/wiki/Passage_Meditation)*[ by Eknath Easwaran](https://en.wikipedia.org/wiki/Passage_Meditation) that I found the right method for me. It might be the right method for you as well.
 
 # The Passage
 
@@ -11,20 +11,20 @@ Meditation consists in training the mind to focus. In order to help, we use an a
 
 The passage I normally use is the Prayer of Saint Francis of Assisi:
 
-> Lord, make me an instrument of your peace,\
-> Where there is hatred, let me show love;\
-> Where there is injury, let me show pardon;\
-> Where there is doubt, let me show faith;\
-> Where there is despair, let me show hope;\
-> Where there is darkness, let me show light;\
+> Lord, make me an instrument of your peace,
+> Where there is hatred, let me show love;
+> Where there is injury, let me show pardon;
+> Where there is doubt, let me show faith;
+> Where there is despair, let me show hope;
+> Where there is darkness, let me show light;
 > Where there is sadness, let me show joy.
 
-> O Divine Master, grant that I may not so much seek\
-> To be consoled as to console,\
-> To be understood as to understand,\
-> To be loved as to love;\
-> For it is in giving that we receive;\
-> It is in pardoning that we are pardoned;\
+> O Divine Master, grant that I may not so much seek
+> To be consoled as to console,
+> To be understood as to understand,
+> To be loved as to love;
+> For it is in giving that we receive;
+> It is in pardoning that we are pardoned;
 > It is in dying to self that we are born to eternal life.
 
 Note that Lord here can have different meanings for different people. For me, it represents both the universe as a whole and the true consciousness inside me.
