@@ -29,7 +29,7 @@ The passage I normally use is the Prayer of Saint Francis of Assisi:
 
 Note that Lord here can have different meanings for different people. For me, it represents both the universe as a whole and the true consciousness inside me.
 
-# How?
+# The method
 
 Starting the day with meditation will be a gift for yourself and it will also help in making a habit out of it, which is necessary to feel the benefits. Before starting, I set a timer with a smooth sound to let me know that 15 minutes have passed, marking the end of my meditation.
 
