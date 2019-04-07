@@ -94,6 +94,7 @@ main p, main li {
 }
 main img {
     max-width: 100%; /* images shouldn't be wider than post container */
+    margin: 1rem 0;
 }
 main a {
     word-break: break-word; /* long links should wrap in multiple lines */
@@ -106,6 +107,9 @@ main h2 {
     margin-top: 2rem;
     text-align: center;
     font-size: 1.17rem;
+}
+main blockquote p {
+    white-space: pre-line; /* for quote blocks to show line breaks */
 }
 
 /* Footer */
