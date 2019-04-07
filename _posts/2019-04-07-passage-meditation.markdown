@@ -37,7 +37,7 @@ The mind repeats the passage silently, focusing on every word, one by one, very 
 
 The posture should be comfortable, sitting erect. I prefer to sit on a chair because it's less demanding for the body than being cross-legged on the floor.
 
-The mind doesn't like to be still, so it will try to find ways to wander away from the passage. It will bring thoughts, questions and worries to distract you. I deal with them by remembering my intention for this moment: to meditate. Since I can think about those things later, I simply pass them along and go back to focusing on the words. Distractions also come as body sensations, like itches and discomforts. By doubling the focus on the words of the passage, they should fade away. If they don’t, it's ok, let them be.
+The mind doesn't like to be still, so it will try to find ways to wander away from the passage. It will bring thoughts, questions and worries to distract you. I deal with them by remembering my intention for that moment: to meditate. Since I can think about those things later, I simply pass them along and go back to focusing on the words. Distractions also come as body sensations, like itches and discomforts. By doubling the focus on the words of the passage, they should fade away. If they don’t, it's ok, let them be.
 
 It helps a lot to have a special place for meditation in your house or room. Setting a candle or a blanket might make it feel more spiritual and peaceful.
 
