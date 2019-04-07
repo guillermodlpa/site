@@ -43,7 +43,7 @@ It helps a lot to have a special place for meditation in your house or room. Set
 
 # Reference
 
-If you're interested in learning more about this type of meditation, I encourage you to read Passage Meditation ([chapter 1](https://www.bmcm.org/inspiration/easwaran/first-chapter-passage-meditation/)).
+If you're interested in learning more about this type of meditation, I encourage you to read Passage Meditation ([chapter 1  here](https://www.bmcm.org/inspiration/easwaran/first-chapter-passage-meditation/)).
 
 I hope it helps you to gain focus and find calm.
 
