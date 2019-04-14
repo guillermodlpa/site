@@ -16,7 +16,8 @@
     </style>
   </head>
   <body class="is-loading">
-    {{ content }}
     {% include loader.html %}
+    {{ content }}
+    <script type="text/javascript">{% include scripts/loader.js %}</script>
   </body>
 </html>

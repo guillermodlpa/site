@@ -16,11 +16,12 @@
     </style>
   </head>
   <body class="is-loading">
-    {% include header.html headline=page.title headline-href=page.permalink %}
+    {% include loader.html %}
+    {% include header.html headline=page.headline headline-href=page.headline_link %}
     <main>
       {{ content }}
     </main>
     {% include footer.html %}
-    {% include loader.html %}
+    <script type="text/javascript">{% include scripts/loader.js %}</script>
   </body>
 </html>
