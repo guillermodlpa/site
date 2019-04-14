@@ -1,7 +1,7 @@
 ---
-title: About
+title: Subscribe
 permalink: "/about"
 layout: default
 ---
 
-About content
+Subscription page
