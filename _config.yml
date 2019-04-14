@@ -20,4 +20,4 @@ defaults:
     path: ''
   values:
     google_analytics_tracking_id: UA-130643092-1
-    subscribe_url: https://tinyletter.com/guillermodelapuente
+    subscribe_url: "/subscribe"

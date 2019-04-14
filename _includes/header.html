@@ -2,18 +2,18 @@
     <div class="header__content">
         <div class="header__headlines">
             <h1>
+                <a href="/" class="a-body">
+                    Guillermo de la Puente
+                </a>
+            </h1>
+            <h3>
                 {% if include.headline-href %}
-                    <a href="{{ include.headline-href }}" class="a-body">
+                    <a href="{{ include.headline-href }}" class="a-inherit">
                 {% endif %}
                     {{ include.headline }}
                 {% if include.headline-href %}
                     </a>
                 {% endif %}
-            </h1>
-            <h3>
-                <a href="/" class="a-inherit">
-                    Guillermo de la Puente
-                </a>
             </h3>
         </div>
         <div class="header__actions">
