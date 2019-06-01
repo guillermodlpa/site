@@ -3,11 +3,19 @@ title: Assumptions getting in the way
 date: 2019-04-14 18:02:00 Z
 ---
 
-Your point of view, based on your perspective, values and experiences, will influence your perception of the others. As a manager, it could influence your perception of what is hard work, who is easy to work with or why goals aren't met. Your point of view comes with many assumptions on how people should communicate, work with urgency and what they should know already.
+What am I trying to say?
 
-Unmet assumptions about others lead to frustration towards them.
+---
 
-"The employee should know X by know, I shouldn't need to teach that.". This is the thought that blocks the manager from coaching effectively.
+In a Scrum team, good QA engineers always ask the right questions to reveal assumptions made by the rest of the team about product functionalities, user behaviors and underlying technology. As people manager, there's a lot to learn from this.
+
+Our point of view will influence our perception of the behaviors of others. It will influence our perception of what is hard work, who is easy to work with or why goals aren't met. Our point of view is built from our previous experiences and beliefs, which are deeply rooted in us. Since we can't always clarify all our context when we communicate, even if know it, our communication is inevitably omitting certain assumptions.
+
+ come with many assumptions on how people should communicate, when to work with urgency and what they should already know.
+
+Unmet expectations about others lead to you feeling frustration towards them.
+
+"The employee should know X by know, I shouldn't need to teach that.". This is the thought that blocks the manager from training effectively.
 
 ---
 
