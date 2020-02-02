@@ -7,12 +7,6 @@ headline: Blog
 headline_link: "/blog"
 ---
 
-<style>
-    article {
-        margin-bottom: 2.5rem;
-    }
-</style>
-
 {% for post in site.posts %}
 <article>
     <h2 id="{{ post.title }}">
@@ -22,11 +16,8 @@ headline_link: "/blog"
     </h2>
     <p>
         <time>
-            {{ post.date | date: "%b %-d, %Y" }}
+            {{ post.date | date: "%b %-d, %Y" }} /
         </time>
-    </p>
-
-    <p>
         <a class="a-body" href="{{ post.url | prepend: site.baseurl }}">
             {{ post.excerpt | strip_html  }}
         </a>
