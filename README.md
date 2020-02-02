@@ -2,7 +2,7 @@
 
 [https://guillermodelapuente.com](https://guillermodelapuente.com)
 
-Managed with [Siteleaf](https://www.siteleaf.com/) and built with [Jekyll](https://jekyllrb.com/).
+Managed with [Siteleaf](https://www.siteleaf.com/) and built with [Jekyll](https://jekyllrb.com/) v4.0.0.
 
 ## Instructions
 

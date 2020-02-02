@@ -21,3 +21,9 @@ defaults:
   values:
     google_analytics_tracking_id: UA-130643092-1
     subscribe_url: "/subscribe"
+    app_background_color: rgb(35, 39, 45)
+    app_font_body_color: rgb(220, 220, 220)
+    app_font_body_color_hover: rgb(255, 255, 255)
+    app_font_body_secondary_color: "#888"
+    app_font_link_color: rgb(230, 187, 70)
+    app_font_link_color_hover: "#F0D690"

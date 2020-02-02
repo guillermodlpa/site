@@ -4,22 +4,27 @@
 
 body {
     font-family: 'Open Sans', Courier, sans-serif;
+    background-color: {{ page.app_background_color }};
+    color: {{ page.app_font_body_color }};
 }
 
 /* Links */
 a {
-    color: #888;
+    color: {{ page.app_font_link_color }};
+    outline-color: {{ page.app_font_link_color }};
     transition: color 0.25s ease;
 }
 a:hover {
-    color: #444;
+    color: {{ page.app_font_link_color_hover }};
 }
+
 a.a-body {
-    color: #000;
+    color: {{ page.app_font_body_color }};
+    outline-color: {{ page.app_font_body_color }};
     text-decoration: inherit;
 }
 a.a-body:hover {
-    color: #888;
+    color: {{ page.app_font_body_color_hover }};
 }
 
 /* Reset font weights for headlines */
@@ -83,7 +88,7 @@ main h1 {
     font-family: Inconsolata, Courier, sans-serif;
 }
 main time {
-    color: #888;
+    color: {{ page.app_font_body_secondary_color }};
     transition: color 0.25s ease;
 }
 main p.p-time {
@@ -100,6 +105,9 @@ main a {
     word-break: break-word; /* long links should wrap in multiple lines */
 }
 main h2 {
+    font-size: 1.75rem;
+    font-family: Inconsolata, Courier, sans-serif;
+    font-weight: bold;
     margin: 1.5em 0 0.83em 0; /* more margin on the top of post titles */
 }
 .main__bottom-actions {
@@ -110,6 +118,9 @@ main h2 {
 }
 main blockquote p {
     white-space: pre-line; /* for quote blocks to show line breaks */
+}
+article {
+    margin-bottom: 4rem;
 }
 
 /* Footer */
