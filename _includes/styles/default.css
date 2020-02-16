@@ -104,6 +104,9 @@ main img {
 main a {
     word-break: break-word; /* long links should wrap in multiple lines */
 }
+main strong {
+    color: {{ page.app_font_body_emphasis_color }};
+}
 main h2 {
     font-size: 1.75rem;
     font-family: Inconsolata, Courier, sans-serif;
