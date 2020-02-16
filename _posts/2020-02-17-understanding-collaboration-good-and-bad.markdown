@@ -1,6 +1,6 @@
 ---
 title: Understanding Collaboration (Good and Bad)
-date: 2020-02-16 11:11:00 Z
+date: 2020-02-17 09:00:00 Z
 excerpt_separator: "<!--more-->"
 ---
 
