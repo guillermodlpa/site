@@ -1,11 +1,14 @@
 ---
 title: Understanding Collaboration (Good and Bad)
 date: 2020-02-16 11:11:00 Z
+excerpt_separator: <!--more-->
 ---
 
 ![export small.png](/uploads/export%20small.png)
 
 The very nature of organizations consists on collaboration, which means two or more people working together towards shared goals. We know collaboration is a good thing: in doing so, people can achieve bigger goals than the ones they would attain working individually. However, both personal experience and scientific studies tell us that it isn’t as simple as putting a group of people together for the positive effects of collaboration to happen. In fact, working together can also be detrimental.
+
+<!--more-->
 
 As manager and Psychology student, I’m always trying to understand better **group dynamics**, so that I can influence my teams to achieve more ambitious results. During the last few years, I’ve been observing the context and behaviors that promote their success as teams. Here are some of them:
 
