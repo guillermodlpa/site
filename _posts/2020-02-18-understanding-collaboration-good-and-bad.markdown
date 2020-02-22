@@ -20,7 +20,9 @@ As manager and Psychology student, I’m always trying to understand better **gr
 
 * **Decision-making process**. A defined process enables streamlined, effective and less stressful decision-making. Frameworks like [DACI](https://medium.com/productmanagement101/daci-framework-a-tool-for-group-decisions-665bd71585cf) or [structured RFC processes](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html) foster cultures more accepting of change.
 
-On the other hand, there are a few aspects that prevent positive collaboration, like:
+* Spaces and interactions intentionally designed to promote respect, connectedness and openness within groups, as shown by [recent research](https://journals.aom.org/doi/abs/10.5465/amj.2016.0685).
+
+On the other hand, here are a few aspects that prevent positive collaboration, like:
 
 * **Unnecessary blocking dependencies**. This happens when some team members are blocked by others to achieve their objectives. It hurts productivity and causes frustration.
 
@@ -34,4 +36,4 @@ In the field Social Psychology, scientists have also studied two opposing phenom
 
 * **Social loafing**, as the tendency to put less effort on tasks done with a group compared to tasks done individually. Some types are easier to identify, like [diffusion of responsibility](https://www.psychologytoday.com/us/blog/happiness-in-world/201006/the-diffusion-responsibility), while others are harder to spot from the outside, like avoidance of putting more effort than others. It’s on the manager to clear the uncertainty that causes teams to develop these dynamics.
 
-As [Zlatian Iliev](https://www.linkedin.com/in/zlatian-iliev-454910111/), Tech Lead at Splash mentioned, we can extend to any relationship the idea of positive collaboration as achieving more than the sum of parts. Think of your friendships, your family and your partner. Are those groups of people better together than separate? Are they enabling their members to be better than if they were alone? While it can’t be measured in terms of output, the idea is still applicable, and it’s a beautiful one in my opinion.
+As [Zlatian Iliev](https://www.linkedin.com/in/zlatian-iliev-454910111/), tech lead at Splash, mentioned, we can extend to any relationship the idea of positive collaboration as achieving more than the sum of parts. Think of your friendships, your family and your partner. Are those groups of people better together than separate? Are they enabling their members to be better than if they were alone? While it can’t be measured in terms of output, the idea is still applicable, and it’s a beautiful one in my opinion.
