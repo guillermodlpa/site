@@ -98,11 +98,16 @@ main p, main li {
     line-height: 1.75;
 }
 main img {
+    margin: 0 auto; /* centering */
+    display: block;
     max-width: 100%; /* images shouldn't be wider than post container */
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 main a {
     word-break: break-word; /* long links should wrap in multiple lines */
+}
+main strong {
+    color: {{ page.app_font_body_emphasis_color }};
 }
 main h2 {
     font-size: 1.75rem;
