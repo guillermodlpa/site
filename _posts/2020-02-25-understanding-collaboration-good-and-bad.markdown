@@ -1,6 +1,6 @@
 ---
 title: Understanding Collaboration (Good and Bad)
-date: 2020-02-18 09:00:00 Z
+date: 2020-02-25 00:00:00 Z
 excerpt_separator: "<!--more-->"
 ---
 
@@ -36,4 +36,4 @@ In the field Social Psychology, scientists have also studied two opposing phenom
 
 * **Social loafing**, as the tendency to put less effort on tasks done with a group compared to tasks done individually. Some types are easier to identify, like [diffusion of responsibility](https://www.psychologytoday.com/us/blog/happiness-in-world/201006/the-diffusion-responsibility), while others are harder to spot from the outside, like avoidance of putting more effort than others. It’s on the manager to clear the uncertainty that causes teams to develop these dynamics.
 
-As [Zlatian Iliev](https://www.linkedin.com/in/zlatian-iliev-454910111/), tech lead at Splash, mentioned, we can extend to any relationship the idea of positive collaboration as achieving more than the sum of parts. Think of your friendships, your family and your partner. Are those groups of people better together than separate? Are they enabling their members to be better than if they were alone? While it can’t be measured in terms of output, the idea is still applicable, and it’s a beautiful one in my opinion.
+[Zlatian Iliev](https://www.linkedin.com/in/zlatian-iliev-454910111/), tech lead at Splash, proposes to extend the idea of positive collaboration to any reliationship, as achieving more than the sum of its parts. Think of your friendships, your family and your partner. Are those groups of people better together than separate? Are they enabling their members to be better than if they were alone? While it can’t be measured in terms of output, the idea is still applicable, and it’s a beautiful one in my opinion.
