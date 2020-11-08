@@ -1,13 +1,13 @@
 ---
-title: 'Virtual Team Building: Abstract Art Interpretation'
+title: Chill Out Meetings and Abstract Art Interpretation
 date: 2020-11-08 19:02:00 Z
 ---
 
 ![Screen Shot 2020-11-08 at 20.53.01.png](/uploads/Screen%20Shot%202020-11-08%20at%2020.53.01.png)
 
-Getting a distributed team to bond is harder than in an office environment. In person, it was easier to run a team dynamic exercise and let relationships develop on their own later thanks to lunches, coffee breaks and happy hours.
+Getting a team to bond is harder in a distributed environment than in an office. In person, it was easier to run a team dynamic exercise and let relationships develop on their own later thanks to lunches, coffee breaks and happy hours.
 
-One of the teams I manage at Splash has 5 members, which are located in Barcelona, Madrid, Philadelphia and New York. Wow! How would we go about making a team like this start getting along, have a laugh and trust each other?
+One of the teams I manage at Splash has 5 members, which are located in Barcelona, Madrid, Philadelphia and New York City. Wow! How would we go about making a new team like this start getting along, have a laugh and trust each other?
 
 As managers, now more than ever, we need to be intentional about investing time in fostering healthy dynamics, trust and bonding within our teams. That's the reason why I schedule a monthly Chill Out Meeting with each team I manage.
 
@@ -43,7 +43,7 @@ Here are the 3 pieces of art by Teresa Gorance:
 
 ![EE14B1EC-E851-4B0E-81D7-C3A065049CA6.jpeg](/uploads/EE14B1EC-E851-4B0E-81D7-C3A065049CA6.jpeg)
 
-From that last picture, our collective story was quite intense. It was about a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. An unfortunate sad end for a hilarious story ¯\\_(ツ)_/¯ Can you see Mufasa or the space worm on the picture above?
+From that last picture, our collective story was quite intense. It was about a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. An unfortunate sad end for a hilarious story ¯\\*(ツ)*/¯ Can you see Mufasa or the space worm on the picture above?
 
 Explore more artwork in [her official website](https://teresagorance.wixsite.com/teresagorance). Reach out to her if you'd like to use it or purchase some pieces.
 
