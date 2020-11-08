@@ -13,7 +13,7 @@ As managers, now more than ever, we need to be intentional about investing time 
 
 # Types of Chill Out Meetings
 
-* **Open discussion**. Let the team talk about any topic that comes up. It's good when there are things happening in the world or the country (ehm, hello 2020?). Through this type of meeting, I've witnessed people identifying common hobbies, sharing worries, emphasizing and supporting each other.
+* **Open discussion**. Let the team talk about any topic that comes up. It's good when there are things happening in the world or the country (ehm, hello 2020?). Through this type of meeting, I've witnessed people identifying common hobbies, sharing worries, empathizing and supporting each other.
 
 * **Guided conversation**. Facilitate the meeting to encourage sharing and homogeneous participation. One typical question I ask is "What did you want to be when you grew up?". Depending on time available, you can pick simpler questions like "Which was a great holiday for you?" to deeper ones like "When you were growing up, who were you closer to?"
 
@@ -45,6 +45,12 @@ Here are the 3 pieces of art by Teresa Gorance:
 
 From that last picture, our collective story was quite intense. It was about a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. An unfortunate sad end for a hilarious story ¯\\*(ツ)*/¯ Can you see Mufasa or the space worm on the picture above?
 
-Explore more artwork in [her official website](https://teresagorance.wixsite.com/teresagorance). Reach out to her if you'd like to use it or purchase some pieces.
+If you want to do this Chill Out Meeting with your team, go for it!
 
-If you want to do this Chill Out Meeting with your team, go for it! Also, feel free to [contact me](https://www.linkedin.com/in/guillermodlpa/) if you'd like to bounce ideas for more team building activities.
+# Conclusion
+
+Use Chill Out Meetings to unite your team, spending quality time through conversations or playing games. Keep them fun and engaging. This is part of the journey to team high performance.
+
+Explore more artwork by Teresa Gorance in [her official website](https://teresagorance.wixsite.com/teresagorance). Reach out to her if you'd like to use or purchase pieces.
+
+Finally, feel free to [contact me](https://www.linkedin.com/in/guillermodlpa/) if you'd like to bounce ideas for more team building activities :)
