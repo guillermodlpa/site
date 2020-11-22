@@ -2,9 +2,9 @@
 title: Blog
 permalink: "/blog"
 layout: default
-show_subscribe_button: 1
 headline: Blog
 headline_link: "/blog"
+main_class: "post-list-page"
 ---
 
 {% for post in site.posts %}
@@ -18,11 +18,11 @@ headline_link: "/blog"
         <time>
             {{ post.date | date: "%b %-d, %Y" }} /
         </time>
-        <a class="a-body" href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.excerpt | strip_html  }}
+        {{ post.excerpt | strip_html  }}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            Read more
         </a>
     </p>
 </article>
 {% endfor %}
 
-{% include bottom-actions.html %}

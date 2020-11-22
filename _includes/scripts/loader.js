@@ -1,7 +1,6 @@
 (function() {
-    var loaded = false;
     var presented = false;
-    var MIN_TIMEOUT = 250;
+    var MIN_TIMEOUT = Number('{% if include.min_timeout %}{{ include.min_timeout }}{% endif %}') || 50;
 
     function hideLoader() {
         var body = document.getElementsByTagName('body')[0];
@@ -16,12 +15,9 @@
     setTimeout(function() {
         presented = true;
     }, MIN_TIMEOUT);
-    window.onload = function() {
-        loaded = true;
-    };
 
     var interval = setInterval(function() {
-        if (presented && loaded) {
+        if (presented && document.readyState === 'complete') {
             clearInterval(interval);
             hideLoader();
         }

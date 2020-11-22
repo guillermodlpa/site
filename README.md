@@ -4,10 +4,12 @@
 
 Managed with [Siteleaf](https://www.siteleaf.com/) and built with [Jekyll](https://jekyllrb.com/) v4.0.0.
 
-## Instructions
+## Local development instructions
 
 To deploy locally at `localhost:4000`, run:
 
 ```
 jekyll serve
 ```
+
+To deploy changes, push and use Siteleaf to publish.

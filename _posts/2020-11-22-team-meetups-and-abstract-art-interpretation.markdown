@@ -1,6 +1,7 @@
 ---
 title: Team Meetups and Abstract Art Interpretation
-date: 2020-11-22 13:30:00 Z
+date: 2020-11-22 10:30:00 Z
+excerpt: One of the teams I manage at Splash has 5 members located in Barcelona, Madrid, Philadelphia and New York City. Wow! How would we go about making such a team start getting along, understanding and trusting each other? Here come Team Meetups, one of my recipes for creating a space to connect as a team.
 ---
 
 ![Screen Shot 2020-11-08 at 20.53.01.png](/uploads/Screen%20Shot%202020-11-08%20at%2020.53.01.png)
@@ -11,7 +12,7 @@ One of the teams I manage at [Splash](https://splashthat.com/) has 5 members loc
 
 Here come **Team Meetups**, one of my recipes for creating a space to connect as a team. I schedule them once a month or every other month.
 
-# Types of Team Meetups
+## Types of Team Meetups
 
 * **Open discussion**, letting the team talk about any topics that come up organically. I find it good when there are things causing stress, happening in the world or the company (ehm, hello 2020?). Through this type of meeting, I've witnessed people identifying common hobbies, sharing worries, empathizing and supporting each other.
 
@@ -19,7 +20,7 @@ Here come **Team Meetups**, one of my recipes for creating a space to connect as
 
 * **Play a game!** There are plenty of quick games to be creative, funny and a bit competitive. It doesn't matter that everybody has played [Skribbl](https://skribbl.io/) at this point, it's still a safe bet for a good time. We also [play board games](https://en.boardgamearena.com/) if the team members are into them.
 
-# An Experiment: Abstract Art Interpretation
+## An Experiment: Abstract Art Interpretation
 
 Last time, I decided to spice it up with a surprise type of Team Meetup. The idea was inspired by [Teresa Gorance](https://teresagorance.wixsite.com/teresagorance/a-b-o-u-t), an artist from Madrid who creates abstract art compositions like these:
 
@@ -55,7 +56,7 @@ The outcome of this experiment was a super fun 30-minute Team Meetup with laught
 
 If you'd like to follow this format with your team, go for it!
 
-# Conclusion
+## Conclusion
 
 I use Team Meetups to unite teams, spending quality time through conversations or playing games. This is part of the journey to achieving high performance as a team.
 
