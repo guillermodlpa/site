@@ -1,4 +1,8 @@
 (function() {
+    if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        document.getElementsByTagName('body')[0].classList.add('ios');
+    }
+
     var presented = false;
     var MIN_TIMEOUT = Number('{% if include.min_timeout %}{{ include.min_timeout }}{% endif %}') || 50;
 
