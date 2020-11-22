@@ -34,7 +34,6 @@ To play, I picked 3 pieces of artwork, and we played one game for each:
    What do you see here?\
    \
    ![B5B9A7AD-99D9-4CD3-83A4-9D4D859A04A9.jpeg](/uploads/B5B9A7AD-99D9-4CD3-83A4-9D4D859A04A9.jpeg)\
-   \
    Some of our answers were a rooster, an upside down baby, a dancer and a tooth.
 
 2. **Think like the Product Manager**. For a team to succeed, they need to understand how the PM thinks. So for the second picture, the game was to try guessing what the PM was seeing. Some people got it right!\
@@ -45,7 +44,8 @@ To play, I picked 3 pieces of artwork, and we played one game for each:
 
 3. **Collective story**. For the third and final picture, after the team looked at it for a minute, one person started telling a story using what they saw. Then, the next person continued it including what they saw too. The last one closed the story.\
    \
-   Our collective story quickly got very intense. It started with a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. Sad end, but oh well ¯\\(ツ)/¯\
+   Our collective story quickly got very intense. It started with a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. Sad end, but oh well.\
+   ¯\\(ツ)/¯\
    \
    Can you see Mufasa or the space worm in the picture below?\
    \
