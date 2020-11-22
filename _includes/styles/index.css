@@ -3,7 +3,7 @@ div, header {
 }
 body {
     font-size: 16px;
-    font-family: Inconsolata, Courier, sans-serif;
+    font-family: 'Roboto', helvetica, arial, sans-serif;
     line-height: 1.2;
     background-color: {{ page.app_background_color }};
     color: {{ page.app_font_body_color }};
@@ -25,8 +25,8 @@ body {
 }
 #content-container {
     flex-direction: column;
-    margin-top: 2rem;
-    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
 }
 header {
     flex-direction: column;
@@ -49,6 +49,10 @@ h2, nav {
 @media screen and (min-width: 600px) {
     #main-container {
         padding: 2rem 5vw;
+    }
+    #content-container {
+        margin-top: 6rem;
+        margin-bottom: 6.5rem;
     }
     h1 {
         font-size: 2.7rem;

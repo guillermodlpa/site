@@ -6,19 +6,16 @@
                     Guillermo de la Puente
                 </a>
             </h1>
-            <h3>
-                {% if include.headline-href %}
-                    <a href="{{ include.headline-href }}" class="a-inherit">
-                {% endif %}
-                    {{ include.headline }}
-                {% if include.headline-href %}
-                    </a>
-                {% endif %}
-            </h3>
         </div>
         <div class="header__actions">
-            {% if page.show_subscribe_button %}
-                <a href="{{ page.subscribe_url }}">Subscribe</a>
+            {% if include.action-href %}
+                <a href="{{ include.action-href }}">
+            {% endif %}
+            {% if include.action-text %}
+                {{ include.action-text }}
+            {% endif %}
+            {% if include.action-href %}
+                </a>
             {% endif %}
         </div>
     </div>

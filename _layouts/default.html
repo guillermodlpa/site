@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -11,7 +11,6 @@ layout: compress
     <meta name="author" content="Guillermo de la Puente">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include analytics.html %}
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:400,700&display=swap" rel="stylesheet">
     <style type="text/css">
       {% include styles/reset.css %}
       {% include styles/default.css %}
@@ -22,7 +21,7 @@ layout: compress
   <body class="is-loading">
     {% include loader.html %}
     {% include header.html headline=page.headline headline-href=page.headline_link %}
-    <main>
+    <main class="{{ page.main_class }}">
       {{ content }}
     </main>
     {% include footer.html %}

@@ -5,7 +5,7 @@ date: 2019-04-07 10:00:00 Z
 
 Training my mind through meditation has enabled me to find calm more easily, slow down the pace, dissolve stress and boost my confidence in order to achieve my resolutions. It's been one of the biggest life improvements I've made recently. But not every meditation style resonates with me. It was when I read *[Passage Meditation](https://en.wikipedia.org/wiki/Passage_Meditation)*[ by Eknath Easwaran](https://en.wikipedia.org/wiki/Passage_Meditation) that I found the right method for me. It might be the right method for you as well.
 
-# The Passage
+## The Passage
 
 Meditation consists in training the mind to focus. In order to help, we use an anchor, something to hold the attention. In passage meditation, we use an inspirational passage as our anchor. It could be any text, as long as it's uplifting and helps us connect with the best version of ourselves. Spiritual passages can serve this purpose wonderfully. After choosing one, the meditation process consists in slowly and silently repeating the memorized passage in our minds.
 
@@ -29,7 +29,7 @@ The passage I normally use is the Prayer of Saint Francis of Assisi:
 
 Note that Lord here can have different meanings for different people. For me, it represents both the universe as a whole and the true consciousness inside me.
 
-# The method
+## The method
 
 Starting the day with meditation will be a gift for yourself and it will also help in making a habit out of it, which is necessary to feel the benefits. Before starting, I set a timer with a smooth sound to let me know that 15 minutes have passed, marking the end of my meditation.
 
@@ -41,7 +41,7 @@ The mind doesn't like to be still, so it will try to find ways to wander away fr
 
 It helps a lot to have a special place for meditation in your house or room. Setting a candle or a blanket might make it feel more spiritual and peaceful.
 
-# Reference
+## Reference
 
 If you're interested in learning more about this type of meditation, I encourage you to read Passage Meditation ([chapter 1  here](https://www.bmcm.org/inspiration/easwaran/first-chapter-passage-meditation/)).
 
