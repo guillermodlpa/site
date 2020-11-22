@@ -15,7 +15,7 @@ defaults:
   values:
     layout: post
     permalink: "/blog/:title/"
-    main_class: "post-page"
+    main_class: post-page
 - scope:
     path: ''
   values:

@@ -1,7 +1,10 @@
 ---
 title: Team Meetups and Abstract Art Interpretation
 date: 2020-11-22 10:30:00 Z
-excerpt: One of the teams I manage at Splash has 5 members located in Barcelona, Madrid, Philadelphia and New York City. Wow! How would we go about making such a team start getting along, understanding and trusting each other? Here come Team Meetups, one of my recipes for creating a space to connect as a team.
+excerpt: One of the teams I manage at Splash has 5 members located in Barcelona, Madrid,
+  Philadelphia and New York City. Wow! How would we go about making such a team start
+  getting along, understanding and trusting each other? Here come Team Meetups, one
+  of my recipes for creating a space to connect as a team.
 ---
 
 ![Screen Shot 2020-11-08 at 20.53.01.png](/uploads/Screen%20Shot%202020-11-08%20at%2020.53.01.png)
