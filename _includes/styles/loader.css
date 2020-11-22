@@ -24,6 +24,16 @@ body.is-loading #loader-overlay {
 #loader-inner {
     animation: rotation 8s ease 0.25s infinite;
 }
+/* patch for Chrome that appears to render the '+' character with 1px displacement */
+#loader > span {
+    padding-top: 0;
+    padding-bottom: 2px;
+}
+/* patch for Safari in iOS that renders the font 8px higher, making the rotation center be displaced */
+.ios #loader > span {
+    padding-top: 8px;
+    padding-bottom: 0;
+}
 @keyframes rotation {
     from {transform: rotateZ(0deg);}
     to {transform: rotateZ(3600deg);}
