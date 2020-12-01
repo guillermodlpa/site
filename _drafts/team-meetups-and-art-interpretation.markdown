@@ -3,7 +3,7 @@ title: Team Meetups and Art Interpretation
 date: 2020-12-01 08:06:00 Z
 ---
 
-![Screen Shot 2020-11-08 at 20.53.01.png](/uploads/Screen%20Shot%202020-11-08%20at%2020.53.01.png)
+![previews SM.png](/uploads/previews%20SM.png)
 
 Getting a team to bond is harder in a distributed environment than in an office. In person, I used to run team building exercises and then let relationships develop on their own thanks to lunches, coffee breaks and happy hours. But working remotely, we don't have those casual gatherings.
 
@@ -21,11 +21,9 @@ Here come **Team Meetups**, one of my recipes for creating a space to connect as
 
 ## An Experiment: Abstract Art Interpretation
 
-Last time, I decided to spice it up with a surprise type of Team Meetup. The idea was inspired by [Teresa Gorance](https://teresagorance.wixsite.com/teresagorance/a-b-o-u-t), an artist from Madrid who creates abstract art compositions like these:
+Last time, I decided to spice it up with a surprise type of Team Meetup inspired by abstract art.
 
-![Screen Shot 2020-11-08 at 20.52.46.png](/uploads/Screen%20Shot%202020-11-08%20at%2020.52.46.png)
-
-The compositions are completely abstract, but our brains are wired to find shapes and meaning. It's like when look up at the clouds in the sky.
+When shapes are completely abstract, but our brains are wired to find shapes and meaning. It's like when look up at the clouds in the sky.
 
 To play, I picked 3 pieces of artwork, and we played one game for each:
 
@@ -33,23 +31,17 @@ To play, I picked 3 pieces of artwork, and we played one game for each:
    \
    What do you see here?\
    \
-   ![B5B9A7AD-99D9-4CD3-83A4-9D4D859A04A9.jpeg](/uploads/B5B9A7AD-99D9-4CD3-83A4-9D4D859A04A9.jpeg)\
-   Some of our answers were a rooster, an upside down baby, a dancer and a tooth.
+   ![joel-filipe-Mbf3xFiC1Zo-unsplash (circle, SM).png](/uploads/joel-filipe-Mbf3xFiC1Zo-unsplash%20(circle,%20SM).png)\
 
 2. **Think like the Product Manager**. For a team to succeed, they need to understand how the PM thinks. So for the second picture, the game was to try guessing what the PM was seeing. Some people got it right!\
    \
    What do you see here?\
    \
-   ![449DBF26-2B51-4DFF-967D-E08FF446630F.jpeg](/uploads/449DBF26-2B51-4DFF-967D-E08FF446630F.jpeg)
+   ![joel-filipe-QwoNAhbmLLo-unsplash (circle, SM).png](/uploads/joel-filipe-QwoNAhbmLLo-unsplash%20(circle,%20SM).png)
 
 3. **Collective story**. For the third and final picture, after the team looked at it for a minute, one person started telling a story using what they saw. Then, the next person continued it including what they saw too. The last one closed the story.\
    \
-   Our collective story quickly got very intense. It started with a person swimming in the ocean, seeing a whale, then getting bitten by a shark, seeing Mufasa in the stars, being attacked by Mufasa, then being pursued by a giant space worm and finally dying. Sad end, but oh well.\
-   ¯\\(ツ)/¯\
-   \
-   Can you see Mufasa or the space worm in the picture below?\
-   \
-   ![EE14B1EC-E851-4B0E-81D7-C3A065049CA6.jpeg](/uploads/EE14B1EC-E851-4B0E-81D7-C3A065049CA6.jpeg)
+   ![joel-filipe-sMncX9OLr8o-unsplash (circle, SM).png](/uploads/joel-filipe-sMncX9OLr8o-unsplash%20(circle,%20SM).png)
 
 The outcome of this experiment was a super fun 30-minute Team Meetup with laughter, weirdness and a feeling of relax and bonding.
 
@@ -59,6 +51,6 @@ If you'd like to follow this format with your team, go for it!
 
 I use Team Meetups to unite teams, spending quality time through conversations or playing games. This is part of the journey to achieving high performance as a team.
 
-Explore more artwork by Teresa Gorance in [her official website](https://teresagorance.wixsite.com/teresagorance). Reach out to her if you'd like to use or purchase a piece.
+The photos are by Joel Philipe ([Unsplash](https://unsplash.com/@joelfilip), [Instagram](http://instagram.com/joelfilip/)) ([1](https://unsplash.com/photos/Mbf3xFiC1Zo), [2](https://unsplash.com/photos/QwoNAhbmLLo), [3](https://unsplash.com/photos/sMncX9OLr8o)).
 
 Finally, feel free to [contact me](https://www.linkedin.com/in/guillermodlpa/) if you'd like to bounce ideas of more team building activities :)
