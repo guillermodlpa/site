@@ -1,5 +1,5 @@
 ---
-title: Team Meetups and Abstract Art Interpretation
+title: Team Meetups and Art Interpretation (Hidden)
 date: 2020-11-22 10:30:00 Z
 published: false
 excerpt: One of the teams I manage at Splash has 5 members located in Barcelona, Madrid,
