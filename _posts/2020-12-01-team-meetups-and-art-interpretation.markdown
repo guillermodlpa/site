@@ -55,6 +55,6 @@ If you'd like to follow this format with your team, go for it!
 
 I use Team Meetups to unite teams, spending quality time through conversations or playing games. This is part of the journey to achieving high performance as a team.
 
-The abstract photos are by Joel Filipe. You can check out his artwork on [Unsplash](https://unsplash.com/@joelfilip) or [Instagram.](http://instagram.com/joelfilip/) ([1](https://unsplash.com/photos/Mbf3xFiC1Zo), [2](https://unsplash.com/photos/QwoNAhbmLLo), [3](https://unsplash.com/photos/sMncX9OLr8o)).
+The abstract photos are by Joel Filipe. You can check out his artwork on [Unsplash](https://unsplash.com/@joelfilip) or [Instagram](http://instagram.com/joelfilip/). ([1](https://unsplash.com/photos/Mbf3xFiC1Zo), [2](https://unsplash.com/photos/QwoNAhbmLLo), [3](https://unsplash.com/photos/sMncX9OLr8o)).
 
 Finally, feel free to [contact me](https://www.linkedin.com/in/guillermodlpa/) if you'd like to bounce ideas of more team building activities :)
