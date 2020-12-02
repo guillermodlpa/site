@@ -1,6 +1,10 @@
 ---
 title: Team Meetups and Art Interpretation
 date: 2020-12-01 10:00:00 Z
+excerpt: One of the teams I manage at Splash has 5 members distributed between Barcelona,
+  Madrid, Granada, Philadelphia and New York City. Wow! How would we go about making
+  such a team start getting along, understanding and trusting each other? Here come
+  Team Meetups, one of my recipes for creating a space to connect as a team.
 ---
 
 ![previews SM.png](/uploads/previews%20SM.png)
