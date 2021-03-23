@@ -3,7 +3,7 @@ title: Writing performance reviews - Self review section
 date: 2021-03-21 10:39:00 Z
 ---
 
-Every year, managers write performance reviews. A review should basically consist on summarizing 360 feedback and defining goals for the next quarters.
+Every year, managers write performance reviews. A review should basically consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed on a meeting with the direct report.
 
 ## My journey preparing performance reviews
 
