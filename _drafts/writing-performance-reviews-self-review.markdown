@@ -44,4 +44,4 @@ The usefulness of the summary depends on the questions asked on the self review 
 
 There's a temptation to ask also about other things that relate to the organization more than to the individual, like "what things of the company would you change?" or "what additional support can the organization give you to achieve those goals?". These questions are very valuable, but don't belong in a performance review process. Let's not mix company surveys with performance reviews.
 
-I'll cover other sections in future blog posts
+I'll cover other sections in future blog posts.
