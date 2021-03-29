@@ -1,5 +1,5 @@
 ---
-title: Writing performance reviews - Self review section
+title: A better approach to the self review summary in performance reviews
 date: 2021-03-29 10:00:00 Z
 ---
 
