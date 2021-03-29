@@ -5,8 +5,6 @@ date: 2021-03-29 10:00:00 Z
 
 Every year, managers write performance reviews. They should consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
 
-## The importance of the self review summary
-
 Writing good performance reviews is tough. At least for me. It isn't fun work. At the same time, delivering a useful performance review is so fulfilling. One that makes the direct report feel understood, challenged and motivated. So despite working long hours during those weeks, I'm always looking forward to performance review periods.
 
 The first section of a performance review document is the self review. It's a summary of what the candidate wrote in their self review form. It's important not to change its meaning or disagree with it. We want to understand the direct and make them feel understood.
