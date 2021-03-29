@@ -22,7 +22,7 @@ When delivering the performance review in a meeting, reading out loud the questi
 
 > You wrote about two main accomplishments during the last period. The first was establishing good incident response practices. The second...
 
-The summaries are more accurate with what the direct report wrote for each question. Which leads to a better mutual understanding.
+The summaries are more accurate with what the direct report wrote for each question. Which leads to a better mutual understanding. And sets the right stage for then going into peer and manager reviews.
 
 ## Questions matter
 
