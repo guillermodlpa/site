@@ -13,16 +13,14 @@ The first section of a performance review document is the self review. It's a su
 
 In the past, I've spent many hours preparing each performance review. Analyzing each piece of feedback, data and notes. Back then, I formatted them as letters. Lots of paragraphs and not many bullet points. The process didn't scale for me, nor that format was helpful for direct reports.
 
-This year, I've followed a more structured approach. That has helped me save time and create more consistency across reviews.
-
-When preparing the self review section of the written performance review, my new scalable approach is to summarize or reword what the direct report wrote, question by question. Example:
+This year, I've followed a more structured approach. That has helped me save time and create more consistency across reviews. It consists on summarizing or rewording what the direct report wrote, question by question, including the question title. Example:
 
 > *\[What were your accomplishments?\]
 > You wrote two. The first was establishing good incident response practices. The second...*
 
-If copying the question name feels too scripted, it's easy to make it more conversational:
+When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. It's easy to make it more conversational though:
 
-> *You wrote about two main accomplishments during the last period. The first was establishing good incident response practices. The second...*
+> *\[When reading out loud\] You wrote about two main accomplishments during the last period. The first was establishing good incident response practices. The second...*
 
 ## Questions matter
 
