@@ -18,7 +18,7 @@ This year, I've followed a more structured approach. That has helped me save tim
 > *\[What were your accomplishments?\]
 > *You wrote two. The first was establishing good incident response practices. The second...
 
-When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. It's easy to speak about it more conversationally though:
+When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. But it's easy to speak about it more conversational:
 
 > You wrote about two main accomplishments during the last period. The first was establishing good incident response practices. The second...
 
