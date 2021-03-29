@@ -15,8 +15,8 @@ In the past, I've spent many hours preparing each performance review. Analyzing 
 
 This year, I've followed a more structured approach. That has helped me save time and create more consistency across reviews. It consists on summarizing or rewording what the direct report wrote, question by question, including the question title. Example:
 
-> *\[What were your accomplishments?\]
-> *You wrote two. The first was establishing good incident response practices. The second...
+> *\[What were your accomplishments?\]*
+> You wrote two. The first was establishing good incident response practices. The second...
 
 When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. But it's easy to speak about it more conversational:
 
