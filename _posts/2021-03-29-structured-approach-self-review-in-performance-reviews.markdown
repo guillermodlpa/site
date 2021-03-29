@@ -1,5 +1,5 @@
 ---
-title: A better approach to the Self Review summary in Performance Reviews
+title: A structured approach to the Self Review summary in Performance Reviews
 date: 2021-03-29 10:00:00 Z
 ---
 
