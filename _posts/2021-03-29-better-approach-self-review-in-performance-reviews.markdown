@@ -13,7 +13,7 @@ The first section of a performance review document is the self review. It's a su
 
 In the past, I've spent many hours preparing each performance review. Back then, I formatted them as letters. Lots of paragraphs and not many bullet points. It required a significant effort. It didn't scale for me. But more importantly, it turns out that format wasn't really helpful for direct reports.
 
-This year, I've followed a more structured approach. That has helped me save time and create more consistency across reviews. It consists on summarizing or rewording what the direct report wrote, question by question, including the question title. Example:
+This year, I've followed a more structured approach. I've saved time. The reviews are more consistently formatted. Intead of writing some paragraphs connecting all answers, I repeat the question name and summarize their answer. Example:
 
 > *\[What were your accomplishments?\]*
 > You wrote two. The first was establishing good incident response practices. The second...
