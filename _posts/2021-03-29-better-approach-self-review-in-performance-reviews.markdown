@@ -1,5 +1,5 @@
 ---
-title: A better approach to the self review summary in performance reviews
+title: A Better Approach to the Self Review Summary in Performance Reviews
 date: 2021-03-29 10:00:00 Z
 ---
 
