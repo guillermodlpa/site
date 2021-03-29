@@ -1,6 +1,6 @@
 ---
 title: Writing performance reviews - Self review section
-date: 2021-03-21 10:39:00 Z
+date: 2021-03-29 10:00:00 Z
 ---
 
 Every year, managers write performance reviews. They should consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
