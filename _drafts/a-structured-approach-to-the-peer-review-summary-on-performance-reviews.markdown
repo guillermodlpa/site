@@ -15,7 +15,7 @@ In the past, I've spent many hours preparing each performance review. Back then,
 
 This year, I've followed a more structured approach. I've saved time. The reviews are more consistently formatted. Instead of writing some paragraphs connecting all answers, I repeat the question name and summarize their answer. Example:
 
-> *\[What were your accomplishments?\]*
+> *\[Does the employee communicate effectively with others?\]*
 > You wrote two. The first was establishing good incident response practices. The second...
 
 When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. But it's easy to speak about it more conversational:
