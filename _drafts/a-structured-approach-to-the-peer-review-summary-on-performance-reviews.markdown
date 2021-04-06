@@ -7,35 +7,48 @@ Every year, managers write performance reviews. They should consist of 360 feedb
 
 Writing good performance reviews is tough. At least for me. It isn't fun work. At the same time, delivering a useful performance review is so fulfilling. One that makes the direct report feel understood, challenged and motivated. So despite working long hours during those weeks, I'm always looking forward to performance review periods.
 
-The second section of a performance review document is the peer review. It includes feedback from peers, collected previously through a form. When writing the performance review, the manager rewords it and extracts common themes in order to deliver useful feedback without calling out who said what.
+The first section of a performance review is the self review. You can read my reflections about it here: [A structured approach to the Self Review summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/).
 
-## New approach
+The second section of a performance review is the **peer review**. It's written by the manager, summarizing feedback given by selected peers through a written form. The manager rewords the answers and extracts common themes in order to deliver useful feedback without calling out who said what.
 
-In the past, I've spent many hours preparing each performance review. Back then, I formatted them as letters. Lots of paragraphs and not many bullet points. I used opinions and connectors to make them cohesive. It required a significant effort. It didn't scale for me. But more importantly, it turns out that format wasn't really helpful for direct reports.
+## Old approach
 
-This year, I've followed a more structured approach. I've saved time. The reviews are more consistently formatted. Instead of writing some paragraphs connecting all answers, I repeat the question name and summarize their answer. Example:
+In the past, I've spent many hours preparing each performance review. Back then, I formatted them as letters. Lots of paragraphs and not many bullet points. I used opinions and connectors to make them cohesive. It required a significant effort. It didn't scale for me. But more importantly, it turns out that format wasn't really helpful for direct reports. 
 
-> *\[Does the employee communicate effectively with others?\]*
-> You wrote two. The first was establishing good incident response practices. The second...
+Here's a fictional example:
 
-When delivering the performance review in a meeting, reading out loud the question name can feel too scripted. But it's easy to speak about it more conversational:
+> Your peers say you’re very communicative, clear and engaging. They say your feedback is frequent, constructive and valuable. At the same time, they suggest you to work on showing more trust for peers as when you give feedback, it sometimes makes them feel you don't trust their work has good quality.
 
-> You wrote about two main accomplishments during the last period. The first was establishing good incident response practices. The second...
+### New approach
 
-Now, my summaries are more accurate with what the direct report wrote for each question. Which leads to a better mutual understanding. And sets the right stage for the peer and manager sections of the performance review.
+This year, I've followed a more structured approach. I've saved time. The reviews are more consistently formatted. Instead of writing some paragraphs connecting all answers, I repeat the question name and summarize their answer. 
+
+It looks like this:
+
+> *\[Does the employee provide valuable feedback to others?\]*
+> Answers: Sets a new bar, exceeds expectations, exceeds expectations.\
+> Comments: Your peers consistently reported you deliver feedback that is constructive, valuable and frecuent.\
+> \
+> *\[Employee communicates effectively with others\]*\
+> Answers: exceeds expectations, needs improvements, meets expectations.\
+> Comments: your peers say you're communicative, clear and engaging. Also, two peers shared that they sometimes feel as if you don't trust their work, based on how you give feedback about their contrubutions.
+
+Now, my summaries are more accurate with what the peers wrote, as I don't  feel tempted to make words up to glue the different answers. It leads to a better understanding and more useful feedback. It also focuses us on the specific topic of the question, as opposed to it being a general document with many points inside.
 
 ## Questions matter
 
-The usefulness of the self review depends on the questions asked on the evaluation form. So far, these are the ones I've found most helpful:
+The usefulness of the peer review depends heavily on the amount of feedback peers give for each other, their honesty, and the managers job to summarize it and communicate it appropriately to produce behavioral improvement.
 
-* What were your accomplishments?
+But the questions are key. Bad questions, or questions with multiple meanings, result in not useful answers. Good questions lead to answers that enable the employee to get good feedback and suggestions. Here are some good questions I've seen:
 
-* What things didn't you accomplish?
+* The employee communicates effectively with others.
 
-* What do you like the most about your current role?
+* The employee provides valuable constructive feedback to others.
 
-* What things will you focus on to help you grow and develop?
+* The employee is approachable and receptive to feedback.
 
-* How can your manager support you on those things?
+* The employee is reliable, recognizing the relative importance of certain responsibilities, tasks, and projects, and\
+  can be counted on to prioritize in order to meet the deadlines.
 
-There's a temptation to ask also about other things that relate to the organization more than to the individual. For example, "what would you change about the company?", or "what additional support can the organization give you to achieve those goals?". These questions are very valuable, but don't belong in a performance review process. Let's not mix company surveys with performance reviews.
+* What is one piece of constructive feedback you have to help this person be more effective in their\
+  role?
