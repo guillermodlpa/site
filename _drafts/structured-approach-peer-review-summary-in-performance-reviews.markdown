@@ -13,7 +13,9 @@ The second section of a performance review is the **peer review**. It's written 
 
 ## Old approach
 
-In the past, I've spent many hours preparing each performance review. Back then, I formatted them as letters. Lots of paragraphs and not many bullet points. I used opinions and connectors to make them cohesive. It required a significant effort. It didn't scale for me. But more importantly, it turns out that format wasn't really helpful for direct reports. 
+In the past, I've spent many hours preparing each performance review. Back then, I formatted them as letters. Lots of **paragraphs** and not many bullet points. I came up with connectors to make them cohesive. It required a significant effort. It didn't scale for me.
+
+But more importantly, it turns out that format wasn't really helpful for them, my direct reports. 
 
 Here's a fictional example:
 
@@ -21,7 +23,7 @@ Here's a fictional example:
 
 ### New approach
 
-This year, I've followed a more structured approach. I've saved time. The reviews are more consistently formatted. Instead of writing some paragraphs connecting all answers, I repeat the question name and summarize their answer. 
+This year, I've followed a more structured approach with some reviews. I've saved time. The writings are more consistently formatted. Instead of having some paragraphs connecting all answers, I copy the question name, show the multi-choice answers they got, and follow it with my reword of the comments.
 
 It looks like this:
 
@@ -33,13 +35,13 @@ It looks like this:
 > Answers: exceeds expectations, needs improvements, meets expectations.\
 > Comments: your peers say you're communicative, clear and engaging. Also, two peers shared that they sometimes feel as if you don't trust their work, based on how you give feedback about their contrubutions.
 
-Now, my summaries are more accurate with what the peers wrote, as I don't  feel tempted to make words up to glue the different answers. It leads to a better understanding and more useful feedback. It also focuses us on the specific topic of the question, as opposed to it being a general document with many points inside.
+Now, my summaries are more accurate with what the peers wrote, as I don't  feel tempted to add extra words to glue the different answers. The best is that, during the meeting, it focuses us on the specific topic of the question. It allows pausing, reflecting and discussing each of them.
 
 ## Questions matter
 
-The usefulness of the peer review depends heavily on the amount of feedback peers give for each other, their honesty, and the managers job to summarize it and communicate it appropriately to produce behavioral improvement.
+The usefulness of the peer review depends heavily on the amount of feedback peers give for each other and their honesty. But also on the managers to summarize it and communicate it appropriately to create behavioral change.
 
-But the questions are key. Bad questions, or questions with multiple meanings, result in not useful answers. Good questions lead to answers that enable the employee to get good feedback and suggestions. Here are some good questions I've seen:
+But the questions themselves are key. Bad questions, or questions with multiple meanings, result in not useful answers. On the other hand, good questions lead to answers that enable the employee to get good feedback and suggestions. Here are some good ones I've seen:
 
 * The employee communicates effectively with others.
 
