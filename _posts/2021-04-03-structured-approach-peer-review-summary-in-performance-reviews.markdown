@@ -52,5 +52,4 @@ But the questions themselves are key. Bad questions, or questions with multiple 
 * The employee is reliable, recognizing the relative importance of certain responsibilities, tasks, and projects, and\
   can be counted on to prioritize in order to meet the deadlines.
 
-* What is one piece of constructive feedback you have to help this person be more effective in their\
-  role?
+* What is one piece of constructive feedback you have to help this person be more effective in their role?
