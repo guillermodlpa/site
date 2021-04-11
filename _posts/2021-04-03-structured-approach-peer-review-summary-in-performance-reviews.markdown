@@ -21,19 +21,19 @@ Here's a fictional example:
 
 > Your peers say you’re very communicative, clear and engaging. They say your feedback is frequent, constructive and valuable. At the same time, they suggest you to work on showing more trust for peers as when you give feedback, it sometimes makes them feel you don't trust their work has good quality.
 
-### New approach
+## New approach
 
 This year, I've followed a more structured approach with some reviews. I've saved time. The writings are more consistently formatted. Instead of having some paragraphs connecting all answers, I copy the question name, show the multi-choice answers they got, and follow it with my reword of the comments.
 
 It looks like this:
 
 > *\[Does the employee provide valuable feedback to others?\]*
-> Answers: Sets a new bar, exceeds expectations, exceeds expectations.\
-> Comments: Your peers consistently reported you deliver feedback that is constructive, valuable and frecuent.\
+> **Answers**: Sets a new bar, exceeds expectations, exceeds expectations.
+> **Comments**: Your peers consistently reported you deliver feedback that is constructive, valuable and frecuent.
 > \
-> *\[Employee communicates effectively with others\]*\
-> Answers: exceeds expectations, needs improvements, meets expectations.\
-> Comments: your peers say you're communicative, clear and engaging. Also, two peers shared that they sometimes feel as if you don't trust their work, based on how you give feedback about their contrubutions.
+> *\[Employee communicates effectively with others\]*
+> **Answers**: exceeds expectations, needs improvements, meets expectations.
+> **Comments**: your peers say you're communicative, clear and engaging. Also, two peers shared that they sometimes feel as if you don't trust their work, based on how you give feedback about their contrubutions.
 
 Now, my summaries are more accurate with what the peers wrote, as I don't  feel tempted to add extra words to glue the different answers. The best is that, during the meeting, it focuses the conversation on the specific topic of the question. It allows pausing, reflecting and discussing each of them.
 
@@ -49,7 +49,6 @@ But the questions themselves are key. Bad questions, or questions with multiple 
 
 * The employee is approachable and receptive to feedback.
 
-* The employee is reliable, recognizing the relative importance of certain responsibilities, tasks, and projects, and\
-  can be counted on to prioritize in order to meet the deadlines.
+* The employee is reliable, recognizing the relative importance of certain responsibilities, tasks, and projects, and can be counted on to prioritize in order to meet the deadlines.
 
 * What is one piece of constructive feedback you have to help this person be more effective in their role?
