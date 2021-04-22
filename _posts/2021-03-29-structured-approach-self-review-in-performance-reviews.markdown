@@ -1,6 +1,11 @@
 ---
 title: A structured approach to the Self Review summary in Performance Reviews
 date: 2021-03-29 10:00:00 Z
+excerpt: In the past, I've spent many hours preparing each performance review. This
+  year, I've followed a more structured approach. Now, my summaries are more accurate
+  with what the direct report wrote for each question. Which leads to a better mutual
+  understanding. And sets the right stage for the peer and manager sections of the
+  performance review.
 ---
 
 Every year, managers write performance reviews. They should consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
