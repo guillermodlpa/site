@@ -1,6 +1,11 @@
 ---
 title: A structured approach to the Peer Review summary in Performance Reviews
 date: 2021-04-11 08:00:00 Z
+excerpt: This year, I've followed a more structured approach with some reviews. Now,
+  my summaries are more accurate with what the peers wrote, as I don't  feel tempted
+  to add extra words to glue the different answers. The best is that, during the meeting,
+  it focuses the conversation on the specific topic of the question. It allows pausing,
+  reflecting and discussing each of them.
 ---
 
 Every year, managers write performance reviews. They consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
