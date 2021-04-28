@@ -9,17 +9,11 @@ Writing good performance reviews is tough. At least for me. It isn’t fun work.
 
 Prior to the manager review, there are two sections on the performance review. You can read my reflections about them here:
 
-* [A structured approach to the Self Review summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/)
+* [A structured approach to the ](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/)**[Self Review](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/)**[ summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/)
 
-* [A structured approach to the Peer Review summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)
+* [A structured approach to the ](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)**[Peer Review](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)**[ summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)
 
 The final section of a performance review is the manager review. It's written by the manager and includes the additional insights and review that the manager can offer.
-
-## Does the manager review or not?
-
-Some companies choose to reduce the importance of the manager, or leave it out completely. That scales well for large amounts of direct reports, as it enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review only though peer feedback. It also prevents biased managers from delivering a biased review.
-
-But I'm an advocate for managers spending effort in writing useful constructive manager review sections. It's a big effort though. Requires a significant amount of data collected through the previous months, self-awareness and dedication.
 
 ## Old approach
 
@@ -68,3 +62,17 @@ Note that these titles are copied literally on the review. Here's a fictional ex
 > ...
 
 I want to credit [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) for this. He prepared my review using a similar format in 2020 and that inspired me to iterate.
+
+## Feedback time? \[TODO\]
+
+When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but focused on next steps, on a "preview" of the future. At the beginning I loved this concept. It felt less corporate and more considerate for people.
+
+With time, I've changed my mind. A performance review is and should be a review of past performance. That's it. And they should be taken seriously. Respecting your team is preparing solid performance reviews that include data, repeat feedback that's been shared previously and summarize peer and direct reports feedback in a way that encourages behavior improvement.
+
+A performance review can finish looking at the future. With a discussion of next steps, goals, or proposed tactics. That's great.  That should be the outcome of a performance review, to think critically on the information received and collaborate with your manager on figuring out next steps. But, to me, this isn't strictly part of the performance review process, as this conversation should continue during most 1:1s.
+
+## Does the manager review or not?
+
+Some companies choose to reduce the importance of the manager in the performance review, or leave it out completely. That scales well for large amounts of direct reports, as it enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review only though peer feedback. It also prevents biased managers from delivering a biased review.
+
+But I'm an advocate for managers spending effort in writing useful constructive manager review sections. It's a big effort though. Requires a significant amount of data collected through the previous months, self-awareness and dedication.
