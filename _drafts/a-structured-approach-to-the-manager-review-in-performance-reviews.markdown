@@ -15,7 +15,7 @@ Prior to the manager review, there are two sections on the performance review. Y
 
 The final section of a performance review is the manager review. It's written by the manager and includes the additional insights and review that the manager can offer.
 
-## The manager reviews or not?
+## Does the manager review or not?
 
 Some companies choose to reduce the importance of the manager, or leave it out completely. That scales well for large amounts of direct reports, as it enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review only though peer feedback. It also prevents biased managers from delivering a biased review.
 
@@ -23,13 +23,13 @@ But I'm an advocate for managers spending effort in writing useful constructive 
 
 ## Old approach
 
-In previous years, I wrote a long document with different paragraphs for each area of feedback. It was prose writing. Almost like a narrative.
+In previous years, I wrote long documents, almost like narratives. They had one paragraph for each area of feedback.
 
-I'm a fan of well written narratives. But when I received a structured review with different sections and organized with bullet points, I realized the narrative format was just not the appropriate one for writing an entire manager review. Thanks to my manager for showing me that.
+I'm a fan of well written narratives. But when I received a structured review with different sections and organized with bullet points, I realized the narrative format wasn't appropriate for writing an entire manager review.
 
 ## New approach
 
-Following the example of Eamon's performance review he did for me in 2020, the manager performance review gets broken down into the following sections:
+The manager performance review is broken down into the following sections:
 
 * What you did well
 
@@ -40,3 +40,31 @@ Following the example of Eamon's performance review he did for me in 2020, the m
 * What I don't want to see more of
 
 * How we will work on these things over the course of the year
+
+Note that these titles are copied literally on the review. Here's a fictional example for a manager position:
+
+> What you did well:
+>
+> * Adapted quickly to lots of changes and adjustments.
+>
+> * Handled yourself before you got burned out.
+>
+> * Supported me on the hiring processes two software engineers
+>
+> * Represented your team VERY WELL to the rest of the organization.
+>
+> What I want to see more:
+>
+> * Throughput of your team. I need you to start thinking more on process bottlenecks and team dynamics at play in order to produce value at a more consistent quick rate.
+>
+> * More involvement on hiring processes as an autonomous hiring manager.
+>
+> What you struggled with:
+>
+> * Communication at high levels. Your communication with the individual contributors is good, but you've had situations of misunderstadings or lack of alignment with other managers.
+>
+> * Reducing shadow work. We've discussed previously, but I see you still do a significant amount of work that goes under the radar and isn't documented anywhere.
+>
+> ...
+
+I want to credit [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) for this. He prepared my review using a similar format in 2020 and that inspired me to iterate.
