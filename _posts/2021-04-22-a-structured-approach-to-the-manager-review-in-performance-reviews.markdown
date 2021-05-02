@@ -79,4 +79,4 @@ Some companies choose to reduce the input from the manager in the performance re
 
 But I'm an advocate for managers spending effort in writing thought-out constructive manager review sections. They are essential to reinforce good behaviors and set a clear path on what's important next for the direct report.
 
-However, managers need support, tools and processes to produce good manager reviews consistently across the organization. How to do that? I'm still figuring that out.
+Managers need support, tools and processes to produce valuable reviews consistently across the organization. How to do that at scale? I'm still figuring that out.
