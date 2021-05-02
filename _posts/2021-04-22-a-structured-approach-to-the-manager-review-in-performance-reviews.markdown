@@ -75,7 +75,7 @@ Discussing all those next steps isn't necessarily part of the performance review
 
 ## Does the manager review or not?
 
-Some companies choose to reduce the importance of the manager in the performance review, or leave it out completely. That scales well for large amounts of direct reports. It enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review based on peer feedback. It also prevents biased managers from delivering a biased review.
+Some companies choose to reduce the input from the manager in the performance review process, or leave it out completely. That scales well for large amounts of direct reports. It enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review based on peer feedback. It also prevents biased managers from delivering a biased review.
 
 But I'm an advocate for managers spending effort in writing thought-out constructive manager review sections. Those are the ones that make the biggest differences.
 
