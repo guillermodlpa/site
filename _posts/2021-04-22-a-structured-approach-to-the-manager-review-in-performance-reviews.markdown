@@ -39,11 +39,11 @@ Here's a fictional example for a manager position:
 
 > What you did well:
 >
-> * Adapted quickly to lots of changes and adjustments.
+> * Adapted quickly to many changes and adjustments.
 >
 > * Handled yourself before you got burned out.
 >
-> * Supported me on the hiring processes two software engineers
+> * Supported me on the hiring processes two software engineers.
 >
 > * Represented your team VERY WELL to the rest of the organization.
 >
@@ -57,7 +57,7 @@ Here's a fictional example for a manager position:
 >
 > * Communication at high levels. Your communication with the individual contributors is good, but you've had situations of misunderstadings or lack of alignment with other managers.
 >
-> * Reducing shadow work. We've discussed previously, but I see you still do a significant amount of work that goes under the radar and isn't documented anywhere.
+> * Reducing shadow work. We've discussed previously, but I've noticed you still do a significant amount of work that goes under the radar and isn't documented anywhere.
 >
 > ...
 
