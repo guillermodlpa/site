@@ -25,15 +25,15 @@ I'm a fan of well written narratives. But when I received, as a direct report, a
 
 Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/), now I break it down into the following parts:
 
-* What you did well
+* What you did well.
 
-* What I want to see more
+* What I want to see more.
 
-* What you struggled with
+* What you struggled with.
 
-* What I don't want to see more of
+* What I don't want to see more of.
 
-* How we will work on these things over the course of the year
+* How we will work on these things over the course of the year.
 
 Here's a fictional example for a manager position:
 
@@ -43,7 +43,7 @@ Here's a fictional example for a manager position:
 >
 > * Handled yourself before you got burned out.
 >
-> * Supported me on the hiring processes two software engineers.
+> * Supported me on the hiring processes of two software engineers.
 >
 > * Represented your team VERY WELL to the rest of the organization.
 >
