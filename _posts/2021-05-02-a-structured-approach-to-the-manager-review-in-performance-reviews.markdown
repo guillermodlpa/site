@@ -1,6 +1,8 @@
 ---
 title: A structured approach to the Manager Review in Performance Reviews
 date: 2021-05-02 10:00:00 Z
+excerpt: This format enables the direct report to have more clarity on each aspect.
+  They can process each bullet point separately. It sticks better.
 ---
 
 Every year, managers write performance reviews. They consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
