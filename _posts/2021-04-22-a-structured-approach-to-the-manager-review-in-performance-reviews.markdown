@@ -61,13 +61,13 @@ Here's a fictional example for a manager position:
 >
 > ...
 
-This format enables the direct report to have much more clarity on each aspect. They can process each bullet point separately. It sticks better.
+This format enables the direct report to have more clarity on each aspect. They can process each bullet point separately. It sticks better.
 
 ## What's the goal of a review?
 
 When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but framed as "previews" of the future. At the beginning I loved this concept. It felt less corporate.
 
-Over time, I've changed my mind. Performance reviews should be taken seriously and be a detailed review of past performance coming from peers, managers, direct reports and data. That's it.
+Over time, I've changed my mind. Performance reviews should be taken seriously for what they are: a detailed review of past performance coming from peers, managers, direct reports and data. That's it.
 
 However, their goal is is to influence future behavior. They achieve it by making every person aware of their performance as seen from multiple angles. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
 
