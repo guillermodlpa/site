@@ -55,7 +55,7 @@ Here's a fictional example for a manager position:
 >
 > What you struggled with:
 >
-> * Communication at high levels. Your communication with the individual contributors is good, but you've had situations of misunderstadings or lack of alignment with other managers.
+> * Communication at high levels. Your communication with the individual contributors is good, but you've had situations of misunderstading or lack of alignment with other managers.
 >
 > * Reducing shadow work. We've discussed previously, but I've noticed you still do a significant amount of work that goes under the radar and isn't documented anywhere.
 >
