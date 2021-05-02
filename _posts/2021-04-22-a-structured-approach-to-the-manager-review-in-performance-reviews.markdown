@@ -61,6 +61,8 @@ Here's a fictional example for a manager position:
 >
 > ...
 
+This format enables the direct report to have much more clarity on each aspect. They can process each bullet point separately. It sticks better.
+
 ## What's the goal of a review?
 
 When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but focused on next steps, on a "preview" of the future. At the beginning I loved this concept. It felt less corporate.
