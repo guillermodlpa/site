@@ -23,7 +23,7 @@ I'm a fan of well written narratives. But when I received a structured review wi
 
 ## New approach
 
-Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) in the last review he prepared for me, now I break down this section into the following parts:
+Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/), now I break it down into the following parts:
 
 * What you did well
 
@@ -61,13 +61,15 @@ Here's a fictional example for a manager position:
 >
 > ...
 
+This format enables the direct report to have much more clarity on each aspect. They can process each bullet point separately. It sticks better.
+
 ## What's the goal of a review?
 
-When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but focused on next steps, on a "preview" of the future. At the beginning I loved this concept. It felt less corporate.
+When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but framed as "previews" of the future. At the beginning I loved this concept. It felt less corporate.
 
-Over time, I've changed my mind. Performance reviews should be taken seriously and be a detailed review of past performance, coming from peers, managers, direct reports and data. That's it.
+Over time, I've changed my mind. Performance reviews should be taken seriously and be a detailed review of past performance coming from peers, managers, direct reports and data. That's it.
 
-However, apart from making every person aware of their performance as seen from multiple angles, the goal of the performance review is to influence future behavior. Same as feedback. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
+However, their goal is is to influence future behavior. The means is making every person aware of their performance as seen from multiple angles. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
 
 Discussing all those next steps isn't strictly part of the performance review meeting, but part of each following 1:1.
 
