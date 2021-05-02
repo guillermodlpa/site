@@ -61,7 +61,7 @@ Here's a fictional example for a manager position:
 >
 > ...
 
-This format enables the direct report to have much more clarity on each aspect. They can process each bullet point separately. It sticks better.
+This format enables the direct report to have more clarity on each aspect. They can process each bullet point separately. It sticks better.
 
 ## What's the goal of a review?
 
