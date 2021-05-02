@@ -23,7 +23,7 @@ I'm a fan of well written narratives. But when I received a structured review wi
 
 ## New approach
 
-Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) in the last review he prepared for me, now I break down this section into the following parts:
+Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/), now I break down this section into the following parts:
 
 * What you did well
 
