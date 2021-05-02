@@ -13,7 +13,7 @@ Prior to the manager review, there are two sections on the performance review. Y
 
 * [A structured approach to the ](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)**[Peer Review](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)**[ summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-peer-review-summary-in-performance-reviews/)
 
-The final section of a performance review is the manager review. It's written by the manager and includes the additional insights and review that the manager can offer.
+The final section of a performance review is the manager review. It's written by the manager and includes the additional insights and feedback that the manager can offer.
 
 ## Old approach
 
@@ -23,7 +23,7 @@ I'm a fan of well written narratives. But when I received a structured review wi
 
 ## New approach
 
-The manager performance review is broken down into the following sections:
+Following the example of  [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) in the last review he prepared for me, now I break down this section into the following parts:
 
 * What you did well
 
@@ -35,7 +35,7 @@ The manager performance review is broken down into the following sections:
 
 * How we will work on these things over the course of the year
 
-Note that these titles are copied literally on the review. Here's a fictional example for a manager position:
+Here's a fictional example for a manager position:
 
 > What you did well:
 >
@@ -61,18 +61,20 @@ Note that these titles are copied literally on the review. Here's a fictional ex
 >
 > ...
 
-I want to credit [Eamon Bisson-Donahue](https://www.linkedin.com/in/eamon-bisson-donahue/) for this. He prepared my review using a similar format in 2020 and that inspired me to iterate.
+## What's the goal of a review?
 
-## Feedback time? \[TODO\]
+When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but focused on next steps, on a "preview" of the future. At the beginning I loved this concept. It felt less corporate.
 
-When I started at Splash, we used to do "\[P\]reviews". They essentially were performance reviews, but focused on next steps, on a "preview" of the future. At the beginning I loved this concept. It felt less corporate and more considerate for people.
+Over time, I've changed my mind. Performance reviews should be taken seriously and be a detailed review of past performance, coming from peers, managers, direct reports and data. That's it.
 
-With time, I've changed my mind. A performance review is and should be a review of past performance. That's it. And they should be taken seriously. Respecting your team is preparing solid performance reviews that include data, repeat feedback that's been shared previously and summarize peer and direct reports feedback in a way that encourages behavior improvement.
+However, apart from making every person aware of their performance as seen from multiple angles, the goal of the performance review is to influence future behavior. Same as feedback. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
 
-A performance review can finish looking at the future. With a discussion of next steps, goals, or proposed tactics. That's great.  That should be the outcome of a performance review, to think critically on the information received and collaborate with your manager on figuring out next steps. But, to me, this isn't strictly part of the performance review process, as this conversation should continue during most 1:1s.
+Discussing all those next steps isn't strictly part of the performance review meeting, but part of each following 1:1.
 
 ## Does the manager review or not?
 
-Some companies choose to reduce the importance of the manager in the performance review, or leave it out completely. That scales well for large amounts of direct reports, as it enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review only though peer feedback. It also prevents biased managers from delivering a biased review.
+Some companies choose to reduce the importance of the manager in the performance review, or leave it out completely. That scales well for large amounts of direct reports. It enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review based on peer feedback. It also prevents biased managers from delivering a biased review.
 
-But I'm an advocate for managers spending effort in writing useful constructive manager review sections. It's a big effort though. Requires a significant amount of data collected through the previous months, self-awareness and dedication.
+But I'm an advocate for managers spending effort in writing thought-out constructive manager review sections. Those are the ones that make the biggest differences.
+
+However, managers need support, tools and processes to produce these reviews matching a quality standard and consistently enough across the organization. How to do that? I'm still figuring out.
