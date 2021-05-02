@@ -69,14 +69,14 @@ When I started at Splash, we used to do "\[P\]reviews". They essentially were pe
 
 Over time, I've changed my mind. Performance reviews should be taken seriously and be a detailed review of past performance coming from peers, managers, direct reports and data. That's it.
 
-However, their goal is is to influence future behavior. The means is making every person aware of their performance as seen from multiple angles. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
+However, their goal is is to influence future behavior. They achieve it by making every person aware of their performance as seen from multiple angles. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
 
-Discussing all those next steps isn't strictly part of the performance review meeting, but part of each following 1:1.
+Discussing all those next steps isn't necessarily part of the performance review meeting, but part of each following 1:1.
 
 ## Does the manager review or not?
 
-Some companies choose to reduce the importance of the manager in the performance review, or leave it out completely. That scales well for large amounts of direct reports. It enables managers without the skill or time to write constructive reviews to still deliver a "good enough" review based on peer feedback. It also prevents biased managers from delivering a biased review.
+Some companies choose to reduce the input from the manager in the performance review process, or leave it out completely. That scales well for large amounts of direct reports. It enables managers without the time or skill to write constructive feedback to still deliver a "good enough" review based on peer feedback. It also reduces the risk of biased reviews.
 
-But I'm an advocate for managers spending effort in writing thought-out constructive manager review sections. Those are the ones that make the biggest differences.
+But I'm an advocate for managers spending effort in writing thought-out constructive manager review sections. They are essential to reinforce good behaviors and set a clear path on what's important next for the direct report.
 
-However, managers need support, tools and processes to produce these reviews matching a quality standard and consistently enough across the organization. How to do that? I'm still figuring out.
+However, managers need support, tools and processes to produce good manager reviews consistently across the organization. How to do that? I'm still figuring that out.
