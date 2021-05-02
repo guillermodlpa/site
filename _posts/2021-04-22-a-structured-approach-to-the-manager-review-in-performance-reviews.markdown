@@ -71,7 +71,7 @@ Over time, I've changed my mind. Performance reviews should be taken seriously a
 
 However, their goal is is to influence future behavior. They achieve it by making every person aware of their performance as seen from multiple angles. A performance review is successful if it makes the candidate self-aware, motivated, challenged, and wanting to be better at their job or continue growing.
 
-Discussing all those next steps isn't really part of the performance review meeting, but part of each following 1:1.
+Discussing all those next steps isn't necessarily part of the performance review meeting, but part of each following 1:1.
 
 ## Does the manager review or not?
 
