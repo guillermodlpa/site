@@ -5,7 +5,7 @@ excerpt: This format enables the direct report to have more clarity on each aspe
   They can process each bullet point separately. It sticks better.
 ---
 
-Every year, managers write performance reviews. They consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
+Every year, managers write performance reviews. They often consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
 
 Writing good performance reviews is tough. At least for me. It isn’t fun work. At the same time, delivering a useful performance review is so fulfilling. One that makes the direct report feel understood, challenged and motivated. So despite working long hours during those weeks, I’m always looking forward to performance review periods.
 
