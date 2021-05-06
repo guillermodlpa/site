@@ -8,9 +8,9 @@ excerpt: This year, I've followed a more structured approach with some reviews. 
   reflecting and discussing each of them.
 ---
 
-Every year, managers write performance reviews. They consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
+Every year, managers write performance reviews. They often consist of 360 feedback and goals for the next quarters, written in a document by the manager and discussed in a meeting with the direct report.
 
-Writing good performance reviews is tough. At least for me. It isn't fun work. At the same time, delivering a useful performance review is so fulfilling. One that makes the direct report feel understood, challenged and motivated. So despite working long hours during those weeks, I'm always looking forward to performance review periods.
+Writing good performance reviews is tough. At least for me. It isn't fun work. At the same time, delivering a useful performance review is so fulfilling. One that makes the direct report feel understood, challenged and motivated. So despite pouring long hours into writing reviews, I'm always looking forward to performance review periods.
 
 The first section of a performance review is the self review. You can read my reflections about it here: [A structured approach to the Self Review summary in Performance Reviews](https://guillermodelapuente.com/blog/structured-approach-self-review-in-performance-reviews/).
 
