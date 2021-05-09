@@ -19,7 +19,7 @@ The final section of a performance review is the manager review. It's written by
 
 ## Old approach
 
-I used to write long documents, almost like narratives. They had one paragraph for each area of feedback.
+I used to write long documents, almost like [narratives](https://www.cnbc.com/2018/04/23/what-jeff-bezos-learned-from-requiring-6-page-memos-at-amazon.html). They had one paragraph for each area of feedback.
 
 I'm a fan of well written narratives. But when I received, as a direct report, a structured review organized with sections and bullet points, I realized the narrative format wasn't the best format.
 
