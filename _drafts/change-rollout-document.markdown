@@ -1,5 +1,5 @@
 ---
-title: Change Rollout Documents
+title: Change Rollout Document
 date: 2021-05-20 20:48:00 Z
 ---
 
@@ -19,7 +19,7 @@ As a manager, I've sometimes forgotten about this. Other times, I've been naive 
 
 Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
 
-How can managers roll out changes without triggering fear and anxiety? Here's my approach:
+How can managers roll out changes without triggering fear and anxiety? Here comes my favorite artifact of 2021, the Change Rollout Document. Here's how it goes:
 
 1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/edit?usp=sharing).
 
