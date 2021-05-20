@@ -9,13 +9,17 @@ In the day-to-day of the organization, you know what we don't want of?
 
 That's right. No **surprise changes**, please. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
 
-Change is good though. Evolution is good. It can be exciting, an opportunity. But most people (including me) need to feel safe in order to produce great work.
+Change can be good though. Iteration and evolution are good. It can be exciting, an opportunity.
 
-Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear (and the dark side of the force).
+Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear (and the dark side of the force). Most people (including me) need to feel safe in order to produce great work.
 
-![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side.jpeg)
+![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
-How can managers roll out changes without triggering fear and anxiety? I've messed up many times with this. But this step-by-step recipe is working out rather well for me these days:
+As a manager, I've sometimes forgotten about this. Other times, I've been naive about how I thought people would react to changes. 
+
+Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
+
+How can managers roll out changes without triggering fear and anxiety? Here's my approach:
 
 1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/edit?usp=sharing).
 
@@ -31,7 +35,7 @@ How can managers roll out changes without triggering fear and anxiety? I've mess
 
 This way, people have time to digest the impact of the change on their own time. To think through their concerns. To have all the information in front of them.
 
-Executing changes using alignment documents is a fantastic way to collaborate. Charlie Irwin and I are producing 3-6 small changes across Splash Engineering per month to enable teams to produce better quality outcomes and reduce friction points. And the impacted stakeholders have plenty of time to offer feedback or ask clarification questions.
+Executing changes using alignment documents is a fantastic way to collaborate. Charlie Irwin and I are producing 2 to 4 small changes across Splash Engineering per month to enable teams to produce better quality outcomes and reduce friction points. And the impacted stakeholders have plenty of time to offer feedback or ask clarification questions.
 
 Besides, in a Remote-First organization like Splash, an async process to present information, receive feedback and achieve alignment should be the way to go. But leave time for a brief live meeting to discuss open questions if necessary.
 
