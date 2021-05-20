@@ -35,6 +35,4 @@ Executing changes using alignment documents is a fantastic way to collaborate. C
 
 Besides, in a Remote-First organization like Splash, an async process to present information, receive feedback and achieve alignment should be the way to go. But leave time for a brief live meeting to discuss open questions if necessary.
 
-Let me know if you try it!
-
 One last advice: these docs can easily get confused between proposals and requests for alignment. Be explicit with stakeholders about if this is "just an idea", or an already-made decision.
