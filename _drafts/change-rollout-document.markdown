@@ -39,6 +39,8 @@ Both Charlie and I have learned that the time we don't invest upfront in writing
 
 Besides, in a Remote-First organization like Splash, we must favor async processes to present information, receive feedback and achieve alignment. Live meetings are okay, but only when async comments aren't working, and we really need more bandwidth to discuss open questions or concerns.
 
+![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
+
 Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
 
 One last advice: these docs can easily get confused between proposals and requests for alignment. Be explicit with stakeholders about if it's "just an idea", or an already-made decision.
