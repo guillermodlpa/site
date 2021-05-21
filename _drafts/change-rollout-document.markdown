@@ -9,15 +9,13 @@ In the day-to-day of the organization, you know what we don't want of?
 
 That's right. No **surprise changes**, please. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
 
-Change can be good though. Iteration and evolution are good. It can be exciting, an opportunity.
+Change in itself can be good though. Iteration and evolution are good. It can be exciting, an opportunity.
 
-Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear (and the dark side of the force). Most people (including me) need to feel safe in order to produce great work.
+But *surprise* changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear... to the dark side of the force, obviously.
 
 ![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
-As a manager, I've sometimes forgotten about this. Other times, I've been naive about how I thought people would react to changes.
-
-Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
+Most people (including me) need to feel safe in order to produce great work. But I've sometimes forgotten about this, and rolled out changes too fast without alignment. Other times, I've been naive about how I thought people would react to changes, assuming I could just inform of a surprise change and move to the next thing. In both situations, the time spent doing damage contention was higher than the time I would have spent planning the rollout of the chgange.
 
 How can managers roll out changes without triggering fear and anxiety? Here comes my favorite artifact of 2021, the Change Rollout Document. Here's how the process goes:
 
@@ -41,4 +39,6 @@ Both Charlie and I have learned that the time we don't invest upfront in writing
 
 Besides, in a Remote-First organization like Splash, we must favor async processes to present information, receive feedback and achieve alignment. Live meetings are okay, but only when async comments aren't working, and we really need more bandwidth to discuss open questions or concerns.
 
-One last advice: these docs can easily get confused between proposals and requests for alignment. Be explicit with stakeholders about if this is "just an idea", or an already-made decision.
+Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
+
+One last advice: these docs can easily get confused between proposals and requests for alignment. Be explicit with stakeholders about if it's "just an idea", or an already-made decision.
