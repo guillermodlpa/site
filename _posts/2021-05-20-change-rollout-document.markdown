@@ -1,6 +1,9 @@
 ---
 title: Change Rollout Document
 date: 2021-05-20 20:48:00 Z
+excerpt: In the day-to-day of the organization, do you know what we don't want any
+  of? Organizational change. How can leaders roll out both planned and unexpected
+  changes in the least surprising way possible?
 ---
 
 In the day-to-day of the organization, do you know what we don't want any of?
@@ -15,7 +18,7 @@ Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety lead
 
 But **organizational change is necessary, both planned and unexpected**. And as managers, we can't control all changes happening in the team or around the organization. But very often, we managers are directly responsible for creating even more uncertainty by changing things around on a whim.
 
-How can we enable the stability and safety to enable people to produce great work? How can we roll out both planned and unexpected changes in the least surprising way possible? How can we avoid triggering fear and anxiety? And very important: how can we reduce the risk of needing to spend time containing the damage caused by a poorly handled change?
+How can leaders enable the stability and safety to enable people to produce great work? How can we roll out both planned and unexpected changes in the least surprising way possible? How can we avoid triggering fear and anxiety? And very important: how can we reduce the risk of needing to spend time containing the damage caused by a poorly handled change?
 
 Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use it:
 
