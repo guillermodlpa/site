@@ -9,7 +9,7 @@ In the day-to-day of the organization, you know what we don't want of?
 
 That's right. No **surprise changes**. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
 
-Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear... to the dark side of the force, obviously.
+Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear leads to... the dark side of the force, obviously.
 
 ![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
@@ -39,4 +39,4 @@ Quick unplanned changes can be necessary. The circumstances may require that. Bu
 
 Here's a filled out example of a change rollout document: https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/edit?usp=sharing
 
-[![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/edit?usp=sharing)
+![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)
