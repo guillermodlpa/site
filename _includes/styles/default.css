@@ -58,6 +58,9 @@ header h3 a {
 .header__headlines {
     flex-grow: 1;
 }
+.header__headlines [role="doc-subtitle"] {
+    font-size: 1.15rem;
+}
 .header__actions {
      /** hide header actions on mobile so that it looks better */
     display: none;
