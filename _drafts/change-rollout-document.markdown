@@ -9,38 +9,30 @@ In the day-to-day of the organization, you know what we don't want of?
 
 That's right. No **surprise changes**, please. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
 
-Change in itself can be good though. Iteration and evolution are good. It can be exciting, an opportunity.
-
-But *surprise* changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear... to the dark side of the force, obviously.
+Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear... to the dark side of the force, obviously.
 
 ![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
-Most people (including me) need to feel safe in order to produce great work. But I've sometimes forgotten about this, and rolled out changes too fast without alignment. Other times, I've been naive about how I thought people would react to changes, assuming I could just inform of a surprise change and move to the next thing. In both situations, the time spent doing damage contention was higher than the time I would have spent planning the rollout of the chgange.
+But **change is necessary, both planned and unexpected**. 
 
-How can managers roll out changes without triggering fear and anxiety? Here comes my favorite artifact of 2021, the Change Rollout Document. Here's how the process goes:
+How can we have the stability and safety to produce great work in an ever-changing environment? How can we roll out both planned and unexpected changes in the least surprising way possible? How can we avoid triggering fear and anxiety? 
+
+How can we avoid needing to spend time fixing morale problems and containing the damage caused by a poorly handled change process?
+
+Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use it:
 
 1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/edit?usp=sharing).
 
 2. Fill it out.
 
-3. Share it with the appropriate stakeholders.
+3. Follow the timeline you wrote, adjusting as necessary along the way based on the feedback received.
 
-4. Collaborate asynchronously to address feedback.
+This way, people have time to digest the impact of the change on their own time. To think through their concerns. To have all the information in front of them. And to asynchronously communicate their feedback.
 
-5. Schedule a brief alignment meeting if necessary to discuss open questions.
+Additionally, writing change rollout documents is a fantastic way to collaborate as leaders. At Splash, [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/) and I are producing 2-4 small changes per month to enable teams to produce better quality outcomes and reduce friction points. We build the documents together (asynchronously), and each of us perform different steps of the timeline.
 
-6. Roll out the change as described in the timeline.
-
-This way, people have time to digest the impact of the change on their own time. To think through their concerns. To have all the information in front of them.
-
-Executing changes using alignment documents is a fantastic way to collaborate. At Splash, [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/) and I are producing 2 to 4 small changes per month to enable teams to produce better quality outcomes and reduce friction points. Thanks to this process, we can count with super helpful suggestions and concerns by peers and other stakeholders, which make our change rollout process so much smoother in the end.
-
-Both Charlie and I have learned that the time we don't invest upfront in writing the change rollout document, it's more time spent later aligning individuals separately and fixing the trust damage that we've caused.
-
-Besides, in a Remote-First organization like Splash, we must favor async processes to present information, receive feedback and achieve alignment. Live meetings are okay, but only when async comments aren't working, and we really need more bandwidth to discuss open questions or concerns.
+Both Charlie and I have learned from experience that the time we don't invest upfront in writing the change rollout document, comes back later multiplied on efforts to align individuals, fix broken trust, and do damage control.
 
 ![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
 
-Sometimes quick unplanned changes are necessary. The circumstances may require that. 2020 was an uncertain year that required many quick changes at the workplace. This is why it's so important to have a process for rolling out changes in a boring way. Most changes don't require managers to rush, making directs feel anxious and wary.
-
-One last advice: these docs can easily get confused between proposals and requests for alignment. Be explicit with stakeholders about if it's "just an idea", or an already-made decision.
+Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply changes without change rollout documents.
