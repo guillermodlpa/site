@@ -34,3 +34,9 @@ Both Charlie and I have learned from experience that the time we don't invest up
 ![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
 
 Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply changes without change rollout documents.
+
+--
+
+Here's a filled out example of a change rollout document: https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/edit?usp=sharing
+
+[![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/edit?usp=sharing)
