@@ -22,7 +22,7 @@ How can we roll out both planned and unexpected changes in the least surprising 
 
 Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use it:
 
-1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU).
+1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview).
 
 2. Fill it out.
 
@@ -46,4 +46,4 @@ Here's a filled out example of a change rollout document: [https://docs.google.c
 
 [![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk)
 
-The template: [https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU)
+The template: [https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview)
