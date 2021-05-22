@@ -27,7 +27,7 @@ Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use
 
 Share the doc with your stakeholders. Let people digest the impact of the change, to think through their concerns, and to asynchronously communicate their feedback. Optionally, alignment meetings are useful when there are important concerns or open questions that need more bandwidth to be discussed effectively.
 
-Writing change rollout documents is a fantastic way for leaders to collaborate. At Splash, [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/) and I are producing 2-4 small changes per month to enable better quality outcomes and reduce friction points. We asynchronously build the documents together, and each of us performs different steps of the timeline.
+Writing change rollout documents is a fantastic way for leaders to collaborate. At Splash, [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/) and I are producing 2-4 small changes per month to enable better quality outcomes and reduce friction points. We build the documents together, asynchronously, and each of us performs different steps of the timeline.
 
 Both Charlie and I have learned from experience that the time we don't invest upfront in writing the change rollout document, comes back later multiplied on efforts to align individuals, fix broken trust, and do damage control.
 
