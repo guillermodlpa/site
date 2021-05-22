@@ -2,7 +2,7 @@
 title: Change Rollout Document
 date: 2021-05-20 20:48:00 Z
 excerpt: In the day-to-day of the organization, do you know what we don't want any
-  of? Organizational change. How can leaders roll out both planned and unexpected
+  of? Surprise organizational changes. How can leaders roll out both planned and unexpected
   changes in the least surprising way possible?
 ---
 
