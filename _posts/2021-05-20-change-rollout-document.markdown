@@ -23,7 +23,7 @@ Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use
 
 2. Fill it out.
 
-3. Follow the timeline you wrote, adjusting as necessary along the way based on the feedback received.
+3. Follow your timeline, adjusting as necessary along the way based on the feedback received.
 
 With it shared asynchronously, people have time to digest the impact of the change on their own time. To think through their concerns. To have all the information in front of them. And to asynchronously communicate their feedback. Optionally, if when there are important concerns or open questions that need more bandwidth to be discussed, an alignment meeting is useful.
 
