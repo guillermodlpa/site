@@ -3,7 +3,7 @@ title: Change Rollout Document
 date: 2021-05-20 20:48:00 Z
 ---
 
-In the day-to-day of the organization, you know what we don't want of?
+In the day-to-day of the organization, do you know what we don't want any of?
 
 ![surprise-changes-surprise-changes-everywhere.jpeg](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
 
