@@ -31,7 +31,7 @@ Share the doc with your stakeholders. Let people digest the impact of the change
 
 Writing change rollout documents is a fantastic way for leaders to collaborate. At [Splash](https://splashthat.com/), [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/) and I are producing 2-4 small changes per month to enable better quality outcomes and reduce friction points. We build the documents together, asynchronously, and each of us performs different steps of the timeline.
 
-Both Charlie and I have learned from experience that the time we don't invest upfront in writing the change rollout document comes back later multiplied as efforts to align individuals, fix broken trust, and do damage control.
+Both Charlie and I have learned from experience the importance of this process. The time we don't invest upfront in writing the change rollout document comes back later multiplied as efforts to align individuals, fix broken trust, and do damage control.
 
 ![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
 
