@@ -14,7 +14,7 @@ That's right. **No surprise organizational changes**. Not with responsibilities.
 
 Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear leads to... the dark side of the force, obviously.
 
-![yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
+![Picture of Yoda](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
 But **organizational change is necessary, both planned and unexpected**. And as managers, we can't control all changes happening in the team or around the organization. But very often, we managers are directly responsible for creating even more uncertainty by changing things around on a whim.
 
