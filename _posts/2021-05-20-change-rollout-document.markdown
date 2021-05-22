@@ -19,7 +19,7 @@ How can we enable the stability and safety to enable people to produce great wor
 
 Here comes my favorite artifact of 2021, the **Change Rollout Document**. To use it:
 
-1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/edit?usp=sharing).
+1. Duplicate the [change rollout document template](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU).
 
 2. Fill it out.
 
@@ -37,6 +37,8 @@ Quick unplanned changes can be necessary. The circumstances may require that. Bu
 
 --
 
-Here's a filled out example of a change rollout document: https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/edit?usp=sharing
+Here's a filled out example of a change rollout document: [https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk)
 
-![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)
+[![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk)
+
+The template: [https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU)
