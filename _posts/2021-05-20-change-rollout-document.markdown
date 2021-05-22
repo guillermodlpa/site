@@ -7,7 +7,7 @@ In the day-to-day of the organization, do you know what we don't want any of?
 
 ![surprise-changes-surprise-changes-everywhere.jpeg](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
 
-That's right. No **surprise changes**. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
+That's right. **No surprise changes**. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
 
 Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear leads to... the dark side of the force, obviously.
 
