@@ -7,7 +7,7 @@ In the day-to-day of the organization, do you know what we don't want any of?
 
 ![surprise-changes-surprise-changes-everywhere.jpeg](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
 
-That's right. **No surprise changes**. Not organizational. Not with responsibilities. Not with priorities. Not with processes.
+That's right. **No surprise organizational changes**. Not with responsibilities. Not with priorities. Not with processes. Not with culture.
 
 Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear leads to... the dark side of the force, obviously.
 
@@ -35,7 +35,7 @@ Both Charlie and I have learned from experience the importance of this process. 
 
 ![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
 
-Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply changes without change rollout documents.
+Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply organizational changes without change rollout documents.
 
 --
 
