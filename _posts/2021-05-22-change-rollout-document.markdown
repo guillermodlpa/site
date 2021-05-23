@@ -1,5 +1,5 @@
 ---
-title: Change Rollout Document
+title: Change Rollout Documents
 date: 2021-05-22 10:00:00 Z
 tags:
 - management
@@ -19,7 +19,7 @@ Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety lead
 
 ![Picture of Yoda](/uploads/yoda-advice-the-fear-of-loss-is-a-path-to-the-dark-side-ca495d.jpeg)
 
-But **organizational change is necessary, both planned and unexpected**. And as managers, we can't control all changes happening in the team or around the organization. But very often, we managers are directly responsible for creating even more uncertainty by changing things around on a whim.
+But **organizational change is necessary, both planned and unexpected**. And as managers, we can't control all changes happening in the team or around the organization. But sometimes, despite our best intentions, we managers are responsible for creating even more uncertainty by changing things around on a whim.
 
 How can we roll out both planned and unexpected changes in the least surprising way possible? How can we avoid triggering fear and anxiety? And very important: how can we reduce the risk of needing to spend time containing the damage caused by a poorly handled change?
 
