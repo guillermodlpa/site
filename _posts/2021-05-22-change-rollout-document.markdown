@@ -51,4 +51,4 @@ Here's a filled out example of a change rollout document: [https://docs.google.c
 
 The template: [https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview)
 
-![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
+![Meme, docs, docs everywhere](/uploads/docs-docs-everywhere.jpeg)
