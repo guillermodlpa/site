@@ -11,9 +11,9 @@ excerpt: In the day-to-day of the organization, do you know what we don't want a
 
 In the day-to-day of the organization, do you know what we don't want any of?
 
-![surprise-changes-surprise-changes-everywhere.jpeg](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
+![Meme, Surprise Changes, Surprise Changes Everywhere](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
 
-That's right. **No surprise organizational changes**. Not with responsibilities. Not with priorities. Not with processes. Not with culture.
+That's right. **No surprise organizational changes**. Not with responsibilities. Not with priorities. Not with processes. Not with team structures.
 
 Surprise changes lead to uncertainty. Uncertainty leads to anxiety. Anxiety leads to fear. And fear leads to... the dark side of the force, obviously.
 
@@ -39,7 +39,7 @@ Writing change rollout documents is a fantastic way for leaders to collaborate. 
 
 Both Charlie and I have learned from experience the importance of this process. The time we don't invest upfront in writing the change rollout document comes back later multiplied as effort to align individuals, fix broken trust, and do damage control.
 
-![docs-docs-everywhere.jpeg](/uploads/docs-docs-everywhere.jpeg)
+![Meme, documents are my favorite](/uploads/i-like-documents-documents-are-my-favorite.jpeg)
 
 Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply organizational changes without change rollout documents.
 
@@ -50,3 +50,5 @@ Here's a filled out example of a change rollout document: [https://docs.google.c
 [![Thumbnail of example change rollout document](/uploads/Screen%20Shot%202021-05-22%20at%2014.28.59%20copy.png)](https://docs.google.com/document/d/1j_tegVZjvErE_KgcqL1OBzy4SObK-gFWv-olx3obApk/preview)
 
 The template: [https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview](https://docs.google.com/document/d/1Yq-gFbKIXfE7JQuDUlO0SSHS7dGqabq0aPTVOojDROU/template/preview)
+
+![Meme, docs, docs everywhere](/uploads/docs-docs-everywhere.jpeg)
