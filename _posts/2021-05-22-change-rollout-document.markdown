@@ -11,7 +11,7 @@ excerpt: In the day-to-day of the organization, do you know what we don't want a
 
 In the day-to-day of the organization, do you know what we don't want any of?
 
-![surprise-changes-surprise-changes-everywhere.jpeg](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
+![Meme, Surprise Changes, Surprise Changes Everywhere](/uploads/surprise-changes-surprise-changes-everywhere.jpeg)
 
 That's right. **No surprise organizational changes**. Not with responsibilities. Not with priorities. Not with processes. Not with culture.
 
@@ -39,7 +39,7 @@ Writing change rollout documents is a fantastic way for leaders to collaborate. 
 
 Both Charlie and I have learned from experience the importance of this process. The time we don't invest upfront in writing the change rollout document comes back later multiplied as effort to align individuals, fix broken trust, and do damage control.
 
-![Meme documents are my favorite](/uploads/i-like-documents-documents-are-my-favorite.jpeg)
+![Meme, documents are my favorite](/uploads/i-like-documents-documents-are-my-favorite.jpeg)
 
 Quick unplanned changes can be necessary. The circumstances may require that. But urgency doesn't justify lack of preparation. Same as we don't make code changes in our production environment without peer review or continuous integration tests, we shouldn't apply organizational changes without change rollout documents.
 
