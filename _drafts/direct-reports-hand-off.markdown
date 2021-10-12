@@ -13,7 +13,7 @@ Inspired by [Lara Hogan's 1:1:1 manager hand-off](https://larahogan.me/blog/mana
 
 1. It's made clear to the direct report that their manager will change, and why.
 
-2. I wrote a document giving context about their direct report in the organization, their performance history, their career goals.
+2. I spent some time writing a document about the direct report in the organization, their performance history, their career goals.
 
 3. The document is shared with the new manager, along with the last performance review.
 
