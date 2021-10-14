@@ -5,7 +5,7 @@ date: 2021-10-12 08:23:00 Z
 
 This post explains how I've managed direct report hand-offs in the last year.
 
-Changing the org structure can be stressful, especially for the direct report. Their new manager has to catch up quickly with their career goals and process. Reports could feel like a  chess piece tossed away. They might even  fear for their job stability. Over the years, I've changed manager 4 times. Each time, I've wondered questions like: *What will happen to me with this new manager? Will they value my work? Will they challenge me to grow? Will I be unhappy and want to leave? Will they exit me? *Even with a growth mindset, these doubts are there. One can easily lose focus on doing great work, and pay more attention to these changes.
+Changing the org structure can be stressful, especially for the direct report. Their new manager has to catch up quickly with their career goals and process. Reports could feel like a  chess piece tossed away. They might even fear for their job stability. Over the years, I've changed manager 4 times. Each time, I've wondered questions like: *What will happen to me with this new manager? Will they value my work? Will they challenge me to grow? Will I be unhappy and want to leave? Will they exit me? *Even with a growth mindset, these doubts are there. One can easily lose focus on doing great work, and pay more attention to these changes.
 
 While a bit of uncertainty, concern, and excitement are inevitable, we can manage it to mitigate the negative emotions. The **clearer** and **more transparent** the hand-off process is, the less **uncertainty** and **stress** will creep in.
 
