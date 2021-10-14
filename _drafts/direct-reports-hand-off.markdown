@@ -1,6 +1,6 @@
 ---
 title: Direct Reports Hand-Off
-date: 2021-10-12 08:23:00 Z
+date: 2021-10-14 08:30:00 Z
 ---
 
 This post explains how I've managed direct report hand-offs in the last year.
