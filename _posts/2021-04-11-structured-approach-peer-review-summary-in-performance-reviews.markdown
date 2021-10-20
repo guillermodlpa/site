@@ -34,7 +34,7 @@ It looks like this:
 
 > *\[Does the employee provide valuable feedback to others?\]*
 > **Answers**: Sets a new bar, exceeds expectations, exceeds expectations.
-> **Comments**: Your peers consistently reported you deliver feedback that is constructive, valuable and frecuent.
+> **Comments**: Your peers consistently reported you deliver feedback that is constructive, valuable and frequent.
 > \
 > *\[Employee communicates effectively with others\]*
 > **Answers**: exceeds expectations, needs improvements, meets expectations.
