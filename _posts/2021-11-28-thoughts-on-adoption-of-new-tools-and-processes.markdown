@@ -31,15 +31,17 @@ With the mindset of being fully responsible for the (lack of) adoption of a chan
 
 * Getting buy-in from the relevant stakeholders, listen to their feedback and incorporate it early on.
 
+* Check individually with a few for their thoughts early, particularly those that want to be listened to.
+
 * Informing of the change in multiple channels (email, meetings, chats, etc.).
 
 * Creating ways to easily measure adoption, like dashboards, and being transparent about the fact that I'll be using them.
 
 * Evaluating adoption later, by setting myself reminders to check it.
 
-* When I see lower adoption than expected, or lower success to fulfill the goal, I ask questions  to understand what would have to be true for adoption to be higher.
+* When I see lower adoption than expected, or lower success to fulfill the goal, I ask many questions  to understand what I'm not seeing.
 
-My advice to fellow managers is, when adoption isn't as good as expected, to avoid blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption! What's not working out? Was it not clear? Are people in your organization not used to reading written communications in depth? How could you say things differently to reach your audience and embrace a change? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
+My advice to fellow managers is, when adoption isn't as good as expected, to avoid blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption! What's not working out? Was the *Why* not clear? Are people in your organization not used to reading written communications? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
 
 # Culture
 
