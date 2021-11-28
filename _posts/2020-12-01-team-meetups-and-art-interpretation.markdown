@@ -5,6 +5,7 @@ excerpt: One of the teams I manage at Splash has 5 members distributed between B
   Madrid, Granada, Philadelphia and New York City. Wow! How would we go about making
   such a team start getting along, understanding and trusting each other? Here come
   Team Meetups, one of my recipes for creating a space to connect as a team.
+image: /uploads/joel-filipe-Mbf3xFiC1Zo-unsplash%20(circle,%20SM)%20thumbnail.png
 ---
 
 ![previews SM.png](/uploads/previews%20SM.png)

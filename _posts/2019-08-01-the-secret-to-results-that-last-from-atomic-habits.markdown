@@ -1,6 +1,7 @@
 ---
 title: The Secret to Results That Last (from Atomic Habits)
 date: 2019-08-01 18:47:00 Z
+image: /uploads/atomicHC-flat-1-e1556572683325-8b09f1.jpg
 ---
 
 An inspiring and useful book. Reading [Atomic Habits by James Clear](https://jamesclear.com/atomic-habits) was quite a journey for me. I share one of my favorite sections with the positive intention of spreading the word and encouraging you to read the full book.

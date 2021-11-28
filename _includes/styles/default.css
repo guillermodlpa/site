@@ -89,6 +89,7 @@ main p.p-time {
 main p, main li {
     font-size: 1.15rem;
     line-height: 1.7;
+    margin-top: 0;
 }
 main img {
     margin: 0 auto; /* centering */
@@ -105,7 +106,7 @@ main strong {
 main h2 {
     font-size: 1.75rem;
     font-weight: inherit;
-    margin: 1.5em 0 0.83em 0; /* more margin on the top of post titles */
+    margin: 1.5em 0 1.5em 0; /* more margin on the top of post titles */
 }
 main.post-list-page h2::after {
     content: '';
@@ -129,6 +130,34 @@ main blockquote p {
 article {
     margin-bottom: 6rem;
 }
+article .article-list-item-content-container {
+    display: flex;
+    flex-direction: column;
+}
+article .article-thumbnail {
+    height: 10rem;
+    flex-shrink: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 600px) {
+    article .article-list-item-content-container {
+        flex-direction: row;
+    }
+    article .article-thumbnail {
+        margin-right: 2rem;
+        width: 25%;
+        height: auto;
+        flex-shrink: 0;
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+    }
+}
+
 
 /* Footer */
 footer {

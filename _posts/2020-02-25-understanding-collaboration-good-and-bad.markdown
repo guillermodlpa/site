@@ -2,6 +2,7 @@
 title: Understanding Collaboration (Good and Bad)
 date: 2020-02-25 00:00:00 Z
 excerpt_separator: "<!--more-->"
+image: /uploads/export%20small.png
 ---
 
 ![export small.png](/uploads/export%20small.png)
