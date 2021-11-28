@@ -45,7 +45,9 @@ My advice to fellow managers is, when adoption isn't as good as expected, to avo
 
 # Culture
 
-It makes it easier to build a company culture in which rolling out changes and adhering to them is the norm. The more expected it is by each other, the stronger the adherence will be. I'm very transparent with my team about how I'll roll out changes, and I continually ask them for feedback, along with their own ideas for new processes and tools that can help them.
+Iterating is easier when it's part of the company culture. Rolling out new processes and tools easier when it's frequent and adhering to them is the norm. The more individuals expect adherence from each other, the stronger it will be. A culture that embraces asynchronous collaboration, via RFCs or change rollout documents, has a huge advantage to make iterations coming from management feel less chaotic. 
+
+To foster this culture, I'm very transparent with my team about how I roll out changes, and encourage them to be with their team. I continually ask them for feedback. And after having experiences some pitfalls with adoption, I try to listen more than act, so the things I roll out are welcome and helpful to the organization.
 
 # Conclusion
 
