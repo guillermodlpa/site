@@ -7,7 +7,7 @@ date: 2021-11-28 10:00:00 Z
 
 *Photo by [Paul Skorupskas](https://unsplash.com/@pawelskor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/change?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
-Have you ever feel frustrated that a  process or tool you rolled out didn't get adopted? I surely have. I'd ask myself, *why the heck isn't the team doing that important thing I asked them to do?*
+Have you ever feel frustrated that a  process or tool you rolled out didn't get adopted? I surely have. I’d ask myself why the heck the team wasn't doing that thing I asked them to do and made so much work for.
 
 I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting participation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at [Splash](https://splashthat.com/), I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
 
