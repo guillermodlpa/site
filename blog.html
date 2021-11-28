@@ -14,15 +14,22 @@ main_class: post-list-page
             {{post.title}}
         </a>
     </h2>
-    <p>
-        <time>
-            {{ post.date | date: "%b %-d, %Y" }} /
-        </time>
-        {{ post.excerpt | strip_html  }}
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            Read more
-        </a>
-    </p>
+
+    <div class="article-list-item-content-container">
+        {% if post.image %}
+            <div style="background-image: url('{{ post.image | prepend: site.baseurl }}');" class="article-thumbnail" role="img" aria-label="Thumbnail image"></div>
+        {% endif %}
+
+        <p>
+            <time>
+                {{ post.date | date: "%b %-d, %Y" }} /
+            </time>
+            {{ post.excerpt | strip_html  }}
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                Read more
+            </a>
+        </p>
+    </div>
 </article>
 {% endfor %}
 

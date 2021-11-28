@@ -1,6 +1,7 @@
 ---
 title: Passage Meditation
 date: 2019-04-07 10:00:00 Z
+image: "/uploads/IMG_2662.jpeg"
 ---
 
 Training my mind through meditation has enabled me to find calm more easily, slow down the pace, dissolve stress and boost my confidence in order to achieve my resolutions. It's been one of the biggest life improvements I've made recently. But not every meditation style resonates with me. It was when I read *[Passage Meditation](https://en.wikipedia.org/wiki/Passage_Meditation)*[ by Eknath Easwaran](https://en.wikipedia.org/wiki/Passage_Meditation) that I found the right method for me. It might be the right method for you as well.

@@ -4,6 +4,7 @@ date: 2021-05-22 10:00:00 Z
 tags:
 - management
 - process
+image: "/uploads/surprise-changes-surprise-changes-everywhere.jpeg"
 excerpt: In the day-to-day of the organization, do you know what we don't want any
   of? Surprise organizational changes. How can leaders roll out both planned and unexpected
   changes in the least surprising way possible?

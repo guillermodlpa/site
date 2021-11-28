@@ -3,7 +3,6 @@ title: Tell-Show-Tell Method
 date: 2018-10-21 16:31:00 Z
 tags:
 - communication
-- demonstrating
 ---
 
 Since I learned about the Tell-Show-Tell method, I've used it almost every day at work. It's a recipe to articulate explanations successfully that involves showing the usage of a product. Its beauty lies in its simplicity and effectiveness.
