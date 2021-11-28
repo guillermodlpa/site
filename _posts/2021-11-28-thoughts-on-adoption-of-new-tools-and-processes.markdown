@@ -9,7 +9,7 @@ date: 2021-11-28 10:00:00 Z
 
 Have you ever feel frustrated that a  process or tool you rolled out didn't get adoption? I surely have. I'd ask myself, *why the heck isn't the team doing that important thing I asked them to do?*
 
-I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting facilitation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at Splash, I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
+I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting participation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at [Splash](https://splashthat.com/), I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
 
 Some times it was lack of understanding the root cause. Other times it was not looping the right stakeholders from the beginning. Regardless of the reason, what helped me learn and do better next time was my mindset.
 
@@ -39,7 +39,7 @@ With the mindset of being fully responsible for the (lack of) adoption of a chan
 
 * When I see lower adoption than expected, or lower success to fulfill the goal, I ask questions  to understand what would have to be true for adoption to be higher.
 
-My advice to fellow managers is, when adoption isn't as good as they expected, to avoid defaulting to blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption. What's not working out? Was it not as clear as you thought it was? Are people in your organization not used to reading written communications in depth? How could you say things differently to reach your audience and embrace a change? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
+My advice to fellow managers is, when adoption isn't as good as expected, to avoid blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption! What's not working out? Was it not clear? Are people in your organization not used to reading written communications in depth? How could you say things differently to reach your audience and embrace a change? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
 
 # Culture
 
