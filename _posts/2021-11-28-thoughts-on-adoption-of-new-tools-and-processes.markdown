@@ -1,13 +1,13 @@
 ---
 title: Adoption of New Tools and Processes
-date: 2021-11-20 10:07:00 Z
+date: 2021-11-28 10:00:00 Z
 ---
 
 ![paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg](/uploads/paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg)
 
 *Photo by [Paul Skorupskas](https://unsplash.com/@pawelskor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/change?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
-Have you ever feel frustrated that a  process or tool you rolled out didn't get adoption? I surely have. I'd ask myself, "*Why the heck isn't the team doing that important thing I asked them to do?*"
+Have you ever feel frustrated that a  process or tool you rolled out didn't get adoption? I surely have. I'd ask myself, *why the heck isn't the team doing that important thing I asked them to do?*
 
 I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting facilitation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at Splash, I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
 
@@ -15,7 +15,7 @@ Some times it was lack of understanding the root cause. Other times it was not l
 
 # The mindset
 
-The attitude of blaming others for lack of adoption is unproductive. It's like communication"  one has to feel responsible for 100% of it in order to be successful. That mindset makes us think more critically. *What could I do differently to achieve better results? What am I not aware of that's causing friction to adopt this change?*
+The attitude of blaming others for lack of adoption is unproductive. It's like communication:  one has to feel responsible for 100% of it in order to be successful. That mindset makes us think more critically. *What could I do differently to achieve better results? What am I not aware of that's causing friction to adopt this change?*
 
 For example, it's ineffective to just write down instructions and send an email, assuming people will comply. That's just a great way to become a leader that asks for seemingly random things. The team will get used to receiving those orders, complying with them for a bit, if at all, and dropping them later. They'll think, *probably they weren't that important in the first place*.
 
