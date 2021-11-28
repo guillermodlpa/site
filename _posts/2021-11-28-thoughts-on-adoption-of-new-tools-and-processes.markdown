@@ -1,6 +1,9 @@
 ---
 title: Adoption of New Tools and Processes
 date: 2021-11-28 10:00:00 Z
+excerpt: Have you ever feel frustrated that a process or tool you rolled out didn’t
+  get adopted? I surely have. I’d ask myself why the heck the team wasn't doing that
+  thing I asked them to do and made so much work for. The problem? My mindset.
 ---
 
 ![paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg](/uploads/paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg)
