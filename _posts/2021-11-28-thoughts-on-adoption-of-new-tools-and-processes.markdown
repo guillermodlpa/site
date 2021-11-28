@@ -47,7 +47,7 @@ My advice to fellow managers is, when adoption isn't as good as expected, to avo
 
 Iterating is easier when it's part of the company culture. Rolling out new processes and tools easier when it's frequent and adhering to them is the norm. The more individuals expect adherence from each other, the stronger it will be. A culture that embraces asynchronous collaboration, via RFCs or change rollout documents, has a huge advantage to make iterations coming from management feel less chaotic. 
 
-To foster this culture, I'm very transparent with my team about how I roll out changes, and encourage them to be with their team. I continually ask them for feedback. And after having experiences some pitfalls with adoption, I try to listen more than act, so the things I roll out are welcome and helpful to the organization.
+To foster this culture, I'm very transparent with my team about how I roll out changes, and encourage them to be with their team. I continually ask them for feedback. And after having experiences some pitfalls with adoption, I try to listen more than act, so the things I roll out are helpful to the organization from the point of view of others, not just mine.
 
 # Conclusion
 
