@@ -52,3 +52,11 @@ To foster this culture, I'm very transparent with my team about how I roll out c
 # Conclusion
 
 Own the adoption results fully. Make others accountable, but you're responsible for the results.
+
+# Shout outs
+
+During this year, I've seen great adoption to so. Some of them I list here
+
+* To [Charlie Irwin](https://www.linkedin.com/in/charleslrirwin/), QA Engineering Manager at Splash, for owning and rolling out processes, tools, and metrics to understand and improve quality at Splash.
+
+* To [Paul Schooss](https://www.linkedin.com/in/paul-schooss-58379211/), Infrastructure Engineering Manager at Splash, for coordinating the creation of documentation, runbooks and live workshops to educate Splash Engineering on our new Kubernetes infrastructure.
