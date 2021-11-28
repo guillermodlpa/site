@@ -9,7 +9,7 @@ date: 2021-11-28 10:00:00 Z
 
 Have you ever feel frustrated that a  process or tool you rolled out didn't get adoption? I surely have. I'd ask myself, *why the heck isn't the team doing that important thing I asked them to do?*
 
-I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting facilitation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at Splash, I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
+I'm fortunate to have had many examples to learn from, like trying to increase adherence to defect SLOs, usage of APM tools, delegation in on-call rotations, and meeting participation. As a first-line manager, I've rolled out numerous tools and policies. Some of them were badly received and poorly adopted. Later, as manager of managers and part of Product Engineering Leadership at [Splash](https://splashthat.com/), I've needed to understand the Engineering organization as a whole,  observing, measuring, and iterating continuously. Similarly, some of the changes I led didn't land well. What was I doing wrong?
 
 Some times it was lack of understanding the root cause. Other times it was not looping the right stakeholders from the beginning. Regardless of the reason, what helped me learn and do better next time was my mindset.
 
@@ -31,19 +31,23 @@ With the mindset of being fully responsible for the (lack of) adoption of a chan
 
 * Getting buy-in from the relevant stakeholders, listen to their feedback and incorporate it early on.
 
+* Check individually with a few for their thoughts early, particularly those that want to be listened to.
+
 * Informing of the change in multiple channels (email, meetings, chats, etc.).
 
 * Creating ways to easily measure adoption, like dashboards, and being transparent about the fact that I'll be using them.
 
 * Evaluating adoption later, by setting myself reminders to check it.
 
-* When I see lower adoption than expected, or lower success to fulfill the goal, I ask questions  to understand what would have to be true for adoption to be higher.
+* When I see lower adoption than expected, or lower success to fulfill the goal, I ask many questions  to understand what I'm not seeing.
 
-My advice to fellow managers is, when adoption isn't as good as they expected, to avoid defaulting to blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption. What's not working out? Was it not as clear as you thought it was? Are people in your organization not used to reading written communications in depth? How could you say things differently to reach your audience and embrace a change? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
+My advice to fellow managers is, when adoption isn't as good as expected, to avoid blaming others for being irresponsible or bad listeners. Take ownership of the lack of adoption! What's not working out? Was the *Why* not clear? Are people in your organization not used to reading written communications? Was this just the wrong time due to other factors? Has your change not hooked up to their pre-existing routines?
 
 # Culture
 
-It makes it easier to build a company culture in which rolling out changes and adhering to them is the norm. The more expected it is by each other, the stronger the adherence will be. I'm very transparent with my team about how I'll roll out changes, and I continually ask them for feedback, along with their own ideas for new processes and tools that can help them.
+Iterating is easier when it's part of the company culture. Rolling out new processes and tools easier when it's frequent and adhering to them is the norm. The more individuals expect adherence from each other, the stronger it will be. A culture that embraces asynchronous collaboration, via RFCs or change rollout documents, has a huge advantage to make iterations coming from management feel less chaotic. 
+
+To foster this culture, I'm very transparent with my team about how I roll out changes, and encourage them to be with their team. I continually ask them for feedback. And after having experiences some pitfalls with adoption, I try to listen more than act, so the things I roll out are welcome and helpful to the organization.
 
 # Conclusion
 
