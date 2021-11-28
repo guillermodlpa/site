@@ -5,7 +5,7 @@ date: 2021-11-20 10:07:00 Z
 
 ![paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg](/uploads/paul-skorupskas-7KLa-xLbSXA-unsplash-cropped.jpeg)
 
-Photo by [Paul Skorupskas](https://unsplash.com/@pawelskor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/change?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+*Photo by [Paul Skorupskas](https://unsplash.com/@pawelskor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/change?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 Have you ever feel frustrated that a  process or tool you rolled out didn't get adoption? I surely have. I'd ask myself, "*Why the heck isn't the team doing that important thing I asked them to do?*"
 
