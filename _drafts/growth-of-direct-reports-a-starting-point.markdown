@@ -3,11 +3,15 @@ title: 'Growth of Direct Reports: a Starting Point'
 date: 2021-12-08 19:26:00 Z
 ---
 
-*This is an adaptation of a 20-minute presentation I gave at Splash's monthly Management Lunch & Learn.*
+*This is an adaptation of a 15-minute presentation I gave at Splash's monthly Management Lunch & Learn.*
 
 ![growth-presentation-preview.png](/uploads/growth-presentation-preview.png)
 
 I'm not an expert on growth processes for direct reports, but as I prepared this talk, I have 4 years of experience doing it. I've had a good amount of learned lessons that make me confident enough to share my thoughts on this topic.
+
+Painting is the analogy I chose, because personal and professional growth feels to me like painting a living self-portrait, from broad strokes to small details, evolving the composition over time with new learnings, experiences, interests and goals.
+
+![framework.png](/uploads/framework.png)
 
 # What is growth?
 
@@ -59,6 +63,8 @@ Growth can take many shapes:
 
 ## 1. Short Term
 
+![short.png](/uploads/short.png)
+
 Feedback, educational discussions during 1:1s, reflection opportunities.
 
 > Feedback examples:
@@ -69,6 +75,8 @@ Feedback, educational discussions during 1:1s, reflection opportunities.
 
 ## 2. Mid Term
 
+![mid.png](/uploads/mid.png)
+
 Coaching processes. Identify an area of improvement/focus, brainstorm resources and approaches to improve, define goals, review in 1:1s.
 
 > Examples:
@@ -78,6 +86,8 @@ Coaching processes. Identify an area of improvement/focus, brainstorm resources 
 > Improve presentation skills.
 
 ## 3. Long Term
+
+![long.png](/uploads/long.png)
 
 Career vision.\
 Write a document, or discuss is in person (and take shared notes).\
@@ -90,3 +100,37 @@ Develop an understanding of your report’s long term vision for themselves, or 
 > I want to have had experience in various roles and areas of focus.
 >
 > I want a great work/life balance, with a fulfilling, stable job and ability to focus my energy in my family.
+
+## Feedback loop
+
+![feedback-loop.png](/uploads/feedback-loop.png)
+
+Defining areas of growth informs short term opportunities and areas of focus on the feedback. Defining a career plan also informs short term opportunities and areas of focus on the feedback.
+
+## A rule for my direct reports
+
+Your growth is your responsibility, not your manager’s.
+
+Your manager has to:
+
+* Retain you.
+
+* Grow you in the way the business needs.
+
+* Treat you fairly and with equal opportunity.
+
+If you want to grow, you can hold your manager accountable for supporting you, having growth conversations, giving you pointed feedback, and identifying opportunities that align with your goals. But not for doing the homework of figuring out your career path for yourself, nor be the only source of opportunities that align with your goals.
+
+# So how’s this working out?
+
+![working-out.png](/uploads/working-out.png)
+
+* Reception was good initially, and continues to be good.
+
+* But not everybody wants to define a long term vision, that’s okay.
+
+* But not everybody comes up of growth areas on their own (and if I pressure them to, they’ll do it, but they might not really own them). Then, it’s okay to be transparent about needing to set growth areas that are relevant for the business.
+
+And so, the story will continue.
+
+![to-be-continued.png](/uploads/to-be-continued.png)
