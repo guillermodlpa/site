@@ -1,5 +1,5 @@
 ---
-title: 'Growth of Direct Reports: a Starting Point'
+title: My framework for Growth of Direct Reports
 date: 2021-12-08 19:26:00 Z
 ---
 
