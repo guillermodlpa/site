@@ -1,5 +1,5 @@
 ---
-title: My framework for Growth of Direct Reports
+title: My guide for Growth of Direct Reports
 date: 2021-12-08 19:26:00 Z
 ---
 
@@ -7,7 +7,7 @@ date: 2021-12-08 19:26:00 Z
 
 ![growth-presentation-preview.png](/uploads/growth-presentation-preview.png)
 
-I'm not an expert on growth processes for direct reports, but as I prepared this talk, I have 4 years of experience doing it. I've had a good amount of learned lessons that make me confident enough to share my thoughts on this topic.
+I've had a good amount of learned lessons with growth of direct reports. I'm not an expert, but I feel confident enough to share my thoughts on this topic.
 
 Painting is the analogy I chose, because personal and professional growth feels to me like painting a living self-portrait, from broad strokes to small details, evolving the composition over time with new learnings, experiences, interests and goals.
 
