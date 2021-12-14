@@ -114,3 +114,19 @@ What I've seen so far is:
 So I'm quite happy with the results of my growth area! But it's a work in progress, so this story will continue...
 
 ![to-be-continued.png](/uploads/to-be-continued.png)
+
+----
+
+All images come from Unsplash. In order of appearance:
+
+* Photo by [Raghav Modi](https://unsplash.com/@raghavmodi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/painting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+* Photo by [Jonathan Borba](https://unsplash.com/@jonathanborba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+* Photo by[ Pedro Barros](https://unsplash.com/@pedrobarros?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/s/photos/brush?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+* Photo by[ Theme Photos](https://unsplash.com/@themephotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/s/photos/wall-paint?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+* Photo by[ Alice Dietrich](https://unsplash.com/@alicegrace?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/s/photos/painting-in-progress?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+* Photo by[ Reuben Juarez](https://unsplash.com/@sunnystate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on[ Unsplash](https://unsplash.com/s/photos/my-story?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
