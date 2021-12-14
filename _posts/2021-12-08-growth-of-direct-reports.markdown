@@ -45,7 +45,7 @@ Later, upwards feedback helped me identify what I had left behind. Also, some re
 
 ### What did I do about it? 🤔
 
-I made a goal for myself to create a baseline framework to grow my direct reports. Not a one-size-fits-all solution, but a starting point. My idea was that, when taking new direct reports, I could listen to what their motivations were and their preference in how they wanted me to coach them, and share my process as a starting point.
+I defined a goal for myself to create a baseline framework to grow my direct reports. Not a one-size-fits-all solution, but a starting point. My idea was that, when taking new direct reports, I could listen to what their motivations were and their preference in how they wanted me to coach them, and share my process as a starting point.
 
 ## The framework
 
