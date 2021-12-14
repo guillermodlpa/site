@@ -17,7 +17,7 @@ Personal and professional growth feel to me like painting a living self-portrait
 
 Growth can take many shapes:
 
-* Development of professional (and personal) skills
+* Development of skills
 
 * Acquisition of new knowledge
 
