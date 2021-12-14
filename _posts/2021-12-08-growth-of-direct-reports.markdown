@@ -7,7 +7,7 @@ date: 2021-12-08 19:26:00 Z
 
 ![growth-presentation-preview.png](/uploads/growth-presentation-preview.png)
 
-I've learned some lessons in the topic of growth of direct reports. I'm not an expert, but I feel confident enough to share my thoughts on this topic.
+Over the past years, I've learned some lessons in the topic of growth of direct reports. I'm not an expert, but I feel confident enough to share my thoughts on this topic.
 
 Personal and professional growth feel to me like painting a living self-portrait. From broad strokes to small details, one evolves the composition over time with new learnings, experiences, interests, and goals. That's why I chose the analogy of painting.
 
