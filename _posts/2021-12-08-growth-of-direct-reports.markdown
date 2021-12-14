@@ -97,7 +97,7 @@ I tell them that managers, like me, have to:
 
 * Treat them fairly and with equal opportunity.
 
-*If you want to grow, you can hold your manager accountable for supporting you, having growth conversations, giving you pointed feedback, and identifying opportunities that align with your goals. But not for doing the homework of figuring out your career path for yourself, nor be the only source of opportunities that align with your goals.*
+*If you want to grow, you can hold me accountable for supporting you, giving you pointed feedback, having growth conversations, mentoring you on the things I know, discussing your career path, and identifying opportunities that align with your goals. But not for figuring out your career path for you, nor be the only source of opportunities that align with your goals.*
 
 ## So how’s this working out?
 
