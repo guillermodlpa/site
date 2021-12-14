@@ -35,7 +35,7 @@ Growth can take many shapes:
 
 ## What’s my story? 🙋🏻
 
-I started my manager path VERY motivated by helping other team members grow in their careers. At the time, this was beyond fulfilling for me. In my first management years, I put a lot of work into it. I spent ridiculous amounts of hours learning about this topic, listening to podcasts, reading books, crafting deep performance reviews, etc.
+I started my manager path VERY motivated by helping other team members grow in their careers. At the time, this was beyond fulfilling for me. In my first management years, I put a lot of work into it. I spent ridiculous amounts of hours listening to podcasts, reading books, preparing feedback, crafting deep performance reviews...
 
 Over time, my focus shifted to team performance and results. I accidentally left the priority of coaching and growing direct reports on the side.
 
