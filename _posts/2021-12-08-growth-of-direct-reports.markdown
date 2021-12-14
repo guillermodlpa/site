@@ -111,6 +111,6 @@ What I've seen so far is:
 
 * Not everybody comes up of growth areas. In that case, I reflect on it and offer them other growth areas based on what I think would maximize their opportunities and outcomes.
 
-But it's a work in progress! So the story will continue...
+It's a work in progress! So this story will continue...
 
 ![to-be-continued.png](/uploads/to-be-continued.png)
