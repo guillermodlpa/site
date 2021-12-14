@@ -87,7 +87,7 @@ Defining areas of growth and a career vision informs short term opportunities an
 
 ## A rule for my direct reports
 
-The rule I share with them is *Your growth is your responsibility, not your manager’s.* While that might not be entirely true, I think it fosters a mindset of empowerment and autonomy.
+The rule I share with them is *Your growth is your responsibility, not your manager’s.* While that might not be entirely true, I think it fosters empowerment and autonomy.
 
 I tell them that managers, like me, have to:
 
