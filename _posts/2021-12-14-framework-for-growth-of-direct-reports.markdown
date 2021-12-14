@@ -3,6 +3,7 @@ title: My framework for Growth of Direct Reports
 date: 2021-12-14 08:00:00 Z
 excerpt: I defined a baseline framework to manage growth of my direct reports. Not
   a one-size-fits-all solution, but a starting point.
+image: "/uploads/framework.png"
 ---
 
 *This is an adaptation of a 15-minute presentation I gave at [Splash](https://splashthat.com/)'s monthly Management Lunch & Learn.*
