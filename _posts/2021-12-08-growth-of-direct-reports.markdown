@@ -79,8 +79,6 @@ This is the **career vision.** Some people prefer to write it in a shared docume
 >
 > I want to be an engineer with expertise in microservice architecture.
 >
-> I want to have had many diverse experiences, in various roles and areas of focus.
->
 > I want a great work/life balance, with a fulfilling, stable job and ability to focus my energy in my family.
 
 ### Feedback loop
