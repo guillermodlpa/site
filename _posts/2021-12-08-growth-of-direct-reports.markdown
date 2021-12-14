@@ -77,7 +77,7 @@ This is the **career vision.** Some people prefer to write it in a shared docume
 
 > Examples:
 >
-> I want to be an engineer with expertise in microservice architectures.
+> I want to be an engineer with expertise in microservice architecture.
 >
 > I want to have had experience in various roles and areas of focus.
 >
