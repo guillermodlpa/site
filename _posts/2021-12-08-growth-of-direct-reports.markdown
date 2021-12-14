@@ -61,7 +61,7 @@ Consists on **feedback**, educational discussions during 1:1s, reflection opport
 
 ![mid.png](/uploads/mid.png)
 
-**Coaching for growth areas**. A bit more broad, but still tangible. We identify an area of improvement/focus, brainstorm resources and approaches to improve, and define goals. Then on every other 1:1, we revisit the growth area. They can be aligned with what they want in the long term, and/or what we see valuable to develop to be more impactful in their role.
+**Coaching for growth areas**. A bit more broad, but still tangible. We identify an area of improvement/focus, brainstorm resources, and define goals. Then on every other 1:1, we revisit the growth area. They can be aligned with what they want in the long term, and/or what we see valuable to develop to be more impactful in their role.
 
 > Examples:
 >
