@@ -1,6 +1,6 @@
 ---
 title: My framewor for Growth of Direct Reports
-date: 2021-12-08 19:26:00 Z
+date: 2021-12-15 08:00:00 Z
 ---
 
 *This is an adaptation of a 15-minute presentation I gave at [Splash](https://splashthat.com/)'s monthly Management Lunch & Learn.*
