@@ -105,7 +105,7 @@ I tell them that managers, like me, have to:
 
 What I've seen so far is:
 
-* Reception was good initially, and continues to be good.
+* The initial reception is good. Direct reports like the amount of thought I've put into this.
 
 * Not everybody wants to define a long term vision, that’s okay.
 
