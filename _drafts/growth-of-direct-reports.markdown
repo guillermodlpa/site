@@ -1,5 +1,5 @@
 ---
-title: My guide for Growth of Direct Reports
+title: My framework for Growth of Direct Reports
 date: 2021-12-08 19:26:00 Z
 ---
 
@@ -9,7 +9,7 @@ date: 2021-12-08 19:26:00 Z
 
 I've had a good amount of learned lessons with growth of direct reports. I'm not an expert, but I feel confident enough to share my thoughts on this topic.
 
-Painting is the analogy I chose, because personal and professional growth feels to me like painting a living self-portrait, from broad strokes to small details, evolving the composition over time with new learnings, experiences, interests and goals.
+Personal and professional growth feel to me like painting a living self-portrait. From broad strokes to small details, one evolves the composition over time with new learnings, experiences, interests and goals. That's why I chose the analogy of painting for this talk.
 
 ![framework.png](/uploads/framework.png)
 
@@ -31,31 +31,23 @@ Growth can take many shapes:
 
 ## Why does it matter?
 
-* Organization with growth business goals always needs team members better equipped to solve problems.
+* Organization with growth business goals always needs their team members to be better equipped to solve problems.
 
-* Many team members seek to see progress in their growth, their professional trajectory (source of demotivation when missing).
+* Many team members want to see progress in their growth, in their professional trajectory. It can be  a source of demotivation when missing.
 
-* Many team members feel fulfilled when they see progress in their growth, their professional trajectory (source of motivation when present).
+* Many team members feel fulfilled when they see progress in their growth, in their professional trajectory. It can be a source of motivation when present.
 
 # What’s my story? 🙋🏻
 
-* I started my path as a manager VERY motivated by helping other team members grow in their careers.
+I started my manager path VERY motivated by helping other team members grow in their careers. In my first years, I put a lot of work into this. This motivation enabled me to spend ridiculous amounts of hours learning about this topic, listening to podcasts, reading books, crafting deep performance reviews, etc.
 
-* In my first years, I put a lot of work on this. This motivation enabled me to spend ridiculous amounts of hours listening to podcasts and reading books, crafting deep performance reviews, etc.
+Over time, my focus shifted to team performance and results. I accidentally left the priority of coaching and growing direct reports on the side.
 
-* Over time, my focus shifted to team performance & results. I accidentally left coaching and growth on the side.
-
-* Upwards feedback helped me identify what I had left behind.
-
-* Some reports were making me responsible for their (lack of) growth.
-
-* Many people that seek growth don’t know how to get it or track it, but they can see their lack of progress.
+Later, upwards feedback helped me identify what I had left behind. Also, some reports were making me responsible for their (lack of) growth. I learned that some people that voice wanting growth don’t know how to get it, how to track it themselves, or even in which direction to grow. But they can clearly see their lack of progress, and that can be demotivating.
 
 ## What did I do about it? 🤔
 
-* Make a goal for me to create a baseline process to grow my direct reports. Not a one-size-fits-all solution, but a starting point.
-
-* When taking new direct reports, I could listen to what their motivation was and their preference, and tell them about my process as a starting point.
+I made a goal for myself to create a baseline framework to grow my direct reports. Not a one-size-fits-all solution, but a starting point. My idea was that, when taking new direct reports, I could listen to what their motivations were and their preference in how they wanted me to coach them, and share my process as a starting point.
 
 # The framework
 
