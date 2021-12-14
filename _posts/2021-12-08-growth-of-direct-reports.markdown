@@ -111,6 +111,6 @@ What I've seen so far is:
 
 * Not everybody comes up of growth areas on their own. I know if I pressure them to, they’ll do it, but they might not really own them.
 
-But it's a work in progress! So the story will continue.
+But it's a work in progress! So the story will continue...
 
 ![to-be-continued.png](/uploads/to-be-continued.png)
