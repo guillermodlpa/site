@@ -1,6 +1,8 @@
 ---
 title: My framewor for Growth of Direct Reports
 date: 2021-12-14 08:00:00 Z
+excerpt: I defined a baseline framework to manage growth of my direct reports. Not
+  a one-size-fits-all solution, but a starting point.
 ---
 
 *This is an adaptation of a 15-minute presentation I gave at [Splash](https://splashthat.com/)'s monthly Management Lunch & Learn.*
@@ -43,7 +45,7 @@ A year later, upwards feedback helped me identify what I had left behind. I had 
 
 ### What did I do about it? 🤔
 
-I defined a goal for myself to create a baseline framework to manage growth of my direct reports. Not a one-size-fits-all solution, but a starting point.
+I made a goal for myself to define a baseline framework to manage growth of my direct reports. Not a one-size-fits-all solution, but a starting point.
 
 ## The framework
 
