@@ -31,9 +31,7 @@ Growth can take many shapes:
 
 * Organizations with ambitious business goals need their team members to be better equipped to solve problems.
 
-* Many team members want to see progress in their growth, in their professional trajectory. It can be  a source of demotivation when missing.
-
-* Many team members feel fulfilled when they see progress in their growth, in their professional trajectory. It can be a source of motivation when present.
+* Many team members want to see progress in their growth, in their professional trajectory. It can be  a source of demotivation when missing, and a source of motivation when present.
 
 ## What’s my story? 🙋🏻
 
