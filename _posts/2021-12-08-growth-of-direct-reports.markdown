@@ -109,7 +109,7 @@ What I've seen so far is:
 
 * Not everybody wants to define a long term vision, that’s okay.
 
-* Not everybody comes up of growth areas on their own. I know if I pressure them to, they’ll do it, but they might not really own them.
+* Not everybody comes up of growth areas. In that case, better than pressuring them, I offer them other growth areas based on what I think would maximize their opportunities and outcomes.
 
 But it's a work in progress! So the story will continue...
 
