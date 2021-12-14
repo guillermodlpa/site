@@ -103,7 +103,7 @@ I tell them that managers, like me, have to:
 
 ![working-out.png](/uploads/working-out.png)
 
-This starting-point framework is work in progress! What I've seen so far is:
+What I've seen so far is:
 
 * Reception was good initially, and continues to be good.
 
@@ -111,6 +111,6 @@ This starting-point framework is work in progress! What I've seen so far is:
 
 * Not everybody comes up of growth areas on their own. I know if I pressure them to, they’ll do it, but they might not really own them.
 
-And so, the story will continue.
+But it's a work in progress! And so, the story will continue.
 
 ![to-be-continued.png](/uploads/to-be-continued.png)
