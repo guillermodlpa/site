@@ -73,7 +73,7 @@ Consists on **feedback**, educational discussions during 1:1s, reflection opport
 
 ![long.png](/uploads/long.png)
 
-This is the **career vision.** Some people prefer to write it in a shared document, others simply to talk about it. My goal is to develop an understanding of their long term vision, or help them develop one if they want.
+This is the **career vision.** Some people prefer to write it in a shared document, others simply to talk about it. My goal is for both of us to develop a shared understanding of their long term vision. If they don't have, I can coach them to develop one, if they want.
 
 > Examples:
 >
