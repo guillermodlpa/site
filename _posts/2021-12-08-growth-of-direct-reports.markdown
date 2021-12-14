@@ -117,7 +117,7 @@ So I'm quite happy with the results of my growth area! But it's a work in progre
 
 ----
 
-All images come from Unsplash. In order of appearance:
+All photographs, in order of appearance:
 
 * Photo by [Raghav Modi](https://unsplash.com/@raghavmodi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/painting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
