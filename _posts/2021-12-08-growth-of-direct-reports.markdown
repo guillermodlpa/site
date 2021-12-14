@@ -53,7 +53,7 @@ I defined a goal for myself to create a baseline framework to grow my direct rep
 
 ![short.png](/uploads/short.png)
 
-Consists on feedback, educational discussions during 1:1s, reflection opportunities, etc. Short, frequent, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
+Consists of feedback, educational discussions, reflection opportunities, etc. Short, frequent, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
 
 ### 2. Mid Term
 
