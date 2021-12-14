@@ -39,7 +39,7 @@ I started my manager path VERY motivated by helping other team members grow in t
 
 However, over time, my focus shifted to team performance and results. I accidentally left on the side the priority of coaching and growing direct reports.
 
-Later, upwards feedback helped me identify what I had left behind. Also, I learned that some reports expected me to actively help them grow, because they didn't know how to do it themselves or in which direction to go, when in reality they needed me to be a supportive manager to coach them.
+A year later, upwards feedback helped me identify what I had left behind. Also, I learned that some reports expected me to actively help them grow, because they didn't know how to do it themselves or in which direction to go, when in reality they needed me to be a supportive manager to coach them.
 
 ### What did I do about it? 🤔
 
