@@ -23,9 +23,7 @@ Growth can take many shapes:
 
 * Preparation for new responsibilities and opportunities
 
-* Increase of value as a professional (compensation, recognition)
-
-* Achievement of tangible goals (promotions)
+* Increase of value as a professional (compensation, recognition, promotions)
 
 * Development of self-awareness about one’s career
 
