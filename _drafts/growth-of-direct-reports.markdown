@@ -57,19 +57,13 @@ I made a goal for myself to create a baseline framework to grow my direct report
 
 ![short.png](/uploads/short.png)
 
-Feedback, educational discussions during 1:1s, reflection opportunities.
-
-> Feedback examples:
->
-> When you respond to a blocker incident, you keep stakeholders updated every few minutes, and that’s very helpful for them to keep customers feeling we’re in control.
->
-> When you respond to a blocker incident, you take a few minutes to give signals in the #outages channel after acknowledging the alert, and during this time all stakeholders are uncomfortably wondering what’s happening. Can we count on you giving an update right away when you respond to the alert?
+Consists on **feedback**, educational discussions during 1:1s, reflection opportunities, etc. Short, quick, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
 
 ## 2. Mid Term
 
 ![mid.png](/uploads/mid.png)
 
-Coaching processes. Identify an area of improvement/focus, brainstorm resources and approaches to improve, define goals, review in 1:1s.
+**Coaching for growth areas**. A bit more broad, but still tangible. We identify an area of improvement/focus, brainstorm resources and approaches to improve, and define goals. Then on every other 1:1, we revisit the growth area. They can be aligned with what they want in the long term, and/or what we see valuable to develop to be more impactful in their role.
 
 > Examples:
 >
@@ -81,9 +75,7 @@ Coaching processes. Identify an area of improvement/focus, brainstorm resources 
 
 ![long.png](/uploads/long.png)
 
-Career vision.\
-Write a document, or discuss is in person (and take shared notes).\
-Develop an understanding of your report’s long term vision for themselves, or help them develop one.
+This is the **career vision.** Some people prefer to write it in a shared document, others simply to talk about it. I of course take shared notes. My goal is to develop an understanding of their long term vision, or help them develop one if they want.
 
 > Examples:
 >
@@ -97,31 +89,33 @@ Develop an understanding of your report’s long term vision for themselves, or 
 
 ![feedback-loop.png](/uploads/feedback-loop.png)
 
-Defining areas of growth informs short term opportunities and areas of focus on the feedback. Defining a career plan also informs short term opportunities and areas of focus on the feedback.
+Defining areas of growth and a career vision informs short term opportunities and areas of focus on the feedback. This is very helpful to make feedback more meaningful, and also tie it with something they care about.
 
 ## A rule for my direct reports
 
-Your growth is your responsibility, not your manager’s.
+The rule I share with them is *Your growth is your responsibility, not your manager’s.*
 
-Your manager has to:
+I tell them that managers, like me, have to:
 
-* Retain you.
+* Retain them.
 
-* Grow you in the way the business needs.
+* Grow them in the way the business needs.
 
-* Treat you fairly and with equal opportunity.
+* Treat them fairly and with equal opportunity.
 
-If you want to grow, you can hold your manager accountable for supporting you, having growth conversations, giving you pointed feedback, and identifying opportunities that align with your goals. But not for doing the homework of figuring out your career path for yourself, nor be the only source of opportunities that align with your goals.
+*If you want to grow, you can hold your manager accountable for supporting you, having growth conversations, giving you pointed feedback, and identifying opportunities that align with your goals. But not for doing the homework of figuring out your career path for yourself, nor be the only source of opportunities that align with your goals.*
 
 # So how’s this working out?
 
 ![working-out.png](/uploads/working-out.png)
 
+This starting-point framework is work in progress! What I've seen so far is:
+
 * Reception was good initially, and continues to be good.
 
-* But not everybody wants to define a long term vision, that’s okay.
+* Not everybody wants to define a long term vision, that’s okay.
 
-* But not everybody comes up of growth areas on their own (and if I pressure them to, they’ll do it, but they might not really own them). Then, it’s okay to be transparent about needing to set growth areas that are relevant for the business.
+* Not everybody comes up of growth areas on their own. I know if I pressure them to, they’ll do it, but they might not really own them.
 
 And so, the story will continue.
 
