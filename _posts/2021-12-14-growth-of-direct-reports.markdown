@@ -89,7 +89,7 @@ Defining areas of growth and a career vision informs short term opportunities an
 
 The rule I share with them is *Your growth is your responsibility, not your manager’s.* While that might not be entirely true, I think it fosters empowerment and autonomy.
 
-I tell them that managers, like me, have to:
+I tell them that regarding their growth, it's my job to:
 
 * Retain them.
 
