@@ -29,7 +29,7 @@ Growth can take many shapes:
 
 ### Why does it matter?
 
-* Organization with growth business goals always needs their team members to be better equipped to solve problems.
+* Organizations with ambitious business goals need their team members to be better equipped to solve problems.
 
 * Many team members want to see progress in their growth, in their professional trajectory. It can be  a source of demotivation when missing.
 
