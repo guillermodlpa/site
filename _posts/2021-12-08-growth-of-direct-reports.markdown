@@ -37,7 +37,7 @@ Growth can take many shapes:
 
 I started my manager path VERY motivated by helping other team members grow in their careers. At the time, this was beyond fulfilling for me. In my first management years, I put a lot of work into it. I spent ridiculous amounts of hours listening to podcasts, reading books, preparing feedback, crafting deep performance reviews...
 
-However, over time, my focus shifted to team performance and results. I accidentally left the priority of coaching and growing direct reports on the side.
+However, over time, my focus shifted to team performance and results. I accidentally left on the side the priority of coaching and growing direct reports.
 
 Later, upwards feedback helped me identify what I had left behind. Also, some reports were making me responsible for their (lack of) growth. I learned that some people that voice wanting growth don’t know how to get it, how to track it themselves, or even in which direction to grow. But they can clearly see their lack of progress, and that can be demotivating.
 
