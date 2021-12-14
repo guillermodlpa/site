@@ -53,13 +53,13 @@ I defined a goal for myself to create a baseline framework to grow my direct rep
 
 ![short.png](/uploads/short.png)
 
-Consists on **feedback**, educational discussions during 1:1s, reflection opportunities, etc. Short, frequent, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
+Consists on feedback, educational discussions during 1:1s, reflection opportunities, etc. Short, frequent, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
 
 ### 2. Mid Term
 
 ![mid.png](/uploads/mid.png)
 
-**Coaching for growth areas**. A bit more broad, but still tangible. We identify an area of improvement/focus, brainstorm resources, and define goals. Then on every other 1:1, we revisit the growth area.
+Coaching for growth areas. A bit more broad, but still tangible. We identify an area of improvement/focus, brainstorm resources, and define goals. Then on every other 1:1, we revisit the growth area.
 
 > Examples:
 >
@@ -71,7 +71,7 @@ Consists on **feedback**, educational discussions during 1:1s, reflection opport
 
 ![long.png](/uploads/long.png)
 
-This is the **career vision.** Some people prefer to write it in a shared document, others to talk about it. My goal is for both of us to develop a shared understanding of their long term vision. If they don't have one, I can coach them to define it, if they want.
+This is the career vision. Some people prefer to write it in a shared document, others to talk about it. My goal is for both of us to develop a shared understanding of their long term vision. If they don't have one, I can coach them to define it, if they want.
 
 > Examples:
 >
