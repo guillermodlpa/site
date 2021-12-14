@@ -13,7 +13,7 @@ Personal and professional growth feel to me like painting a living self-portrait
 
 ![framework.png](/uploads/framework.png)
 
-# What is growth?
+## What is growth?
 
 Growth can take many shapes:
 
@@ -27,7 +27,7 @@ Growth can take many shapes:
 
 * Development of self-awareness about one’s career
 
-## Why does it matter?
+### Why does it matter?
 
 * Organization with growth business goals always needs their team members to be better equipped to solve problems.
 
@@ -35,7 +35,7 @@ Growth can take many shapes:
 
 * Many team members feel fulfilled when they see progress in their growth, in their professional trajectory. It can be a source of motivation when present.
 
-# What’s my story? 🙋🏻
+## What’s my story? 🙋🏻
 
 I started my manager path VERY motivated by helping other team members grow in their careers. In my first years, I put a lot of work into this. This motivation enabled me to spend ridiculous amounts of hours learning about this topic, listening to podcasts, reading books, crafting deep performance reviews, etc.
 
@@ -43,21 +43,21 @@ Over time, my focus shifted to team performance and results. I accidentally left
 
 Later, upwards feedback helped me identify what I had left behind. Also, some reports were making me responsible for their (lack of) growth. I learned that some people that voice wanting growth don’t know how to get it, how to track it themselves, or even in which direction to grow. But they can clearly see their lack of progress, and that can be demotivating.
 
-## What did I do about it? 🤔
+### What did I do about it? 🤔
 
 I made a goal for myself to create a baseline framework to grow my direct reports. Not a one-size-fits-all solution, but a starting point. My idea was that, when taking new direct reports, I could listen to what their motivations were and their preference in how they wanted me to coach them, and share my process as a starting point.
 
-# The framework
+## The framework
 
 ![short-mid-long-term.png](/uploads/short-mid-long-term.png)
 
-## 1. Short Term
+### 1. Short Term
 
 ![short.png](/uploads/short.png)
 
 Consists on **feedback**, educational discussions during 1:1s, reflection opportunities, etc. Short, quick, and inexpensive to deliver. Like fine strokes to add detail and polish rough edges.
 
-## 2. Mid Term
+### 2. Mid Term
 
 ![mid.png](/uploads/mid.png)
 
@@ -69,7 +69,7 @@ Consists on **feedback**, educational discussions during 1:1s, reflection opport
 >
 > Improve presentation skills.
 
-## 3. Long Term
+### 3. Long Term
 
 ![long.png](/uploads/long.png)
 
@@ -83,7 +83,7 @@ This is the **career vision.** Some people prefer to write it in a shared docume
 >
 > I want a great work/life balance, with a fulfilling, stable job and ability to focus my energy in my family.
 
-## Feedback loop
+### Feedback loop
 
 ![feedback-loop.png](/uploads/feedback-loop.png)
 
@@ -103,7 +103,7 @@ I tell them that managers, like me, have to:
 
 *If you want to grow, you can hold your manager accountable for supporting you, having growth conversations, giving you pointed feedback, and identifying opportunities that align with your goals. But not for doing the homework of figuring out your career path for yourself, nor be the only source of opportunities that align with your goals.*
 
-# So how’s this working out?
+## So how’s this working out?
 
 ![working-out.png](/uploads/working-out.png)
 
