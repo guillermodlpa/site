@@ -109,7 +109,7 @@ What I've seen so far is:
 
 * Not everybody wants to define a long term vision, that’s okay.
 
-* Not everybody comes up of growth areas. In that case, I offer them other growth areas based on what I think would maximize their opportunities and outcomes.
+* Not everybody comes up of growth areas. In that case, I reflect on it and offer them other growth areas based on what I think would maximize their opportunities and outcomes.
 
 But it's a work in progress! So the story will continue...
 
