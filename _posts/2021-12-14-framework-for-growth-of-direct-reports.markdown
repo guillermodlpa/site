@@ -1,5 +1,5 @@
 ---
-title: My framework for Growth of Direct Reports
+title: My Framework for Growth of Direct Reports
 date: 2021-12-14 08:00:00 Z
 excerpt: I defined a baseline framework to manage growth of my direct reports. Not
   a one-size-fits-all solution, but a starting point.
