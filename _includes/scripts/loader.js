@@ -4,7 +4,9 @@
     }
 
     var presented = false;
-    var MIN_TIMEOUT = Number('{% if include.min_timeout %}{{ include.min_timeout }}{% endif %}') || 50;
+    var minTimeout = Number('{% if include.min_timeout %}{{ include.min_timeout }}{% endif %}') || 50;
+    var maxTimeout = Number('{% if include.max_timeout %}{{ include.max_timeout }}{% endif %}') || 5000;
+    var start = Date.now();
 
     function hideLoader() {
         var body = document.getElementsByTagName('body')[0];
@@ -18,10 +20,13 @@
 
     setTimeout(function() {
         presented = true;
-    }, MIN_TIMEOUT);
+    }, minTimeout);
 
     var interval = setInterval(function() {
-        if (presented && document.readyState === 'complete') {
+        var documentLoadComplete = document.readyState === 'complete';
+        var maxTimeoutReached = start + maxTimeout < Date.now();
+
+        if (presented && (documentLoadComplete || maxTimeoutReached)) {
             clearInterval(interval);
             hideLoader();
         }

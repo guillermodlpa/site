@@ -10,7 +10,6 @@ layout: compress
     <meta name="description" content="{{ page.description }}">
     <meta name="author" content="Guillermo de la Puente">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ page.favicon_url }}">
     {% include analytics.html %}
     <style type="text/css">
       {% include styles/reset.css %}
@@ -22,6 +21,6 @@ layout: compress
   <body class="is-loading">
     {% include loader.html %}
     {{ content }}
-    <script type="text/javascript">{% include scripts/loader.js min_timeout="500" %}</script>
+    <script type="text/javascript">{% include scripts/loader.js min_timeout="500" max_timeout="2500" %}</script>
   </body>
 </html>
