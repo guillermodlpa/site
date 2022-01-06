@@ -1,12 +1,12 @@
 ---
 title: No-Oriented Questions To Get Others To Act
 date: 2022-01-06 10:00:00 Z
+image: "/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg"
 ---
 
 ![jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg](/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg)
 
 _Photo by [Jonas Stolle](https://unsplash.com/@jostolle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/6rhdGmD6wfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
 
 A few years ago, I read the book *[Never Split the Difference](https://info.blackswanltd.com/never-split-the-difference)*. One of the tips that stayed with me is to **Make “No” Work For You**.
 
