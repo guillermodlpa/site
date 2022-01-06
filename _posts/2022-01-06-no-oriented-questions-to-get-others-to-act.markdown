@@ -2,6 +2,9 @@
 title: No-Oriented Questions To Get Others To Act
 date: 2022-01-06 10:00:00 Z
 image: "/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg"
+excerpt: Asking no-oriented questions has improved my ability to influence others.
+  Also, applying this technique to myself has pushed me to execute tedious but meaningful
+  tasks I felt lazy about.
 ---
 
 ![jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg](/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg)
