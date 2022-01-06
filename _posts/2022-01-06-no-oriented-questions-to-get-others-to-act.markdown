@@ -31,15 +31,15 @@ The technique that has improved my ability to influence others has been asking n
 
 * Are you going to let the unit test continue being flaky?
 
-The answer, in most cases, will be no. The person often knows that otherwise they’d look too disengaged or unprofessional. This format has helped me in getting someone else’s commitment on a task I needed them to do. And when not, it has surfaced the reason for not acting, like lack of alignment or understanding the context.
+The answer, in most cases, will be no. The person often knows that otherwise they’d look too disengaged or unprofessional. This format has helped me in getting someone else’s commitment. And when not, it has surfaced their reason for not acting, like lack of alignment or understanding the context.
 
 You can read more about this technique in the blog post **[Communication Skills: 3 Ways To Make “No” Work For You](https://blog.blackswanltd.com/the-edge/3-ways-to-make-no-work-for-you)**.
 
 ## Iteration: No-Oriented Questions For Myself
 
-Recently, asking myself questions with this format has pushed me to get done tedious but meaningful tasks I felt lazy about. *Am I going to leave this email unanswered? Am I not going to support my peers in preparing this presentation? Am I not going to go the extra mile to give context for my teams, so they can plan the upcoming quarters?*
+Recently, asking myself no-oriented questions has motivated me to get done tedious but impactful tasks I felt lazy about. *Am I going to leave this email unanswered? Am I not going to support my peers in preparing this presentation? Am I not going to go the extra mile to give context for my teams, so they can plan the upcoming quarters?*
 
-Those prompts, especially imagining my manager asking me that question, have given me the push to get those things done quickly.
+Those prompts, especially when picturing my manager asking me that question, have given me the push to get those things done quickly.
 
 May this tip serve you well!
 
