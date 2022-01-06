@@ -1,6 +1,6 @@
 ---
 title: No-Oriented Questions To Get Others To Act
-date: 2022-01-06 19:01:00 Z
+date: 2022-01-06 10:00:00 Z
 ---
 
 A few years ago, I read the book *[Never Split the Difference](https://info.blackswanltd.com/never-split-the-difference)*. One of the tips that stayed with me is to **Make “No” Work For You**.
