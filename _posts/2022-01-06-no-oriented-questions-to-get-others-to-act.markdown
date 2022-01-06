@@ -7,7 +7,7 @@ excerpt: Asking no-oriented questions has improved my ability to influence other
   tasks I felt lazy about.
 ---
 
-![jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg](/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg)
+![Lonely minion in natural background](/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg)
 
 _Photo by [Jonas Stolle](https://unsplash.com/@jostolle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/6rhdGmD6wfw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
@@ -43,6 +43,6 @@ Those prompts, especially imagining my manager asking me that question, have giv
 
 May this tip serve you well!
 
-![rene-vincit-Z1gUzq1D59s-unsplash-medium.jpeg](/uploads/rene-vincit-Z1gUzq1D59s-unsplash-medium.jpeg)
+![Kite with minion in the sky](/uploads/rene-vincit-Z1gUzq1D59s-unsplash-medium.jpeg)
 
 _Photo by [Rene Vincit](https://unsplash.com/@renevincit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Z1gUzq1D59s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
