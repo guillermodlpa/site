@@ -3,7 +3,7 @@ title: No-Oriented Questions To Get Others To Act
 date: 2022-01-06 10:00:00 Z
 image: "/uploads/jonas-stolle-6rhdGmD6wfw-unsplash-small.jpeg"
 excerpt: Asking no-oriented questions has improved my ability to influence others.
-  Also, applying this technique to myself has pushed me to execute tedious but meaningful
+  Also, applying this technique to myself has pushed me to get done tedious but meaningful
   tasks I felt lazy about.
 ---
 
@@ -37,7 +37,7 @@ You can read more about this technique in the blog post **[Communication Skills:
 
 ## Iteration: No-Oriented Questions For Myself
 
-Recently, asking myself questions with this format has pushed me to execute tedious but meaningful tasks I felt lazy about. *Am I going to leave this email unanswered? Am I not going to support my peers in preparing this presentation? Am I not going to go the extra mile to give context for my teams, so they can plan the upcoming quarters?*
+Recently, asking myself questions with this format has pushed me to get done tedious but meaningful tasks I felt lazy about. *Am I going to leave this email unanswered? Am I not going to support my peers in preparing this presentation? Am I not going to go the extra mile to give context for my teams, so they can plan the upcoming quarters?*
 
 Those prompts, especially imagining my manager asking me that question, have given me the push to get those things done quickly.
 
