@@ -3,6 +3,7 @@ title: What do we lose if we don’t make this decision?
 date: 2022-02-08 06:00:00 Z
 excerpt: This question brought clarity and alignment to a hard-to-follow discussion.
   I was so surprised about it that I wanted to write a blog post.
+image: "/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg"
 ---
 
 ![saffu-E4kKGI4oGaU-unsplash-cover.jpeg](/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg)
@@ -21,4 +22,4 @@ I will continue asking this question in different contexts when reviewing propos
 
 ---
 
-[Photo](https://unsplash.com/photos/E4kKGI4oGaU) by [Saffu](https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/movement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+*[Photo](https://unsplash.com/photos/E4kKGI4oGaU) by [Saffu](https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/movement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
