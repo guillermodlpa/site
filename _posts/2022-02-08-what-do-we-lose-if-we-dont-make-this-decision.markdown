@@ -14,7 +14,7 @@ This question brought clarity and alignment to a hard-to-follow discussion. I wa
 
 A group of engineers, engineering managers, and product managers were discussing which team should own a particular product component. Ownership of a component at [Splash](https://splashthat.com/) involves its maintenance and being the go-to team for updating it. The engineers had identified a better alignment between this particular component's roadmap and another engineering team's mission and area of focus. After the idea had been circulating for a while, we held a meeting to share our thoughts.
 
-During the meeting, I felt myself a bit lost with the different opinions. Some people seemed in favor, others not, and there were many detailed implications of the potential change being shared. Trying to understand where we stood, I asked **“what do we lose if we don’t make this decision?”**
+During the meeting, I felt myself a bit lost with the different opinions. Some people seemed in favor, others not, and there were many detailed implications of the potential change being shared. Trying to understand where we stood, I asked, **“what do we lose if we don’t make this decision?”**
 
 Then, each participant took a step back from the details and shared that they wanted to make the ownership change. For them, not doing it meant losing a well-timed opportunity for one of our teams to increase focus and autonomy on a business problem they already were working on. Because we believe that focused autonomous teams are key in delivering value to customers, the meeting was followed by a [change rollout document](https://guillermodelapuente.com/blog/change-rollout-document/) for sharing the news and receiving feedback from team members outside this group.
 
