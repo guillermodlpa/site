@@ -2,7 +2,7 @@
 title: What do we lose if we don’t make this decision?
 date: 2022-02-08 06:00:00 Z
 excerpt: This question brought clarity and alignment to a hard-to-follow discussion.
-  I was so surprised about it that I wanted to write a blog post.
+  I was so surprised about it that I wrote this blog post.
 image: "/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg"
 ---
 
@@ -10,7 +10,7 @@ image: "/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg"
 
 *[Photo](https://unsplash.com/photos/E4kKGI4oGaU) by [Saffu](https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/movement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
-This question brought clarity and alignment to a hard-to-follow discussion. I was so surprised about it that I wanted to write a blog post.
+This question brought clarity and alignment to a hard-to-follow discussion. I was so surprised about it that I wrote this blog post.
 
 A group of engineers, engineering managers, and product managers were discussing which team should own a particular component. Ownership of a product component at Splash means overall maintenance and setting technical direction. There were a few reasons why this particular component’s ownership would be better aligned with another engineering team’s mission and area of focus. After the idea had been circulating for a while, we held a meeting to share our thoughts.
 
