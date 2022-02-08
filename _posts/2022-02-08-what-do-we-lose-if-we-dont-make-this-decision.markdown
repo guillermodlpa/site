@@ -18,7 +18,7 @@ During the meeting, I felt myself a bit lost with the different opinions. Some p
 
 Then, each participant took a step back from the details and shared that they wanted to make the ownership change. For them, not doing it meant losing a well-timed opportunity for one of our teams to increase focus and autonomy on a business problem they already were working on. Because we believe that focused autonomous teams are key in delivering value to customers, the meeting was followed by a [change rollout document](https://guillermodelapuente.com/blog/change-rollout-document/) for sharing the news and receiving feedback from team members outside this group.
 
-**“What do we lose if we don’t make this decision?”** is a powerful question for a decision that feels scary. It enables to lay out the expected results and missed opportunities. It’s also good to remind us that most decisions are reversible. And it can also uncover reasons that made the discussion feel stuck.
+**“What do we lose if we don’t make this decision?”** is a powerful question for a decision that feels scary. It enables to lay out the expected results and missed opportunities. It’s also reminds us that most decisions are reversible. And it can also uncover reasons that made the discussion feel stuck.
 
 I'll continue asking this question in different contexts when reviewing proposals, feeling lost, or sensing people are stuck. Like [no-oriented questions](https://guillermodelapuente.com/blog/no-oriented-questions-to-get-others-to-act/), this is a tool to surface hidden roadblocks and reach alignment. Similarly, I’ve found that asking myself the question when faced with tough personal decisions can give me the clarity and motivation to get something hard done.
 
