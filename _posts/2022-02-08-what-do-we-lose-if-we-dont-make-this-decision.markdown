@@ -1,6 +1,6 @@
 ---
 title: What do we lose if we don’t make this decision?
-date: 2022-02-08 06:21:00 Z
+date: 2022-02-08 06:00:00 Z
 excerpt: This question brought clarity and alignment to a hard-to-follow discussion.
   I was so surprised about it that I wanted to write a blog post.
 ---
