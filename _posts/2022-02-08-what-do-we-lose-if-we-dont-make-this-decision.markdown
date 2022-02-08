@@ -12,9 +12,9 @@ image: "/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg"
 
 This question brought clarity and alignment to a hard-to-follow discussion. I was so surprised about it that I wanted to write a blog post.
 
-A group engineers, engineering managers, and product managers were discussing which team should own a particular component. Ownership of a product component at Splash means overall maintenance and setting technical direction. There were a few reasons why this particular component’s ownership would be better aligned with another engineering team’s mission and area of focus. After the idea had been circulating for a while, we held a meeting to share our thoughts.
+A group of engineers, engineering managers, and product managers were discussing which team should own a particular component. Ownership of a product component at Splash means overall maintenance and setting technical direction. There were a few reasons why this particular component’s ownership would be better aligned with another engineering team’s mission and area of focus. After the idea had been circulating for a while, we held a meeting to share our thoughts.
 
-During the meeting, I felt myself a bit lost with the different opinions. Some people seemed in favor, others not, and there were a lot of specific details being shared. To try to understand where we stood, I asked the question **“what do we lose if we don’t make this decision?”**
+During the meeting, I felt myself a bit lost with the different opinions. Some people seemed in favor, others not, and there were a lot of specific details being shared. Trying to understand where we stood, I asked **“what do we lose if we don’t make this decision?”**
 
 Everyone in the group expressed alignment about wanting to make the ownership change. Not doing it meant losing a well-timed opportunity for one of the teams to increase focus on a business problem they already were working on, and enable them to evolve that part of the product autonomously. Because we believe that focused autonomous teams are key to deliver the best value to customers, the meeting was followed by a [change rollout document](https://guillermodelapuente.com/blog/change-rollout-document/) for communicating the upcoming change and receiving feedback from team members outside this group.
 
