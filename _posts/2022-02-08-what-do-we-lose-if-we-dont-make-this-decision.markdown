@@ -8,6 +8,8 @@ image: "/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg"
 
 ![saffu-E4kKGI4oGaU-unsplash-cover.jpeg](/uploads/saffu-E4kKGI4oGaU-unsplash-cover.jpeg)
 
+*[Photo](https://unsplash.com/photos/E4kKGI4oGaU) by [Saffu](https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/movement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+
 This question brought clarity and alignment to a hard-to-follow discussion. I was so surprised about it that I wanted to write a blog post.
 
 A group engineers, engineering managers, and product managers were discussing which team should own a particular component. Ownership of a product component at Splash means overall maintenance and setting technical direction. There were a few reasons why this particular component’s ownership would be better aligned with another engineering team’s mission and area of focus. After the idea had been circulating for a while, we held a meeting to share our thoughts.
@@ -19,7 +21,3 @@ Everyone in the group expressed alignment about wanting to make the ownership ch
 **“What do we lose if we don’t make this decision?”** is a powerful question for a decision that *feels* scary. It enables to lay out the expected results and missed opportunities. It’s also good to remind us that most decisions are reversible. And it can also uncover reasons that made the discussion feel stuck.
 
 I will continue asking this question in different contexts when reviewing proposals or sensing people are stuck. Just like [no-oriented questions](https://guillermodelapuente.com/blog/no-oriented-questions-to-get-others-to-act/), this is another tool to better surface hidden roadblocks and reach alignment! Similarly to no-oriented questions, I’ve found that asking myself that question when faced with tough decisions can give me the clarity and motivation to get something hard done.
-
----
-
-*[Photo](https://unsplash.com/photos/E4kKGI4oGaU) by [Saffu](https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/movement?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
