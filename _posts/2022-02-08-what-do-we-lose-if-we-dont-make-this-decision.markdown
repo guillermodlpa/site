@@ -20,7 +20,7 @@ Then, each participant took a step back from the details and expressed that they
 
 **“What do we lose if we don’t make this decision?”** is a powerful question for a decision that feels scary. It enables to lay out the opportunities and expected results. It can uncover reasons that made a discussion feel stuck. Also it reminds us that most decisions are reversible.
 
-I'll continue asking this question in different contexts when reviewing proposals, feeling lost, or sensing people are stuck. Like [no-oriented questions](https://guillermodelapuente.com/blog/no-oriented-questions-to-get-others-to-act/), this is a tool to surface hidden roadblocks and reach alignment. Similarly, I’ve found that asking myself the question when faced with tough personal decisions can give me the clarity and motivation to get something hard done.
+I'll continue asking this question in different contexts when reviewing proposals, feeling lost, or sensing people are stuck. Like [no-oriented questions](https://guillermodelapuente.com/blog/no-oriented-questions-to-get-others-to-act/), this is a tool to surface hidden roadblocks and reach alignment. Similarly, I’ve found that asking myself this question when faced with tough personal decisions can give me the clarity and motivation to get something hard done.
 
 ![saffu-E4kKGI4oGaU-unsplash-cover-bg.jpeg](/uploads/saffu-E4kKGI4oGaU-unsplash-cover-bg.jpeg)
 
