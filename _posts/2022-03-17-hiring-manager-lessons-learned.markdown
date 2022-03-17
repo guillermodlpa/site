@@ -1,9 +1,9 @@
 ---
 title: Hiring Manager Lessons Learned
 date: 2022-03-17 11:00:00 Z
-excerpt: This blog post is to share some lessons I’ve learned as a hiring manager.
+excerpt: 'This blog post is to share some lessons I’ve learned as a hiring manager:
   Participate in Sourcing, Be Always Planting Seeds, Build Trust with Recruiting,
-  and Set the Bar High with Candidate Experience.
+  and Set the Bar High with Candidate Experience.'
 image: "/uploads/roger-bradshaw-miEWeTPYsFE-unsplash-medium.jpeg"
 ---
 
