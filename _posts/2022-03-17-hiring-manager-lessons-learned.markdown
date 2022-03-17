@@ -33,7 +33,7 @@ As a hiring manager, the seeds we plant today can enable the best hires later. S
 
 My story is a good example of [Ben Hindman](https://twitter.com/bennydotevents?lang=en) planting seeds. Ben, cofounder at Splash, participated in a virtual interview along with 3 other NYC startup founders. That was on April of 2014, when I was a student at [IIT](https://www.iit.edu/). That day, I arrived late to class (sorry, professor!), so I tuned in to the live interview from the building hall. Ben was so energizing and motivating during the session that he stuck in my mind. A few weeks later, when I started looking for a summer internship, I remembered him. The seed he planted that day led to me to join Splash a few months later.
 
-One of the best managers I’ve hired came thanks to a seed I discreetly planted 1 year before. In 2020, I discovered [remote-es/remotes](https://github.com/remote-es/remotes), a code repository listing companies offering full-time remote jobs with Spanish contracts, and [I added Splash](https://github.com/remote-es/remotes/pull/35). Many months later, this person discovered  us in that repository, right when we had an open manager role. Great!
+One of the best managers I’ve hired came thanks to a seed I discreetly planted 1 year before. In 2020, I discovered [remote-es/remotes](https://github.com/remote-es/remotes), a code repository listing companies offering full-time remote jobs with Spanish contracts, and [I added Splash](https://github.com/remote-es/remotes/pull/35). Many months later, this person discovered  us thanks to that repository, right when we had an open manager role. Great!
 
 ## #3: 🤝 Build Trust with Recruiting
 
