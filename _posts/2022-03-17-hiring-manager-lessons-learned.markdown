@@ -39,7 +39,7 @@ One of the best managers I’ve hired came thanks to a seed I discreetly planted
 
 As hiring managers, the more trusting the relationship is with our recruiters, the more honest and precise feedback we can share with each other.
 
-Recruiting has the goal of bringing quickly candidates that will get hired. A hiring manager must give them guidance on what to look for. Feedback and detailed scorecards are very important so recruiting develops a better understanding of what works and doesn’t, and so they can spot and correct unconscious bias in the interviewing team.
+Recruiting has the goal of bringing quickly candidates that will get hired. A hiring manager must give them guidance on what to look for. Feedback, detailed scorecards, and debriefs are essential for Recruiting to develop a better understanding of what works and doesn’t, and so they can spot and correct unconscious bias in the interviewing team.
 
 Recruiting can sometimes be pushy when we reject a seemingly good enough candidate. It’s a healthy push, though. We shouldn’t reject candidates based on unconscious gut feeling. Sometimes it’s hard to fairly articulate why a candidate should be rejected, though. It’s taken me time to improve, with my recruiter’s support, at differentiating my potential biases from actual behaviors that matter for the role.
 
