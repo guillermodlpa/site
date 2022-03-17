@@ -51,4 +51,4 @@ Having built a trusting relationship with the recruiting team, it becomes easier
 
 But it should go beyond that. With great candidates, we should add a bit of personal connection. I usually do it. Thanks to that, I’ve stayed in touch with great candidates that didn’t work out or that we couldn’t hire at the time, and regained their interest when we had new openings.
 
-That said, the recruiting team at Splash has continuously improved our candidate experience so much in the last years. It’s amazing. If you want to learn about that, why not try it yourself? [Check out the job opportunities we’re hiring for.](https://splashthat.com/careers)
+The recruiting team at Splash has continuously improved our candidate experience so much in the last years. It’s amazing. If you want to learn about that, why not try it yourself? [Check out the job opportunities we’re hiring for.](https://splashthat.com/careers)
