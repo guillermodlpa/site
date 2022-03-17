@@ -45,10 +45,10 @@ Recruiting can sometimes be pushy when we reject a seemingly good enough candida
 
 ## #4: ✨ Set the Bar High with Candidate Experience
 
-As hiring managers, one of the best ways to hire a great candidate is to personally care about the developer experience of the hiring process. We should suffer for a candidate when they haven’t heard from our company in a few days, when an interview didn’t match their expectations, or when they don’t feel guided through the interview process.
+As hiring managers, one of the best ways to hire a great candidate is to personally care about the developer experience of the hiring process. We should suffer for a candidate when they haven’t heard from our company in a few days, when an interview didn’t meet their expectations, or when they didn't feel guided through the interview process.
 
 Having built a trusting relationship with the recruiting team, it becomes easier to share critical feedback with them abut the candidate experience we’re seeing, and offer a hand to help.
 
 But it should go beyond that. With great candidates, we should add a bit of personal connection. I usually do it. Thanks to that, I’ve stayed in touch with great candidates that didn’t work out or that we couldn’t hire at the time, and regained their interest when we had new openings.
 
-That said, the recruiting team at Splash has continuously improved our candidate experience so much in the last years. It’s amazing. If you want to learn about that, why not try it yourself? [Check out the job opportunities we’re hiring for.](https://splashthat.com/careers)
+The recruiting team at Splash has continuously improved our candidate experience so much in the last years. It’s amazing. If you want to learn about that, why not try it yourself? [Check out the job opportunities we’re hiring for.](https://splashthat.com/careers)
