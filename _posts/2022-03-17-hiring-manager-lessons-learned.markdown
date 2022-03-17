@@ -23,7 +23,7 @@ Nowadays, with such a strong recruiting team at [Splash](https://splashthat.com/
 
 As hiring managers, we need to invest time in sourcing candidates and promoting the job posting. Let’s get our hands dirty, show ourselves to the world, and share the excitement.
 
-Even if I have a recruiting team doing the hard work of sourcing, whenever I have an open role, I invest some time every week to promote, share, and source candidates. Additionally, I often volunteer to support the recruiting team’s efforts in various ways, like proactively reaching to my network or sending the right message to somebody on the fence about starting the process.
+Even if I have a recruiting team doing the hard work of sourcing, whenever I have an open role, I invest some time every week to promote the opportunity and source candidates. Additionally, I often volunteer to support the recruiting team’s efforts in various ways, like proactively reaching to my network or sending the right message to somebody on the fence about starting the process.
 
 While we should have high standards of our tech recruiters, that doesn’t mean we should just do nothing. Or worse, complain when the pipeline is dry.
 
