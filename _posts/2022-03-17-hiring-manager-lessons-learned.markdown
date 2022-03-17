@@ -1,6 +1,10 @@
 ---
 title: Hiring Manager Lessons Learned
 date: 2022-03-17 11:00:00 Z
+excerpt: This blog post is to share some lessons I’ve learned as a hiring manager.
+  Participate in Sourcing, Be Always Planting Seeds, Build Trust with Recruiting,
+  and Set the Bar High with Candidate Experience.
+image: "/uploads/roger-bradshaw-miEWeTPYsFE-unsplash-medium.jpeg"
 ---
 
 ![roger-bradshaw-miEWeTPYsFE-unsplash-medium.jpeg](/uploads/roger-bradshaw-miEWeTPYsFE-unsplash-medium.jpeg)
@@ -39,7 +43,7 @@ Recruiting has the goal of bringing quickly candidates that will get hired. A hi
 
 Recruiting can sometimes be pushy when we reject a seemingly good enough candidate. It’s a healthy push, though. We shouldn’t reject candidates based on unconscious gut feeling. Sometimes it’s hard to fairly articulate why a candidate should be rejected, though. It’s taken me time to improve, with my recruiter’s support, at differentiating my potential biases from actual behaviors that matter for the role.
 
-## **#4: ✨ Set the bar high with Candidate Experience**
+## **#4: ✨ Set the Bar High with Candidate Experience**
 
 As hiring managers, one of the best ways to hire a great candidate is to personally care about the developer experience of the hiring process. We should suffer for a candidate when they haven’t heard from our company in a few days, when an interview didn’t match their expectations, or when they don’t feel guided through the interview process.
 
