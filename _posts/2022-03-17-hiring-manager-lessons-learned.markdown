@@ -2,7 +2,7 @@
 title: Hiring Manager Lessons Learned
 date: 2022-03-17 11:00:00 Z
 excerpt: 'This blog post is to share some lessons I’ve learned as a hiring manager:
-  Participate in Sourcing, Be Always Planting Seeds, Build Trust with Recruiting,
+  Participate in Sourcing, Always Be Planting Seeds, Build Trust with Recruiting,
   and Set the Bar High with Candidate Experience.'
 image: "/uploads/roger-bradshaw-miEWeTPYsFE-unsplash-medium.jpeg"
 ---
@@ -27,7 +27,7 @@ Even if I have a recruiting team doing the hard work of sourcing, whenever I hav
 
 While we should have high standards of our tech recruiters and the candidate pipelines, that doesn’t mean we can just do nothing.
 
-## #2: 🌱 Be Always Planting Seeds
+## #2: 🌱 Always Be Planting Seeds
 
 As a hiring manager, the seeds we plant today can enable the best hires later. Seeds are planted when we polish our online personal brand, we network during conferences, we promote the company in software development groups, and we meet in real life with local developer communities.
 
