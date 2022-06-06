@@ -1,14 +1,5 @@
 {% if jekyll.environment == 'production' %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ page.google_analytics_tracking_id }}"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{ page.google_analytics_tracking_id }}');
-    </script>
-
   <script async defer data-website-id="1f83c5d3-6db5-4fa8-a4d7-b93c486b697b" src="https://umami-pvn48eb4t-guillermodlpa.vercel.app/umami.js"></script>
 {% else %}
-  <!-- Google Analytics Disabled. Tracking ID: {{ page.google_analytics_tracking_id }} -->
+  <!-- No analytics -->
 {% endif %}
