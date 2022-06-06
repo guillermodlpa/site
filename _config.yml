@@ -19,7 +19,6 @@ defaults:
 - scope:
     path: ''
   values:
-    google_analytics_tracking_id: UA-130643092-1
     app_background_color: rgb(255, 255, 255)
     app_font_body_color: "#576c7b"
     app_font_body_color_hover: "#4A5C69"
