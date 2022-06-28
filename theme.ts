@@ -12,7 +12,7 @@ const theme = {
     current: "currentColor",
     black: "#000000",
     white: "#FFFFFF",
-    primary: {
+    purpleTurtle: {
       // https://smart-swatch.netlify.app/#A557DE
       50: "#f7e8ff",
       100: "#debef5",
@@ -25,7 +25,7 @@ const theme = {
       800: "#2b0c42",
       900: "#11021a",
     },
-    secondary: {
+    pinkyPromise: {
       50: "#ffe4ff",
       100: "#fdb6ef",
       200: "#f987e0",
@@ -68,6 +68,8 @@ const theme = {
         _dark: "whiteAlpha.400",
         _light: "neutral.500",
       },
+      primary: "purpleTurtle.300",
+      secondary: "pinkyPromise.300",
     },
   },
   components: {
@@ -96,9 +98,9 @@ const theme = {
     Link: {
       baseStyle: {
         transition: "color 0.25s ease",
-        color: `primary.300`,
+        color: `primary`,
         _hover: {
-          color: `secondary.300`,
+          color: `secondary`,
           textDecoration: "none",
         },
       },
