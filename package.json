@@ -1,0 +1,34 @@
+{
+  "name": "@guillermodlpa/site",
+  "version": "2.0.0",
+  "description": "Personal site, blog and portfolio of Guillermo de la Puente",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillermodlpa/site.git"
+  },
+  "author": "Guillermo de la Puente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillermodlpa/site/issues"
+  },
+  "homepage": "https://github.com/guillermodlpa/site#readme",
+  "dependencies": {
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
