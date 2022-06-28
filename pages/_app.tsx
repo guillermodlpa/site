@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 import theme from "../theme";
 
@@ -18,9 +18,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="all" />
       </Head>
 
-      <ThemeProvider theme={theme}>
+      <ChakraProvider theme={theme}>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </ChakraProvider>
     </>
   );
 }

@@ -54,7 +54,12 @@ const theme = {
     Heading: {
       baseStyle: {
         fontWeight: "normal",
-        color: "neutral.500",
+        color: "neutral.600",
+      },
+      sizes: {
+        "2xl": {
+          fontWeight: "bold",
+        },
       },
     },
     Text: {
@@ -62,11 +67,11 @@ const theme = {
         fontFamily: "body",
         fontSize: "lg",
       },
-      variants: {
-        bodySecondary: () => ({
-          fontSize: "md",
-        }),
-      },
+      // variants: {
+      //   bodySecondary: () => ({
+      //     fontSize: "md",
+      //   }),
+      // },
     },
     Link: {
       baseStyle: {

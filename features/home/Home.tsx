@@ -1,4 +1,5 @@
 import {
+  Box,
   Container,
   Heading,
   Link,
@@ -11,6 +12,7 @@ import LinkedInLogo from "../../components/icons/LinkedInLogo";
 import GitHubLogo from "../../components/icons/GitHubLogo";
 import InstagramLogo from "../../components/icons/InstagramLogo";
 import TwitterLogo from "../../components/icons/TwitterLogo";
+import MagicalDivider from "../../components/MagicalDivider";
 
 const socialLinks = [
   {
@@ -37,30 +39,57 @@ const socialLinks = [
 
 function Home() {
   return (
-    <Container>
-      <Heading as="h1" size="xl">
-        Guillermo de la Puente
-      </Heading>
-      <Heading as="h2" size="lg">
-        Engineering manager. Software developer.
-      </Heading>
+    <Box
+      width="full"
+      maxWidth="full"
+      py={8}
+      px="5vw"
+      minHeight="100vh"
+      display="flex"
+      flexDirection="column"
+    >
+      <Box
+        flexGrow={1}
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        mb={[0, 20]}
+      >
+        <MagicalDivider />
 
-      <Text>
-        <NextLink href="/blog" passHref>
-          <Link>Blog</Link>
-        </NextLink>
-      </Text>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          my={"12.5vh"}
+        >
+          <Heading as="h1" size="2xl" mb={8}>
+            Guillermo de la Puente
+          </Heading>
+          <Heading as="h2" size="lg" mb={12}>
+            Engineering manager. Software developer
+          </Heading>
 
-      <Wrap>
-        {socialLinks.map(({ href, label, Icon }) => (
-          <WrapItem key={href}>
-            <Link href={href} aria-label={label}>
-              <Icon />
-            </Link>
-          </WrapItem>
-        ))}
-      </Wrap>
-    </Container>
+          <Text mb={8} fontSize="xl">
+            <NextLink href="/blog" passHref>
+              <Link>Blog</Link>
+            </NextLink>
+          </Text>
+
+          <Wrap spacing={4}>
+            {socialLinks.map(({ href, label, Icon }) => (
+              <WrapItem key={href}>
+                <Link href={href} aria-label={label}>
+                  <Icon boxSize={8} />
+                </Link>
+              </WrapItem>
+            ))}
+          </Wrap>
+        </Box>
+
+        <MagicalDivider />
+      </Box>
+    </Box>
   );
 }
 
