@@ -103,6 +103,9 @@ const theme = {
           color: `secondary`,
           textDecoration: "none",
         },
+        _focus: {
+          color: `secondary`,
+        },
       },
       variants: {
         inheritColor: {
