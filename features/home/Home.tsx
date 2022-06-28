@@ -1,41 +1,7 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Link,
-  Text,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import LinkedInLogo from "../../components/icons/LinkedInLogo";
-import GitHubLogo from "../../components/icons/GitHubLogo";
-import InstagramLogo from "../../components/icons/InstagramLogo";
-import TwitterLogo from "../../components/icons/TwitterLogo";
 import MagicalDivider from "../../components/MagicalDivider";
-
-const socialLinks = [
-  {
-    href: "https://linkedin.com/in/guillermodlpa",
-    label: "Guillermo's LinkedIn profile",
-    Icon: LinkedInLogo,
-  },
-  {
-    href: "https://github.com/guillermodlpa",
-    label: "Guillermo's GitHub profile",
-    Icon: GitHubLogo,
-  },
-  {
-    href: "https://www.instagram.com/guillermodlpa",
-    label: "Guillermo's Instagram profile",
-    Icon: InstagramLogo,
-  },
-  {
-    href: "https://twitter.com/guillermodlpa",
-    label: "Guillermo's Twitter feed",
-    Icon: TwitterLogo,
-  },
-];
+import SocialLinks from "../../components/SocialLinks";
 
 function Home() {
   return (
@@ -76,15 +42,7 @@ function Home() {
             </NextLink>
           </Text>
 
-          <Wrap spacing={4}>
-            {socialLinks.map(({ href, label, Icon }) => (
-              <WrapItem key={href}>
-                <Link href={href} aria-label={label}>
-                  <Icon boxSize={8} />
-                </Link>
-              </WrapItem>
-            ))}
-          </Wrap>
+          <SocialLinks />
         </Box>
 
         <MagicalDivider />

@@ -50,6 +50,26 @@ const theme = {
       900: "#010e18",
     },
   },
+  semanticTokens: {
+    colors: {
+      "chakra-body-bg": {
+        _dark: "neutral.800",
+        _light: "white",
+      },
+      "chakra-body-text": {
+        _dark: "whiteAlpha.900",
+        _light: "neutral.800",
+      },
+      "chakra-border-color": {
+        _dark: "whiteAlpha.300",
+        _light: "neutral.200",
+      },
+      "chakra-placeholder-color": {
+        _dark: "whiteAlpha.400",
+        _light: "neutral.500",
+      },
+    },
+  },
   components: {
     Heading: {
       baseStyle: {
@@ -67,11 +87,11 @@ const theme = {
         fontFamily: "body",
         fontSize: "lg",
       },
-      // variants: {
-      //   bodySecondary: () => ({
-      //     fontSize: "md",
-      //   }),
-      // },
+      variants: {
+        secondaryText: () => ({
+          color: "neutral.400",
+        }),
+      },
     },
     Link: {
       baseStyle: {
@@ -79,6 +99,18 @@ const theme = {
         color: `primary.300`,
         _hover: {
           color: `secondary.300`,
+          textDecoration: "none",
+        },
+      },
+      variants: {
+        inheritColor: {
+          color: "inherit",
+          _hover: {
+            color: `neutral.400`,
+          },
+        },
+        inheritColorKeepHover: {
+          color: "inherit",
         },
       },
     },
@@ -86,5 +118,7 @@ const theme = {
 };
 
 const chakraUITheme = extendTheme(theme);
+
+console.log(chakraUITheme);
 
 export default chakraUITheme;

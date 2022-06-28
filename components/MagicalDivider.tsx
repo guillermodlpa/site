@@ -11,7 +11,7 @@ export default function MagicalDivider({
   height = 1,
 }: {
   as?: As;
-  height?: number;
+  height?: number | string;
 }) {
   return (
     <Divider

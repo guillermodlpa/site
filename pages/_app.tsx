@@ -3,6 +3,8 @@ import Head from "next/head";
 import theme from "../theme";
 
 function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
   return (
     <>
       <Head>
@@ -19,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
+        {getLayout(<Component {...pageProps} />)}
       </ChakraProvider>
     </>
   );
