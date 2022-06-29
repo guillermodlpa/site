@@ -32,7 +32,7 @@ function SocialLinks({ size = 8 }: { size?: number }) {
     <Wrap spacing={Math.round(size / 2)}>
       {socialLinks.map(({ href, label, Icon }) => (
         <WrapItem key={href}>
-          <Link href={href} aria-label={label} target="_blank">
+          <Link href={href} aria-label={label} isExternal>
             <Icon boxSize={size} />
           </Link>
         </WrapItem>
