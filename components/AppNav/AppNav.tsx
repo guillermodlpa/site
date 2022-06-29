@@ -1,5 +1,6 @@
 import { Box, Container, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { PATH_BLOG } from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
 
 export default function AppNav() {
@@ -13,7 +14,7 @@ export default function AppNav() {
         </Heading>
 
         <Text size="md">
-          <NextLink passHref href="/blog">
+          <NextLink passHref href={PATH_BLOG}>
             <Link variant="inheritColor">Blog</Link>
           </NextLink>
         </Text>

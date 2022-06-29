@@ -1,6 +1,7 @@
 import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
+import { getBlogPostPath } from "../../constants/paths";
 import { BlogPostSummary } from "../../fixtures/blogPostSummaries";
 
 export default function Blog({
@@ -14,7 +15,7 @@ export default function Blog({
         <Box key={post.title} mb={24}>
           <Box my={8}>
             <Heading as="h2" size="lg" mb={2}>
-              <NextLink href={`/blog/${post.slug}`}>
+              <NextLink href={getBlogPostPath(post.slug)}>
                 <Link variant="inheritColorKeepHover">{post.title}</Link>
               </NextLink>
             </Heading>
@@ -38,7 +39,7 @@ export default function Blog({
                   variant="secondaryText"
                 >{`${post.date} / `}</Text>
                 {post.excerpt}{" "}
-                <NextLink href={`/blog/${post.slug}`} passHref>
+                <NextLink href={getBlogPostPath(post.slug)} passHref>
                   <Link>Read more</Link>
                 </NextLink>
               </Text>

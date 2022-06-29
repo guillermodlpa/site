@@ -1,5 +1,6 @@
 import { Box, Container, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost } from "../../fixtures/blogPost";
 
 export default function Blog({ blogPost }: { blogPost: BlogPost }) {
@@ -23,7 +24,7 @@ export default function Blog({ blogPost }: { blogPost: BlogPost }) {
       ))}
 
       <Text textAlign="center">
-        <NextLink href="/blog" passHref>
+        <NextLink href={PATH_BLOG} passHref>
           <Link>Back to all posts</Link>
         </NextLink>
       </Text>
