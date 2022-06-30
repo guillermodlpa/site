@@ -70,6 +70,10 @@ const theme = {
       },
       primary: "purpleTurtle.300",
       secondary: "pinkyPromise.300",
+      "code-background": {
+        _dark: "whiteAlpha.300",
+        _light: "neutral.50",
+      },
     },
   },
   components: {
@@ -90,9 +94,15 @@ const theme = {
         fontSize: "lg",
       },
       variants: {
-        secondaryText: () => ({
+        secondaryText: {
           color: "neutral.400",
-        }),
+        },
+        code: {
+          fontFamily: "mono",
+          backgroundColor: "code-background",
+          px: 1,
+          borderRadius: "md",
+        },
       },
     },
     Link: {

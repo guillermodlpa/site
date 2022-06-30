@@ -1,5 +1,8 @@
 import { Client, LogLevel } from "@notionhq/client";
-import { GetPageResponse } from "@notionhq/client/build/src/api-endpoints";
+import {
+  GetBlockResponse,
+  GetPageResponse,
+} from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
 import { BlogPost } from "../types/types";
 
@@ -96,4 +99,40 @@ export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost> {
   });
   const blogPost = transformNotionPageIntoBlogPost(result.results[0]);
   return blogPost;
+}
+
+export async function fetchBlocks(
+  pageIdOrBlockId: string
+): Promise<GetBlockResponse[]> {
+  const result = await notion.blocks.children.list({
+    block_id: pageIdOrBlockId,
+  });
+  const blocks = result.results;
+  // Retrieve block children for nested blocks (one level deep), for example toggle blocks
+  // https://developers.notion.com/docs/working-with-page-content#reading-nested-blocks
+  const childBlocks = await Promise.all(
+    blocks
+      .filter((block) => "has_children" in block && block.has_children)
+      .map(async (block) => {
+        return {
+          id: block.id,
+          children: await fetchBlocks(block.id),
+        };
+      })
+  );
+  const blocksWithChildren = blocks.map((block) => {
+    // Add child blocks if the block should contain children but none exists
+    if (
+      "has_children" in block &&
+      block.has_children &&
+      !block[block.type].children
+    ) {
+      block[block.type]["children"] = childBlocks.find(
+        ({ id }) => id === block.id
+      )?.children;
+    }
+    return block;
+  });
+
+  return blocksWithChildren;
 }

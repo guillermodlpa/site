@@ -1,9 +1,17 @@
-import { Box, Container, Heading, Link, Text } from "@chakra-ui/react";
+import { Container, Heading, Link, Text } from "@chakra-ui/react";
+import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import NextLink from "next/link";
 import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost as BlogPostType } from "../../types/types";
+import NotionPageRenderer from "./NotionPageRenderer";
 
-export default function BlogPost({ blogPost }: { blogPost: BlogPostType }) {
+export default function BlogPost({
+  blogPost,
+  blocks,
+}: {
+  blogPost: BlogPostType;
+  blocks: GetBlockResponse[];
+}) {
   return (
     <Container py={4} maxWidth="container.md">
       <Heading as="h1" mb={4}>
@@ -13,11 +21,7 @@ export default function BlogPost({ blogPost }: { blogPost: BlogPostType }) {
         {blogPost.datePublished}
       </Text>
 
-      {[].map((paragraph, key) => (
-        <Text key={key} mb={4}>
-          {paragraph}
-        </Text>
-      ))}
+      <NotionPageRenderer blocks={blocks} />
 
       <Text textAlign="center">
         <NextLink href={PATH_BLOG} passHref>
