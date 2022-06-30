@@ -2,16 +2,12 @@ import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import { getBlogPostPath } from "../../constants/paths";
-import { BlogPostSummary } from "../../fixtures/blogPostSummaries";
+import { BlogPost } from "../../types/types";
 
-export default function Blog({
-  blogPostSummaries,
-}: {
-  blogPostSummaries: BlogPostSummary[];
-}) {
+export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
   return (
     <Container py={4} maxWidth="container.md">
-      {blogPostSummaries.map((post) => (
+      {blogPosts.map((post) => (
         <Box key={post.title} mb={24}>
           <Box my={8}>
             <Heading as="h2" size="lg" mb={2}>
@@ -37,7 +33,7 @@ export default function Blog({
                 <Text
                   as="span"
                   variant="secondaryText"
-                >{`${post.date} / `}</Text>
+                >{`${post.datePublished} / `}</Text>
                 {post.excerpt}{" "}
                 <NextLink href={getBlogPostPath(post.slug)} passHref>
                   <Link>Read more</Link>

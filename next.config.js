@@ -6,6 +6,10 @@ const nextConfig = {
   publicRuntimeConfig: {
     SITE_URL: process.env.SITE_URL,
   },
+  serverRuntimeConfig: {
+    NOTION_TOKEN: process.env.NOTION_TOKEN,
+    NOTION_BLOG_DATABASE_ID: process.env.NOTION_BLOG_DATABASE_ID,
+  },
 };
 
 module.exports = nextConfig;

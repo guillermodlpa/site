@@ -124,6 +124,9 @@ const theme = {
 
 const chakraUITheme = extendTheme(theme);
 
-console.log(chakraUITheme);
+// Printing the Chakra UI theme to console for easier debugging and customization
+if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+  console.log("[Chakra UI theme]", chakraUITheme);
+}
 
 export default chakraUITheme;
