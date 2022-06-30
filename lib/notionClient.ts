@@ -127,7 +127,7 @@ export async function fetchBlocks(
       block.has_children &&
       !block[block.type].children
     ) {
-      block[block.type]["children"] = childBlocks.find(
+      block[block.type].children = childBlocks.find(
         ({ id }) => id === block.id
       )?.children;
     }
