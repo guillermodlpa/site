@@ -71,8 +71,12 @@ const theme = {
       primary: "purpleTurtle.300",
       secondary: "pinkyPromise.300",
       "code-background": {
-        _dark: "whiteAlpha.300",
+        _dark: "whiteAlpha.200",
         _light: "neutral.50",
+      },
+      "callout-background": {
+        _dark: "whiteAlpha.300",
+        _light: "blackAlpha.50",
       },
     },
   },

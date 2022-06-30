@@ -134,6 +134,24 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
       case BLOCK_TYPES.COLUMN:
         // These are just wrappers over children
         return null;
+        return;
+      case BLOCK_TYPES.CALLOUT:
+        console.log(block);
+        return (
+          <Box
+            as="aside"
+            display="flex"
+            mb={PARAGRAPH_SPACING}
+            backgroundColor={"callout-background"}
+            p={3}
+            borderRadius="md"
+          >
+            <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
+              {value.icon?.type === "emoji" ? value.icon.emoji : ""}
+            </Text>
+            <Text flexGrow={1}>{renderRichText(value.rich_text)}</Text>
+          </Box>
+        );
       default:
         return (
           <>
