@@ -103,6 +103,11 @@ const theme = {
           px: 1,
           borderRadius: "md",
         },
+        caption: {
+          color: "neutral.400",
+          fontSize: "sm",
+          textAlign: "center",
+        },
       },
     },
     Link: {

@@ -52,6 +52,13 @@ function renderRichText(richTextItems): JSX.Element[] {
   ));
 }
 
+function getPlainText(richTextItems): string {
+  return richTextItems.reduce(
+    (memo, richText) => `${memo}${richText.plain_text}`,
+    ""
+  );
+}
+
 const PARAGRAPH_SPACING = 4;
 
 export default function NotionBlock({ block }: { block: GetBlockResponse }) {
@@ -96,7 +103,6 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
       case BLOCK_TYPES.IMAGE:
         const src =
           value.type === "external" ? value.external.url : value.file.url;
-        const caption = value.caption?.[0]?.plain_text ?? "";
         return (
           <Box
             display="flex"
@@ -104,10 +110,17 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
             mb={PARAGRAPH_SPACING * 2}
           >
             <figure>
-              <img src={src} alt={caption} />
-              {caption && (
-                <Text as="figcaption" variant="secondaryText" fontSize="sm">
-                  {caption}
+              <img
+                src={src}
+                alt={
+                  value.caption
+                    ? getPlainText(value.caption)
+                    : "Blog post image"
+                }
+              />
+              {value.caption && (
+                <Text as="figcaption" variant="caption" mt={2}>
+                  {renderRichText(value.caption)}
                 </Text>
               )}
             </figure>
@@ -117,6 +130,10 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
         return (
           <Divider mt={PARAGRAPH_SPACING * 2} mb={PARAGRAPH_SPACING * 2} />
         );
+      case BLOCK_TYPES.COLUMN_LIST:
+      case BLOCK_TYPES.COLUMN:
+        // These are just wrappers over children
+        return null;
       default:
         return (
           <>
@@ -128,17 +145,42 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
     }
   };
 
+  const renderChildrenWrapper = (children) => {
+    switch (type) {
+      case BLOCK_TYPES.COLUMN_LIST:
+        return (
+          <Box
+            sx={{
+              display: ["block", "block", "grid"],
+              gridTemplateColumns: [
+                undefined,
+                undefined,
+                children.map(() => "1fr").join(" "),
+              ],
+              gap: [4, 4, null],
+            }}
+          >
+            {children}
+          </Box>
+        );
+      case BLOCK_TYPES.COLUMN:
+        return <Box>{children}</Box>;
+      default: {
+        return <Box ml={8}>{children}</Box>;
+      }
+    }
+  };
+
   return (
     <>
       {renderBlock()}
 
-      {value.children?.length > 0 && (
-        <Box ml={8}>
-          {value.children.map((child) => (
+      {value.children?.length > 0 &&
+        renderChildrenWrapper(
+          value.children.map((child) => (
             <NotionBlock key={child.id} block={child} />
-          ))}
-        </Box>
-      )}
+          ))
+        )}
     </>
   );
 }

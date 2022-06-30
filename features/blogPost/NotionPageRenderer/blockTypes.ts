@@ -6,3 +6,5 @@ export const BULLETED_LIST_ITEM = "bulleted_list_item";
 export const NUMBERED_LIST_ITEM = "numbered_list_item";
 export const IMAGE = "image";
 export const DIVIDER = "divider";
+export const COLUMN_LIST = "column_list";
+export const COLUMN = "column";
