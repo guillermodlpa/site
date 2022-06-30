@@ -13,21 +13,30 @@ export default function BlogPost({
   blocks: GetBlockResponse[];
 }) {
   return (
-    <Container py={4} maxWidth="container.md">
-      <Heading as="h1" mb={4}>
-        {blogPost.title}
-      </Heading>
-      <Text variant="secondaryText" mb={4}>
-        {blogPost.datePublished}
-      </Text>
+    <Container py={4} maxWidth="container.md" as="article">
+      <header>
+        <Heading as="h1" mb={4}>
+          {blogPost.title}
+        </Heading>
+        <Text
+          variant="secondaryText"
+          mb={4}
+          as="time"
+          dateTime={"todo format the date example: 2022-06-05T07:00:00-07:00"}
+        >
+          {blogPost.datePublished}
+        </Text>
+      </header>
 
       <NotionPageRenderer blocks={blocks} />
 
-      <Text textAlign="center">
-        <NextLink href={PATH_BLOG} passHref>
-          <Link>Back to all posts</Link>
-        </NextLink>
-      </Text>
+      <footer>
+        <Text textAlign="center">
+          <NextLink href={PATH_BLOG} passHref>
+            <Link>Back to all posts</Link>
+          </NextLink>
+        </Text>
+      </footer>
     </Container>
   );
 }
