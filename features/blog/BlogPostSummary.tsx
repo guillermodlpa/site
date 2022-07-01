@@ -15,7 +15,7 @@ export default function BlogPostSummary({
   preloadImage,
 }: BlogPost & { preloadImage: boolean }) {
   return (
-    <Box mb={24}>
+    <Box mb={[12, undefined, 24]}>
       <Box my={8}>
         <Heading as="h2" size="xl" mb={2}>
           <NextLink href={getBlogPostPath(slug)}>
