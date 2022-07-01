@@ -4,7 +4,7 @@
 const nextConfig = {
   reactStrictMode: true,
   publicRuntimeConfig: {
-    SITE_URL: process.env.SITE_URL,
+    SITE_DOMAIN: process.env.SITE_DOMAIN,
     UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
   },
   serverRuntimeConfig: {
