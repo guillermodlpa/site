@@ -5,7 +5,7 @@ import MagicalDivider from "../MagicalDivider";
 
 export default function AppNav() {
   return (
-    <Container py={4} maxWidth="container.md">
+    <Container pb={4} maxWidth="container.md">
       <Box py={4}>
         <Heading size="xl" mb={2}>
           <NextLink passHref href="/">
