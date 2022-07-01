@@ -1,4 +1,4 @@
-import Canonical from "../components/Canonical";
+import PageMeta from "../components/PageMeta";
 import { PATH_BLOG } from "../constants/paths";
 import Blog from "../features/blog";
 import BlogLayout from "../layouts/BlogLayout";
@@ -6,9 +6,21 @@ import { fetchBlogPosts } from "../lib/notionClient";
 import { BlogPost } from "../types/types";
 
 function BlogPage({ blogPosts }: { blogPosts: BlogPost[] }) {
+  const description = blogPosts
+    .slice(0, 5)
+    .reduce(
+      (memo, blogPost) =>
+        memo ? `${memo}, "${blogPost.title}"` : `"${blogPost.title}"`,
+      ""
+    )
+    .trim();
   return (
     <>
-      <Canonical path={PATH_BLOG} />
+      <PageMeta
+        canonicalPath={PATH_BLOG}
+        title="Blog - Guillermo de la Puente"
+        description={description}
+      />
       <Blog blogPosts={blogPosts} />
     </>
   );

@@ -1,5 +1,5 @@
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
-import Canonical from "../../components/Canonical";
+import PageMeta from "../../components/PageMeta";
 import { getBlogPostPath } from "../../constants/paths";
 import BlogPost from "../../features/blogPost";
 import BlogLayout from "../../layouts/BlogLayout";
@@ -19,7 +19,11 @@ function BlogPostPage({
 }) {
   return (
     <>
-      <Canonical path={getBlogPostPath(blogPost.slug)} />
+      <PageMeta
+        canonicalPath={getBlogPostPath(blogPost.slug)}
+        title={`${blogPost.title} - Guillermo de la Puente`}
+        description={blogPost.excerpt}
+      />
       <BlogPost blogPost={blogPost} blocks={blocks} />
     </>
   );
