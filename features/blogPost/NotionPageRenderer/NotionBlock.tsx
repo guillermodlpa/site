@@ -12,6 +12,7 @@ import getConfig from "next/config";
 import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import Image from "next/image";
+import MagicalDivider from "../../../components/MagicalDivider";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -42,8 +43,8 @@ function renderRichText(richTextItems): JSX.Element[] {
           : "span"
       }
       fontSize="inherit"
-      fontWeight={richText.annotations.bold ? "bold" : "normal"}
-      fontStyle={richText.annotations.italic ? "italic" : "normal"}
+      fontWeight={richText.annotations.bold ? "bold" : undefined}
+      fontStyle={richText.annotations.italic ? "italic" : undefined}
       variant={richText.annotations.code ? "code" : undefined}
     >
       {richText.text.link?.url
@@ -73,19 +74,28 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
           <Text mb={PARAGRAPH_SPACING}>{renderRichText(value.rich_text)}</Text>
         );
       case BLOCK_TYPES.HEADING_1:
+        return <>❌ No h1s allowed</>;
       case BLOCK_TYPES.HEADING_2:
+        return (
+          <>
+            <Heading
+              as="h2"
+              size="lg"
+              mt={PARAGRAPH_SPACING * 3}
+              mb={PARAGRAPH_SPACING}
+            >
+              {renderRichText(value.rich_text)}
+            </Heading>
+            <MagicalDivider
+              height={"2px"}
+              as="div"
+              mb={PARAGRAPH_SPACING * 2}
+            />
+          </>
+        );
       case BLOCK_TYPES.HEADING_3:
         return (
-          <Heading
-            as={
-              {
-                [BLOCK_TYPES.HEADING_1]: "h1",
-                [BLOCK_TYPES.HEADING_2]: "h2",
-                [BLOCK_TYPES.HEADING_3]: "h3",
-              }[type] as "h1" | "h2" | "h3"
-            }
-            mb={PARAGRAPH_SPACING}
-          >
+          <Heading as="h3" size="md" my={PARAGRAPH_SPACING * 2}>
             {renderRichText(value.rich_text)}
           </Heading>
         );
@@ -100,6 +110,12 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
           <OrderedList start={value.counter} mb={PARAGRAPH_SPACING}>
             <ListItem>{renderRichText(value.rich_text)}</ListItem>
           </OrderedList>
+        );
+      case BLOCK_TYPES.QUOTE:
+        return (
+          <Text as="blockquote" mb={PARAGRAPH_SPACING} variant="quoteBlock">
+            {renderRichText(value.rich_text)}
+          </Text>
         );
       case BLOCK_TYPES.IMAGE:
         const src =

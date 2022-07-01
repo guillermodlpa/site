@@ -16,7 +16,7 @@ export default function BlogPost({
   return (
     <Container py={4} maxWidth="container.md" as="article">
       <header>
-        <Heading as="h1" mb={4}>
+        <Heading size="xl" as="h1" mb={4} fontWeight="bold">
           {blogPost.title}
         </Heading>
         <Text

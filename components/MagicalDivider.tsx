@@ -9,15 +9,18 @@ const BackgroundPositionOscilation = keyframes`
 export default function MagicalDivider({
   as = "hr",
   height = 1,
+  mb,
 }: {
   as?: As;
   height?: number | string;
+  mb?: any;
 }) {
   return (
     <Divider
       as={as}
       height={height}
       borderBottomWidth={0}
+      mb={mb}
       sx={{
         background: `linear-gradient(90deg, #F0D690, #11c093, #4d53e0, #B161EC, #d233cf, #F0D690)`,
         backgroundSize: "600% 600%",

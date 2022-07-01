@@ -9,3 +9,4 @@ export const DIVIDER = "divider";
 export const COLUMN_LIST = "column_list";
 export const COLUMN = "column";
 export const CALLOUT = "callout";
+export const QUOTE = "quote";

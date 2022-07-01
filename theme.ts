@@ -86,11 +86,6 @@ const theme = {
         fontWeight: "normal",
         color: "neutral.600",
       },
-      sizes: {
-        "2xl": {
-          fontWeight: "bold",
-        },
-      },
     },
     Text: {
       baseStyle: {
@@ -111,6 +106,13 @@ const theme = {
           color: "neutral.400",
           fontSize: "sm",
           textAlign: "center",
+        },
+        quoteBlock: {
+          marginLeft: 3,
+          paddingLeft: 3,
+          borderLeftWidth: 3,
+          borderLeftColor: "divider",
+          borderLeftStyle: "solid",
         },
       },
     },
@@ -135,6 +137,13 @@ const theme = {
         },
         inheritColorKeepHover: {
           color: "inherit",
+        },
+      },
+    },
+    List: {
+      baseStyle: {
+        container: {
+          paddingLeft: 4,
         },
       },
     },
