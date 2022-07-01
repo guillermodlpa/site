@@ -7,9 +7,11 @@ import getConfig from "next/config";
 import { BlogPost } from "../types/types";
 import probeImageSize from "./probeImageSize";
 
+// These are custom properties defined in the Notion database, that we use here to filter, sort, and show info
 const PROPERTY_SLUG = "Slug";
 const PROPERTY_EXCERPT = "Excerpt";
 const PROPERTY_PUBLISHED = "Published";
+const PROPERTY_LISTED = "Listed";
 const PROPERTY_DATE_PUBLISHED = "Date Published";
 const PROPERTY_TAGS = "Tags";
 const PROPERTY_NAME = "Name";
@@ -66,10 +68,20 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   const result = await notion.databases.query({
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
     filter: {
-      property: PROPERTY_PUBLISHED,
-      checkbox: {
-        equals: true,
-      },
+      and: [
+        {
+          property: PROPERTY_PUBLISHED,
+          checkbox: {
+            equals: true,
+          },
+        },
+        {
+          property: PROPERTY_LISTED,
+          checkbox: {
+            equals: true,
+          },
+        },
+      ],
     },
     sorts: [
       {
@@ -87,17 +99,32 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   return blogPosts;
 }
 
-export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost> {
+export async function fetchBlogPostBySlug(
+  slug: string
+): Promise<BlogPost | undefined> {
   const result = await notion.databases.query({
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
     page_size: 1,
     filter: {
-      property: PROPERTY_SLUG,
-      rich_text: {
-        equals: slug,
-      },
+      and: [
+        {
+          property: PROPERTY_PUBLISHED,
+          checkbox: {
+            equals: true,
+          },
+        },
+        {
+          property: PROPERTY_SLUG,
+          rich_text: {
+            equals: slug,
+          },
+        },
+      ],
     },
   });
+  if (result.results.length === 0) {
+    return undefined;
+  }
   const blogPost = transformNotionPageIntoBlogPost(result.results[0]);
   return blogPost;
 }

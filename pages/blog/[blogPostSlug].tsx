@@ -45,6 +45,11 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const slug = context.params.blogPostSlug as string;
   const blogPost = await fetchBlogPostBySlug(slug);
+
+  if (!blogPost) {
+    return { notFound: true };
+  }
+
   const blocks = await fetchAllBlocks(blogPost.id);
   return {
     props: {
