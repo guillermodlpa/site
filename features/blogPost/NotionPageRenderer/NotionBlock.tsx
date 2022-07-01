@@ -63,7 +63,13 @@ function getPlainText(richTextItems): string {
 
 const PARAGRAPH_SPACING = 4;
 
-export default function NotionBlock({ block }: { block: GetBlockResponse }) {
+export default function NotionBlock({
+  block,
+  likelyAboveTheFold,
+}: {
+  block: GetBlockResponse;
+  likelyAboveTheFold: boolean;
+}) {
   const type = "type" in block ? block.type : null;
   const value = block[type];
 
@@ -137,6 +143,7 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
                   width={value.dim.width}
                   height={value.dim.height}
                   alt={alt}
+                  priority={likelyAboveTheFold}
                 />
               ) : (
                 // If we don't have dimensions because image probbing failed, we fall back to regular image
@@ -221,7 +228,11 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
       {value.children?.length > 0 &&
         renderChildrenWrapper(
           value.children.map((child) => (
-            <NotionBlock key={child.id} block={child} />
+            <NotionBlock
+              key={child.id}
+              block={child}
+              likelyAboveTheFold={false}
+            />
           ))
         )}
     </>

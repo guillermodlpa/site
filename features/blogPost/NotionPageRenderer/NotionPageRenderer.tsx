@@ -10,8 +10,12 @@ function NotionPageRenderer({ blocks }: { blocks: GetBlockResponse[] }) {
     addNumberedListItemCounters(blocks);
   return (
     <>
-      {blocksWithNumberedListItemCounters.map((block) => (
-        <NotionBlock block={block} key={block.id} />
+      {blocksWithNumberedListItemCounters.map((block, index) => (
+        <NotionBlock
+          block={block}
+          key={block.id}
+          likelyAboveTheFold={index < 10}
+        />
       ))}
     </>
   );
