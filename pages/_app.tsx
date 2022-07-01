@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
-import theme from "../theme";
+import theme from "../constants/theme";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout ?? ((page) => page);
