@@ -4,7 +4,7 @@ import { getBlogPostPath } from "../../constants/paths";
 import BlogPost from "../../features/blogPost";
 import BlogLayout from "../../layouts/BlogLayout";
 import {
-  fetchBlocks,
+  fetchAllBlocks,
   fetchBlogPostBySlug,
   fetchBlogPosts,
 } from "../../lib/notionClient";
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const slug = context.params.blogPostSlug as string;
   const blogPost = await fetchBlogPostBySlug(slug);
-  const blocks = await fetchBlocks(blogPost.id);
+  const blocks = await fetchAllBlocks(blogPost.id);
   return {
     props: {
       blogPost,

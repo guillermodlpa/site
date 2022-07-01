@@ -101,7 +101,7 @@ export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost> {
   return blogPost;
 }
 
-export async function fetchBlocks(
+export async function fetchAllBlocks(
   pageIdOrBlockId: string
 ): Promise<GetBlockResponse[]> {
   const result = await notion.blocks.children.list({
@@ -116,7 +116,7 @@ export async function fetchBlocks(
       .map(async (block) => {
         return {
           id: block.id,
-          children: await fetchBlocks(block.id),
+          children: await fetchAllBlocks(block.id),
         };
       })
   );
