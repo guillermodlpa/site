@@ -5,6 +5,7 @@ import {
 } from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
 import { BlogPost } from "../types/types";
+import probeImageSize from "./probeImageSize";
 
 const PROPERTY_SLUG = "Slug";
 const PROPERTY_EXCERPT = "Excerpt";
@@ -101,6 +102,41 @@ export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost> {
   return blogPost;
 }
 
+async function addDimensionsToImageBlocks(
+  blocks: GetBlockResponse[]
+): Promise<void[]> {
+  return await Promise.all(
+    blocks
+      .filter((block) => "type" in block && block.type === "image")
+      .map(async (block) => {
+        // @ts-ignore
+        const type = block.type;
+        const value = block[type];
+        const src =
+          value.type === "external"
+            ? value.external.url
+            : value.type === "file"
+            ? value.file.url
+            : null;
+        if (!src) {
+          return;
+        }
+        return probeImageSize(src)
+          .then(({ width, height }) => {
+            block[type] = {
+              ...value,
+              dim: { width, height },
+            };
+          })
+          .catch((error) => {
+            console.warn(error);
+            // Not a huge deal. If this fails, we won't have these and resort back to regular images
+            return;
+          });
+      })
+  );
+}
+
 export async function fetchAllBlocks(
   pageIdOrBlockId: string
 ): Promise<GetBlockResponse[]> {
@@ -108,6 +144,7 @@ export async function fetchAllBlocks(
     block_id: pageIdOrBlockId,
   });
   const blocks = result.results;
+
   // Retrieve block children for nested blocks (one level deep), for example toggle blocks
   // https://developers.notion.com/docs/working-with-page-content#reading-nested-blocks
   const childBlocks = await Promise.all(
@@ -133,6 +170,8 @@ export async function fetchAllBlocks(
     }
     return block;
   });
+
+  await addDimensionsToImageBlocks(blocksWithChildren);
 
   return blocksWithChildren;
 }

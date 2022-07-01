@@ -6,6 +6,7 @@ The prop `blocks` is a `GetBlockResponse` consisting of:
 * The blocks returned by [/v1/blocks/{block_id}/children](https://developers.notion.com/reference/get-block-children), passing the page ID.
 * Then executing it again for the blocks with children.
 * Combining the results adding the children blocks to their parents on the `[type].children` key.
+* We probe images to obtain their dimensions, necessay for Next.js image optimization and in any case useful to avoid CLS.
 
 ## Limitations
 

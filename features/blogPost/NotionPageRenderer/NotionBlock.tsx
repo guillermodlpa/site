@@ -11,6 +11,7 @@ import {
 import getConfig from "next/config";
 import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
+import Image from "next/image";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -103,6 +104,9 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
       case BLOCK_TYPES.IMAGE:
         const src =
           value.type === "external" ? value.external.url : value.file.url;
+        const alt = value.caption
+          ? getPlainText(value.caption)
+          : "Blog post image";
         return (
           <Box
             display="flex"
@@ -110,14 +114,19 @@ export default function NotionBlock({ block }: { block: GetBlockResponse }) {
             mb={PARAGRAPH_SPACING * 2}
           >
             <figure>
-              <img
-                src={src}
-                alt={
-                  value.caption
-                    ? getPlainText(value.caption)
-                    : "Blog post image"
-                }
-              />
+              {value.dim ? (
+                <Image
+                  src={src}
+                  layout="intrinsic"
+                  width={value.dim.width}
+                  height={value.dim.height}
+                  alt={alt}
+                />
+              ) : (
+                // If we don't have dimensions because image probbing failed, we fall back to regular image
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={src} alt={alt} />
+              )}
               {value.caption && (
                 <Text as="figcaption" variant="caption" mt={2}>
                   {renderRichText(value.caption)}
