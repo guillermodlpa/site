@@ -30,7 +30,7 @@ function Home() {
           justifyContent="center"
           my={"12.5vh"}
         >
-          <Heading as="h1" size="2xl" mb={8}>
+          <Heading as="h1" size="3xl" mb={8}>
             Guillermo de la Puente
           </Heading>
           <Heading as="h2" size="lg" mb={12}>

@@ -86,7 +86,7 @@ export default function NotionBlock({
           <>
             <Heading
               as="h2"
-              size="lg"
+              size="xl"
               mt={PARAGRAPH_SPACING * 3}
               mb={PARAGRAPH_SPACING}
             >
@@ -101,7 +101,12 @@ export default function NotionBlock({
         );
       case BLOCK_TYPES.HEADING_3:
         return (
-          <Heading as="h3" size="md" my={PARAGRAPH_SPACING * 2}>
+          <Heading
+            as="h3"
+            size="md"
+            fontWeight={"bold"}
+            my={PARAGRAPH_SPACING * 2}
+          >
             {renderRichText(value.rich_text)}
           </Heading>
         );
