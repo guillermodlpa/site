@@ -5,8 +5,12 @@ import BlogPostSummary from "./BlogPostSummary";
 export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
   return (
     <Container py={4} maxWidth="container.md">
-      {blogPosts.map((blogPost) => (
-        <BlogPostSummary key={blogPost.id} {...blogPost} />
+      {blogPosts.map((blogPost, index) => (
+        <BlogPostSummary
+          key={blogPost.id}
+          {...blogPost}
+          preloadImage={index < 5}
+        />
       ))}
     </Container>
   );
