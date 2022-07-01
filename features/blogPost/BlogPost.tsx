@@ -3,6 +3,7 @@ import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import NextLink from "next/link";
 import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost as BlogPostType } from "../../types/types";
+import formatDate from "../../utils/formatDate";
 import NotionPageRenderer from "./NotionPageRenderer";
 
 export default function BlogPost({
@@ -24,7 +25,7 @@ export default function BlogPost({
           as="time"
           dateTime={"todo format the date example: 2022-06-05T07:00:00-07:00"}
         >
-          {blogPost.datePublished}
+          {formatDate(blogPost.datePublished)}
         </Text>
       </header>
 

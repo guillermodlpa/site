@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import { getBlogPostPath } from "../../constants/paths";
 import { BlogPost } from "../../types/types";
+import formatDate from "../../utils/formatDate";
 
 export default function BlogPostSummary({
   slug,
@@ -37,10 +38,9 @@ export default function BlogPostSummary({
         )}
         <Box>
           <Text>
-            <Text
-              as="span"
-              variant="secondaryText"
-            >{`${datePublished} / `}</Text>
+            <Text as="span" variant="secondaryText">{`${formatDate(
+              datePublished
+            )} / `}</Text>
             {excerpt}{" "}
             <NextLink href={getBlogPostPath(slug)} passHref>
               <Link>Read more</Link>
