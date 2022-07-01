@@ -21,8 +21,7 @@ function wrapWithLink(content: string, href: string) {
     <Link
       href={href}
       isExternal={
-        !href.startsWith("/") &&
-        !href.startsWith(`https://${publicRuntimeConfig.SITE_DOMAIN}`)
+        !href.startsWith("/") && !href.startsWith(publicRuntimeConfig.SITE_URL)
       }
     >
       {content}

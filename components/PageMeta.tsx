@@ -28,7 +28,11 @@ export default function PageMeta({
       <meta name="description" content={truncatedContent} />
       <link
         rel="canonical"
-        href={`https://${publicRuntimeConfig.SITE_DOMAIN}${canonicalPath}`}
+        href={
+          canonicalPath.length > 0
+            ? `${publicRuntimeConfig.SITE_URL}${canonicalPath}`
+            : `${publicRuntimeConfig.SITE_URL}`
+        }
       />
       <meta name="description" content={truncatedContent} />
     </Head>
