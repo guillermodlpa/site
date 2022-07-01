@@ -101,6 +101,14 @@ const theme = {
         fontWeight: "normal",
         color: "neutral.600",
       },
+      sizes: {
+        "2xl": {
+          lineHeight: "shorter",
+        },
+        xl: {
+          lineHeight: "short",
+        },
+      },
     },
     Text: {
       baseStyle: {
