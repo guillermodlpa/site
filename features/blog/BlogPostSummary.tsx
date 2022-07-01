@@ -32,6 +32,7 @@ export default function BlogPostSummary({
               position: "relative",
               flexShrink: 0,
               width: ["100%", undefined, "25%"],
+              height: ["50vw", undefined, "auto"],
             }}
           >
             <Image
