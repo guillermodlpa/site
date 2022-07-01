@@ -86,7 +86,7 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
     sorts: [
       {
         property: PROPERTY_DATE_PUBLISHED,
-        direction: "ascending",
+        direction: "descending",
       },
     ],
   });
