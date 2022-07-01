@@ -23,13 +23,14 @@ export default function BlogPostSummary({
         <MagicalDivider height="2px" />
       </Box>
 
-      <Flex gap={8}>
+      <Flex gap={8} flexDirection={["column", undefined, "row"]}>
         {imageSrc && (
           <Box
             sx={{
-              width: "25%",
+              height: ["50vw", undefined, "auto"],
+              width: ["100%", undefined, "25%"],
               backgroundImage: `url(${imageSrc})`,
-              backgroundSize: "contain",
+              backgroundSize: ["cover", undefined, "contain"],
               backgroundPosition: "top center",
               backgroundRepeat: "no-repeat",
               flexShrink: 0,
