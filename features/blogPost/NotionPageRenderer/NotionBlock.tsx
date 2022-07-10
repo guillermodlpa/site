@@ -171,9 +171,7 @@ export default function NotionBlock({
       case BLOCK_TYPES.COLUMN:
         // These are just wrappers over children
         return null;
-        return;
       case BLOCK_TYPES.CALLOUT:
-        console.log(block);
         return (
           <Box
             as="aside"
@@ -189,7 +187,27 @@ export default function NotionBlock({
             <Text flexGrow={1}>{renderRichText(value.rich_text)}</Text>
           </Box>
         );
-      default:
+      case BLOCK_TYPES.BOOKMARK: {
+        // @TODO: unfurl these URLs to show more details on their preview.
+        // https://spencerwoo.com/blog/revisiting-blogging-with-notion-2022
+        return (
+          <Box
+            display="flex"
+            mb={PARAGRAPH_SPACING}
+            backgroundColor={"callout-background"}
+            p={3}
+            borderRadius="md"
+          >
+            <Text>
+              <Link isExternal href={value.url}>
+                {value.url || ""}
+              </Link>
+            </Text>
+          </Box>
+        );
+      }
+      default: {
+        console.log("Unsupported block", block);
         return (
           <>
             {`❌ Unsupported block (${
@@ -197,6 +215,7 @@ export default function NotionBlock({
             })`}
           </>
         );
+      }
     }
   };
 
