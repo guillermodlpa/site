@@ -17,7 +17,7 @@ const PROPERTY_TAGS = "Tags";
 const PROPERTY_NAME = "Name";
 
 function getTextValue(property: any): string | undefined {
-  return property.rich_text[0].plain_text ?? undefined;
+  return property?.rich_text?.[0]?.plain_text ?? undefined;
 }
 function getDateValue(property: any): string | undefined {
   return property.date.start ?? undefined;
@@ -48,7 +48,7 @@ function transformNotionPageIntoBlogPost(
   return {
     id: page.id,
     slug: getTextValue(page.properties[PROPERTY_SLUG]),
-    excerpt: getTextValue(page.properties[PROPERTY_EXCERPT]),
+    excerpt: getTextValue(page.properties[PROPERTY_EXCERPT]) || "",
     datePublished: getDateValue(page.properties[PROPERTY_DATE_PUBLISHED]),
     tags: getMultiSelectValues(page.properties[PROPERTY_TAGS]),
     title: getTitleValue(page.properties[PROPERTY_NAME]),
