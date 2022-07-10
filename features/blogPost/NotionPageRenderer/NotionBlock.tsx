@@ -198,7 +198,7 @@ export default function NotionBlock({
             p={3}
             borderRadius="md"
           >
-            <Text>
+            <Text wordBreak="break-word">
               <Link isExternal href={value.url}>
                 {value.url || ""}
               </Link>
