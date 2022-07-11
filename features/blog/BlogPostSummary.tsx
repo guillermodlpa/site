@@ -7,6 +7,17 @@ import { BlogPost } from "../../types/types";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateForUser from "../../utils/formatDateForUser";
 
+// note: we should only see future posts in dev mode
+function isNotPublishedYet(date: Date | string): boolean {
+  if (process.env.NODE_ENV !== "development") {
+    return false;
+  }
+  const dateObject = date instanceof Date ? date : new Date(date);
+  const valid = !isNaN(dateObject as unknown as number);
+  console.log(dateObject.getTime(), new Date().getTime());
+  return valid ? dateObject.getTime() > new Date().getTime() : false;
+}
+
 export default function BlogPostSummary({
   slug,
   title,
@@ -16,7 +27,10 @@ export default function BlogPostSummary({
   preloadImage,
 }: BlogPost & { preloadImage: boolean }) {
   return (
-    <Box mb={[12, undefined, 24]}>
+    <Box
+      mb={[12, undefined, 24]}
+      opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}
+    >
       <Box my={8}>
         <Heading as="h2" size="xl" mb={2}>
           <NextLink href={getBlogPostPath(slug)}>

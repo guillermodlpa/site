@@ -81,6 +81,17 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
             equals: true,
           },
         },
+        {
+          property: PROPERTY_DATE_PUBLISHED,
+          date:
+            process.env.NODE_ENV === "development"
+              ? {
+                  is_not_empty: true,
+                }
+              : {
+                  before: new Date().toISOString(),
+                },
+        },
       ],
     },
     sorts: [
