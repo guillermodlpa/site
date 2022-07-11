@@ -46,6 +46,7 @@ function renderRichText(richTextItems): JSX.Element[] {
       fontWeight={richText.annotations.bold ? "bold" : undefined}
       fontStyle={richText.annotations.italic ? "italic" : undefined}
       variant={richText.annotations.code ? "code" : undefined}
+      sx={{ whiteSpace: "pre-line" }}
     >
       {richText.text.link?.url
         ? wrapWithLink(richText.text.content, richText.text.link.url)
