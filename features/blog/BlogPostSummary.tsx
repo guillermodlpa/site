@@ -14,7 +14,6 @@ function isNotPublishedYet(date: Date | string): boolean {
   }
   const dateObject = date instanceof Date ? date : new Date(date);
   const valid = !isNaN(dateObject as unknown as number);
-  console.log(dateObject.getTime(), new Date().getTime());
   return valid ? dateObject.getTime() > new Date().getTime() : false;
 }
 
