@@ -14,6 +14,7 @@ const nextConfig = {
   images: {
     domains: [
       "s3.us-west-2.amazonaws.com", // Notion images
+      "res.cloudinary.com", // Images moved to Cloudinary
     ],
     minimumCacheTTL: 112492800, // 6 months. trying here that Next.js doesn't clear cache for iamges, as the Notion links are temporary
   },

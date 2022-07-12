@@ -21,7 +21,7 @@ As of 2022 July, these are some limitations of the Notion API that limit styling
 * Images can have a caption, but not an alt.
   * Workaround: use the caption text both as alt and below the image in a `figcaption` tag.
 * The URLs of images uploaded in Notion are temporary, and trying to optimize them with Next.js will likely cause reaching a limit.
-  * Alternative: don't use Next.js to optimize images hosted by Notion.
+  * Workaround: use a script to move all images from Notion to an external CDN, Cloudinary. [https://github.com/guillermodlpa/upload-notion-images-to-cloudinary](https://github.com/guillermodlpa/upload-notion-images-to-cloudinary)
   
 ## Resources
 
