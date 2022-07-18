@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import { getBlogPostPath } from "../../constants/paths";
 import { BlogPost } from "../../types/types";
+import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateForUser from "../../utils/formatDateForUser";
 
@@ -24,6 +25,7 @@ export default function BlogPostSummary({
   datePublished,
   excerpt,
   preloadImage,
+  tags,
 }: BlogPost & { preloadImage: boolean }) {
   return (
     <Box
@@ -69,7 +71,7 @@ export default function BlogPostSummary({
           //     flexShrink: 0,
           //   }}
         // /> */}
-        <Box>
+        <Flex flexDirection="column" gap={2}>
           <Text>
             <Text
               as="time"
@@ -78,13 +80,23 @@ export default function BlogPostSummary({
             >
               {formatDateForUser(datePublished)}
             </Text>
-            <Text as="span" variant="secondaryText">{` / `}</Text>
+            {tags.length > 0 && (
+              <>
+                <Text as="span" variant="secondaryText">
+                  {` / `}
+                  {tags.map(capitalizeString).join(", ")}
+                </Text>
+              </>
+            )}
+          </Text>
+
+          <Text>
             {excerpt}{" "}
             <NextLink href={getBlogPostPath(slug)} passHref>
               <Link>Read more</Link>
             </NextLink>
           </Text>
-        </Box>
+        </Flex>
       </Flex>
     </Box>
   );

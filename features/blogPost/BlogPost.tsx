@@ -3,6 +3,7 @@ import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import NextLink from "next/link";
 import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost as BlogPostType } from "../../types/types";
+import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateForUser from "../../utils/formatDateForUser";
 import NotionPageRenderer from "./NotionPageRenderer";
@@ -28,6 +29,14 @@ export default function BlogPost({
         >
           {formatDateForUser(blogPost.datePublished)}
         </Text>
+        {blogPost.tags.length > 0 && (
+          <>
+            <Text as="span" variant="secondaryText">
+              {` / `}
+              {blogPost.tags.map(capitalizeString).join(", ")}
+            </Text>
+          </>
+        )}
       </Box>
 
       <NotionPageRenderer blocks={blocks} />
