@@ -71,35 +71,22 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
       and: [
         {
           property: PROPERTY_PUBLISHED,
-          checkbox: {
-            equals: true,
-          },
+          checkbox: { equals: true },
         },
         {
           property: PROPERTY_LISTED,
-          checkbox: {
-            equals: true,
-          },
+          checkbox: { equals: true },
         },
         {
           property: PROPERTY_DATE_PUBLISHED,
           date:
             process.env.NODE_ENV === "development"
-              ? {
-                  is_not_empty: true,
-                }
-              : {
-                  before: new Date().toISOString(),
-                },
+              ? { is_not_empty: true }
+              : { before: new Date().toISOString() },
         },
       ],
     },
-    sorts: [
-      {
-        property: PROPERTY_DATE_PUBLISHED,
-        direction: "descending",
-      },
-    ],
+    sorts: [{ property: PROPERTY_DATE_PUBLISHED, direction: "descending" }],
   });
 
   // @todo: consider adding more pages here
