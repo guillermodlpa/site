@@ -11,7 +11,8 @@ function Home() {
       maxWidth="full"
       py={8}
       px="5vw"
-      minHeight="100vh"
+      // @ts-ignore
+      minHeight={[["100vh", "fill-available"]]}
       display="flex"
       flexDirection="column"
     >
@@ -20,7 +21,7 @@ function Home() {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        mb={[0, 20]}
+        mb={[0, 0, 0, 0, 0, 20]}
       >
         <MagicalDivider />
 

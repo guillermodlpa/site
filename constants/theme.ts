@@ -171,6 +171,14 @@ const theme = {
       },
     },
   },
+  styles: {
+    global: {
+      "html, body, #__next": {
+        minHeight: [["100vh", "fill-available"]], // account for iOS Safari viewport handling
+        height: "100%",
+      },
+    },
+  },
 };
 
 const chakraUITheme = extendTheme(theme);
