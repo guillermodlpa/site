@@ -34,8 +34,11 @@ function Home() {
           <Heading as="h1" size="3xl" mb={8}>
             Guillermo de la Puente
           </Heading>
-          <Heading as="h2" size="lg" mb={12}>
-            Engineering manager. Software developer
+          <Heading as="h2" size="lg" mb={2}>
+            Freelance Software Engineer
+          </Heading>
+          <Heading as="p" size="md" mb={8}>
+            TypeScript, React, Node
           </Heading>
 
           <Text mb={8} fontSize="xl">

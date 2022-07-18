@@ -108,6 +108,9 @@ const theme = {
         xl: {
           lineHeight: "short",
         },
+        lg: {
+          lineHeight: "base",
+        },
       },
     },
     Text: {
