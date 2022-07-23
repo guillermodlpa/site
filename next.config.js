@@ -25,6 +25,11 @@ const nextConfig = {
         destination: "/blog/what-do-collaborative-teams-have-in-common",
         permanent: true,
       },
+      {
+        source: "/blog/team-meetups-and-art-interpretation",
+        destination: "/blog/team-building-with-abstract-contemporary-art",
+        permanent: true,
+      },
     ];
   },
 };
