@@ -35,11 +35,11 @@ function Home() {
             Guillermo de la Puente
           </Heading>
           <Heading as="h2" size="lg" mb={2}>
-            Freelance Software Engineer
+            {`Freelance Software Engineer & Manager`}
           </Heading>
-          <Heading as="p" size="md" mb={8}>
+          <Text variant="secondaryText" size="md" mb={6}>
             TypeScript, React, Node
-          </Heading>
+          </Text>
 
           <Text mb={8} fontSize="xl">
             <NextLink href={PATH_BLOG} passHref>
