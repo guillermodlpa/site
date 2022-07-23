@@ -120,7 +120,7 @@ const theme = {
       },
       variants: {
         secondaryText: {
-          color: "neutral.400",
+          color: "neutral.500",
         },
         code: {
           fontFamily: "mono",
