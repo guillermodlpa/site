@@ -34,7 +34,7 @@ export default function BlogPostSummary({
     >
       <Box my={8}>
         <Heading as="h2" size="xl" mb={2}>
-          <NextLink href={getBlogPostPath(slug)}>
+          <NextLink href={getBlogPostPath(slug)} passHref>
             <Link variant="inheritColorKeepHover">{title}</Link>
           </NextLink>
         </Heading>
