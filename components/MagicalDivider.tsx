@@ -1,4 +1,4 @@
-import { As, Divider, keyframes } from "@chakra-ui/react";
+import { As, Box, Divider, keyframes } from "@chakra-ui/react";
 
 const BackgroundPositionOscilation = keyframes`
   0%{background-position:85% 0%}
@@ -9,17 +9,25 @@ const BackgroundPositionOscilation = keyframes`
 export default function MagicalDivider({
   as = "hr",
   height = 1,
+  mt,
   mb,
+  width = "100%",
 }: {
   as?: As;
   height?: number | string;
+  mt?: any;
   mb?: any;
+  width?: any;
 }) {
+  const Component = as === "hr" ? Divider : Box;
   return (
-    <Divider
+    <Component
       as={as}
       height={height}
       borderBottomWidth={0}
+      mt={mt}
+      width={width}
+      mx="auto"
       mb={mb}
       sx={{
         background: `linear-gradient(90deg, #F0D690, #11c093, #4d53e0, #B161EC, #d233cf, #F0D690)`,

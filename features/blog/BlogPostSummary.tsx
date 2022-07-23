@@ -28,17 +28,13 @@ export default function BlogPostSummary({
   tags,
 }: BlogPost & { preloadImage: boolean }) {
   return (
-    <Box
-      mb={[12, undefined, 24]}
-      opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}
-    >
-      <Box my={8}>
-        <Heading as="h2" size="xl" mb={2}>
+    <Box opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}>
+      <Box mb={6}>
+        <Heading as="h2" size="xl">
           <NextLink href={getBlogPostPath(slug)} passHref>
             <Link variant="inheritColorKeepHover">{title}</Link>
           </NextLink>
         </Heading>
-        <MagicalDivider height="2px" />
       </Box>
 
       <Flex gap={8} flexDirection={["column", undefined, "row"]}>
@@ -75,7 +71,7 @@ export default function BlogPostSummary({
           //     flexShrink: 0,
           //   }}
         // /> */}
-        <Flex flexDirection="column" gap={2}>
+        <Flex flexDirection="column" gap={4}>
           <Text>
             <Text
               as="time"

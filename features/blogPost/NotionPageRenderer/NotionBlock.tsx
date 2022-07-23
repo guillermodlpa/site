@@ -85,19 +85,21 @@ export default function NotionBlock({
       case BLOCK_TYPES.HEADING_2:
         return (
           <>
+            <MagicalDivider
+              height={"2px"}
+              width="25%"
+              as="div"
+              mt={PARAGRAPH_SPACING * 3}
+              mb={PARAGRAPH_SPACING * 3}
+            />
             <Heading
               as="h2"
               size="xl"
-              mt={PARAGRAPH_SPACING * 3}
-              mb={PARAGRAPH_SPACING}
+              // mt={PARAGRAPH_SPACING * 3}
+              mb={PARAGRAPH_SPACING * 2}
             >
               {renderRichText(value.rich_text)}
             </Heading>
-            <MagicalDivider
-              height={"2px"}
-              as="div"
-              mb={PARAGRAPH_SPACING * 2}
-            />
           </>
         );
       case BLOCK_TYPES.HEADING_3:
