@@ -21,21 +21,35 @@ export default function BlogPost({
         <Heading size="2xl" as="h1" mb={4} fontWeight="bold">
           {blogPost.title}
         </Heading>
+
+        {blogPost.tags.length > 0 && (
+          <>
+            <Text as="p" variant="secondaryText" mb={1}>
+              {blogPost.tags.map(capitalizeString).join(", ")}
+            </Text>
+          </>
+        )}
+
         <Text
           variant="secondaryText"
           mb={4}
           as="time"
           dateTime={formatDateForAttribute(blogPost.datePublished)}
         >
+          {`Published on `}
           {formatDateForUser(blogPost.datePublished)}
         </Text>
-        {blogPost.tags.length > 0 && (
-          <>
-            <Text as="span" variant="secondaryText">
-              {` / `}
-              {blogPost.tags.map(capitalizeString).join(", ")}
-            </Text>
-          </>
+
+        {blogPost.dateUpdated && (
+          <Text
+            variant="secondaryText"
+            mb={4}
+            as="time"
+            dateTime={formatDateForAttribute(blogPost.dateUpdated)}
+          >
+            {` / Updated on `}
+            {formatDateForUser(blogPost.dateUpdated)}
+          </Text>
         )}
       </Box>
 

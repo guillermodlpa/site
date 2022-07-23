@@ -13,6 +13,7 @@ const PROPERTY_EXCERPT = "Excerpt";
 const PROPERTY_PUBLISHED = "Published";
 const PROPERTY_LISTED = "Listed";
 const PROPERTY_DATE_PUBLISHED = "Date Published";
+const PROPERTY_DATE_UPDATED = "Date Updated";
 const PROPERTY_TAGS = "Tags";
 const PROPERTY_NAME = "Name";
 
@@ -20,7 +21,7 @@ function getTextValue(property: any): string | undefined {
   return property?.rich_text?.[0]?.plain_text ?? undefined;
 }
 function getDateValue(property: any): string | undefined {
-  return property.date.start ?? undefined;
+  return property?.date?.start ?? undefined;
 }
 function getMultiSelectValues(property: any): string[] | undefined {
   return property.multi_select.map((item) => item.name) ?? undefined;
@@ -50,6 +51,7 @@ function transformNotionPageIntoBlogPost(
     slug: getTextValue(page.properties[PROPERTY_SLUG]),
     excerpt: getTextValue(page.properties[PROPERTY_EXCERPT]) || "",
     datePublished: getDateValue(page.properties[PROPERTY_DATE_PUBLISHED]),
+    dateUpdated: getDateValue(page.properties[PROPERTY_DATE_UPDATED]) || null,
     tags: getMultiSelectValues(page.properties[PROPERTY_TAGS]),
     title: getTitleValue(page.properties[PROPERTY_NAME]),
     imageSrc: getCover(page),

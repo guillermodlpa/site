@@ -4,7 +4,7 @@ export default function formatDateForUser(date: Date | string): string {
   return valid
     ? dateObject.toLocaleDateString(undefined, {
         year: "numeric",
-        month: "short",
+        month: "long",
         day: "numeric",
       })
     : "";
