@@ -30,25 +30,19 @@ export default function BlogPost({
           </>
         )}
 
-        <Text
-          variant="secondaryText"
-          mb={4}
-          as="time"
-          dateTime={formatDateForAttribute(blogPost.datePublished)}
-        >
+        <Text variant="secondaryText" mb={4} as="span">
           {`Published on `}
-          {formatDateForUser(blogPost.datePublished)}
+          <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
+            {formatDateForUser(blogPost.datePublished)}
+          </time>
         </Text>
 
         {blogPost.dateUpdated && (
-          <Text
-            variant="secondaryText"
-            mb={4}
-            as="time"
-            dateTime={formatDateForAttribute(blogPost.dateUpdated)}
-          >
+          <Text variant="secondaryText" mb={4} as="span">
             {` / Updated on `}
-            {formatDateForUser(blogPost.dateUpdated)}
+            <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
+              {formatDateForUser(blogPost.dateUpdated)}
+            </time>
           </Text>
         )}
       </Box>
