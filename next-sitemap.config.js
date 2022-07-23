@@ -9,10 +9,11 @@ const PATH_BLOG = "/blog";
  * @param {string} slug
  * @returns {Promise<string | undefined>}
  */
-async function fetchBlogPostDatePublished(slug) {
+async function fetchBlogPostLastModDate(slug) {
   const PROPERTY_SLUG = "Slug";
   const PROPERTY_PUBLISHED = "Published";
   const PROPERTY_DATE_PUBLISHED = "Date Published";
+  const PROPERTY_DATE_UPDATED = "Date Updated";
 
   const notion = new Client({
     auth: process.env.NOTION_TOKEN,
@@ -41,7 +42,9 @@ async function fetchBlogPostDatePublished(slug) {
     process.stdout.write(`. Not date value`);
     return undefined;
   }
-  const formattedDate = new Date(datePublished).toISOString();
+  const dateUpdated = page.properties[PROPERTY_DATE_UPDATED]?.date?.start;
+  const lastModificationDate = dateUpdated || datePublished;
+  const formattedDate = new Date(lastModificationDate).toISOString();
   process.stdout.write(`. ${formattedDate}`);
   return formattedDate;
 }
@@ -58,7 +61,7 @@ const config = {
       changefreq: path === PATH_BLOG ? "weekly" : "monthly",
       priority: [PATH_ROOT, PATH_BLOG].includes(path) ? 1 : 0.7,
       lastmod: path.startsWith("/blog/")
-        ? await fetchBlogPostDatePublished(path.replace("/blog/", ""))
+        ? await fetchBlogPostLastModDate(path.replace("/blog/", ""))
         : new Date().toISOString(),
     };
   },
