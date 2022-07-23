@@ -88,7 +88,6 @@ export default function NotionBlock({
             <MagicalDivider
               height={"2px"}
               width="25%"
-              as="div"
               mt={PARAGRAPH_SPACING * 3}
               mb={PARAGRAPH_SPACING * 3}
             />

@@ -23,7 +23,7 @@ function Home() {
         justifyContent="center"
         mb={[0, 0, 0, 0, 0, 20]}
       >
-        <MagicalDivider />
+        <MagicalDivider as="div" />
 
         <Box
           display="flex"
@@ -50,7 +50,7 @@ function Home() {
           <SocialLinks />
         </Box>
 
-        <MagicalDivider />
+        <MagicalDivider as="div" />
       </Box>
     </Box>
   );

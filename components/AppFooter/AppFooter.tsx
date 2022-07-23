@@ -14,7 +14,7 @@ import SocialLinks from "../SocialLinks";
 export default function AppFooter() {
   return (
     <Container py={4} maxWidth="container.md">
-      <MagicalDivider />
+      <MagicalDivider as="div" />
 
       <Box py={4} display="flex" justifyContent="space-between" gap={4}>
         <Wrap>

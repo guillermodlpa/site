@@ -19,7 +19,7 @@ export default function AppNav() {
           </NextLink>
         </Text>
       </Box>
-      <MagicalDivider />
+      <MagicalDivider as="div" />
     </Container>
   );
 }
