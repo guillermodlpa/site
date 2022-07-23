@@ -114,13 +114,17 @@ export default function NotionBlock({
       case BLOCK_TYPES.BULLETED_LIST_ITEM:
         return (
           <UnorderedList mb={PARAGRAPH_SPACING}>
-            <ListItem>{renderRichText(value.rich_text)}</ListItem>
+            <ListItem>
+              <Text>{renderRichText(value.rich_text)}</Text>
+            </ListItem>
           </UnorderedList>
         );
       case BLOCK_TYPES.NUMBERED_LIST_ITEM:
         return (
           <OrderedList start={value.counter} mb={PARAGRAPH_SPACING}>
-            <ListItem>{renderRichText(value.rich_text)}</ListItem>
+            <ListItem>
+              <Text>{renderRichText(value.rich_text)}</Text>
+            </ListItem>
           </OrderedList>
         );
       case BLOCK_TYPES.QUOTE:
