@@ -51,13 +51,17 @@ export default function BlogPostSummary({
               height: ["50vw", undefined, "auto"],
             }}
           >
-            <Image
-              src={imageSrc}
-              layout="fill"
-              objectFit="contain"
-              alt={"Blog post thumbnail"}
-              priority={preloadImage}
-            />
+            <NextLink href={getBlogPostPath(slug)} passHref>
+              <a>
+                <Image
+                  src={imageSrc}
+                  layout="fill"
+                  objectFit="contain"
+                  alt={"Blog post thumbnail"}
+                  priority={preloadImage}
+                />
+              </a>
+            </NextLink>
           </Box>
         )}
         {/* // <Box
