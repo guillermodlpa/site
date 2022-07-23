@@ -27,7 +27,7 @@ function getMultiSelectValues(property: any): string[] | undefined {
   return property.multi_select.map((item) => item.name) ?? undefined;
 }
 function getTitleValue(property: any): string | undefined {
-  return property.title[0].plain_text ?? undefined;
+  return property?.title?.map((item) => item.plain_text).join("") ?? undefined;
 }
 function getCover(page: any): string | null {
   if (!page.cover) {
