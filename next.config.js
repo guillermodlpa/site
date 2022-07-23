@@ -18,6 +18,15 @@ const nextConfig = {
     ],
     minimumCacheTTL: 112492800, // 6 months. trying here that Next.js doesn't clear cache for iamges, as the Notion links are temporary
   },
+  async redirects() {
+    return [
+      {
+        source: "/blog/understanding-collaboration-good-and-bad",
+        destination: "/blog/what-do-collaborative-teams-have-in-common",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
