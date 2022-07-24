@@ -1,6 +1,6 @@
-import { useTheme, useToken } from "@chakra-ui/react";
+import { useToken } from "@chakra-ui/react";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { prism } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function CodeBlock({
   language,
