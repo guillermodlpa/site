@@ -69,25 +69,25 @@ const notion = new Client({
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
   const result = await notion.databases.query({
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
-    filter: {
-      and: [
-        {
-          property: PROPERTY_PUBLISHED,
-          checkbox: { equals: true },
-        },
-        {
-          property: PROPERTY_LISTED,
-          checkbox: { equals: true },
-        },
-        {
-          property: PROPERTY_DATE_PUBLISHED,
-          date:
-            process.env.NODE_ENV === "development"
-              ? { is_not_empty: true }
-              : { before: new Date().toISOString() },
-        },
-      ],
-    },
+    filter:
+      process.env.NODE_ENV === "development"
+        ? undefined
+        : {
+            and: [
+              {
+                property: PROPERTY_PUBLISHED,
+                checkbox: { equals: true },
+              },
+              {
+                property: PROPERTY_LISTED,
+                checkbox: { equals: true },
+              },
+              {
+                property: PROPERTY_DATE_PUBLISHED,
+                date: { before: new Date().toISOString() },
+              },
+            ],
+          },
     sorts: [{ property: PROPERTY_DATE_PUBLISHED, direction: "descending" }],
   });
 
@@ -107,19 +107,21 @@ export async function fetchBlogPostBySlug(
     page_size: 1,
     filter: {
       and: [
-        {
-          property: PROPERTY_PUBLISHED,
-          checkbox: {
-            equals: true,
-          },
-        },
+        process.env.NODE_ENV === "development"
+          ? undefined
+          : {
+              property: PROPERTY_PUBLISHED,
+              checkbox: {
+                equals: true,
+              },
+            },
         {
           property: PROPERTY_SLUG,
           rich_text: {
             equals: slug,
           },
         },
-      ],
+      ].filter(Boolean),
     },
   });
   if (result.results.length === 0) {
