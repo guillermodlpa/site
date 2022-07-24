@@ -13,6 +13,7 @@ import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import Image from "next/image";
 import MagicalDivider from "../../../components/MagicalDivider";
+import CodeBlock from "./CodeBlock";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -211,6 +212,11 @@ export default function NotionBlock({
             </Text>
           </Box>
         );
+      }
+      case BLOCK_TYPES.CODE: {
+        const language = value.language;
+        const code = getPlainText(value.rich_text);
+        return <CodeBlock language={language}>{code}</CodeBlock>;
       }
       default: {
         console.log("Unsupported block", block);
