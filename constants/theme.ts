@@ -93,6 +93,14 @@ const theme = {
         _dark: "whiteAlpha.300",
         _light: "blackAlpha.50",
       },
+      "callout-background-focused": {
+        _dark: "whiteAlpha.400",
+        _light: "blackAlpha.200",
+      },
+      border: {
+        _dark: "neutral.900",
+        _light: "neutral.100",
+      },
     },
   },
   components: {

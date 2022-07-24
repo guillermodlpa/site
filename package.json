@@ -31,7 +31,8 @@
     "probe-image-size": "^7.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-syntax-highlighter": "^15.5.0"
+    "react-syntax-highlighter": "^15.5.0",
+    "unfurl.js": "^5.7.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

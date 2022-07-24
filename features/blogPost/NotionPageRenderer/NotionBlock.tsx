@@ -14,6 +14,7 @@ import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import Image from "next/image";
 import MagicalDivider from "../../../components/MagicalDivider";
 import CodeBlock from "./CodeBlock";
+import BookmarkBlock from "./BookmarkBlock";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -197,21 +198,7 @@ export default function NotionBlock({
       case BLOCK_TYPES.BOOKMARK: {
         // @TODO: unfurl these URLs to show more details on their preview.
         // https://spencerwoo.com/blog/revisiting-blogging-with-notion-2022
-        return (
-          <Box
-            display="flex"
-            mb={PARAGRAPH_SPACING}
-            backgroundColor={"callout-background"}
-            p={3}
-            borderRadius="md"
-          >
-            <Text wordBreak="break-word">
-              <Link isExternal href={value.url}>
-                {value.url || ""}
-              </Link>
-            </Text>
-          </Box>
-        );
+        return <BookmarkBlock url={value.url} />;
       }
       case BLOCK_TYPES.CODE: {
         const language = value.language;
