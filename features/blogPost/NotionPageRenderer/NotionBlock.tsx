@@ -1,70 +1,19 @@
-import {
-  Box,
-  Divider,
-  Heading,
-  Link,
-  ListItem,
-  OrderedList,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
-import getConfig from "next/config";
+import { Box } from "@chakra-ui/react";
 import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
-import Image from "next/image";
-import MagicalDivider from "../../../components/MagicalDivider";
-import CodeBlock from "./CodeBlock";
-import BookmarkBlock from "./BookmarkBlock";
-
-const { publicRuntimeConfig } = getConfig();
-
-function wrapWithLink(content: string, href: string) {
-  return (
-    <Link
-      href={href}
-      isExternal={
-        !href.startsWith("/") && !href.startsWith(publicRuntimeConfig.SITE_URL)
-      }
-    >
-      {content}
-    </Link>
-  );
-}
-
-function renderRichText(richTextItems): JSX.Element[] {
-  return richTextItems.map((richText, index) => (
-    <Text
-      key={`${index}`}
-      as={
-        richText.annotations.code
-          ? "code"
-          : richText.annotations.bold
-          ? "strong"
-          : richText.annotations.italic
-          ? "i"
-          : "span"
-      }
-      fontSize="inherit"
-      fontWeight={richText.annotations.bold ? "bold" : undefined}
-      fontStyle={richText.annotations.italic ? "italic" : undefined}
-      variant={richText.annotations.code ? "code" : undefined}
-      sx={{ whiteSpace: "pre-line" }}
-    >
-      {richText.text.link?.url
-        ? wrapWithLink(richText.text.content, richText.text.link.url)
-        : richText.text.content}
-    </Text>
-  ));
-}
-
-function getPlainText(richTextItems): string {
-  return richTextItems.reduce(
-    (memo, richText) => `${memo}${richText.plain_text}`,
-    ""
-  );
-}
-
-const PARAGRAPH_SPACING = 4;
+import CodeBlock from "./components/CodeBlock";
+import BookmarkBlock from "./components/BookmarkBlock";
+import getPlainText from "./utils/getPlainText";
+import ParagraphBlock from "./components/ParagraphBlock";
+import Heading1Block from "./components/Heading1Block";
+import Heading2Block from "./components/Heading2Block";
+import Heading3Block from "./components/Heading3Block";
+import BulletedListItemBlock from "./components/BulletedListItemBlock";
+import NumberedListItemBlock from "./components/NumberedListItemBlock";
+import QuoteBlock from "./components/QuoteBlock";
+import ImageBlock from "./components/ImageBlock";
+import DividerBlock from "./components/DividerBlock";
+import CalloutBlock from "./components/CalloutBlock";
 
 export default function NotionBlock({
   block,
@@ -79,132 +28,53 @@ export default function NotionBlock({
   const renderBlock = () => {
     switch (type) {
       case BLOCK_TYPES.PARAGRAPH:
-        return (
-          <Text mb={PARAGRAPH_SPACING}>{renderRichText(value.rich_text)}</Text>
-        );
+        return <ParagraphBlock richTextItems={value.rich_text} />;
       case BLOCK_TYPES.HEADING_1:
-        return <>❌ No h1s allowed</>;
+        return <Heading1Block />;
       case BLOCK_TYPES.HEADING_2:
-        return (
-          <>
-            <MagicalDivider
-              height={"2px"}
-              width="25%"
-              mt={PARAGRAPH_SPACING * 3}
-              mb={PARAGRAPH_SPACING * 3}
-            />
-            <Heading
-              as="h2"
-              size="xl"
-              // mt={PARAGRAPH_SPACING * 3}
-              mb={PARAGRAPH_SPACING * 2}
-            >
-              {renderRichText(value.rich_text)}
-            </Heading>
-          </>
-        );
+        return <Heading2Block richTextItems={value.rich_text} />;
       case BLOCK_TYPES.HEADING_3:
-        return (
-          <Heading
-            as="h3"
-            size="md"
-            fontWeight={"bold"}
-            my={PARAGRAPH_SPACING * 2}
-          >
-            {renderRichText(value.rich_text)}
-          </Heading>
-        );
+        return <Heading3Block richTextItems={value.rich_text} />;
       case BLOCK_TYPES.BULLETED_LIST_ITEM:
-        return (
-          <UnorderedList mb={PARAGRAPH_SPACING}>
-            <ListItem>
-              <Text>{renderRichText(value.rich_text)}</Text>
-            </ListItem>
-          </UnorderedList>
-        );
+        return <BulletedListItemBlock richTextItems={value.rich_text} />;
       case BLOCK_TYPES.NUMBERED_LIST_ITEM:
         return (
-          <OrderedList start={value.counter} mb={PARAGRAPH_SPACING}>
-            <ListItem>
-              <Text>{renderRichText(value.rich_text)}</Text>
-            </ListItem>
-          </OrderedList>
+          <NumberedListItemBlock
+            richTextItems={value.rich_text}
+            position={value.counter}
+          />
         );
       case BLOCK_TYPES.QUOTE:
-        return (
-          <Text as="blockquote" mb={PARAGRAPH_SPACING} variant="quoteBlock">
-            {renderRichText(value.rich_text)}
-          </Text>
-        );
+        return <QuoteBlock richTextItems={value.rich_text} />;
       case BLOCK_TYPES.IMAGE:
-        const src =
-          value.type === "external" ? value.external.url : value.file.url;
-        const alt = value.caption
-          ? getPlainText(value.caption)
-          : "Blog post image";
         return (
-          <Box
-            display="flex"
-            justifyContent="center"
-            mb={PARAGRAPH_SPACING * 2}
-          >
-            <figure>
-              {value.dim ? (
-                <Image
-                  src={src}
-                  layout="intrinsic"
-                  width={value.dim.width}
-                  height={value.dim.height}
-                  alt={alt}
-                  priority={likelyAboveTheFold}
-                />
-              ) : (
-                // If we don't have dimensions because image probbing failed, we fall back to regular image
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={src} alt={alt} />
-              )}
-              {value.caption && (
-                <Text as="figcaption" variant="caption" mt={2}>
-                  {renderRichText(value.caption)}
-                </Text>
-              )}
-            </figure>
-          </Box>
+          <ImageBlock
+            src={
+              value.type === "external" ? value.external.url : value.file.url
+            }
+            priority={likelyAboveTheFold}
+            dimensions={value.dim}
+            captionRichTextItems={value.caption}
+          />
         );
       case BLOCK_TYPES.DIVIDER:
-        return (
-          <Divider mt={PARAGRAPH_SPACING * 2} mb={PARAGRAPH_SPACING * 2} />
-        );
+        return <DividerBlock />;
       case BLOCK_TYPES.COLUMN_LIST:
       case BLOCK_TYPES.COLUMN:
         // These are just wrappers over children
         return null;
       case BLOCK_TYPES.CALLOUT:
         return (
-          <Box
-            as="aside"
-            display="flex"
-            mb={PARAGRAPH_SPACING}
-            backgroundColor={"callout-background"}
-            p={3}
-            borderRadius="md"
-          >
-            <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
-              {value.icon?.type === "emoji" ? value.icon.emoji : ""}
-            </Text>
-            <Text flexGrow={1}>{renderRichText(value.rich_text)}</Text>
-          </Box>
+          <CalloutBlock richTextItems={value.rich_text} icon={value.icon} />
         );
-      case BLOCK_TYPES.BOOKMARK: {
-        // @TODO: unfurl these URLs to show more details on their preview.
-        // https://spencerwoo.com/blog/revisiting-blogging-with-notion-2022
+      case BLOCK_TYPES.BOOKMARK:
         return <BookmarkBlock url={value.url} />;
-      }
-      case BLOCK_TYPES.CODE: {
-        const language = value.language;
-        const code = getPlainText(value.rich_text);
-        return <CodeBlock language={language}>{code}</CodeBlock>;
-      }
+      case BLOCK_TYPES.CODE:
+        return (
+          <CodeBlock language={value.language}>
+            {getPlainText(value.rich_text)}
+          </CodeBlock>
+        );
       default: {
         console.log("Unsupported block", block);
         return (

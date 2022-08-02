@@ -1,5 +1,5 @@
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
-import { NUMBERED_LIST_ITEM } from "./blockTypes";
+import { NUMBERED_LIST_ITEM } from "../blockTypes";
 
 /**
  * Adds a `counter` property in the numbered list items, so we can have number indexes with them

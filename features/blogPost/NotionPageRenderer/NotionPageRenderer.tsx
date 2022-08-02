@@ -1,6 +1,6 @@
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import { memo } from "react";
-import addNumberedListItemCounters from "./addNumberedListItemCounters";
+import addNumberedListItemCounters from "./utils/addNumberedListItemCounters";
 import NotionBlock from "./NotionBlock";
 
 function NotionPageRenderer({ blocks }: { blocks: GetBlockResponse[] }) {
