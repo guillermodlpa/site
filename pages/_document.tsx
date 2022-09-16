@@ -49,7 +49,7 @@ class MyDocument extends Document {
             async
             defer
             data-website-id={publicRuntimeConfig.UMAMI_WEBSITE_ID}
-            data-domains="guillermodlpa.com,guillermodelapuente.com"
+            data-domains="guillermodlpa.com"
             src="https://umami-pvn48eb4t-guillermodlpa.vercel.app/umami.js"
           ></script>
         </Head>
