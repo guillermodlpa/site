@@ -1,8 +1,8 @@
-import { Box, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
-import { PATH_BLOG } from "../../constants/paths";
+import { PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
 
 function Home() {
   return (
@@ -35,17 +35,21 @@ function Home() {
             Guillermo de la Puente
           </Heading>
           <Heading as="h2" size="lg" mb={2}>
-            {`Freelance Software Engineer & Manager`}
+            {`Freelance Frontend Engineer & Manager`}
           </Heading>
           <Text variant="secondaryText" size="md" mb={6}>
             TypeScript, React, Node
           </Text>
 
-          <Text mb={8} fontSize="xl">
+          <Flex as="nav" mb={8} gap={3}>
             <NextLink href={PATH_BLOG} passHref>
-              <Link>Blog</Link>
+              <Link fontSize="xl">Blog</Link>
             </NextLink>
-          </Text>
+
+            <NextLink href={PATH_PORTFOLIO} passHref>
+              <Link fontSize="xl">Portfolio</Link>
+            </NextLink>
+          </Flex>
 
           <SocialLinks />
         </Box>

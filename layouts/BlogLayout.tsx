@@ -7,16 +7,18 @@ import AppNav from "../components/AppNav";
  */
 export default function BlogLayout({
   children,
+  fullWidth = false,
 }: {
   children: React.ReactNode;
+  fullWidth?: boolean;
 }) {
   return (
     <>
-      <AppNav />
+      <AppNav fullWidth={fullWidth} />
 
       {children}
 
-      <AppFooter />
+      <AppFooter fullWidth={fullWidth} />
     </>
   );
 }

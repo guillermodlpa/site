@@ -6,7 +6,9 @@ function HomePage() {
     <>
       <PageMeta
         canonicalPath={""}
-        title="Guillermo de la Puente - Engineering manager. Software developer"
+        title={
+          "Guillermo de la Puente - Freelance Frontend Engineer - TypeScript, React, Node"
+        }
         description={
           "Blog and portfolio site. Check out my work, and learn about management and software engineering tips."
         }
@@ -14,6 +16,6 @@ function HomePage() {
       <Home />
     </>
   );
-}
+} 
 
 export default HomePage;

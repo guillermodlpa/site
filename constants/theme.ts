@@ -75,6 +75,10 @@ const theme = {
         _dark: "whiteAlpha.900",
         _light: "neutral.800",
       },
+      "chakra-body-text-secondary": {
+        _dark: "whiteAlpha.600",
+        _light: "neutral.500",
+      },
       "chakra-border-color": {
         _dark: "whiteAlpha.300",
         _light: "neutral.200",
