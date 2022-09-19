@@ -145,7 +145,12 @@ export default function PersonalProjectLayout({
             objectFit="scale-down"
           />
         </Box>
-        <Text as="h4" textAlign="center" color={colors.subheadline}>
+        <Text
+          as="h4"
+          textAlign="center"
+          color={colors.subheadline}
+          whiteSpace="pre-line"
+        >
           {subheadline}
         </Text>
         <Box position={"static"} top={"auto"} right={"auto"} mb={"6"}>

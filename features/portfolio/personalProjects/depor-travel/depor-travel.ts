@@ -13,7 +13,7 @@ const deporTravelProject: PersonalProject = {
   date: "2022",
   logo: deporTravelLogo,
   logoAlt: "depor.travel",
-  subheadline: "Travel and sport. Two passions, one portal",
+  subheadline: "Travel and sport.\nTwo passions, one portal",
   technologies: ["Next.js", "next-i18n", "Google Sheets", "Webflow"],
   colors: {
     accent: "#ef3d21",
