@@ -11,11 +11,22 @@ export default function DevicePreviews({
   mobileImage,
   desktopImage,
   mobileAppBarColor,
+  mb,
 }: {
-  mobileImage: StaticImageData;
-  desktopImage: StaticImageData;
+  mobileImage?: StaticImageData;
+  desktopImage?: StaticImageData;
   mobileAppBarColor: string;
+  mb?: any;
 }) {
+  const desktopFramePositioning =
+    desktopImage && mobileImage
+      ? { top: "20%", left: "30%" }
+      : { top: "0%", left: "0%" };
+  const mobileFramePositioning =
+    desktopImage && mobileImage
+      ? { width: "60%", left: "30%", top: "50%" }
+      : { width: "80%", left: "50%", top: "50%" };
+
   const mobileContainerRef = useRef<HTMLDivElement>();
   const desktopContainerRef = useRef<HTMLDivElement>();
   const [devicesContainerHeight, setDevicesContainerHeight] = useState<number>(
@@ -24,13 +35,18 @@ export default function DevicePreviews({
   useEffect(() => {
     function apply() {
       const mobileBoundingRect =
-        mobileContainerRef.current.getBoundingClientRect();
+        mobileContainerRef.current?.getBoundingClientRect();
       const desktopBoundingRect =
-        desktopContainerRef.current.getBoundingClientRect();
-      const top = Math.min(mobileBoundingRect.top, desktopBoundingRect.top);
+        desktopContainerRef.current?.getBoundingClientRect();
+      const top = Math.min(
+        ...[mobileBoundingRect?.top, desktopBoundingRect?.top].filter(
+          (value) => value != undefined
+        )
+      );
       const bottom = Math.max(
-        mobileBoundingRect.bottom,
-        desktopBoundingRect.bottom
+        ...[mobileBoundingRect?.bottom, desktopBoundingRect?.bottom].filter(
+          (value) => value != undefined
+        )
       );
       const height = Math.ceil(bottom - top);
       setDevicesContainerHeight(height);
@@ -43,56 +59,63 @@ export default function DevicePreviews({
   }, [mobileContainerRef, desktopContainerRef]);
 
   return (
-    <Box position="relative" height={devicesContainerHeight}>
-      <Box position="absolute" top="10vh" left="15vw" ref={desktopContainerRef}>
+    <Box position="relative" height={devicesContainerHeight} mb={mb}>
+      {desktopImage && (
         <Box
           position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
-          borderRadius="0.2rem"
-          overflow="hidden"
-          height="89%"
-          width="76%"
+          {...desktopFramePositioning}
+          ref={desktopContainerRef}
         >
-          <Image src={desktopImage} alt="screenshot" />
+          <Box
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-50%, -50%)"
+            borderRadius="0.2rem"
+            overflow="hidden"
+            height="89%"
+            width="76%"
+          >
+            <Image src={desktopImage} alt="screenshot" />
+          </Box>
+          <Image src={macFrame} alt="laptop frame" />
         </Box>
-        <Image src={macFrame} alt="laptop frame" />
-      </Box>
+      )}
 
-      <Box
-        position="absolute"
-        top="0"
-        left="0"
-        width="60%"
-        ref={mobileContainerRef}
-      >
-        <Box
-          height="3%"
-          width="43%"
-          position="absolute"
-          left="49.8%"
-          transform="translate(-50%, 0)"
-          top="3.2%"
-          backgroundColor={mobileAppBarColor}
-          borderTopLeftRadius="1rem"
-          borderTopRightRadius="1rem"
-        />
+      {mobileImage && (
         <Box
           position="absolute"
-          top="50%"
-          left="49.8%"
+          {...mobileFramePositioning}
           transform="translate(-50%, -50%)"
-          borderBottomLeftRadius="1rem"
-          borderBottomRightRadius="1rem"
-          overflow="hidden"
-          height="88.5%"
-          width="43%"
+          ref={mobileContainerRef}
         >
-          <Image src={mobileImage} alt="screenshot" />
+          <Box
+            height="3%"
+            width="43%"
+            position="absolute"
+            left="49.8%"
+            transform="translate(-50%, 0)"
+            top="3.2%"
+            backgroundColor={mobileAppBarColor}
+            borderTopLeftRadius="1rem"
+            borderTopRightRadius="1rem"
+          />
+          <Box
+            position="absolute"
+            top="50%"
+            left="49.8%"
+            transform="translate(-50%, -50%)"
+            borderBottomLeftRadius="1rem"
+            borderBottomRightRadius="1rem"
+            overflow="hidden"
+            height="88.5%"
+            width="43%"
+          >
+            <Image src={mobileImage} alt="screenshot" />
+          </Box>
+          <Image src={iphoneFrame} alt="phone frame" />
         </Box>
-        <Image src={iphoneFrame} alt="phone frame" />
-      </Box>
+      )}
     </Box>
   );
 }

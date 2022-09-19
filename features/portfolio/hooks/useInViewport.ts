@@ -14,7 +14,7 @@ export default function useInViewport(ref: MutableRefObject<HTMLElement>) {
     const observer = new IntersectionObserver(callback, {
       root: null, // viewport
       rootMargin: "0px",
-      threshold: 0.25,
+      threshold: 0,
     });
     observer.observe(ref.current);
 

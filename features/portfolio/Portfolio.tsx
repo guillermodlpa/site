@@ -1,27 +1,30 @@
-import TableOfContents from "./TableOfContents";
-
-import ProfessionalProjectLayout from "./ProfessionalProjectLayout";
+import ProfessionalProjectLayout from "./professionalProjects/ProfessionalProjectLayout";
 import React from "react";
-import { Box, Divider, Text } from "@chakra-ui/react";
-import professionalProjects from "./data/professionalProjects";
+import { Flex } from "@chakra-ui/react";
+import professionalProjects from "./professionalProjects/professionalProjects";
 import MagicalDivider from "../../components/MagicalDivider";
+import personalProjects from "./personalProjects/personalProjects";
+import PersonalProjectLayout from "./personalProjects/PersonalProjectLayout";
 
 export default function Portfolio() {
   return (
     <>
-      {/* <TableOfContents /> */}
-
       {professionalProjects.map((project, index) => (
         <React.Fragment key={project.name}>
-          {/* <Divider /> */}
           <ProfessionalProjectLayout {...project} />
           {index + 1 < professionalProjects.length && (
-            <Box px={4}>
-              <MagicalDivider />
-            </Box>
+            <MagicalDivider mx={4} width="auto" />
           )}
         </React.Fragment>
       ))}
+
+      <MagicalDivider mx={4} width="auto" />
+
+      <Flex flexWrap="wrap" justifyContent="center">
+        {personalProjects.map((project) => (
+          <PersonalProjectLayout key={project.name} {...project} />
+        ))}
+      </Flex>
     </>
   );
 }

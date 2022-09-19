@@ -11,12 +11,14 @@ export default function MagicalDivider({
   height = 1,
   mt,
   mb,
+  mx = "auto",
   width = "100%",
 }: {
   as?: As;
   height?: number | string;
   mt?: any;
   mb?: any;
+  mx?: any;
   width?: any;
 }) {
   const Component = as === "hr" ? Divider : Box;
@@ -27,7 +29,7 @@ export default function MagicalDivider({
       borderBottomWidth={0}
       mt={mt}
       width={width}
-      mx="auto"
+      mx={mx}
       mb={mb}
       sx={{
         background: `linear-gradient(90deg, #F0D690, #11c093, #4d53e0, #B161EC, #d233cf, #F0D690)`,
