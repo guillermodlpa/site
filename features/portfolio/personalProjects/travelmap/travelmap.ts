@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
 import { PersonalProject } from "../personalProjects";
 
+import Description from "./travelmap-description.mdx";
 import travelmapMobile from "./travelmap-mobile.png";
 import travelmapLogo from "./travelmap-logo.png";
 import travelmapBackground from "./travelmap-background.png";
@@ -27,6 +27,7 @@ const travelmapProject: PersonalProject = {
     accentHightlighted: "rgb(17, 47, 106)",
     accentHightlightedForeground: "rgb(252, 245, 229)",
     subheadline: "rgb(15, 15, 15)",
+    body: "rgb(15, 15, 15)",
     background: "rgb(228, 207, 188)",
     mobileAppBar: "rgb(137, 148, 154)",
   },
@@ -39,15 +40,7 @@ const travelmapProject: PersonalProject = {
   ],
   mobileImage: travelmapMobile,
   desktopImage: null,
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        This was a pet project to learn Auth0 for user authentication,
-        Planetscale as distributed database, Mapbox for map visualization and
-        interactions, and the UI component library Grommet.
-      </Text>
-    </>
-  ),
+  Description,
   backgroundImage: {
     src: travelmapBackground,
     layout: "fill",

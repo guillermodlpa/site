@@ -9,7 +9,7 @@ export type ProfessionalProject = {
   name: string;
   subheadline: string;
   anchorId: string;
-  content: JSX.Element;
+  Description: (props: any) => JSX.Element;
   technologies: string[];
   url: string;
   buttonLabel: string;
@@ -20,6 +20,7 @@ export type ProfessionalProject = {
     accentHightlighted: string;
     accentHightlightedForeground: string;
     subheadline: string;
+    body: string;
     background: string;
     mobileAppBar: string;
   };

@@ -1,14 +1,7 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Link,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRef } from "react";
+import { MDXProvider } from "@mdx-js/react";
 
 import DevicePreviews from "../DevicePreviews";
 import useInViewport from "../hooks/useInViewport";
@@ -18,6 +11,7 @@ import OpacitySlideFade from "../OpacitySlideFade";
 import professionalProjects from "./professionalProjects";
 import VideoPopupButton from "../VideoPopupButton";
 import Technologies from "../Technologies";
+import useMarkdownComponents from "../hooks/useMarkdownComponents";
 
 export default function ProfessionalProjectLayout({
   logo,
@@ -25,7 +19,7 @@ export default function ProfessionalProjectLayout({
   name,
   anchorId,
   subheadline,
-  content,
+  Description,
   technologies,
   url,
   buttonLabel,
@@ -53,6 +47,8 @@ export default function ProfessionalProjectLayout({
       borderColor: colors.accentHightlightedForeground,
     },
   };
+
+  const markdownComponents = useMarkdownComponents({ colors });
 
   const sectionRef = useRef<HTMLDivElement>();
   const backgroundRef = useRef<HTMLDivElement>();
@@ -165,11 +161,16 @@ export default function ProfessionalProjectLayout({
         </Box>
 
         <Box width={{ base: "100%", md: "35%" }} zIndex={1}>
-          <Box mb={10}>{content}</Box>
+          <MDXProvider components={markdownComponents}>
+            <Box mb={10}>
+              <Description />
+            </Box>
+          </MDXProvider>
 
           <Technologies
             technologies={technologies}
             borderColor={colors.accent}
+            bodyColor={colors.body}
             backgroundColor={colors.accentForeground}
             alignment={{ base: "center", md: "flex-end" }}
           />

@@ -20,6 +20,7 @@ export type PersonalProject = {
     accentHightlighted: string;
     accentHightlightedForeground: string;
     subheadline: string;
+    body: string;
     background: string;
     mobileAppBar: string;
   };
@@ -32,7 +33,7 @@ export type PersonalProject = {
     | null;
   mobileImage: StaticImageData;
   desktopImage: StaticImageData;
-  content: JSX.Element;
+  Description: (props: any) => JSX.Element;
   backgroundImage: {
     src: StaticImageData;
     layout: "responsive" | "fill" | "fixed" | "intrinsic" | "raw";

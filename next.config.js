@@ -34,4 +34,13 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+    providerImportSource: "@mdx-js/react", // for using MDXProvider
+  },
+});
+
+module.exports = withMDX(nextConfig);

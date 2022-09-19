@@ -1,6 +1,6 @@
-import { Link, Text } from "@chakra-ui/react";
 import { PersonalProject } from "../personalProjects";
 
+import Description from "./quatro-description.mdx";
 import quatroLogo from "./quatro-logo.webp";
 import quatroDesktop from "./quatro-desktop.png";
 
@@ -28,6 +28,7 @@ const quatroProject: PersonalProject = {
     accentHightlighted: "rgba(38, 53, 115, 0.5)",
     accentHightlightedForeground: "white",
     subheadline: "#605E5E",
+    body: "rgb(82, 82, 82)",
     background: "rgb(250, 250, 250)",
     mobileAppBar: "white",
   },
@@ -50,26 +51,7 @@ const quatroProject: PersonalProject = {
   ],
   mobileImage: null,
   desktopImage: quatroDesktop,
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        With 2 other non-technical cofounders, we built Quatro as a web
-        application for managing tasks and scheduling them, with a{" "}
-        <strong>calendar display</strong>, repeating tasks, an{" "}
-        <strong>integration with Google Calendar</strong>,
-        <strong>desktop notifications</strong>, plenty of keyboard shortcuts,
-        and a <strong>native desktop app</strong> using{" "}
-        <Link isExternal href="https://www.todesktop.com/">
-          ToDesktop
-        </Link>
-        .
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        The project is currently abandoned and its code left open source for
-        others to learn from.
-      </Text>
-    </>
-  ),
+  Description,
   backgroundImage: null,
   backgroundOverlay: null,
 };

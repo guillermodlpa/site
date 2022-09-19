@@ -4,11 +4,13 @@ export default function Technologies({
   technologies,
   borderColor,
   backgroundColor,
+  bodyColor,
   alignment,
 }: {
   technologies: string[];
   borderColor: string;
   backgroundColor: string;
+  bodyColor: string;
   alignment: ResponsiveValue<"center" | "flex-end" | "flex-start">;
 }) {
   return (
@@ -28,6 +30,7 @@ export default function Technologies({
       {technologies.map((technology) => (
         <ListItem
           key={technology}
+          color={bodyColor}
           borderRadius="1rem"
           borderWidth={1}
           borderColor={borderColor}

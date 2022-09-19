@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
 import { PersonalProject } from "../personalProjects";
 
+import Description from "./notion-powered-blog-description.mdx";
 import notionPoweredBlogLogo from "./notion-powered-blog-logo.png";
 import notionPoweredBlogDesktop from "./notion-powered-blog-desktop.png";
 import notionPoweredBlogMobile from "./notion-powered-blog-mobile.png";
@@ -20,6 +20,7 @@ const notionPoweredBlogProject: PersonalProject = {
     accentHightlighted: "#f457d3",
     accentHightlightedForeground: "white",
     subheadline: "#495c6a",
+    body: "#1c2831",
     background: "white",
     mobileAppBar: "white",
   },
@@ -37,20 +38,7 @@ const notionPoweredBlogProject: PersonalProject = {
   ],
   mobileImage: notionPoweredBlogMobile,
   desktopImage: notionPoweredBlogDesktop,
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        Notion is a project management and note-taking software platform. Since
-        they launched their API, it can be used as a database for rich text
-        documents, and so it&quot;s a backend for a blog.
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        With Next.js Static-Site-Generation, we just need to pull the blog posts
-        from the Notion API at build time, build the sitemap, and then make a
-        renderer to display the post as we want.
-      </Text>
-    </>
-  ),
+  Description,
   backgroundImage: null,
   backgroundOverlay: null,
 };

@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
 import { PersonalProject } from "../personalProjects";
 
+import Description from "./kikiricoin-description.mdx";
 import kikiriCoinLogo from "./kikiricoin-logo.webp";
 import kikiriCoinMobile from "./kikiricoin-mobile.png";
 import kikiriCoinDesktop from "./kikiricoin-desktop.png";
@@ -20,6 +20,7 @@ const kikiriCoinProject: PersonalProject = {
     accentHightlighted: "#6d1415",
     accentHightlightedForeground: "white",
     subheadline: "#343434",
+    body: "#343434",
     background: "white",
     mobileAppBar: "white",
   },
@@ -32,18 +33,7 @@ const kikiriCoinProject: PersonalProject = {
   ],
   mobileImage: kikiriCoinMobile,
   desktopImage: kikiriCoinDesktop,
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        KikiriCoin (KIKI) is an ERC-20 token deployed on the Polygon blockchain
-        network. Its implementation is open source and meant to be educational
-        and fun
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        This was a pet project to learn Web3 basics building an ERC-20 token
-      </Text>
-    </>
-  ),
+  Description,
   backgroundImage: {
     src: kikiriCoinLogo,
     layout: "responsive",

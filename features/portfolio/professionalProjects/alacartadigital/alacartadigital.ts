@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
 import { ProfessionalProject } from "../professionalProjects";
 
+import Description from "./alacartadigital-description.mdx";
 import alacartadigitalLogo from "./alacartadigital-logo.svg";
 import alacartadigitalDesktop from "./alacartadigital-desktop.png";
 import alacartadigitalMobile from "./alacartadigital-mobile.png";
@@ -12,31 +12,7 @@ const alacartadigitalProject: ProfessionalProject = {
   name: "alacartadigital",
   anchorId: "alacartadigital",
   subheadline: "Online restaurant menu platform with QR code integration",
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        Developed during the first weeks of the pandemic, alacartadigital
-        brought a solution to restaurants that quickly needed to digitalize
-        their menu and make it accessible via QR codes. The goal was to provide
-        a super intuitive interface, but customizable enough to solve various
-        menu use cases and capable of using the same branding as its restaurant.
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        Alongside Cristian C and Kelvin S, we built a Next.js application that
-        optimized <strong>ease of use and page speed</strong>. It included{" "}
-        <strong>
-          brand customization of colors and typography with live preview
-        </strong>
-        , an integrated QR code generator, <strong>paid subscriptions</strong>,
-        and enough admin controls so that the founders wouldn&apos;t depend on
-        developers to operate the platform.
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        The project has become a successful company powering hundreds of
-        thousands of menus in Spain and Latin America.
-      </Text>
-    </>
-  ),
+  Description,
   technologies: [
     "React",
     "Next.js",
@@ -54,6 +30,7 @@ const alacartadigitalProject: ProfessionalProject = {
     accentHightlighted: "white",
     accentHightlightedForeground: "#00CF6A",
     subheadline: "#909090",
+    body: "#4F4F4F",
     background: "white",
     mobileAppBar: "rgb(33, 33, 33)",
   },

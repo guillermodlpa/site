@@ -5,6 +5,8 @@ import personalProjects from "./personalProjects";
 import DevicePreviews from "../DevicePreviews";
 import useParallax from "../hooks/useParallax";
 import Technologies from "../Technologies";
+import { MDXProvider } from "@mdx-js/react";
+import useMarkdownComponents from "../hooks/useMarkdownComponents";
 
 export default function PersonalProjectLayout({
   name,
@@ -19,7 +21,7 @@ export default function PersonalProjectLayout({
   buttons,
   desktopImage,
   mobileImage,
-  content,
+  Description,
   backgroundImage,
   backgroundOverlay,
 }: typeof personalProjects[0]) {
@@ -56,6 +58,8 @@ export default function PersonalProjectLayout({
       borderColor: colors.accentHightlighted,
     },
   };
+
+  const markdownComponents = useMarkdownComponents({ colors });
 
   const sectionRef = useRef<HTMLDivElement>();
   const backgroundRef = useRef<HTMLDivElement>();
@@ -152,11 +156,16 @@ export default function PersonalProjectLayout({
         mb={8}
       />
       <Box mb={8} zIndex={1} position="relative">
-        {content}
+        <MDXProvider components={markdownComponents}>
+          <Box mb={10}>
+            <Description />
+          </Box>
+        </MDXProvider>
       </Box>
       <Technologies
         technologies={technologies}
         borderColor={colors.accent}
+        bodyColor={colors.body}
         backgroundColor={colors.accentForeground}
         alignment="center"
       />

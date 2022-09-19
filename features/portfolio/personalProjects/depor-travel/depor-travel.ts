@@ -1,6 +1,6 @@
-import { Link, Text } from "@chakra-ui/react";
 import { PersonalProject } from "../personalProjects";
 
+import Description from "./depor-travel-description.mdx";
 import deporTravelLogo from "./depor-travel-logo.png";
 import deporTravelDesktop from "./depor-travel-desktop.png";
 import deporTravelMobile from "./depor-travel-mobile.png";
@@ -20,6 +20,7 @@ const deporTravelProject: PersonalProject = {
     accentHightlighted: "#d80f1e",
     accentHightlightedForeground: "white",
     subheadline: "rgba(0, 0, 0, 0.87)",
+    body: "rgba(0, 0, 0, 0.87)",
     background: "white",
     mobileAppBar: "white",
   },
@@ -37,28 +38,7 @@ const deporTravelProject: PersonalProject = {
   ],
   mobileImage: deporTravelMobile,
   desktopImage: deporTravelDesktop,
-  content: (
-    <>
-      <Text fontSize="sm" mb={4}>
-        depor.travel is an aggregator of sport trips around the world focused on
-        users in Spain.
-      </Text>
-      <Text fontSize="sm" mb={4}>
-        We started building a squeeze page to capture emails of interested
-        users, built with Next.js and capturing data via Google Sheets with a
-        custom Apps Script API.
-      </Text>
-
-      <Text fontSize="sm" mb={4}>
-        The initial prototype to test market fit was built with Webflow, which
-        combined with{" "}
-        <Link isExternal href="https://www.finsweet.com/attributes/">
-          Attributes
-        </Link>
-        , it included all functionality necessary for an MVP.
-      </Text>
-    </>
-  ),
+  Description,
   backgroundImage: null,
   backgroundOverlay: null,
 };
