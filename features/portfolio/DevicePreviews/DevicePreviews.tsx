@@ -24,8 +24,8 @@ export default function DevicePreviews({
       : { top: "0%", left: "0%" };
   const mobileFramePositioning =
     desktopImage && mobileImage
-      ? { width: "60%", left: "30%", top: "50%" }
-      : { width: "80%", left: "50%", top: "50%" };
+      ? { width: "30%", left: "30%", top: "50%" }
+      : { width: "40%", left: "50%", top: "50%" };
 
   const mobileContainerRef = useRef<HTMLDivElement>();
   const desktopContainerRef = useRef<HTMLDivElement>();
@@ -65,6 +65,12 @@ export default function DevicePreviews({
           position="absolute"
           {...desktopFramePositioning}
           ref={desktopContainerRef}
+          transform="scale(1)"
+          transition="transform 0.25s ease"
+          _hover={{
+            transform: `scale(1.2)`,
+            zIndex: 1,
+          }}
         >
           <Box
             position="absolute"
@@ -86,12 +92,17 @@ export default function DevicePreviews({
         <Box
           position="absolute"
           {...mobileFramePositioning}
-          transform="translate(-50%, -50%)"
+          transform="translate(-50%, -50%) scale(1)"
           ref={mobileContainerRef}
+          transition="transform 0.25s ease"
+          _hover={{
+            transform: `translate(-50%, -50%) scale(1.2)`,
+            zIndex: 1,
+          }}
         >
           <Box
             height="3%"
-            width="43%"
+            width="85%"
             position="absolute"
             left="49.8%"
             transform="translate(-50%, 0)"
@@ -109,7 +120,7 @@ export default function DevicePreviews({
             borderBottomRightRadius="1rem"
             overflow="hidden"
             height="88.5%"
-            width="43%"
+            width="85%"
           >
             <Image src={mobileImage} alt="screenshot" />
           </Box>
