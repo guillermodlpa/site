@@ -27,7 +27,7 @@ const socialLinks = [
   },
 ];
 
-function SocialLinks({ size = 8 }: { size?: number }) {
+function SocialLinks({ size = 7 }: { size?: number }) {
   return (
     <Wrap spacing={Math.round(size / 2)}>
       {socialLinks.map(({ href, label, Icon }) => (
