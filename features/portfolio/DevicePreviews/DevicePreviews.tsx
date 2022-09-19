@@ -82,7 +82,7 @@ export default function DevicePreviews({
             height="89%"
             width="76%"
           >
-            <Image src={desktopImage} alt="screenshot" />
+            <Image src={desktopImage} alt="screenshot" placeholder="blur" />
           </Box>
           <Image src={macFrame} alt="laptop frame" />
         </Box>
@@ -101,15 +101,14 @@ export default function DevicePreviews({
           }}
         >
           <Box
-            height="3%"
+            height="91%"
             width="85%"
             position="absolute"
             left="49.8%"
             transform="translate(-50%, 0)"
             top="3.2%"
             backgroundColor={mobileAppBarColor}
-            borderTopLeftRadius="1rem"
-            borderTopRightRadius="1rem"
+            borderRadius="0.5rem"
           />
           <Box
             position="absolute"
@@ -122,7 +121,7 @@ export default function DevicePreviews({
             height="88.5%"
             width="85%"
           >
-            <Image src={mobileImage} alt="screenshot" />
+            <Image src={mobileImage} alt="screenshot" placeholder="blur" />
           </Box>
           <Image src={iphoneFrame} alt="phone frame" />
         </Box>

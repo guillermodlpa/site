@@ -90,6 +90,7 @@ export default function PersonalProjectLayout({
             alt="Background"
             layout={backgroundImage.layout}
             objectFit="cover"
+            placeholder="blur"
           />
         </Box>
       )}

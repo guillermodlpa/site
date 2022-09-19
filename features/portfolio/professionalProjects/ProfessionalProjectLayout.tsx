@@ -82,6 +82,7 @@ export default function ProfessionalProjectLayout({
             alt="Background"
             layout="responsive"
             objectFit="cover"
+            placeholder="blur"
           />
         </Box>
       )}
