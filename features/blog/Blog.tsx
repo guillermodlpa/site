@@ -1,11 +1,14 @@
-import { Container } from "@chakra-ui/react";
+import { Container, useBreakpointValue } from "@chakra-ui/react";
+import AuthorAside from "../../components/AuthorAside";
 import MagicalDivider from "../../components/MagicalDivider";
 import { BlogPost } from "../../types/types";
 import BlogPostSummary from "./BlogPostSummary";
 
 export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
+  const renderAuthorAside = useBreakpointValue({ base: false, xl: true });
+
   return (
-    <Container pt={12} pb={20} maxWidth="container.md">
+    <Container pt={12} pb={20} maxWidth="container.md" position="relative">
       {blogPosts.map((blogPost, index) => (
         <>
           <BlogPostSummary
@@ -23,6 +26,7 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
           )}
         </>
       ))}
+      {renderAuthorAside && <AuthorAside />}
     </Container>
   );
 }
