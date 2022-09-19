@@ -10,12 +10,7 @@ export default function Heading2Block({
   return (
     <>
       <MagicalDivider height={"2px"} width="25%" mt={12} mb={12} />
-      <Heading
-        as="h2"
-        size="xl"
-        // mt={12}
-        mb={8}
-      >
+      <Heading as="h2" size="lg" mb={8}>
         <NotionRichText richTextItems={richTextItems} />
       </Heading>
     </>

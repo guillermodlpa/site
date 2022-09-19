@@ -29,26 +29,20 @@ export default function BlogPostSummary({
 }: BlogPost & { preloadImage: boolean }) {
   return (
     <Box opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}>
-      <Box mb={6}>
-        <Heading as="h2" size="xl">
-          <NextLink href={getBlogPostPath(slug)} passHref>
-            <Link variant="inheritColorKeepHover">{title}</Link>
-          </NextLink>
-        </Heading>
-      </Box>
-
       <Flex gap={8} flexDirection={["column", undefined, "row"]}>
         {imageSrc && (
           <Box
             sx={{
               position: "relative",
               flexShrink: 0,
-              width: ["100%", undefined, "25%"],
-              height: ["50vw", undefined, "auto"],
+              width: { base: "100%", md: "25%" },
+              maxWidth: { base: "30rem", md: "none" },
+              height: { base: "40vw", md: "auto" },
+              margin: "0 auto",
             }}
           >
-            <NextLink href={getBlogPostPath(slug)} passHref>
-              <a>
+            <a>
+              <NextLink href={getBlogPostPath(slug)} passHref>
                 <Image
                   src={imageSrc}
                   layout="fill"
@@ -56,33 +50,29 @@ export default function BlogPostSummary({
                   alt={"Blog post thumbnail"}
                   priority={preloadImage}
                 />
-              </a>
-            </NextLink>
+              </NextLink>
+            </a>
           </Box>
         )}
-        {/* // <Box
-        //   sx={{
-          //     height: ["50vw", undefined, "auto"],
-          //     width: ["100%", undefined, "25%"],
-          //     backgroundImage: `url(${imageSrc})`,
-          //     backgroundSize: ["cover", undefined, "contain"],
-          //     backgroundPosition: "top center",
-          //     backgroundRepeat: "no-repeat",
-          //     flexShrink: 0,
-          //   }}
-        // /> */}
         <Flex flexDirection="column" gap={4}>
+          <Heading as="h2" size="md">
+            <NextLink href={getBlogPostPath(slug)} passHref>
+              <Link variant="inheritColorKeepHover">{title}</Link>
+            </NextLink>
+          </Heading>
+
           <Text>
             <Text
               as="time"
               variant="secondaryText"
+              fontSize="md"
               dateTime={formatDateForAttribute(datePublished)}
             >
               {formatDateForUser(datePublished)}
             </Text>
             {tags.length > 0 && (
               <>
-                <Text as="span" variant="secondaryText">
+                <Text as="span" variant="secondaryText" fontSize="md">
                   {` / `}
                   {tags.map(capitalizeString).join(", ")}
                 </Text>
@@ -90,7 +80,7 @@ export default function BlogPostSummary({
             )}
           </Text>
 
-          <Text>
+          <Text fontSize="md">
             {excerpt}{" "}
             <NextLink href={getBlogPostPath(slug)} passHref>
               <Link>Read more</Link>

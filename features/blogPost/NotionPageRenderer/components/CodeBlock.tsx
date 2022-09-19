@@ -11,6 +11,7 @@ export default function CodeBlock({
 }) {
   const marginBottom = useToken("space", 4);
   const backgroundColor = useToken("colors", "callout-background");
+  const fontSize = useToken("fontSizes", "sm");
 
   return (
     <SyntaxHighlighter
@@ -19,6 +20,7 @@ export default function CodeBlock({
       customStyle={{
         marginBottom,
         background: backgroundColor,
+        fontSize,
       }}
     >
       {children}

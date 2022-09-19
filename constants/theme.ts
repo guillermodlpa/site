@@ -118,13 +118,14 @@ const theme = {
         "3xl": { lineHeight: "shorter" },
         "2xl": { lineHeight: "shorter" },
         xl: { lineHeight: "short" },
-        lg: { lineHeight: "base" },
+        lg: { lineHeight: "short" },
+        md: { lineHeight: "short" },
       },
     },
     Text: {
       baseStyle: {
         fontFamily: "body",
-        fontSize: "lg",
+        fontSize: "md",
       },
       variants: {
         secondaryText: {
@@ -197,6 +198,8 @@ const chakraUITheme = extendTheme(theme);
 // Printing the Chakra UI theme to console for easier debugging and customization
 if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
   console.log("[Chakra UI theme]", chakraUITheme);
+  // @ts-ignore
+  window.theme = chakraUITheme;
 }
 
 export default chakraUITheme;

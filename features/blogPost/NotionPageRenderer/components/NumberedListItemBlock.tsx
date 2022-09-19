@@ -9,9 +9,9 @@ export default function NumberedListItemBlock({
   position: number;
 }) {
   return (
-    <OrderedList start={position} mb={4}>
+    <OrderedList start={position} mb={3}>
       <ListItem>
-        <Text>
+        <Text fontSize="md">
           <NotionRichText richTextItems={richTextItems} />
         </Text>
       </ListItem>

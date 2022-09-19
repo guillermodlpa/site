@@ -7,7 +7,7 @@ export default function ParagraphBlock({
   richTextItems: RichTextItem[];
 }) {
   return (
-    <Text mb={4}>
+    <Text mb={4} fontSize="md">
       <NotionRichText richTextItems={richTextItems} />
     </Text>
   );

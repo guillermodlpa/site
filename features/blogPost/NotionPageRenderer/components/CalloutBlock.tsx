@@ -20,7 +20,7 @@ export default function CalloutBlock({
       <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
         {icon.emoji ?? ""}
       </Text>
-      <Text flexGrow={1}>
+      <Text flexGrow={1} fontSize="md">
         <NotionRichText richTextItems={richTextItems} />
       </Text>
     </Box>

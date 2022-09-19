@@ -7,9 +7,9 @@ export default function BulletedListItemBlock({
   richTextItems: RichTextItem[];
 }) {
   return (
-    <UnorderedList mb={4}>
+    <UnorderedList mb={3}>
       <ListItem>
-        <Text>
+        <Text fontSize="md">
           <NotionRichText richTextItems={richTextItems} />
         </Text>
       </ListItem>

@@ -18,19 +18,19 @@ export default function BlogPost({
   return (
     <Container py={4} maxWidth="container.md" as="article">
       <Box as="header" mb={8}>
-        <Heading size="2xl" as="h1" mb={4} fontWeight="bold">
+        <Heading size="xl" as="h1" mb={4} fontWeight="bold">
           {blogPost.title}
         </Heading>
 
         {blogPost.tags.length > 0 && (
           <>
-            <Text as="p" variant="secondaryText" mb={1}>
+            <Text as="p" variant="secondaryText" mb={1} fontSize="md">
               {blogPost.tags.map(capitalizeString).join(", ")}
             </Text>
           </>
         )}
 
-        <Text variant="secondaryText" mb={4} as="span">
+        <Text variant="secondaryText" mb={4} as="span" fontSize="md">
           {`Published on `}
           <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
             {formatDateForUser(blogPost.datePublished)}
@@ -38,7 +38,7 @@ export default function BlogPost({
         </Text>
 
         {blogPost.dateUpdated && (
-          <Text variant="secondaryText" mb={4} as="span">
+          <Text variant="secondaryText" mb={4} as="span" fontSize="md">
             {` / Updated on `}
             <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
               {formatDateForUser(blogPost.dateUpdated)}

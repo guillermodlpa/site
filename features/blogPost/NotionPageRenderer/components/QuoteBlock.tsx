@@ -7,7 +7,7 @@ export default function QuoteBlock({
   richTextItems: RichTextItem[];
 }) {
   return (
-    <Text as="blockquote" mb={4} variant="quoteBlock">
+    <Text as="blockquote" mb={4} variant="quoteBlock" fontSize="md">
       <NotionRichText richTextItems={richTextItems} />
     </Text>
   );
