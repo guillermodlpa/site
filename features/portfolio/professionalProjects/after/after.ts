@@ -39,7 +39,16 @@ const afterProject: ProfessionalProject = {
   },
   mobileImage: afterMobile,
   desktopImage: afterDesktop,
-  video: { url: "/assets/after-demo.mp4" },
+  video: [
+    {
+      type: "video/mp4",
+      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto/v1663607812/site/portfolio/demo-videos/after-demo_fosvre.mp4",
+    },
+    {
+      type: "video/webm",
+      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto,f_webm/v1663607812/site/portfolio/demo-videos/after-demo_fosvre.mp4",
+    },
+  ],
   backgroundImage: {
     src: afterBackground,
     styles: {

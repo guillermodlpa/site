@@ -11,11 +11,11 @@ import {
 } from "@chakra-ui/react";
 
 export default function VideoPopupButton({
-  videoUrl,
+  videoSources,
   name,
   ...buttonProps
 }: {
-  videoUrl: string;
+  videoSources: { type: string; src: string }[];
   name: string;
 } & ButtonProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,7 +35,9 @@ export default function VideoPopupButton({
               autoPlay
               style={{ maxHeight: "65vh", margin: "0 auto" }}
             >
-              <source src={videoUrl} type="video/mp4" />
+              {videoSources.map(({ src, type }) => (
+                <source key={type} src={src} type={type} />
+              ))}
             </video>
 
             <Text

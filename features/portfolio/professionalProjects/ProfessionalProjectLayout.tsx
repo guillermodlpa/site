@@ -157,7 +157,7 @@ export default function ProfessionalProjectLayout({
             <Flex justifyContent="center" flexWrap="wrap" mt={8}>
               <VideoPopupButton
                 {...buttonBrandProps}
-                videoUrl={video.url}
+                videoSources={video}
                 name={name}
               />
             </Flex>

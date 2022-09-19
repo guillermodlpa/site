@@ -36,7 +36,16 @@ const alacartadigitalProject: ProfessionalProject = {
   },
   mobileImage: alacartadigitalMobile,
   desktopImage: alacartadigitalDesktop,
-  video: { url: "/assets/alacartadigital-demo.mp4" },
+  video: [
+    {
+      type: "video/mp4",
+      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto/v1663607721/site/portfolio/demo-videos/alacartadigital-demo_ezu2yk.mp4",
+    },
+    {
+      type: "video/webm",
+      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto,f_webm/v1663607721/site/portfolio/demo-videos/alacartadigital-demo_ezu2yk.mp4",
+    },
+  ],
   backgroundImage: {
     src: alacartadigitalBackground,
     styles: {

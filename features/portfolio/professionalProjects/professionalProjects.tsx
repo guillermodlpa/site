@@ -26,7 +26,7 @@ export type ProfessionalProject = {
   };
   mobileImage: StaticImageData;
   desktopImage: StaticImageData;
-  video: { url: string } | null;
+  video: { src: string; type: string }[] | null;
   backgroundImage: {
     src: StaticImageData;
     styles: {
