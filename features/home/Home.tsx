@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Heading, Link, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
@@ -41,19 +41,23 @@ function Home() {
             TypeScript, React, Node
           </Text>
 
-          <Flex as="nav" mb={8} gap={3}>
-            <NextLink href={PATH_BLOG} passHref>
-              <Link fontSize="xl">Blog</Link>
-            </NextLink>
-
-            <NextLink href={PATH_PORTFOLIO} passHref>
-              <Link fontSize="xl">Portfolio</Link>
-            </NextLink>
-
-            <NextLink href={PATH_ABOUT} passHref>
-              <Link fontSize="xl">About</Link>
-            </NextLink>
-          </Flex>
+          <Wrap as="nav" spacing={4} mb={8}>
+            <WrapItem>
+              <NextLink href={PATH_BLOG} passHref>
+                <Link fontSize="xl">Blog</Link>
+              </NextLink>
+            </WrapItem>
+            <WrapItem>
+              <NextLink href={PATH_PORTFOLIO} passHref>
+                <Link fontSize="xl">Portfolio</Link>
+              </NextLink>
+            </WrapItem>
+            <WrapItem>
+              <NextLink href={PATH_ABOUT} passHref>
+                <Link fontSize="xl">About</Link>
+              </NextLink>
+            </WrapItem>
+          </Wrap>
 
           <SocialLinks />
         </Box>
