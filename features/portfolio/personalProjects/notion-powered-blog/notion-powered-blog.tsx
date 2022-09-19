@@ -7,6 +7,7 @@ import notionPoweredBlogMobile from "./notion-powered-blog-mobile.png";
 
 const notionPoweredBlogProject: PersonalProject = {
   name: "Notion-powered blog",
+  type: "Personal Project",
   anchorId: "notion-powered-blog",
   date: "2022",
   logo: notionPoweredBlogLogo,

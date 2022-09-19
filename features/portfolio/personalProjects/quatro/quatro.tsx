@@ -6,6 +6,7 @@ import quatroDesktop from "./quatro-desktop.png";
 
 const quatroProject: PersonalProject = {
   name: "Quatro",
+  type: "Startup",
   anchorId: "quatro",
   date: "2020 - 2021",
   logo: quatroLogo,

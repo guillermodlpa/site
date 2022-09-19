@@ -7,6 +7,7 @@ import kikiriCoinDesktop from "./kikiricoin-desktop.png";
 
 const kikiriCoinProject: PersonalProject = {
   name: "KikiriCoin",
+  type: "Personal Project",
   anchorId: "kikiricoin",
   date: "2021",
   logo: kikiriCoinLogo,

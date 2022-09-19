@@ -7,6 +7,7 @@ import travelmapBackground from "./travelmap-background.png";
 
 const travelmapProject: PersonalProject = {
   name: "Travelmap",
+  type: "Personal Project",
   anchorId: "travelmap",
   date: "2022",
   logo: travelmapLogo,

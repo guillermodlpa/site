@@ -8,6 +8,7 @@ import Technologies from "../Technologies";
 
 export default function PersonalProjectLayout({
   name,
+  type,
   anchorId,
   date,
   logo,
@@ -138,6 +139,11 @@ export default function PersonalProjectLayout({
         <Text textAlign="center" color={colors.subheadline}>
           {subheadline}
         </Text>
+        <Box position={"static"} top={"auto"} right={"auto"} mb={"6"}>
+          <Text color={colors.subheadline} fontSize="sm" opacity={0.75}>
+            {`(${type})`}
+          </Text>
+        </Box>
       </Flex>
       <DevicePreviews
         desktopImage={desktopImage}

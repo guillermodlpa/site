@@ -7,6 +7,7 @@ import deporTravelMobile from "./depor-travel-mobile.png";
 
 const deporTravelProject: PersonalProject = {
   name: "depor.travel",
+  type: "Startup",
   anchorId: "depor-travel",
   date: "2022",
   logo: deporTravelLogo,

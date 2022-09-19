@@ -7,6 +7,7 @@ import deporTravelProject from "./depor-travel/depor-travel";
 
 export type PersonalProject = {
   name: string;
+  type: "Personal Project" | "Startup";
   anchorId: string;
   date: string;
   logo: StaticImageData;
