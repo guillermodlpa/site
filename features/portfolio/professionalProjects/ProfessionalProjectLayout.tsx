@@ -130,6 +130,10 @@ export default function ProfessionalProjectLayout({
           overflow="hidden"
           position="relative"
         >
+          {/* for SEO, so these headers are indexed even though we show only the image */}
+          <Text as="span" display="none">
+            {name}
+          </Text>
           <Image src={logo} alt={logoAlt} layout="responsive" />
         </Box>
         <Text textAlign="center" color={colors.subheadline}>

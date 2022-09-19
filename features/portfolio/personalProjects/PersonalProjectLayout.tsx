@@ -132,7 +132,12 @@ export default function PersonalProjectLayout({
           height="5rem"
           overflow="hidden"
           position="relative"
+          as="h3"
         >
+          {/* for SEO, so these headers are indexed even though we show only the image */}
+          <Text as="span" display="none">
+            {name}
+          </Text>
           <Image
             src={logo}
             alt={logoAlt}
@@ -140,7 +145,7 @@ export default function PersonalProjectLayout({
             objectFit="scale-down"
           />
         </Box>
-        <Text textAlign="center" color={colors.subheadline}>
+        <Text as="h4" textAlign="center" color={colors.subheadline}>
           {subheadline}
         </Text>
         <Box position={"static"} top={"auto"} right={"auto"} mb={"6"}>
