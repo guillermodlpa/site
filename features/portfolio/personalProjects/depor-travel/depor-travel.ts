@@ -19,7 +19,7 @@ const deporTravelProject: PersonalProject = {
     accent: "#ef3d21",
     accentForeground: "white",
     accentHightlighted: "#d80f1e",
-    accentHightlightedForeground: "transparent",
+    accentHightlightedForeground: "white",
     subheadline: "white",
     body: "white",
     background: "white",
