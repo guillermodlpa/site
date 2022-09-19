@@ -1,6 +1,14 @@
-import { Box, Container, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  Link,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import NextLink from "next/link";
+import AuthorAside from "../../components/AuthorAside";
 import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost as BlogPostType } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
@@ -15,8 +23,10 @@ export default function BlogPost({
   blogPost: BlogPostType;
   blocks: GetBlockResponse[];
 }) {
+  const renderAuthorAside = useBreakpointValue({ base: false, xl: true });
+
   return (
-    <Container py={4} maxWidth="container.md" as="article">
+    <Container py={4} maxWidth="container.md" as="article" position="relative">
       <Box as="header" mb={8}>
         <Heading size="xl" as="h1" mb={4} fontWeight="bold">
           {blogPost.title}
@@ -56,6 +66,7 @@ export default function BlogPost({
           </NextLink>
         </Text>
       </Box>
+      {renderAuthorAside && <AuthorAside />}
     </Container>
   );
 }

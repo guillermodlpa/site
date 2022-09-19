@@ -22,7 +22,7 @@ export default function AuthorAside() {
       <Flex
         flexDirection="column"
         alignItems="stretch"
-        pt={12}
+        pt={8}
         position="sticky"
         top={0}
       >
