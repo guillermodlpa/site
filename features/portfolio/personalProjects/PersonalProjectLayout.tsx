@@ -74,7 +74,7 @@ export default function PersonalProjectLayout({
       overflow="hidden"
       id={anchorId}
       backgroundColor={colors.background}
-      width={{ base: "100%", md: "33.333%" }}
+      width={{ base: "100%", sm: "50%", md: "33.333%" }}
       ref={sectionRef}
     >
       {backgroundImage && (
@@ -117,7 +117,7 @@ export default function PersonalProjectLayout({
         as="header"
         alignItems="center"
         flexDirection="column"
-        mb={8}
+        mb={{ base: 4, md: 8 }}
         position="relative" // sticky headers for mobile?
         zIndex={1}
       >
@@ -153,7 +153,7 @@ export default function PersonalProjectLayout({
         >
           {subheadline}
         </Text>
-        <Box position={"static"} top={"auto"} right={"auto"} mb={"6"}>
+        <Box position={"static"} top={"auto"} right={"auto"} mb={4}>
           <Text color={colors.subheadline} fontSize="sm" opacity={0.75}>
             {`(${type})`}
           </Text>

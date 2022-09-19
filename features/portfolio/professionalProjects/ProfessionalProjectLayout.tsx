@@ -110,7 +110,7 @@ export default function ProfessionalProjectLayout({
         as="header"
         alignItems="center"
         flexDirection="column"
-        mb={16}
+        mb={{ base: 8, md: 16 }}
         position="relative"
       >
         <Box
@@ -141,7 +141,10 @@ export default function ProfessionalProjectLayout({
         </Text>
       </Flex>
 
-      <Flex flexDirection={{ base: "column", md: "row" }} gap={16}>
+      <Flex
+        flexDirection={{ base: "column", md: "row" }}
+        gap={{ base: 8, md: 16 }}
+      >
         <Box
           width={{ base: "100%", md: "50%" }}
           ref={devicePreviewsContainerRef}

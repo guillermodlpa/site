@@ -5,8 +5,8 @@ import professionalProjects from "./professionalProjects/professionalProjects";
 import MagicalDivider from "../../components/MagicalDivider";
 import personalProjects from "./personalProjects/personalProjects";
 import PersonalProjectLayout from "./personalProjects/PersonalProjectLayout";
-import Intro from "../about/Intro";
 import PortfolioHeader from "./PortfolioHeader";
+import PersonalProjectsHeader from "./PersonalProjectsHeader";
 
 export default function Portfolio() {
   return (
@@ -18,6 +18,9 @@ export default function Portfolio() {
           <ProfessionalProjectLayout {...project} />
         </React.Fragment>
       ))}
+
+      <MagicalDivider width="auto" mx={6} />
+      <PersonalProjectsHeader />
 
       <Flex flexWrap="wrap" justifyContent="center">
         {personalProjects.map((project) => (
