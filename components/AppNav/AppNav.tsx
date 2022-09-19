@@ -27,14 +27,14 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
 
         <Wrap as="nav" spacing={4}>
           <WrapItem>
-            <Text size="md">
+            <Text size="md" color="neutral.600">
               <NextLink passHref href={PATH_BLOG}>
                 <Link variant="inheritColor">Blog</Link>
               </NextLink>
             </Text>
           </WrapItem>
           <WrapItem>
-            <Text size="md">
+            <Text size="md" color="neutral.600">
               <NextLink passHref href={PATH_PORTFOLIO}>
                 <Link variant="inheritColor">Portfolio</Link>
               </NextLink>
@@ -42,7 +42,7 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
           </WrapItem>
 
           <WrapItem>
-            <Text size="md">
+            <Text size="md" color="neutral.600">
               <NextLink passHref href={PATH_ABOUT}>
                 <Link variant="inheritColor">About</Link>
               </NextLink>
