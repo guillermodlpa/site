@@ -19,4 +19,3 @@ To render the blog posts, I implemented a component `NotionPageRenderer`. Learn 
 ```jsx
 <NotionPageRenderer blocks={blocks} />
 ```
-

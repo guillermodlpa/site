@@ -10,12 +10,12 @@ function HomePage() {
           "Guillermo de la Puente - Freelance Frontend Engineer - TypeScript, React, Node"
         }
         description={
-          "Blog and portfolio site. Check out my work, and learn about management and software engineering tips."
+          "Frontend Engineer that builds successful, fast, high quality web applications."
         }
       />
       <Home />
     </>
   );
-} 
+}
 
 export default HomePage;

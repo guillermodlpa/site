@@ -5,20 +5,19 @@ import professionalProjects from "./professionalProjects/professionalProjects";
 import MagicalDivider from "../../components/MagicalDivider";
 import personalProjects from "./personalProjects/personalProjects";
 import PersonalProjectLayout from "./personalProjects/PersonalProjectLayout";
+import Intro from "../about/Intro";
+import PortfolioHeader from "./PortfolioHeader";
 
 export default function Portfolio() {
   return (
     <>
+      <PortfolioHeader />
+
       {professionalProjects.map((project, index) => (
         <React.Fragment key={project.name}>
           <ProfessionalProjectLayout {...project} />
-          {index + 1 < professionalProjects.length && (
-            <MagicalDivider mx={4} width="auto" />
-          )}
         </React.Fragment>
       ))}
-
-      <MagicalDivider mx={4} width="auto" />
 
       <Flex flexWrap="wrap" justifyContent="center">
         {personalProjects.map((project) => (

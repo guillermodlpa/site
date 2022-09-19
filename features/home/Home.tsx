@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
-import { PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
+import { PATH_ABOUT, PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
 
 function Home() {
   return (
@@ -48,6 +48,10 @@ function Home() {
 
             <NextLink href={PATH_PORTFOLIO} passHref>
               <Link fontSize="xl">Portfolio</Link>
+            </NextLink>
+
+            <NextLink href={PATH_ABOUT} passHref>
+              <Link fontSize="xl">About</Link>
             </NextLink>
           </Flex>
 

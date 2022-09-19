@@ -1,4 +1,5 @@
 import PageMeta from "../components/PageMeta";
+import { PATH_PORTFOLIO } from "../constants/paths";
 import Portfolio from "../features/portfolio";
 import BlogLayout from "../layouts/BlogLayout";
 
@@ -6,11 +7,13 @@ function PortfolioPage() {
   return (
     <>
       <PageMeta
-        canonicalPath={"/portfolio"}
+        canonicalPath={PATH_PORTFOLIO}
         title={
           "Portfolio - Guillermo de la Puente - Freelance Frontend Engineer"
         }
-        description={""}
+        description={
+          "High quality web applications and experiments. Splash, alacartadigital, After..."
+        }
       />
       <Portfolio />
     </>

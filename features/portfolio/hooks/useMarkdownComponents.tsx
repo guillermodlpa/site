@@ -2,7 +2,12 @@ import { Link, Text } from "@chakra-ui/react";
 import { useMemo } from "react";
 
 export default function useMarkdownComponents({
-  colors,
+  colors = {
+    body: undefined,
+    accent: undefined,
+    accentHightlighted: undefined,
+    accentHightlightedForeground: undefined,
+  },
 }: {
   colors: {
     body: string;

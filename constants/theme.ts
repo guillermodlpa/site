@@ -114,15 +114,11 @@ const theme = {
         color: "neutral.600",
       },
       sizes: {
-        "2xl": {
-          lineHeight: "shorter",
-        },
-        xl: {
-          lineHeight: "short",
-        },
-        lg: {
-          lineHeight: "base",
-        },
+        "4xl": { lineHeight: "shorter" },
+        "3xl": { lineHeight: "shorter" },
+        "2xl": { lineHeight: "shorter" },
+        xl: { lineHeight: "short" },
+        lg: { lineHeight: "base" },
       },
     },
     Text: {
