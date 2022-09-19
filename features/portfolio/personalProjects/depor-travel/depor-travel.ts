@@ -4,6 +4,7 @@ import Description from "./depor-travel-description.mdx";
 import deporTravelLogo from "./depor-travel-logo.png";
 import deporTravelDesktop from "./depor-travel-desktop.png";
 import deporTravelMobile from "./depor-travel-mobile.png";
+import deporTravelBackground from "./depor-travel-background.jpeg";
 
 const deporTravelProject: PersonalProject = {
   name: "depor.travel",
@@ -18,9 +19,9 @@ const deporTravelProject: PersonalProject = {
     accent: "#ef3d21",
     accentForeground: "white",
     accentHightlighted: "#d80f1e",
-    accentHightlightedForeground: "white",
-    subheadline: "rgba(0, 0, 0, 0.87)",
-    body: "rgba(0, 0, 0, 0.87)",
+    accentHightlightedForeground: "transparent",
+    subheadline: "white",
+    body: "white",
     background: "white",
     mobileAppBar: "white",
   },
@@ -39,8 +40,19 @@ const deporTravelProject: PersonalProject = {
   mobileImage: deporTravelMobile,
   desktopImage: deporTravelDesktop,
   Description,
-  backgroundImage: null,
-  backgroundOverlay: null,
+  backgroundImage: {
+    src: deporTravelBackground,
+    layout: "fill",
+    styles: {
+      height: "100%",
+      width: "100%",
+      top: 0,
+      left: "auto",
+      right: 0,
+    },
+  },
+  backgroundOverlay:
+    "linear-gradient(135deg,rgba(30,33,33,.82) 1%,rgba(32,32,32,.14) 98%)",
 };
 
 export default deporTravelProject;

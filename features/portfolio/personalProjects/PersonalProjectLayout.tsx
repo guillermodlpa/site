@@ -122,7 +122,7 @@ export default function PersonalProjectLayout({
         zIndex={1}
       >
         <Box position={"static"} top={"auto"} right={"auto"} mb={"6"}>
-          <Text color={colors.subheadline} fontSize="sm">
+          <Text color={colors.subheadline} fontSize="sm" opacity={0.75}>
             {date}
           </Text>
         </Box>
@@ -166,7 +166,6 @@ export default function PersonalProjectLayout({
         technologies={technologies}
         borderColor={colors.accent}
         bodyColor={colors.body}
-        backgroundColor={colors.accentForeground}
         alignment="center"
       />
       {buttons && (

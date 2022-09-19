@@ -171,7 +171,6 @@ export default function ProfessionalProjectLayout({
             technologies={technologies}
             borderColor={colors.accent}
             bodyColor={colors.body}
-            backgroundColor={colors.accentForeground}
             alignment={{ base: "center", md: "flex-end" }}
           />
 

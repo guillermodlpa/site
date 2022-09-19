@@ -3,13 +3,11 @@ import { ListItem, ResponsiveValue, UnorderedList } from "@chakra-ui/react";
 export default function Technologies({
   technologies,
   borderColor,
-  backgroundColor,
   bodyColor,
   alignment,
 }: {
   technologies: string[];
   borderColor: string;
-  backgroundColor: string;
   bodyColor: string;
   alignment: ResponsiveValue<"center" | "flex-end" | "flex-start">;
 }) {
@@ -34,7 +32,7 @@ export default function Technologies({
           borderRadius="1rem"
           borderWidth={1}
           borderColor={borderColor}
-          backgroundColor={backgroundColor}
+          backgroundColor={"transparent"}
           px={3}
           fontSize="sm"
         >
