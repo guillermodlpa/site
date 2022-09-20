@@ -8,7 +8,12 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { PATH_ABOUT, PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
+import {
+  PATH_ABOUT,
+  PATH_BLOG,
+  PATH_CONTACT,
+  PATH_PORTFOLIO,
+} from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
 
 export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
@@ -45,6 +50,14 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
             <Text size="md" color="neutral.600">
               <NextLink passHref href={PATH_ABOUT}>
                 <Link variant="inheritColor">About</Link>
+              </NextLink>
+            </Text>
+          </WrapItem>
+
+          <WrapItem>
+            <Text size="md" color="neutral.600">
+              <NextLink passHref href={PATH_CONTACT}>
+                <Link variant="inheritColor">Contact</Link>
               </NextLink>
             </Text>
           </WrapItem>

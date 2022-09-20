@@ -1,6 +1,11 @@
 import { Box, Container, Link, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { PATH_ABOUT, PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
+import {
+  PATH_ABOUT,
+  PATH_BLOG,
+  PATH_CONTACT,
+  PATH_PORTFOLIO,
+} from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
 import SocialLinks from "../SocialLinks";
 
@@ -34,10 +39,14 @@ export default function AppFooter({
               <Link>Portfolio</Link>
             </NextLink>
           </WrapItem>
-
           <WrapItem>
             <NextLink passHref href={PATH_ABOUT}>
               <Link>About</Link>
+            </NextLink>
+          </WrapItem>
+          <WrapItem>
+            <NextLink passHref href={PATH_CONTACT}>
+              <Link>Contact</Link>
             </NextLink>
           </WrapItem>
         </Wrap>
