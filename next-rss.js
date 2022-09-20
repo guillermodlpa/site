@@ -1,7 +1,7 @@
 const loadEnvConfig = require("@next/env").loadEnvConfig;
 loadEnvConfig(process.cwd());
 
-const siteURL = `${process.env.SITE_URL}/blog`;
+const siteURL = process.env.SITE_URL;
 
 module.exports = {
   siteTitle: "Guillermo de la Puente's Blog",
