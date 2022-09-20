@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
-import SocialLinks from "../../../components/SocialLinks";
+import NextLink from "next/link";
+import { PATH_CONTACT } from "../../../constants/paths";
 import IntroContent from "./intro-content.mdx";
 import ProfilePicture from "./profile-picture.jpg";
 
@@ -59,7 +60,11 @@ export default function Intro() {
           </MDXProvider>
 
           <Flex mt={8} justifyContent={{ base: "center", md: "flex-start" }}>
-            <SocialLinks />
+            <NextLink passHref href={PATH_CONTACT}>
+              <Button colorScheme="primary" as={Link}>
+                Get in touch
+              </Button>
+            </NextLink>
           </Flex>
         </Box>
       </Flex>

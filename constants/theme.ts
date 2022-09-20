@@ -114,11 +114,18 @@ const theme = {
           if (props.colorScheme === "primary") {
             return {
               backgroundColor: "primary",
+              color: "white",
               _hover: {
                 backgroundColor: "secondary",
+                color: "white",
+              },
+              _focus: {
+                backgroundColor: "secondary",
+                color: "white",
               },
               _active: {
                 backgroundColor: "pinkyPromise.400",
+                color: "white",
               },
             };
           }
