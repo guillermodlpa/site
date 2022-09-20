@@ -2,7 +2,12 @@ import { Box, Heading, Link, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
-import { PATH_ABOUT, PATH_BLOG, PATH_PORTFOLIO } from "../../constants/paths";
+import {
+  PATH_ABOUT,
+  PATH_BLOG,
+  PATH_CONTACT,
+  PATH_PORTFOLIO,
+} from "../../constants/paths";
 
 function Home() {
   return (
@@ -55,6 +60,11 @@ function Home() {
             <WrapItem>
               <NextLink href={PATH_ABOUT} passHref>
                 <Link fontSize="xl">About</Link>
+              </NextLink>
+            </WrapItem>
+            <WrapItem>
+              <NextLink href={PATH_CONTACT} passHref>
+                <Link fontSize="xl">Contact</Link>
               </NextLink>
             </WrapItem>
           </Wrap>
