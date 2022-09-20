@@ -1,6 +1,7 @@
 import {
   Box,
   Container,
+  Flex,
   Heading,
   Link,
   Text,
@@ -14,6 +15,7 @@ import { BlogPost as BlogPostType } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateForUser from "../../utils/formatDateForUser";
+import RssFeedLink from "../blog/RssFeedLink";
 import NotionPageRenderer from "./NotionPageRenderer";
 
 export default function BlogPost({
@@ -40,21 +42,29 @@ export default function BlogPost({
           </>
         )}
 
-        <Text variant="secondaryText" mb={4} as="span" fontSize="md">
-          {`Published on `}
-          <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
-            {formatDateForUser(blogPost.datePublished)}
-          </time>
-        </Text>
+        <Flex alignItems="flex-start">
+          <Box flexGrow={1}>
+            <Text variant="secondaryText" mb={4} as="span" fontSize="md">
+              {`Published on `}
+              <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
+                {formatDateForUser(blogPost.datePublished)}
+              </time>
+            </Text>
 
-        {blogPost.dateUpdated && (
-          <Text variant="secondaryText" mb={4} as="span" fontSize="md">
-            {` / Updated on `}
-            <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
-              {formatDateForUser(blogPost.dateUpdated)}
-            </time>
+            {blogPost.dateUpdated && (
+              <Text variant="secondaryText" mb={4} as="span" fontSize="md">
+                {` / Updated on `}
+                <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
+                  {formatDateForUser(blogPost.dateUpdated)}
+                </time>
+              </Text>
+            )}
+          </Box>
+
+          <Text fontSize="small">
+            <RssFeedLink />
           </Text>
-        )}
+        </Flex>
       </Box>
 
       <NotionPageRenderer blocks={blocks} />
