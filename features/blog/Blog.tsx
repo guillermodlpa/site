@@ -1,14 +1,21 @@
-import { Container, useBreakpointValue } from "@chakra-ui/react";
+import { Container, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 import AuthorAside from "../../components/AuthorAside";
 import MagicalDivider from "../../components/MagicalDivider";
 import { BlogPost } from "../../types/types";
 import BlogPostSummary from "./BlogPostSummary";
+import RssFeedLink from "./RssFeedLink";
 
 export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
   const renderAuthorAside = useBreakpointValue({ base: false, xl: true });
 
   return (
-    <Container pt={12} pb={20} maxWidth="container.md" position="relative">
+    <Container pt={2} pb={10} maxWidth="container.md" position="relative">
+      <Flex justifyContent="flex-end" mb={6}>
+        <Text fontSize="small">
+          <RssFeedLink />
+        </Text>
+      </Flex>
+
       {blogPosts.map((blogPost, index) => (
         <>
           <BlogPostSummary
@@ -26,6 +33,13 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
           )}
         </>
       ))}
+
+      <Flex justifyContent="flex-end" mt={14}>
+        <Text fontSize="small">
+          <RssFeedLink />
+        </Text>
+      </Flex>
+
       {renderAuthorAside && <AuthorAside />}
     </Container>
   );

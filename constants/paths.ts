@@ -6,3 +6,5 @@ export const PATH_PORTFOLIO = "/portfolio";
 export const PATH_ABOUT = "/about";
 
 export const PATH_CONTACT = "/contact";
+
+export const PATH_RSS = "/rss.xml";
