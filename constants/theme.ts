@@ -108,6 +108,23 @@ const theme = {
     },
   },
   components: {
+    Button: {
+      variants: {
+        solid: (props) => {
+          if (props.colorScheme === "primary") {
+            return {
+              backgroundColor: "primary",
+              _hover: {
+                backgroundColor: "secondary",
+              },
+              _active: {
+                backgroundColor: "pinkyPromise.400",
+              },
+            };
+          }
+        },
+      },
+    },
     Heading: {
       baseStyle: {
         fontWeight: "normal",
@@ -179,6 +196,38 @@ const theme = {
       baseStyle: {
         container: {
           paddingLeft: 4,
+        },
+      },
+    },
+    Input: {
+      variants: {
+        outline: {
+          field: {
+            borderColor: "neutral.100",
+            _hover: {
+              borderColor: "neutral.400",
+              boxShadow: "none",
+            },
+            _focus: {
+              borderColor: "secondary",
+              boxShadow: "0 0 0 1px var(--chakra-colors-secondary)",
+            },
+          },
+        },
+      },
+    },
+    Textarea: {
+      variants: {
+        outline: {
+          borderColor: "neutral.100",
+          _hover: {
+            borderColor: "neutral.400",
+            boxShadow: "none",
+          },
+          _focus: {
+            borderColor: "secondary",
+            boxShadow: "0 0 0 1px var(--chakra-colors-secondary)",
+          },
         },
       },
     },
