@@ -1,4 +1,4 @@
-import { Link, Text } from "@chakra-ui/react";
+import { Link, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { useMemo } from "react";
 
 export default function useMarkdownComponents({
@@ -20,6 +20,10 @@ export default function useMarkdownComponents({
     () => ({
       p: (props) => (
         <Text mb={4} fontSize="sm" color={colors.body} {...props} />
+      ),
+      ul: (props) => <UnorderedList {...props} ml={1} />,
+      li: (props) => (
+        <ListItem fontSize="sm" mb={1} color={colors.body} {...props} />
       ),
       a: (props) => (
         <Link

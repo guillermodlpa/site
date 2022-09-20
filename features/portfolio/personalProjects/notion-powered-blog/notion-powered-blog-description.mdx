@@ -1,7 +1,8 @@
-Notion is a project management and note-taking software platform. Since
+**Notion** is a project management and note-taking software platform. Since
 they launched their API, it can be used as a database for rich text
 documents, and so it's a backend for a blog.
 
-With Next.js Static-Site-Generation, we just need to pull the blog posts
-from the Notion API at build time, build the sitemap, and then make a
-renderer to display the post as we want.
+Leveraging Next.js **Static-Site-Generation**, the site retrieves all blog posts at build time and prepares
+the blog summary and each blog post page. Combined with Next.js prefetching, they load instantly. The [sitemap](https://guillermodlpa.com/sitemap.xml) is also automatically generated.
+
+My [custom renderer](https://github.com/guillermodlpa/site/tree/main/features/blogPost/NotionPageRenderer) renders each Notion block using Chakra UI components, the library of choice here, and compensates the limitations that the Notion API has.
