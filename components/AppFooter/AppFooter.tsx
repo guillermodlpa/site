@@ -6,14 +6,24 @@ import {
   PATH_CONTACT,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
+import useActivePathname from "../../hooks/useActivePathname";
 import MagicalDivider from "../MagicalDivider";
 import SocialLinks from "../SocialLinks";
+
+const links = [
+  { label: "Home", path: "/" },
+  { label: "Blog", path: PATH_BLOG },
+  { label: "Portfolio", path: PATH_PORTFOLIO },
+  { label: "About", path: PATH_ABOUT },
+  { label: "Contact", path: PATH_CONTACT },
+];
 
 export default function AppFooter({
   fullWidth = false,
 }: {
   fullWidth: boolean;
 }) {
+  const activePathname = useActivePathname();
   return (
     <Container
       as="footer"
@@ -24,31 +34,19 @@ export default function AppFooter({
 
       <Box py={4} display="flex" justifyContent="space-between">
         <Wrap spacing={4} direction={{ base: "column", md: "row" }}>
-          <WrapItem>
-            <NextLink passHref href="/">
-              <Link>Home</Link>
-            </NextLink>
-          </WrapItem>
-          <WrapItem>
-            <NextLink passHref href={PATH_BLOG}>
-              <Link>Blog</Link>
-            </NextLink>
-          </WrapItem>
-          <WrapItem>
-            <NextLink passHref href={PATH_PORTFOLIO}>
-              <Link>Portfolio</Link>
-            </NextLink>
-          </WrapItem>
-          <WrapItem>
-            <NextLink passHref href={PATH_ABOUT}>
-              <Link>About</Link>
-            </NextLink>
-          </WrapItem>
-          <WrapItem>
-            <NextLink passHref href={PATH_CONTACT}>
-              <Link>Contact</Link>
-            </NextLink>
-          </WrapItem>
+          {links.map(({ label, path }) => (
+            <WrapItem key={path}>
+              <NextLink passHref href={path}>
+                <Link
+                  aria-current={activePathname === path ? "page" : false}
+                  borderBottomWidth={activePathname === path ? "1px" : "0px"}
+                  borderColor="currentColor"
+                >
+                  {label}
+                </Link>
+              </NextLink>
+            </WrapItem>
+          ))}
         </Wrap>
 
         <SocialLinks size={6} />

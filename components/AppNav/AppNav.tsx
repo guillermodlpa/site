@@ -14,9 +14,19 @@ import {
   PATH_CONTACT,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
+import useActivePathname from "../../hooks/useActivePathname";
 import MagicalDivider from "../MagicalDivider";
 
+const links = [
+  { label: "Blog", path: PATH_BLOG },
+  { label: "Portfolio", path: PATH_PORTFOLIO },
+  { label: "About", path: PATH_ABOUT },
+  { label: "Contact", path: PATH_CONTACT },
+];
+
 export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
+  const activePathname = useActivePathname();
+
   return (
     <Container
       as="header"
@@ -31,36 +41,22 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
         </Heading>
 
         <Wrap as="nav" spacing={4}>
-          <WrapItem>
-            <Text size="md" color="neutral.600">
-              <NextLink passHref href={PATH_BLOG}>
-                <Link variant="inheritColor">Blog</Link>
-              </NextLink>
-            </Text>
-          </WrapItem>
-          <WrapItem>
-            <Text size="md" color="neutral.600">
-              <NextLink passHref href={PATH_PORTFOLIO}>
-                <Link variant="inheritColor">Portfolio</Link>
-              </NextLink>
-            </Text>
-          </WrapItem>
-
-          <WrapItem>
-            <Text size="md" color="neutral.600">
-              <NextLink passHref href={PATH_ABOUT}>
-                <Link variant="inheritColor">About</Link>
-              </NextLink>
-            </Text>
-          </WrapItem>
-
-          <WrapItem>
-            <Text size="md" color="neutral.600">
-              <NextLink passHref href={PATH_CONTACT}>
-                <Link variant="inheritColor">Contact</Link>
-              </NextLink>
-            </Text>
-          </WrapItem>
+          {links.map(({ label, path }) => (
+            <WrapItem key={path}>
+              <Text size="md" color="neutral.600">
+                <NextLink passHref href={path}>
+                  <Link
+                    variant="inheritColor"
+                    aria-current={activePathname === path ? "page" : false}
+                    borderBottomWidth={activePathname === path ? "1px" : "0px"}
+                    borderColor="currentColor"
+                  >
+                    {label}
+                  </Link>
+                </NextLink>
+              </Text>
+            </WrapItem>
+          ))}
         </Wrap>
       </Box>
       <MagicalDivider as="div" />
