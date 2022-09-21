@@ -1,10 +1,22 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { PATH_ABOUT } from "../../constants/paths";
+import {
+  PATH_ABOUT,
+  PATH_BLOG,
+  PATH_CONTACT,
+  PATH_PORTFOLIO,
+} from "../../constants/paths";
 import OpacitySlideFade from "../../features/portfolio/OpacitySlideFade";
 import useScrollThreshold from "./useScrollThreshold";
 
 const ASIDE_WIDTH = 150;
+
+const links = [
+  { label: "Blog", path: PATH_BLOG },
+  { label: "Portfolio", path: PATH_PORTFOLIO },
+  { label: "About", path: PATH_ABOUT },
+  { label: "Contact", path: PATH_CONTACT },
+];
 
 export default function AuthorAside() {
   const visible = useScrollThreshold(100);
@@ -38,16 +50,14 @@ export default function AuthorAside() {
             fontSize="sm"
             textAlign="right"
           >{`Freelance Frontend Engineer & Manager`}</Text>
-          <Text fontSize="sm" textAlign="right" mb={1}>
-            <NextLink passHref href={PATH_ABOUT}>
-              <Link>Portfolio</Link>
-            </NextLink>
-          </Text>
-          <Text fontSize="sm" textAlign="right">
-            <NextLink passHref href={PATH_ABOUT}>
-              <Link>About</Link>
-            </NextLink>
-          </Text>
+
+          {links.map(({ label, path }) => (
+            <Text key={path} fontSize="sm" textAlign="right" mb={1}>
+              <NextLink passHref href={path}>
+                <Link>{label}</Link>
+              </NextLink>
+            </Text>
+          ))}
         </OpacitySlideFade>
       </Flex>
     </Box>
