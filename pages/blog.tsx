@@ -4,6 +4,7 @@ import Blog from "../features/blog";
 import BlogLayout from "../layouts/BlogLayout";
 import { fetchBlogPosts } from "../lib/notionClient";
 import { BlogPost } from "../types/types";
+import recursivelyNullifyUndefinedValues from "../utils/recursivelyNullifyUndefinedValues";
 
 function BlogPage({ blogPosts }: { blogPosts: BlogPost[] }) {
   const description = blogPosts
@@ -32,9 +33,13 @@ BlogPage.getLayout = function getLayout(page: React.ReactElement) {
 
 export async function getStaticProps(context) {
   const blogPosts = await fetchBlogPosts();
+
+  // Next doesn't like `undefined` values
+  const parsedBlocks = recursivelyNullifyUndefinedValues(blogPosts);
+
   return {
     props: {
-      blogPosts,
+      blogPosts: parsedBlocks,
     },
   };
 }
