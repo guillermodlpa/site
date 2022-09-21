@@ -27,6 +27,8 @@ To render the blog posts, I implemented a `NotionPageRenderer` component. Learn 
 <NotionPageRenderer blocks={blocks} />
 ```
 
+🖼❕ Images hosted in Notion can't be optimized with `next/image` because their URLs are temporary. Check out the README above and the repo [guillermodlpa/upload-notion-images-to-cloudinary](https://github.com/guillermodlpa/upload-notion-images-to-cloudinary) for more details.
+
 ## Markdown for content
 
 It's truly a pain in the ass to write and edit large chunks of copy in JSX or as strings. That's why I used markdown for the portfolio project descriptions, and `@next/mdx` to parse it to React. The result is actually delightful to work with as a developer!
