@@ -1,4 +1,5 @@
 import { Container, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
+import React from "react";
 import AuthorAside from "../../components/AuthorAside";
 import MagicalDivider from "../../components/MagicalDivider";
 import { BlogPost } from "../../types/types";
@@ -17,12 +18,8 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
       </Flex>
 
       {blogPosts.map((blogPost, index) => (
-        <>
-          <BlogPostSummary
-            key={blogPost.id}
-            {...blogPost}
-            preloadImage={index < 5}
-          />
+        <React.Fragment key={blogPost.id}>
+          <BlogPostSummary {...blogPost} preloadImage={index < 5} />
           {index !== blogPosts.length - 1 && (
             <MagicalDivider
               height="2px"
@@ -31,7 +28,7 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
               width="full"
             />
           )}
-        </>
+        </React.Fragment>
       ))}
 
       <Flex justifyContent="flex-end" mt={14}>
