@@ -40,8 +40,8 @@ export default function BlogPostSummary({
               margin: "0 auto",
             }}
           >
-            <a>
-              <NextLink href={getBlogPostPath(slug)} passHref>
+            <NextLink href={getBlogPostPath(slug)} passHref>
+              <a>
                 <Image
                   src={imageSrc}
                   layout="fill"
@@ -49,8 +49,8 @@ export default function BlogPostSummary({
                   alt={"Blog post thumbnail"}
                   priority={preloadImage}
                 />
-              </NextLink>
-            </a>
+              </a>
+            </NextLink>
           </Box>
         )}
         <Flex flexDirection="column" gap={4}>
