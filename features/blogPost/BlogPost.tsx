@@ -14,7 +14,7 @@ import { PATH_BLOG } from "../../constants/paths";
 import { BlogPost as BlogPostType } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
-import formatDateForUser from "../../utils/formatDateForUser";
+import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
 import RssFeedLink from "../blog/RssFeedLink";
 import NotionPageRenderer from "./NotionPageRenderer";
 
@@ -47,7 +47,7 @@ export default function BlogPost({
             <Text variant="secondaryText" mb={4} as="span" fontSize="md">
               {`Published on `}
               <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
-                {formatDateForUser(blogPost.datePublished)}
+                {formatDateInUTCForUser(blogPost.datePublished)}
               </time>
             </Text>
 
@@ -55,7 +55,7 @@ export default function BlogPost({
               <Text variant="secondaryText" mb={4} as="span" fontSize="md">
                 {` / Updated on `}
                 <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
-                  {formatDateForUser(blogPost.dateUpdated)}
+                  {formatDateInUTCForUser(blogPost.dateUpdated)}
                 </time>
               </Text>
             )}

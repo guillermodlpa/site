@@ -1,12 +1,11 @@
 import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import MagicalDivider from "../../components/MagicalDivider";
 import { getBlogPostPath } from "../../constants/paths";
 import { BlogPost } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
-import formatDateForUser from "../../utils/formatDateForUser";
+import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
 
 // note: we should only see future posts in dev mode
 function isNotPublishedYet(date: Date | string): boolean {
@@ -68,7 +67,7 @@ export default function BlogPostSummary({
               fontSize="md"
               dateTime={formatDateForAttribute(datePublished)}
             >
-              {formatDateForUser(datePublished)}
+              {formatDateInUTCForUser(datePublished)}
             </Text>
             {tags.length > 0 && (
               <>
