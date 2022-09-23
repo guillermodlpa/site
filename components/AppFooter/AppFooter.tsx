@@ -1,12 +1,12 @@
 import { Box, Container, Link, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
-import useActivePathname from "../../hooks/useActivePathname";
 import MagicalDivider from "../MagicalDivider";
 import SocialLinks from "../SocialLinks";
 
@@ -23,7 +23,7 @@ export default function AppFooter({
 }: {
   fullWidth: boolean;
 }) {
-  const activePathname = useActivePathname();
+  const { pathname } = useRouter();
   return (
     <Container
       as="footer"
@@ -38,8 +38,12 @@ export default function AppFooter({
             <WrapItem key={path}>
               <NextLink passHref href={path}>
                 <Link
-                  aria-current={activePathname === path ? "page" : false}
-                  borderBottomWidth={activePathname === path ? "1px" : "0px"}
+                  aria-current={
+                    path !== "/" && pathname?.startsWith(path) ? "page" : false
+                  }
+                  borderBottomWidth={
+                    path !== "/" && pathname?.startsWith(path) ? "1px" : "0px"
+                  }
                   borderColor="currentColor"
                 >
                   {label}

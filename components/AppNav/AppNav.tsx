@@ -8,13 +8,13 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
-import useActivePathname from "../../hooks/useActivePathname";
 import MagicalDivider from "../MagicalDivider";
 
 const links = [
@@ -25,7 +25,7 @@ const links = [
 ];
 
 export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
-  const activePathname = useActivePathname();
+  const { pathname } = useRouter();
 
   return (
     <Container
@@ -47,8 +47,14 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
                 <NextLink passHref href={path}>
                   <Link
                     variant="inheritColor"
-                    aria-current={activePathname === path ? "page" : false}
-                    borderBottomWidth={activePathname === path ? "1px" : "0px"}
+                    aria-current={
+                      path !== "/" && pathname?.startsWith(path)
+                        ? "page"
+                        : false
+                    }
+                    borderBottomWidth={
+                      path !== "/" && pathname?.startsWith(path) ? "1px" : "0px"
+                    }
                     borderColor="currentColor"
                   >
                     {label}
