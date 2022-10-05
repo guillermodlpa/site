@@ -9,6 +9,7 @@ import {
   fetchBlogPosts,
 } from "../../lib/notionClient";
 import { BlogPost as BlogPostType } from "../../types/types";
+import recursivelyNullifyUndefinedValues from "../../utils/recursivelyNullifyUndefinedValues";
 
 function BlogPostPage({
   blogPost,
@@ -57,7 +58,7 @@ export async function getStaticProps(context) {
   const blocks = await fetchAllBlocks(blogPost.id);
   return {
     props: {
-      blogPost,
+      blogPost: recursivelyNullifyUndefinedValues(blogPost),
       blocks,
     },
   };
