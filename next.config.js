@@ -31,6 +31,12 @@ const nextConfig = {
         destination: "/blog/team-building-with-abstract-contemporary-art",
         permanent: true,
       },
+      {
+        source: "/blog/how-to-use-sendinblue-tracker-in-react-typescript-app",
+        destination:
+          "/blog/how-to-set-up-sendinblue-tracker-in-react-typescript-app",
+        permanent: true,
+      },
     ];
   },
 };
