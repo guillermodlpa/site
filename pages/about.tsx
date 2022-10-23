@@ -12,6 +12,7 @@ function AboutPage() {
         description={
           "Frontend Engineer that builds successful, fast, high quality web applications."
         }
+        ogType="profile"
       />
       <About />
     </>

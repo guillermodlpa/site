@@ -24,6 +24,18 @@ function BlogPostPage({
         canonicalPath={getBlogPostPath(blogPost.slug)}
         title={`${blogPost.title} - Guillermo de la Puente`}
         description={blogPost.excerpt}
+        ogType="article"
+        ogImageUrl={blogPost.imageSrc}
+        ogArticleTags={{
+          published_time: blogPost.datePublished
+            ? new Date(blogPost.datePublished).toISOString()
+            : null,
+          modified_time: blogPost.dateUpdated
+            ? new Date(blogPost.dateUpdated).toISOString()
+            : null,
+          author: "Guillermo de la Puente",
+          tags: blogPost.tags,
+        }}
       />
       <BlogPost blogPost={blogPost} blocks={blocks} />
     </>
