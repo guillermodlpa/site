@@ -65,7 +65,15 @@ export default function NotionBlock({
         return null;
       case BLOCK_TYPES.CALLOUT:
         return (
-          <CalloutBlock richTextItems={value.rich_text} icon={value.icon} />
+          <CalloutBlock richTextItems={value.rich_text} icon={value.icon}>
+            {(value.children || []).map((child) => (
+              <NotionBlock
+                key={child.id}
+                block={child}
+                likelyAboveTheFold={false}
+              />
+            ))}
+          </CalloutBlock>
         );
       case BLOCK_TYPES.BOOKMARK:
         return <BookmarkBlock url={value.url} />;
@@ -108,6 +116,9 @@ export default function NotionBlock({
         );
       case BLOCK_TYPES.COLUMN:
         return <Box>{children}</Box>;
+      // The callout renders the children internally
+      case BLOCK_TYPES.CALLOUT:
+        return null;
       default: {
         return <Box ml={8}>{children}</Box>;
       }

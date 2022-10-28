@@ -1,28 +1,33 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import NotionRichText from "./NotionRichText";
 
 export default function CalloutBlock({
   richTextItems,
   icon,
+  children,
 }: {
   richTextItems: RichTextItem[];
   icon: { type: string; emoji?: string } | null;
+  children: React.ReactNode;
 }) {
   return (
     <Box
       as="aside"
-      display="flex"
       mb={4}
       backgroundColor={"callout-background"}
       p={3}
       borderRadius="md"
     >
-      <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
-        {icon.emoji ?? ""}
-      </Text>
-      <Text flexGrow={1} fontSize="md">
-        <NotionRichText richTextItems={richTextItems} />
-      </Text>
+      <Flex pb={3}>
+        <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
+          {icon.emoji ?? ""}
+        </Text>
+        <Text flexGrow={1} fontSize="md">
+          <NotionRichText richTextItems={richTextItems} />
+        </Text>
+      </Flex>
+
+      <Box ml={9}>{children}</Box>
     </Box>
   );
 }
