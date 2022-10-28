@@ -7,6 +7,7 @@ import useParallax from "../hooks/useParallax";
 import Technologies from "../Technologies";
 import { MDXProvider } from "@mdx-js/react";
 import useMarkdownComponents from "../hooks/useMarkdownComponents";
+import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
 export default function PersonalProjectLayout({
   name,
@@ -91,6 +92,11 @@ export default function PersonalProjectLayout({
             layout={backgroundImage.layout}
             objectFit="cover"
             placeholder="blur"
+            sizes={generateImageSizesProp({
+              base: "100vw",
+              md: "50vw",
+              lg: "33vw",
+            })}
           />
         </Box>
       )}
@@ -144,6 +150,11 @@ export default function PersonalProjectLayout({
             alt={logoAlt}
             layout="fill"
             objectFit="scale-down"
+            sizes={generateImageSizesProp({
+              base: "90vw",
+              md: "40vw",
+              lg: "25vw",
+            })}
           />
         </Box>
         <Text

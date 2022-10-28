@@ -6,6 +6,7 @@ import { BlogPost } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
+import generateImageSizesProp from "../../utils/generateImageSizesProp";
 
 // note: we should only see future posts in dev mode
 function isNotPublishedYet(date: Date | string): boolean {
@@ -48,6 +49,11 @@ export default function BlogPostSummary({
                   objectFit="contain"
                   alt={"Blog post thumbnail"}
                   priority={preloadImage}
+                  sizes={generateImageSizesProp({
+                    base: "95vw",
+                    sm: "25vw",
+                    lg: "15vw",
+                  })}
                 />
               </a>
             </NextLink>

@@ -3,6 +3,7 @@ import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { PATH_CONTACT } from "../../../constants/paths";
+import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 import IntroContent from "./intro-content.mdx";
 import ProfilePicture from "./profile-picture.jpg";
 
@@ -50,6 +51,10 @@ export default function Intro() {
               src={ProfilePicture}
               alt="Portrait photo"
               layout="responsive"
+              sizes={generateImageSizesProp({
+                base: "33vw",
+                md: "15vw",
+              })}
             />
           </Box>
         </Box>

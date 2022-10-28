@@ -12,6 +12,7 @@ import professionalProjects from "./professionalProjects";
 import VideoPopupButton from "../VideoPopupButton";
 import Technologies from "../Technologies";
 import useMarkdownComponents from "../hooks/useMarkdownComponents";
+import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
 export default function ProfessionalProjectLayout({
   logo,
@@ -83,6 +84,7 @@ export default function ProfessionalProjectLayout({
             layout="responsive"
             objectFit="cover"
             placeholder="blur"
+            sizes="100vw"
           />
         </Box>
       )}
@@ -135,7 +137,15 @@ export default function ProfessionalProjectLayout({
           <Text as="span" display="none">
             {name}
           </Text>
-          <Image src={logo} alt={logoAlt} layout="responsive" />
+          <Image
+            src={logo}
+            alt={logoAlt}
+            layout="responsive"
+            sizes={generateImageSizesProp({
+              base: "90vw",
+              md: "50vw",
+            })}
+          />
         </Box>
         <Text textAlign="center" color={colors.subheadline}>
           {subheadline}

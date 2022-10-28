@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import generateImageSizesProp from "../../../../utils/generateImageSizesProp";
 import getPlainText from "../utils/getPlainText";
 import NotionRichText from "./NotionRichText";
 
@@ -28,6 +29,11 @@ export default function ImageBlock({
             height={dimensions.height}
             alt={alt}
             priority={priority}
+            sizes={generateImageSizesProp({
+              base: "95vw",
+              md: "75vw",
+              xl: "50vw",
+            })}
           />
         ) : (
           // If we don't have dimensions because image probbing failed, we fall back to regular image

@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
+import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
 import iphoneFrame from "./iphone.png"; // https://www.pngwing.com/en/free-png-vahlq
 import macFrame from "./macpro.png"; // https://www.pngwing.com/en/free-png-njmbh
@@ -82,7 +83,15 @@ export default function DevicePreviews({
             height="89%"
             width="76%"
           >
-            <Image src={desktopImage} alt="screenshot" placeholder="blur" />
+            <Image
+              src={desktopImage}
+              alt="screenshot"
+              placeholder="blur"
+              sizes={generateImageSizesProp({
+                base: "50vw",
+                md: "25vw",
+              })}
+            />
           </Box>
           <Image src={macFrame} alt="laptop frame" />
         </Box>
@@ -121,7 +130,15 @@ export default function DevicePreviews({
             height="88.5%"
             width="85%"
           >
-            <Image src={mobileImage} alt="screenshot" placeholder="blur" />
+            <Image
+              src={mobileImage}
+              alt="screenshot"
+              placeholder="blur"
+              sizes={generateImageSizesProp({
+                base: "40vw",
+                md: "20vw",
+              })}
+            />
           </Box>
           <Image src={iphoneFrame} alt="phone frame" />
         </Box>
