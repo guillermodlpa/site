@@ -23,8 +23,8 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
           {index !== blogPosts.length - 1 && (
             <MagicalDivider
               height="2px"
-              mb={{ base: 10, md: 10 }}
-              mt={{ base: 10, md: 12 }}
+              mb={{ base: 5, md: 5 }}
+              mt={{ base: 5, md: 7 }}
               width="full"
             />
           )}

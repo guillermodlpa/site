@@ -1,4 +1,11 @@
-import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  LinkBox,
+  LinkOverlay,
+  Text,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { getBlogPostPath } from "../../constants/paths";
@@ -28,7 +35,21 @@ export default function BlogPostSummary({
   tags,
 }: BlogPost & { preloadImage: boolean }) {
   return (
-    <Box opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}>
+    <LinkBox
+      opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}
+      as="article"
+      transitionProperty="common"
+      transitionDuration="faster"
+      _hover={{
+        "& a": { color: "secondary" },
+      }}
+      _active={{
+        backgroundColor: "blackAlpha.50",
+      }}
+      px={2}
+      mx={-2}
+      py={5}
+    >
       <Flex gap={8} flexDirection={["column", undefined, "row"]}>
         {imageSrc && (
           <Box
@@ -41,28 +62,30 @@ export default function BlogPostSummary({
               margin: "0 auto",
             }}
           >
-            <NextLink href={getBlogPostPath(slug)} passHref>
-              <a>
-                <Image
-                  src={imageSrc}
-                  layout="fill"
-                  objectFit="contain"
-                  alt={"Blog post thumbnail"}
-                  priority={preloadImage}
-                  sizes={generateImageSizesProp({
-                    base: "95vw",
-                    sm: "25vw",
-                    lg: "15vw",
-                  })}
-                />
-              </a>
-            </NextLink>
+            <Image
+              src={imageSrc}
+              layout="fill"
+              objectFit="contain"
+              alt={"Blog post thumbnail"}
+              priority={preloadImage}
+              sizes={generateImageSizesProp({
+                base: "95vw",
+                sm: "25vw",
+                lg: "15vw",
+              })}
+            />
           </Box>
         )}
         <Flex flexDirection="column" gap={4}>
           <Heading as="h2" size="md">
             <NextLink href={getBlogPostPath(slug)} passHref>
-              <Link variant="inheritColorKeepHover">{title}</Link>
+              <LinkOverlay
+                color="inherit"
+                transitionProperty="common"
+                transitionDuration="faster"
+              >
+                {title}
+              </LinkOverlay>
             </NextLink>
           </Heading>
 
@@ -85,14 +108,9 @@ export default function BlogPostSummary({
             )}
           </Text>
 
-          <Text fontSize="md">
-            {excerpt}{" "}
-            <NextLink href={getBlogPostPath(slug)} passHref>
-              <Link>Read more</Link>
-            </NextLink>
-          </Text>
+          <Text fontSize="md">{excerpt}</Text>
         </Flex>
       </Flex>
-    </Box>
+    </LinkBox>
   );
 }
