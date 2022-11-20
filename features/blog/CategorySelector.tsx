@@ -7,6 +7,7 @@ const categoryButtons = [
   { name: "development", label: "Development" },
   { name: "management", label: "Management" },
   { name: "remote work", label: "Remote Work" },
+  { name: "", label: "Others" },
 ];
 
 export default function CategorySelector({
@@ -17,7 +18,7 @@ export default function CategorySelector({
   setSelectedCategory;
 }) {
   return (
-    <ButtonGroup isAttached size="sm">
+    <ButtonGroup isAttached size="sm" flexWrap="wrap">
       {categoryButtons.map((categoryButton) => (
         <Button
           key={categoryButton.name}
@@ -30,6 +31,7 @@ export default function CategorySelector({
             setSelectedCategory(categoryButton.name);
             umami.trackEvent(`Apply filter: ${categoryButton.name}`);
           }}
+          px={{ base: 2, md: 3 }}
         >
           {categoryButton.label}
         </Button>

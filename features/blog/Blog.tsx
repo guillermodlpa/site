@@ -15,7 +15,9 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
     selectedCategory === "all"
       ? blogPosts
       : blogPosts.filter((blogPost) =>
-          blogPost.tags.includes(selectedCategory.toLocaleLowerCase())
+          selectedCategory
+            ? blogPost.tags.includes(selectedCategory)
+            : blogPost.tags.length === 0
         );
 
   return (
