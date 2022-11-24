@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/legacy/image";
+import { StaticImageData } from "next/image";
 import splashProject from "./splash/splash";
 import alacartadigitalProject from "./alacartadigital/alacartadigital";
 import afterProject from "./after/after";

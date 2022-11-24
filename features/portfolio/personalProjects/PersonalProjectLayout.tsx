@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useRef } from "react";
 import personalProjects from "./personalProjects";
 import DevicePreviews from "../DevicePreviews";
@@ -89,9 +89,11 @@ export default function PersonalProjectLayout({
           <Image
             src={backgroundImage.src}
             alt="Background"
-            layout={backgroundImage.layout}
-            objectFit="cover"
+            fill={backgroundImage.fill}
             placeholder="blur"
+            style={{
+              objectFit: backgroundImage.objectFit,
+            }}
             sizes={generateImageSizesProp({
               base: "100vw",
               md: "50vw",
@@ -148,8 +150,8 @@ export default function PersonalProjectLayout({
           <Image
             src={logo}
             alt={logoAlt}
-            layout="fill"
-            objectFit="scale-down"
+            fill
+            style={{ objectFit: "scale-down" }}
             sizes={generateImageSizesProp({
               base: "90vw",
               md: "40vw",

@@ -1,5 +1,5 @@
 import { Box, Text, useToken } from "@chakra-ui/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import getPlainText from "../utils/getPlainText";
 import NotionRichText from "./NotionRichText";
@@ -51,7 +51,6 @@ export default function ImageBlock({
         {dimensions ? (
           <Image
             src={src}
-            layout="intrinsic"
             width={renderedWidth}
             height={renderedHeight}
             alt={alt}

@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
@@ -93,7 +93,12 @@ export default function DevicePreviews({
               })}
             />
           </Box>
-          <Image src={macFrame} alt="laptop frame" />
+          <Image
+            src={macFrame}
+            alt="laptop frame"
+            // this is so the frame shows above the absolute positioned images above
+            style={{ transform: "translate(0, 0)" }}
+          />
         </Box>
       )}
 
@@ -121,13 +126,13 @@ export default function DevicePreviews({
           />
           <Box
             position="absolute"
-            top="50%"
+            top="53%"
             left="49.8%"
             transform="translate(-50%, -50%)"
-            borderBottomLeftRadius="1rem"
-            borderBottomRightRadius="1rem"
+            borderBottomLeftRadius="0.5rem"
+            borderBottomRightRadius="0.5rem"
             overflow="hidden"
-            height="88.5%"
+            height="90%"
             width="85%"
           >
             <Image
@@ -140,7 +145,12 @@ export default function DevicePreviews({
               })}
             />
           </Box>
-          <Image src={iphoneFrame} alt="phone frame" />
+          <Image
+            src={iphoneFrame}
+            alt="phone frame"
+            // this is so the frame shows above the absolute positioned images above
+            style={{ transform: "translate(0, 0)" }}
+          />
         </Box>
       )}
     </Box>

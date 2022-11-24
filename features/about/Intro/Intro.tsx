@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import NextLink from "next/link";
 import { PATH_CONTACT } from "../../../constants/paths";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
@@ -40,11 +40,7 @@ export default function Intro() {
             sx={{
               borderRadius: "1rem",
               overflow: "hidden",
-              filter: `brightness(1.2) contrast(1.1) grayscale(0.7)`,
-              transition: "filter 0.5s ease",
-              _groupHover: {
-                filter: `brightness(1.1) contrast(1.1) grayscale(0.1)`,
-              },
+              filter: `brightness(1.05) contrast(1.1)`,
             }}
           >
             <Image
@@ -65,7 +61,7 @@ export default function Intro() {
           </MDXProvider>
 
           <Flex mt={8} justifyContent={{ base: "center", md: "flex-start" }}>
-            <NextLink passHref href={PATH_CONTACT}>
+            <NextLink passHref legacyBehavior href={PATH_CONTACT}>
               <Button colorScheme="primary" as={Link}>
                 Get in touch
               </Button>

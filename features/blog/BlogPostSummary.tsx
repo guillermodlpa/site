@@ -6,7 +6,7 @@ import {
   LinkOverlay,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import NextLink from "next/link";
 import { getBlogPostPath } from "../../constants/paths";
 import { BlogPost } from "../../types/types";
@@ -64,8 +64,8 @@ export default function BlogPostSummary({
           >
             <Image
               src={imageSrc}
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
               alt={"Blog post thumbnail"}
               priority={preloadImage}
               sizes={generateImageSizesProp({
@@ -76,7 +76,7 @@ export default function BlogPostSummary({
             />
           </Box>
         )}
-        <Flex flexDirection="column" gap={4}>
+        <Flex flexDirection="column" gap={4} flexGrow={1}>
           <Heading as="h2" size="md">
             <NextLink href={getBlogPostPath(slug)} passHref legacyBehavior>
               <LinkOverlay

@@ -43,7 +43,8 @@ const travelmapProject: PersonalProject = {
   Description,
   backgroundImage: {
     src: travelmapBackground,
-    layout: "fill",
+    fill: true,
+    objectFit: "cover",
     styles: {
       width: "100%",
       height: "100%",

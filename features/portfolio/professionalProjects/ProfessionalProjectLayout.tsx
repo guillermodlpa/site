@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useRef } from "react";
 import { MDXProvider } from "@mdx-js/react";
 
@@ -81,8 +81,7 @@ export default function ProfessionalProjectLayout({
           <Image
             src={backgroundImage.src}
             alt="Background"
-            layout="responsive"
-            objectFit="cover"
+            style={{ objectFit: "cover" }}
             placeholder="blur"
             sizes="100vw"
           />
@@ -140,7 +139,6 @@ export default function ProfessionalProjectLayout({
           <Image
             src={logo}
             alt={logoAlt}
-            layout="responsive"
             sizes={generateImageSizesProp({
               base: "90vw",
               md: "50vw",

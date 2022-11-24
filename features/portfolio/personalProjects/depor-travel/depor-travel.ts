@@ -42,7 +42,8 @@ const deporTravelProject: PersonalProject = {
   Description,
   backgroundImage: {
     src: deporTravelBackground,
-    layout: "fill",
+    fill: true,
+    objectFit: "cover",
     styles: {
       height: "100%",
       width: "100%",

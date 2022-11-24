@@ -36,7 +36,8 @@ const kikiriCoinProject: PersonalProject = {
   Description,
   backgroundImage: {
     src: kikiriCoinLogo,
-    layout: "responsive",
+    fill: true,
+    objectFit: "contain",
     styles: {
       top: "10%",
       left: "50%",

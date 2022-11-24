@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/legacy/image";
+import { StaticImageData } from "next/image";
 import quatroProject from "./quatro/quatro";
 import kikiriCoinProject from "./kikiricoin/kikiricoin";
 import travelmapProject from "./travelmap/travelmap";
@@ -36,7 +36,8 @@ export type PersonalProject = {
   Description: (props: any) => JSX.Element;
   backgroundImage: {
     src: StaticImageData;
-    layout: "responsive" | "fill" | "intrinsic";
+    fill: boolean;
+    objectFit: "cover" | "contain";
     styles: {
       top?: string | number | { base: string | number; md: string | number };
       left?: string | number | { base: string | number; md: string | number };
