@@ -33,7 +33,7 @@ const afterProject: ProfessionalProject = {
     accentHightlighted: "#4e5b6f",
     accentHightlightedForeground: "white",
     subheadline: "#627389",
-    body: "#627389",
+    body: "#1A202C",
     background: "white",
     mobileAppBar: "black",
   },
