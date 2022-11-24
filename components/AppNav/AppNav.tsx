@@ -35,7 +35,7 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
     >
       <Box py={4}>
         <Heading size="xl" mb={2}>
-          <NextLink passHref href="/">
+          <NextLink passHref legacyBehavior href="/">
             <Link variant="inheritColor">Guillermo de la Puente</Link>
           </NextLink>
         </Heading>
@@ -44,7 +44,7 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
           {links.map(({ label, path }) => (
             <WrapItem key={path}>
               <Text size="md" color="neutral.600">
-                <NextLink passHref href={path}>
+                <NextLink passHref legacyBehavior href={path}>
                   <Link
                     variant="inheritColor"
                     aria-current={

@@ -110,7 +110,7 @@ export default function Contact() {
               </UnorderedList>
 
               <Text mb={2}>
-                <NextLink href={PATH_BLOG} passHref>
+                <NextLink href={PATH_BLOG} passHref legacyBehavior>
                   <Link>Check out my blog</Link>
                 </NextLink>
               </Text>

@@ -9,7 +9,7 @@ function NotFoundPage() {
       <Heading>Not found</Heading>
       <Text>This page could not be found.</Text>
       <Text>
-        <NextLink href={PATH_BLOG} passHref>
+        <NextLink href={PATH_BLOG} passHref legacyBehavior>
           <Link>Go to blog</Link>
         </NextLink>
       </Text>

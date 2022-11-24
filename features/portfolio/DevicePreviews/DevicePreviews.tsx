@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import { useEffect, useRef, useState } from "react";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 

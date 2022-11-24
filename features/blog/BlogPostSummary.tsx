@@ -6,7 +6,7 @@ import {
   LinkOverlay,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import NextLink from "next/link";
 import { getBlogPostPath } from "../../constants/paths";
 import { BlogPost } from "../../types/types";
@@ -78,7 +78,7 @@ export default function BlogPostSummary({
         )}
         <Flex flexDirection="column" gap={4}>
           <Heading as="h2" size="md">
-            <NextLink href={getBlogPostPath(slug)} passHref>
+            <NextLink href={getBlogPostPath(slug)} passHref legacyBehavior>
               <LinkOverlay
                 color="inherit"
                 transitionProperty="common"

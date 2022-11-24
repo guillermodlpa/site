@@ -48,22 +48,22 @@ function Home() {
 
           <Wrap as="nav" spacing={4} mb={8}>
             <WrapItem>
-              <NextLink href={PATH_BLOG} passHref>
+              <NextLink href={PATH_BLOG} passHref legacyBehavior>
                 <Link fontSize="xl">Blog</Link>
               </NextLink>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_PORTFOLIO} passHref>
+              <NextLink href={PATH_PORTFOLIO} passHref legacyBehavior>
                 <Link fontSize="xl">Portfolio</Link>
               </NextLink>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_ABOUT} passHref>
+              <NextLink href={PATH_ABOUT} passHref legacyBehavior>
                 <Link fontSize="xl">About</Link>
               </NextLink>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_CONTACT} passHref>
+              <NextLink href={PATH_CONTACT} passHref legacyBehavior>
                 <Link fontSize="xl">Contact</Link>
               </NextLink>
             </WrapItem>

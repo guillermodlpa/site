@@ -36,7 +36,7 @@ export default function AppFooter({
         <Wrap spacing={4} direction={{ base: "column", md: "row" }}>
           {links.map(({ label, path }) => (
             <WrapItem key={path}>
-              <NextLink passHref href={path}>
+              <NextLink passHref legacyBehavior href={path}>
                 <Link
                   aria-current={
                     path !== "/" && pathname?.startsWith(path) ? "page" : false

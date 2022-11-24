@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import NextLink from "next/link";
 import { PATH_CONTACT } from "../../../constants/paths";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";

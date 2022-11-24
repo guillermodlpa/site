@@ -53,7 +53,7 @@ export default function AuthorAside() {
 
           {links.map(({ label, path }) => (
             <Text key={path} fontSize="sm" textAlign="right" mb={1}>
-              <NextLink passHref href={path}>
+              <NextLink passHref legacyBehavior href={path}>
                 <Link>{label}</Link>
               </NextLink>
             </Text>

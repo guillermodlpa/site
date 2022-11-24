@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRef } from "react";
 import personalProjects from "./personalProjects";
 import DevicePreviews from "../DevicePreviews";

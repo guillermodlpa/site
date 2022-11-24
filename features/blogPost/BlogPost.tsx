@@ -71,7 +71,7 @@ export default function BlogPost({
 
       <Box as="footer" mt={16} mb={4}>
         <Text textAlign="center">
-          <NextLink href={PATH_BLOG} passHref>
+          <NextLink href={PATH_BLOG} passHref legacyBehavior>
             <Link>Back to all posts</Link>
           </NextLink>
         </Text>
