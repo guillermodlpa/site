@@ -27,7 +27,11 @@ export default function useMarkdownComponents({
       ),
       a: (props) => (
         <Link
-          isExternal
+          isExternal={
+            props.href &&
+            !props.href.startsWith("/") &&
+            !props.href.startsWith("#")
+          }
           color={colors.accent}
           _hover={{
             color: colors.accentHightlighted,
