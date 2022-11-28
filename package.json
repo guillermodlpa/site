@@ -37,7 +37,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-syntax-highlighter": "^15.5.0",
-    "unfurl.js": "^6.0.0"
+    "unfurl.js": "^6.0.0",
+    "upload-notion-images-to-cloudinary": "^1.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
