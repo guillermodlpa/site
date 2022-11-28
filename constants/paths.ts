@@ -7,4 +7,6 @@ export const PATH_ABOUT = "/about";
 
 export const PATH_CONTACT = "/contact";
 
+export const PATH_NEWSLETTER = "/newsletter";
+
 export const PATH_RSS = "/rss.xml";

@@ -5,6 +5,7 @@ import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
+  PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
@@ -16,6 +17,7 @@ const links = [
   { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "About", path: PATH_ABOUT },
   { label: "Contact", path: PATH_CONTACT },
+  { label: "Newsletter", path: PATH_NEWSLETTER },
 ];
 
 export default function AppFooter({
@@ -33,7 +35,11 @@ export default function AppFooter({
       <MagicalDivider as="div" />
 
       <Box py={4} display="flex" justifyContent="space-between">
-        <Wrap spacing={4} direction={{ base: "column", md: "row" }}>
+        <Wrap
+          spacingX={4}
+          spacingY={2}
+          direction={{ base: "column", md: "row" }}
+        >
           {links.map(({ label, path }) => (
             <WrapItem key={path}>
               <NextLink passHref legacyBehavior href={path}>

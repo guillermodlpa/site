@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import { PATH_CONTACT } from "../../../constants/paths";
+import { PATH_CONTACT, PATH_NEWSLETTER } from "../../../constants/paths";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 import IntroContent from "./intro-content.mdx";
 import ProfilePicture from "./profile-picture.jpg";
@@ -60,10 +60,20 @@ export default function Intro() {
             <IntroContent />
           </MDXProvider>
 
-          <Flex mt={8} justifyContent={{ base: "center", md: "flex-start" }}>
+          <Flex
+            mt={8}
+            justifyContent={{ base: "center", md: "flex-start" }}
+            gap={4}
+          >
             <NextLink passHref legacyBehavior href={PATH_CONTACT}>
-              <Button colorScheme="primary" as={Link}>
+              <Button variant="outline" colorScheme="primary" as={Link}>
                 Get in touch
+              </Button>
+            </NextLink>
+
+            <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
+              <Button variant="outline" colorScheme="primary" as={Link}>
+                Join my Personal Newsletter
               </Button>
             </NextLink>
           </Flex>

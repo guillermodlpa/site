@@ -6,6 +6,7 @@ import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
+  PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
 
@@ -65,6 +66,11 @@ function Home() {
             <WrapItem>
               <NextLink href={PATH_CONTACT} passHref legacyBehavior>
                 <Link fontSize="xl">Contact</Link>
+              </NextLink>
+            </WrapItem>
+            <WrapItem>
+              <NextLink href={PATH_NEWSLETTER} passHref legacyBehavior>
+                <Link fontSize="xl">Newsletter</Link>
               </NextLink>
             </WrapItem>
           </Wrap>

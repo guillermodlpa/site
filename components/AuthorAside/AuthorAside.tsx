@@ -4,6 +4,7 @@ import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
+  PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
 import OpacitySlideFade from "../../features/portfolio/OpacitySlideFade";
@@ -16,6 +17,7 @@ const links = [
   { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "About", path: PATH_ABOUT },
   { label: "Contact", path: PATH_CONTACT },
+  { label: "Newsletter", path: PATH_NEWSLETTER },
 ];
 
 export default function AuthorAside() {

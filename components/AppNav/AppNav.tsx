@@ -13,6 +13,7 @@ import {
   PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
+  PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
@@ -22,6 +23,7 @@ const links = [
   { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "About", path: PATH_ABOUT },
   { label: "Contact", path: PATH_CONTACT },
+  { label: "Newsletter", path: PATH_NEWSLETTER },
 ];
 
 export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
@@ -40,7 +42,7 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
           </NextLink>
         </Heading>
 
-        <Wrap as="nav" spacing={4}>
+        <Wrap as="nav" spacingX={4} spacingY={1}>
           {links.map(({ label, path }) => (
             <WrapItem key={path}>
               <Text size="md" color="neutral.600">

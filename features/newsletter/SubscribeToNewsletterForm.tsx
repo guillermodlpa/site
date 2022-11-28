@@ -5,25 +5,29 @@ import {
   AlertTitle,
   Box,
   Button,
-  Container,
   Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
-  Heading,
   Input,
   Link,
   ListItem,
   Text,
-  Textarea,
   UnorderedList,
 } from "@chakra-ui/react";
 import getConfig from "next/config";
-import NextLink from "next/link";
 import { FormEvent, useState } from "react";
+import NextLink from "next/link";
 import { PATH_BLOG } from "../../constants/paths";
 
 const { publicRuntimeConfig } = getConfig();
+
+enum FormStatus {
+  IDDLE,
+  SUBMITTING,
+  ERROR,
+  SUBMITTED,
+}
 
 // FormBold fails with a server error when we send an empty value for a key
 function removeEmptyValues(params: { [key: string]: string }): {
@@ -38,30 +42,22 @@ function removeEmptyValues(params: { [key: string]: string }): {
   return filteredParams;
 }
 
-enum FormStatus {
-  IDDLE,
-  SUBMITTING,
-  ERROR,
-  SUBMITTED,
-}
+export default function SubscribeToNewsletterForm() {
+  const [formStatus, setFormStatus] = useState<FormStatus>(FormStatus.IDDLE);
 
-export default function Contact() {
   const [data, setData] = useState({
     name: "",
     email: "",
-    website: "",
-    message: "",
   });
-  const [formStatus, setFormStatus] = useState<FormStatus>(FormStatus.IDDLE);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent) {
     event.preventDefault();
     if (formStatus === FormStatus.SUBMITTING) {
       return;
     }
 
     setFormStatus(FormStatus.SUBMITTING);
-    fetch(publicRuntimeConfig.FORMBOLD_CONTACT_FORM_ENDPOINT, {
+    fetch(publicRuntimeConfig.FORMBOLD_NEWSLETTER_FORM_ENDPOINT, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -80,33 +76,22 @@ export default function Contact() {
         setFormStatus(FormStatus.ERROR);
       });
   }
-
   return (
-    <Container py={10}>
-      <Heading mb={2}>Get in touch</Heading>
-      <Text mb={6}>
-        {`Send a general message or details of a project you'd like me to be a
-        part of. I'll get back to you as soon as possible.`}
-      </Text>
-
+    <Box onSubmit={handleSubmit} as="form" mt={8}>
       {formStatus === FormStatus.SUBMITTED ? (
         <Alert status="success" variant="subtle">
           <AlertIcon />
           <Box>
             <AlertTitle fontSize="lg" mb={4} mt={2}>
-              Form Submitted
+              Subscribed
             </AlertTitle>
             <AlertDescription maxWidth="sm">
-              <Text mb={2}>{`Thank you. I'll get back to you soon.`}</Text>
+              <Text mb={2}>{`Thank you! I'll be in touch.`}</Text>
               <Text mb={1}>{`Your submission:`}</Text>
 
               <UnorderedList listStyleType="none" ml={0} mb={4}>
                 <ListItem fontSize="sm">{data.name}</ListItem>
                 <ListItem fontSize="sm">{data.email}</ListItem>
-                <ListItem fontSize="sm">{data.website || "-"}</ListItem>
-                <ListItem fontSize="sm" whiteSpace="pre-line">
-                  {data.message}
-                </ListItem>
               </UnorderedList>
 
               <Text mb={2}>
@@ -118,9 +103,17 @@ export default function Contact() {
           </Box>
         </Alert>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <FormControl isRequired mb={4}>
-            <FormLabel requiredIndicator={<></>}>Your name</FormLabel>
+        <Flex
+          gap={4}
+          width="fit-content"
+          mx="auto"
+          alignItems="flex-end"
+          flexDirection={{ base: "column", sm: "row" }}
+          justifyContent="flex-end"
+          flexWrap="wrap"
+        >
+          <FormControl isRequired width="fit-content">
+            <FormLabel requiredIndicator={<></>}>Name</FormLabel>
             <Input
               type="text"
               name="name"
@@ -130,7 +123,7 @@ export default function Contact() {
               }
             />
           </FormControl>
-          <FormControl isRequired mb={4}>
+          <FormControl isRequired width="fit-content">
             <FormLabel requiredIndicator={<></>}>Email</FormLabel>
             <Input
               type="email"
@@ -141,51 +134,27 @@ export default function Contact() {
               }
             />
           </FormControl>
-          <FormControl mb={4}>
-            <FormLabel mb={1}>
-              Your website{" "}
-              <Text as="span" color="chakra-body-text-secondary">
-                (optional)
-              </Text>
-            </FormLabel>
-            <Input
-              type="text"
-              name="website"
-              value={data.website}
-              onChange={(event) =>
-                setData((data) => ({ ...data, website: event.target.value }))
-              }
-            />
-          </FormControl>
-          <FormControl mb={4} isRequired>
-            <FormLabel requiredIndicator={<></>}>Message</FormLabel>
-            <Textarea
-              name="message"
-              rows={5}
-              value={data.message}
-              onChange={(event) =>
-                setData((data) => ({ ...data, message: event.target.value }))
-              }
-            />
-          </FormControl>
 
-          {formStatus === FormStatus.ERROR && (
-            <FormControl isInvalid>
-              <FormErrorMessage>{`There's been an error. Try again later`}</FormErrorMessage>
-            </FormControl>
-          )}
-
-          <Flex justifyContent="center" mt={6}>
-            <Button
-              type="submit"
-              colorScheme="primary"
-              isLoading={formStatus === FormStatus.SUBMITTING}
-            >
-              Send
-            </Button>
-          </Flex>
-        </form>
+          <Button
+            flexShrink={0}
+            type="submit"
+            colorScheme="primary"
+            isLoading={formStatus === FormStatus.SUBMITTING}
+          >
+            Subscribe
+          </Button>
+        </Flex>
       )}
-    </Container>
+
+      {formStatus === FormStatus.ERROR && (
+        <FormControl isInvalid>
+          <FormErrorMessage
+            textAlign="center"
+            width="full"
+            display="block"
+          >{`There's been an error. Try again later`}</FormErrorMessage>
+        </FormControl>
+      )}
+    </Box>
   );
 }
