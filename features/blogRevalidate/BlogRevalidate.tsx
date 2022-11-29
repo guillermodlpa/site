@@ -53,8 +53,7 @@ export default function BlogRevalidate() {
     <Box maxWidth="container.md" mx="auto" px={4} py={16}>
       <Heading mb={6}>Blog Reload</Heading>
       <Text mb={4}>
-        {`This is an internal utility to revalidate on-demand the pages that are statically
-        rendered, which are the blog and the blog posts.`}
+        {`This is a utility to publish changes made in Notion. It revalidates on-demand the pages that are statically rendered, which are the blog and the blog posts.`}
       </Text>
       <Text
         mb={4}
