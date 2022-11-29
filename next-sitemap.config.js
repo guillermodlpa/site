@@ -54,7 +54,7 @@ const config = {
   siteUrl: process.env.SITE_URL,
   generateIndexSitemap: false,
   generateRobotsTxt: true,
-  exclude: [],
+  exclude: ["/blog/revalidate"],
   transform: async (config, path) => {
     return {
       loc: path,

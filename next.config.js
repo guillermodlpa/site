@@ -13,6 +13,7 @@ const nextConfig = {
   serverRuntimeConfig: {
     NOTION_TOKEN: process.env.NOTION_TOKEN,
     NOTION_BLOG_DATABASE_ID: process.env.NOTION_BLOG_DATABASE_ID,
+    REVALIDATION_PASSCODE: process.env.REVALIDATION_PASSCODE,
   },
   images: {
     domains: [

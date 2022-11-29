@@ -7,7 +7,9 @@ const { publicRuntimeConfig } = getConfig();
 const META_DESCRIPTION_LIMIT = 155;
 
 // https://ogp.me/#types
-type ogType = "website" | "article" | "profile";
+type OgType = "website" | "article" | "profile";
+
+type RobotsTag = "all" | "noindex" | "nofollow" | "none";
 
 /**
  * Helper component to render SEO meta tags.
@@ -21,11 +23,12 @@ export default function PageMeta({
   ogType = "website",
   ogImageUrl,
   ogArticleTags,
+  robots,
 }: {
   canonicalPath: string;
   description: string;
   title: string;
-  ogType?: ogType;
+  ogType?: OgType;
   ogImageUrl?: string;
   ogArticleTags?: {
     // https://ogp.me/#type_article
@@ -34,6 +37,7 @@ export default function PageMeta({
     author: string;
     tags: string[];
   };
+  robots?: RobotsTag | RobotsTag[];
 }) {
   const truncatedContent = truncateString(description, META_DESCRIPTION_LIMIT);
   const canonicalUrl =
@@ -70,6 +74,13 @@ export default function PageMeta({
             )
           )}
       <meta property="og:site_name" content="Guillermo de la Puente" />
+
+      {robots && (
+        <meta
+          name="robots"
+          content={typeof robots === "string" ? robots : robots.join(", ")}
+        />
+      )}
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@guillermodlpa" />

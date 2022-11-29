@@ -9,4 +9,6 @@ export const PATH_CONTACT = "/contact";
 
 export const PATH_NEWSLETTER = "/newsletter";
 
+export const PATH_BLOG_REVALIDATE = "/blog/revalidate";
+
 export const PATH_RSS = "/rss.xml";
