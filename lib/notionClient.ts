@@ -68,6 +68,7 @@ const notion = new Client({
 
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
   const result = await notion.databases.query({
+    page_size: 100,
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
     filter:
       process.env.NODE_ENV === "development"
@@ -91,7 +92,7 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
     sorts: [{ property: PROPERTY_DATE_PUBLISHED, direction: "descending" }],
   });
 
-  // @todo: consider adding more pages here
+  // @todo: add pagination support when we reach 100 posts
   const { results } = result;
 
   const blogPosts = results.map(transformNotionPageIntoBlogPost);
