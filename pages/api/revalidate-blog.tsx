@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import getConfig from "next/config";
 import { getBlogPostPath, PATH_BLOG } from "../../constants/paths";
 import { fetchBlogPosts } from "../../lib/notionClient";
+import uploadNotionImagesToCloudinary from "upload-notion-images-to-cloudinary";
 
 type ErrorResponse = { error: string };
 
@@ -17,6 +18,14 @@ const handlePost = async (
       .status(400)
       .json({ error: "Invalid revalidation passcode header value" });
   }
+
+  await uploadNotionImagesToCloudinary({
+    notionToken: serverRuntimeConfig.NOTION_TOKEN,
+    notionDatabaseId: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
+    cloudinaryUrl: serverRuntimeConfig.CLOUDINARY_URL,
+    cloudinaryUploadFolder: serverRuntimeConfig.CLOUDINARY_UPLOAD_FOLDER,
+    logLevel: "debug",
+  });
 
   const blogPosts = await fetchBlogPosts();
 
