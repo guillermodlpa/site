@@ -14,5 +14,6 @@ module.exports = {
     // next-sitemap can actually put them here, but we want to keep it dynamic to allow regeneration without deployment
     "/blog/*",
     "/sitemap-*.xml",
+    "/rss.xml",
   ],
 };
