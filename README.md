@@ -39,6 +39,6 @@ The contact form backend is powered by [FormBold](https://formbold.com/). It's a
 
 ## RSS
 
-The RSS feed is produced at build time, in the `postbuild` step. I started building it myself with feed, but ended up explorina more integrated solution with Next.js so that I didn't have to manually pull the blog posts from the Notion API nor parse the Next.js manifests to list the built blog post pages.
+The RSS feed (https://guillermodlpa.com/rss.xml) is generated dynamically, pulling the blog posts and returning them in RSS feed XML format. [Check out the implementation.](./pages/rss.xml.tsx)
 
-The package [next-rss](https://www.npmjs.com/package/next-rss) was perfect except for the fact that it seemed to bug out with dynamic routes, so I forked it and made a version with the fix and the ability to add more information to the feed items: [@guillermodlpa/next-rss](https://www.npmjs.com/package/@guillermodlpa/next-rss)
+Before, I had the RSS generated in the `postbuild` step using [next-rss](https://www.npmjs.com/package/next-rss). That package was perfect except was perfect except for the fact that it seemed to bug out with dynamic routes, so I forked it and made a version with the fix and the ability to add more information to the feed items: [@guillermodlpa/next-rss](https://www.npmjs.com/package/@guillermodlpa/next-rss).
