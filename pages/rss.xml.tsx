@@ -1,7 +1,7 @@
 /**
- * This is a dynamic sitemap rendered on the server with all posts
- * We use SSG with a cache of a few minutes instead of statically generating the sitemap
- * because we want to publish changes without redeploying and next-sitemap doesn't support ISG revalidation
+ * This is a dynamic RSS feed rendered on the server with all blog posts
+ * We use SSG with a cache of a few minutes instead of statically generating the file because we want
+ * new blog posts and edits to automatically show up here
  */
 
 import { getServerSideSitemap } from "next-sitemap";
