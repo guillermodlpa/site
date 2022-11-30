@@ -51,9 +51,12 @@ export default function BlogRevalidate() {
   }
   return (
     <Box maxWidth="container.md" mx="auto" px={4} py={16}>
-      <Heading mb={6}>Blog Reload</Heading>
+      <Heading mb={6}>Blog Revalidation</Heading>
       <Text mb={4}>
-        {`This is a utility to publish changes made in Notion. It revalidates on-demand the pages that are statically rendered, which are the blog and the blog posts.`}
+        {`This is a utility to publish changes made the blog posts in Notion.`}
+      </Text>
+      <Text mb={4}>
+        {`Technically speaking, this utility triggers the on-demand revalidation of statically generated pages, like the blog and each blog post.`}
       </Text>
       <Text
         mb={4}
@@ -61,10 +64,11 @@ export default function BlogRevalidate() {
 
       <form onSubmit={handleSubmit}>
         <Flex flexDirection="row" alignItems="flex-end" gap={4}>
-          <FormControl width="fit-content">
-            <FormLabel>Passcode</FormLabel>
+          <FormControl width="fit-content" isRequired>
+            <FormLabel requiredIndicator={<></>}>Secret Passcode</FormLabel>
             <Input
               type="password"
+              name="blog_revalidation_passcode"
               value={passcode}
               onChange={(event) => setPasscode(event.target.value)}
             />
