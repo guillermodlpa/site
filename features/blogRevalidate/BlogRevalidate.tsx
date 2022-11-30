@@ -58,14 +58,14 @@ export default function BlogRevalidate() {
     <Box maxWidth="container.md" mx="auto" px={4} py={16}>
       <Heading mb={6}>Blog Revalidation</Heading>
       <Text mb={4}>
-        {`This is a utility to publish changes made the blog posts in Notion.`}
+        {`This is a utility to publish changes made the blog posts in Notion. You can only use it if you have the secret passcode.`}
       </Text>
       <Text mb={4}>
         {`Technically speaking, this utility triggers the on-demand revalidation of statically generated pages, like the blog and each blog post. Doing a full revalidation can take over a minute, and since Vercel has execution limits on their functions, we have to split it.`}
       </Text>
-      <Text
-        mb={4}
-      >{`You can only use it if you have the secret passcode.`}</Text>
+      <Text mb={4}>
+        {`In a client project, this view would be made more easy to use, listing all pages from Notion and letting the user select those that they wish to publish changes from.`}
+      </Text>
 
       <form onSubmit={handleSubmit} id="blog_revalidation_form">
         <Flex flexDirection="row" alignItems="flex-end" gap={4} mt={8}>
