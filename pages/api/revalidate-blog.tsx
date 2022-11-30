@@ -5,12 +5,13 @@ import uploadNotionImagesToCloudinary from "upload-notion-images-to-cloudinary";
 import { fetchBlogPostBySlug } from "../../lib/notionClient";
 
 type ErrorResponse = { error: string };
+type SuccessResponse = { paths: string[] };
 
 const { serverRuntimeConfig } = getConfig();
 
 const handlePost = async (
   req: NextApiRequest,
-  res: NextApiResponse<{ paths: string[] } | ErrorResponse>
+  res: NextApiResponse<SuccessResponse | ErrorResponse>
 ) => {
   const passcode = req.headers["x-revalidation-passcode"];
   if (!passcode || passcode !== serverRuntimeConfig.REVALIDATION_PASSCODE) {
@@ -41,7 +42,6 @@ const handlePost = async (
   });
 
   const paths = [getBlogPostPath(slug), PATH_BLOG];
-
   for (const path of paths) {
     await res.revalidate(path);
   }
@@ -49,6 +49,7 @@ const handlePost = async (
   return res.status(200).send({ paths });
 };
 
+// Extendable handler to easily separate per method
 export default async function handle(
   req: NextApiRequest,
   res: NextApiResponse

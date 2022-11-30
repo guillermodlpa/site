@@ -13,6 +13,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import MagicalDivider from "../../components/MagicalDivider";
+import BookmarkBlock from "../blogPost/NotionPageRenderer/components/BookmarkBlock";
 
 enum FormStatus {
   IDDLE,
@@ -68,7 +70,12 @@ export default function BlogRevalidate() {
       </Text>
 
       <form onSubmit={handleSubmit} id="blog_revalidation_form">
-        <Flex flexDirection="row" alignItems="flex-end" gap={4} mt={8}>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems={{ base: "center", md: "flex-end" }}
+          gap={4}
+          mt={8}
+        >
           <FormControl width="fit-content" isRequired>
             <FormLabel requiredIndicator={<></>}>Secret Passcode</FormLabel>
             <Input
@@ -115,6 +122,19 @@ export default function BlogRevalidate() {
           )}
         </Flex>
       </form>
+
+      <MagicalDivider mt={16} mb={16} height="2px" width="66%" />
+
+      <Box as="section">
+        <Text mb={4}>
+          Check out the implementation of the revalidation endpoint:
+        </Text>
+        <BookmarkBlock
+          url={
+            "https://github.com/guillermodlpa/site/blob/main/pages/api/revalidate-blog.tsx"
+          }
+        />
+      </Box>
     </Box>
   );
 }
