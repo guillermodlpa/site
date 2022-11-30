@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import getConfig from "next/config";
 import { getBlogPostPath, PATH_BLOG } from "../../constants/paths";
-import { fetchBlogPosts } from "../../lib/notionClient";
 import uploadNotionImagesToCloudinary from "upload-notion-images-to-cloudinary";
 
 type ErrorResponse = { error: string };
@@ -10,7 +9,7 @@ const { serverRuntimeConfig } = getConfig();
 
 const handlePost = async (
   req: NextApiRequest,
-  res: NextApiResponse<void | ErrorResponse>
+  res: NextApiResponse<{ paths: string[] } | ErrorResponse>
 ) => {
   const passcode = req.headers["x-revalidation-passcode"];
   if (!passcode || passcode !== serverRuntimeConfig.REVALIDATION_PASSCODE) {
@@ -18,27 +17,33 @@ const handlePost = async (
       .status(400)
       .json({ error: "Invalid revalidation passcode header value" });
   }
+  const blogPostSlug = req.body.blog_post_slug;
+  if (typeof blogPostSlug !== "string") {
+    return res
+      .status(400)
+      .json({ error: "Invalid blog_post_slug value, it must be a string" });
+  }
 
-  await uploadNotionImagesToCloudinary({
-    notionToken: serverRuntimeConfig.NOTION_TOKEN,
-    notionDatabaseId: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
-    cloudinaryUrl: serverRuntimeConfig.CLOUDINARY_URL,
-    cloudinaryUploadFolder: serverRuntimeConfig.CLOUDINARY_UPLOAD_FOLDER,
-    logLevel: "debug",
-  });
+  // await uploadNotionImagesToCloudinary({
+  //   notionToken: serverRuntimeConfig.NOTION_TOKEN,
+  //   notionDatabaseId: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
+  //   cloudinaryUrl: serverRuntimeConfig.CLOUDINARY_URL,
+  //   cloudinaryUploadFolder: serverRuntimeConfig.CLOUDINARY_UPLOAD_FOLDER,
+  //   logLevel: "debug",
+  // });
 
-  const blogPosts = await fetchBlogPosts();
+  // const blogPosts = await fetchBlogPosts();
 
   const paths = [
+    getBlogPostPath(blogPostSlug.replace(/^\/blog\//, "").replace(/^\//, "")),
     PATH_BLOG,
-    ...blogPosts.map((blogPost) => getBlogPostPath(blogPost.slug)),
   ];
 
   for (const path of paths) {
     await res.revalidate(path);
   }
 
-  return res.status(204).send();
+  return res.status(200).send({ paths });
 };
 
 export default async function handle(

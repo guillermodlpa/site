@@ -6,6 +6,7 @@ import {
   Button,
   Flex,
   FormControl,
+  FormHelperText,
   FormLabel,
   Heading,
   Input,
@@ -22,6 +23,7 @@ enum FormStatus {
 
 export default function BlogRevalidate() {
   const [passcode, setPasscode] = useState("");
+  const [blogPostSlug, setBlogPostSlug] = useState("");
   const [status, setStatus] = useState<FormStatus>(FormStatus.IDDLE);
 
   function handleSubmit(event) {
@@ -37,6 +39,9 @@ export default function BlogRevalidate() {
         "Content-Type": "application/json",
         "x-revalidation-passcode": passcode,
       },
+      body: JSON.stringify({
+        blog_post_slug: blogPostSlug,
+      }),
     })
       .then((res) => {
         if (res.ok) {
@@ -56,14 +61,14 @@ export default function BlogRevalidate() {
         {`This is a utility to publish changes made the blog posts in Notion.`}
       </Text>
       <Text mb={4}>
-        {`Technically speaking, this utility triggers the on-demand revalidation of statically generated pages, like the blog and each blog post.`}
+        {`Technically speaking, this utility triggers the on-demand revalidation of statically generated pages, like the blog and each blog post. Doing a full revalidation can take over a minute, and since Vercel has execution limits on their functions, we have to split it.`}
       </Text>
       <Text
         mb={4}
       >{`You can only use it if you have the secret passcode.`}</Text>
 
-      <form onSubmit={handleSubmit}>
-        <Flex flexDirection="row" alignItems="flex-end" gap={4}>
+      <form onSubmit={handleSubmit} id="blog_revalidation_form">
+        <Flex flexDirection="row" alignItems="flex-end" gap={4} mt={8}>
           <FormControl width="fit-content" isRequired>
             <FormLabel requiredIndicator={<></>}>Secret Passcode</FormLabel>
             <Input
@@ -71,6 +76,19 @@ export default function BlogRevalidate() {
               name="blog_revalidation_passcode"
               value={passcode}
               onChange={(event) => setPasscode(event.target.value)}
+            />
+          </FormControl>
+
+          <FormControl width="fit-content" isRequired>
+            <FormLabel requiredIndicator={<></>}>Blog Post Slug</FormLabel>
+            <FormHelperText mb={2}>
+              /blog will also be revalidated
+            </FormHelperText>
+            <Input
+              name="blog_post_slug"
+              placeholder="/how-to-generate-rss-feed-with-next-js"
+              value={blogPostSlug}
+              onChange={(event) => setBlogPostSlug(event.target.value)}
             />
           </FormControl>
 
