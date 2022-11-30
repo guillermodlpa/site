@@ -23,7 +23,7 @@ enum FormStatus {
 
 export default function BlogRevalidate() {
   const [passcode, setPasscode] = useState("");
-  const [blogPostSlug, setBlogPostSlug] = useState("");
+  const [blogPostPath, setBlogPostSlug] = useState("");
   const [status, setStatus] = useState<FormStatus>(FormStatus.IDDLE);
 
   function handleSubmit(event) {
@@ -40,7 +40,7 @@ export default function BlogRevalidate() {
         "x-revalidation-passcode": passcode,
       },
       body: JSON.stringify({
-        blog_post_slug: blogPostSlug,
+        blog_post_path: blogPostPath,
       }),
     })
       .then((res) => {
@@ -85,9 +85,9 @@ export default function BlogRevalidate() {
               /blog will also be revalidated
             </FormHelperText>
             <Input
-              name="blog_post_slug"
+              name="blog_post_path"
               placeholder="/how-to-generate-rss-feed-with-next-js"
-              value={blogPostSlug}
+              value={blogPostPath}
               onChange={(event) => setBlogPostSlug(event.target.value)}
             />
           </FormControl>
