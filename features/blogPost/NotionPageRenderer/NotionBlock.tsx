@@ -79,7 +79,10 @@ export default function NotionBlock({
         return <BookmarkBlock url={value.url} />;
       case BLOCK_TYPES.CODE:
         return (
-          <CodeBlock language={value.language}>
+          <CodeBlock
+            language={value.language}
+            captionRichTextItems={value.caption}
+          >
             {getPlainText(value.rich_text)}
           </CodeBlock>
         );
