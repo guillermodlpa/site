@@ -45,6 +45,7 @@ export default function ImageBlock({
 
   const renderedWidth = useGetRenderedWidth(dimensions?.width);
   const renderedHeight = (dimensions.height / dimensions.width) * renderedWidth;
+  const borderColor = useToken("semanticTokens", "colors.border");
   return (
     <Box display="flex" justifyContent="center" mb={8}>
       <figure>
@@ -55,13 +56,14 @@ export default function ImageBlock({
             height={renderedHeight}
             alt={alt}
             priority={priority}
+            style={{ borderWidth: "1px", borderStyle: "solid", borderColor }}
           />
         ) : (
           // If we don't have dimensions because image probbing failed, we fall back to regular image
           // eslint-disable-next-line @next/next/no-img-element
           <img src={src} alt={alt} />
         )}
-        {captionRichTextItems && (
+        {captionRichTextItems && captionRichTextItems.length > 0 && (
           <Text as="figcaption" variant="caption" mt={2}>
             <NotionRichText richTextItems={captionRichTextItems} />
           </Text>

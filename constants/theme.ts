@@ -80,8 +80,8 @@ const theme = {
         _light: "neutral.500",
       },
       "chakra-border-color": {
-        _dark: "whiteAlpha.300",
-        _light: "neutral.200",
+        _dark: "neutral.900",
+        _light: "neutral.100",
       },
       "chakra-placeholder-color": {
         _dark: "whiteAlpha.400",
