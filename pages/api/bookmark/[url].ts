@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { unfurl } from "unfurl.js";
+import createApiEndpointHandler from "../../../utils/createApiEndpointHandler";
 
 type ErrorResponse = { error: string };
 type SuccessResponse = {
@@ -41,25 +42,6 @@ const handleGet = async (
     });
 };
 
-export default async function handle(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const handlers: {
-    [method: string]: (
-      req: NextApiRequest,
-      res: NextApiResponse
-    ) => Promise<void>;
-  } = {
-    GET: handleGet,
-  };
-  try {
-    return req.method && handlers[req.method]
-      ? await handlers[req.method](req, res)
-      : res.status(405).json({ error: "Method not allowed" });
-  } catch (error) {
-    res.status(500).json({
-      error: error instanceof Error ? error.message : "Internal error",
-    });
-  }
-}
+export default createApiEndpointHandler({
+  GET: handleGet,
+});
