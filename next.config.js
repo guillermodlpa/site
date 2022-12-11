@@ -18,6 +18,7 @@ const nextConfig = {
   images: {
     domains: [
       process.env.SITE_URL.replace(/:[0-9]+$/, "").replace(/^https?:\/\//, ""),
+      process.env.VERCEL_URL,
       "s3.us-west-2.amazonaws.com", // Notion images
       "res.cloudinary.com", // Images moved to Cloudinary
     ],
