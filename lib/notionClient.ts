@@ -59,7 +59,7 @@ function transformNotionPageIntoBlogPost(
     title: getTitleValue(page.properties[PROPERTY_NAME]),
     originalNotionImageSrc: cover,
     imageSrc: cover
-      ? `${publicRuntimeConfig.SITE_URL}/notion-resources/pages/${page.id}/cover`
+      ? `https://${publicRuntimeConfig.VERCEL_URL}/notion-resources/pages/${page.id}/cover`
       : null,
   };
 }
