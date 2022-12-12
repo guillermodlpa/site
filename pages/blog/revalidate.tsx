@@ -13,7 +13,6 @@ export default function BlogRevalidatePage() {
           "Frontend Engineer that builds successful, fast, high quality web applications."
         }
         ogType="profile"
-        robots="none"
       />
       <BlogRevalidate />
     </>

@@ -10,11 +10,16 @@ import {
   FormLabel,
   Heading,
   Input,
+  Link,
+  ListItem,
   Text,
+  UnorderedList,
 } from "@chakra-ui/react";
+import { MDXProvider } from "@mdx-js/react";
 import { useState } from "react";
 import MagicalDivider from "../../components/MagicalDivider";
 import BookmarkBlock from "../blogPost/NotionPageRenderer/components/BookmarkBlock";
+import BlogRevalidateDescription from "./blog-revalidate-description.mdx";
 
 enum FormStatus {
   IDDLE,
@@ -22,6 +27,20 @@ enum FormStatus {
   ERROR,
   SUBMITTED,
 }
+
+const markdownComponents = {
+  p: (props) => <Text mb={4} fontSize="md" {...props} />,
+  ul: (props) => <UnorderedList mb={4} {...props} />,
+  li: (props) => <ListItem mb={2} {...props} />,
+  a: (props) => (
+    <Link
+      isExternal={
+        props.href && !props.href.startsWith("/") && !props.href.startsWith("#")
+      }
+      {...props}
+    />
+  ),
+};
 
 export default function BlogRevalidate() {
   const [passcode, setPasscode] = useState("");
@@ -58,16 +77,13 @@ export default function BlogRevalidate() {
   }
   return (
     <Box maxWidth="container.md" mx="auto" px={4} py={16}>
-      <Heading mb={6}>Blog Revalidation</Heading>
-      <Text mb={4}>
-        {`This is a utility to publish changes made the blog posts in Notion. You can only use it if you have the secret passcode.`}
-      </Text>
-      <Text mb={4}>
-        {`Technically speaking, this utility triggers the on-demand revalidation of statically generated pages, like the blog and each blog post. Doing a full revalidation can take over a minute, and since Vercel has execution limits on their functions, we have to split it.`}
-      </Text>
-      <Text mb={4}>
-        {`In a client project, this view would be made more easy to use, listing all pages from Notion and letting the user select those that they wish to publish changes from.`}
-      </Text>
+      <Heading as="h1" mb={6}>
+        Blog Revalidation
+      </Heading>
+
+      <MDXProvider components={markdownComponents}>
+        <BlogRevalidateDescription />
+      </MDXProvider>
 
       <form onSubmit={handleSubmit} id="blog_revalidation_form">
         <Flex

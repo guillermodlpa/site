@@ -1,0 +1,10 @@
+This is a utility to publish changes made the blog posts in Notion. You can only use it if you have the secret passcode.
+
+Technically speaking, this utility:
+
+- Runs a script to move images from Notion to an external hosting provider. [Read why it's necessary for using Next.js image optimization.](/blog/how-to-render-images-from-the-notion-api-with-next-js-image-optimization)
+- Triggers the on-demand revalidation of statically generated pages, like the blog and each blog post.
+
+Doing revalidation of all pages can take over a minute. Since Vercel has execution limits on their functions, we have to split it and require passing which blog post should be revalidated.
+
+In a client project, this view would be made more easy to use, listing all pages from Notion and letting the user select those that they wish to publish changes from.
