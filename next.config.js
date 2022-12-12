@@ -4,6 +4,7 @@
 const nextConfig = {
   reactStrictMode: true,
   publicRuntimeConfig: {
+    VERCEL_URL: process.env.VERCEL_URL,
     SITE_URL: process.env.SITE_URL,
     UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
     FORMBOLD_CONTACT_FORM_ENDPOINT: process.env.FORMBOLD_CONTACT_FORM_ENDPOINT,
