@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { PATH_CONTACT, PATH_NEWSLETTER } from "../../../constants/paths";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 import IntroContent from "./intro-content.mdx";
-import ProfilePicture from "./profile-picture.jpg";
+import ProfilePicture from "./profile-picture-2.jpeg";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -19,7 +19,7 @@ export default function Intro() {
     <Box
       as="section"
       px={4}
-      py={16}
+      py={{ base: 10, md: 16 }}
       position="relative"
       overflow="hidden"
       maxWidth="container.md"
@@ -33,14 +33,14 @@ export default function Intro() {
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: 8, md: 16 }}
       >
-        <Box width={{ base: "50%", md: "33%" }} flexShrink={0}>
+        <Box width={{ base: "75%", md: "33%" }} flexShrink={0}>
           <Box
-            width="75%"
+            width="95%"
             margin="0 auto"
             sx={{
               borderRadius: "1rem",
               overflow: "hidden",
-              filter: `brightness(1.05) contrast(1.1)`,
+              filter: `brightness(1.01) contrast(1.02)`,
             }}
           >
             <Image
