@@ -22,7 +22,7 @@ export default function Portfolio() {
       <MagicalDivider width="auto" mx={6} />
       <PersonalProjectsHeader />
 
-      <Flex flexWrap="wrap" justifyContent="center">
+      <Flex flexWrap="wrap" justifyContent="center" mb={8}>
         {personalProjects.map((project) => (
           <PersonalProjectLayout key={project.name} {...project} />
         ))}

@@ -29,6 +29,7 @@ export type ProfessionalProject = {
   video: { src: string; type: string }[] | null;
   backgroundImage: {
     src: StaticImageData;
+    fill?: boolean;
     styles: {
       top?: string | number | { base: string | number; md: string | number };
       left?: string | number | { base: string | number; md: string | number };

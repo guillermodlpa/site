@@ -48,6 +48,7 @@ const alacartadigitalProject: ProfessionalProject = {
   ],
   backgroundImage: {
     src: alacartadigitalBackground,
+    fill: true,
     styles: {
       top: "20%",
       left: 0,

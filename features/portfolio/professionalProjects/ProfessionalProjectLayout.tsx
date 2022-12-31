@@ -80,6 +80,7 @@ export default function ProfessionalProjectLayout({
         >
           <Image
             src={backgroundImage.src}
+            fill={backgroundImage.fill}
             alt="Background"
             style={{ objectFit: "cover" }}
             placeholder="blur"
