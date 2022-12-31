@@ -10,8 +10,8 @@ import probeImageSize from "./probeImageSize";
 // These are custom properties defined in the Notion database, that we use here to filter, sort, and show info
 const PROPERTY_SLUG = "Slug";
 const PROPERTY_EXCERPT = "Excerpt";
-const PROPERTY_PUBLISHED = "Published";
-const PROPERTY_LISTED = "Listed";
+const PROPERTY_PREVIEW = "Preview";
+const PROPERTY_PRODUCTION = "Production";
 const PROPERTY_DATE_PUBLISHED = "Date Published";
 const PROPERTY_DATE_UPDATED = "Date Updated";
 const PROPERTY_TAGS = "Tags";
@@ -70,25 +70,21 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
   const result = await notion.databases.query({
     page_size: 100,
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
-    filter:
-      process.env.NODE_ENV === "development"
-        ? undefined
-        : {
-            and: [
-              {
-                property: PROPERTY_PUBLISHED,
-                checkbox: { equals: true },
-              },
-              {
-                property: PROPERTY_LISTED,
-                checkbox: { equals: true },
-              },
-              {
-                property: PROPERTY_DATE_PUBLISHED,
-                date: { before: new Date().toISOString() },
-              },
-            ],
-          },
+    filter: {
+      and: [
+        {
+          property:
+            process.env.VERCEL_ENV === "production"
+              ? PROPERTY_PRODUCTION
+              : PROPERTY_PREVIEW,
+          checkbox: { equals: true },
+        },
+        {
+          property: PROPERTY_DATE_PUBLISHED,
+          date: { before: new Date().toISOString() },
+        },
+      ],
+    },
     sorts: [{ property: PROPERTY_DATE_PUBLISHED, direction: "descending" }],
   });
 
@@ -108,14 +104,15 @@ export async function fetchBlogPostBySlug(
     page_size: 1,
     filter: {
       and: [
-        process.env.NODE_ENV === "development"
-          ? undefined
-          : {
-              property: PROPERTY_PUBLISHED,
-              checkbox: {
-                equals: true,
-              },
-            },
+        {
+          property:
+            process.env.VERCEL_ENV === "production"
+              ? PROPERTY_PRODUCTION
+              : PROPERTY_PREVIEW,
+          checkbox: {
+            equals: true,
+          },
+        },
         {
           property: PROPERTY_SLUG,
           rich_text: {
