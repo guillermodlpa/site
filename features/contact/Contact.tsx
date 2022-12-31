@@ -83,7 +83,9 @@ export default function Contact() {
 
   return (
     <Container py={10}>
-      <Heading mb={2}>Get in touch</Heading>
+      <Heading mb={2} as="h1" size="xl">
+        Get in touch
+      </Heading>
       <Text mb={6}>
         {`Send a general message or details of a project you'd like me to be a
         part of. I'll get back to you as soon as possible.`}

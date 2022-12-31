@@ -4,7 +4,7 @@ import NewsletterContent from "./newsletter-content.mdx";
 import SubscribeToNewsletterForm from "./SubscribeToNewsletterForm";
 
 const markdownComponents = {
-  h1: (props) => <Heading as="h1" size="lg" mb={6} mt={2} {...props} />,
+  h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
   h2: (props) => <Heading as="h2" size="md" mb={6} mt={2} {...props} />,
   h3: (props) => <Heading as="h3" size="sm" mb={6} mt={2} {...props} />,
   p: (props) => <Text mb={4} fontSize="md" {...props} />,
