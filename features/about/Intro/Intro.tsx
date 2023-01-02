@@ -65,16 +65,13 @@ export default function Intro() {
             gap={4}
             flexWrap="wrap"
           >
-            <NextLink passHref legacyBehavior href={PATH_CONTACT}>
-              <Button variant="outline" colorScheme="primary" as={Link}>
-                Get in touch
-              </Button>
-            </NextLink>
-
+            <Text as="span">
+              <NextLink passHref legacyBehavior href={PATH_CONTACT}>
+                <Text as={Link}>Get in touch</Text>
+              </NextLink>
+            </Text>
             <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
-              <Button variant="outline" colorScheme="primary" as={Link}>
-                Join my Personal Newsletter
-              </Button>
+              <Text as={Link}>Join my Personal Newsletter</Text>
             </NextLink>
           </Flex>
         </Box>
