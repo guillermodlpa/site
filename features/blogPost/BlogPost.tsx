@@ -61,7 +61,7 @@ export default function BlogPost({
             )}
           </Box>
 
-          <Text fontSize="small">
+          <Text fontSize="xs">
             <RssFeedLink />
           </Text>
         </Flex>

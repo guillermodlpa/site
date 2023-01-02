@@ -32,7 +32,7 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Text fontSize="small" alignSelf="flex-end">
+        <Text fontSize="xs" alignSelf="flex-end">
           <RssFeedLink />
         </Text>
       </Flex>
@@ -52,7 +52,7 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
       ))}
 
       <Flex justifyContent="flex-end" mt={14}>
-        <Text fontSize="small">
+        <Text fontSize="xs">
           <RssFeedLink />
         </Text>
       </Flex>
