@@ -72,6 +72,10 @@ const theme = {
         _dark: "neutral.800",
         _light: "white",
       },
+      "chakra-body-soft-headline": {
+        _dark: "whiteAlpha.800",
+        _light: "neutral.600",
+      },
       "chakra-body-text": {
         _dark: "whiteAlpha.900",
         _light: "neutral.800",
@@ -136,7 +140,7 @@ const theme = {
     Heading: {
       baseStyle: {
         fontWeight: "normal",
-        color: "neutral.600",
+        color: "chakra-body-soft-headline",
       },
       sizes: {
         "4xl": { lineHeight: "shorter" },
@@ -154,7 +158,7 @@ const theme = {
       },
       variants: {
         secondaryText: {
-          color: "neutral.500",
+          color: "chakra-body-text-secondary",
         },
         code: {
           fontFamily: "mono",
@@ -247,6 +251,10 @@ const theme = {
         height: "100%",
       },
     },
+  },
+  config: {
+    initialColorMode: "system",
+    useSystemColorMode: true,
   },
 };
 

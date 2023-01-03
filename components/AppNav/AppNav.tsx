@@ -1,6 +1,7 @@
 import {
   Box,
   Container,
+  Flex,
   Heading,
   Link,
   Text,
@@ -16,6 +17,7 @@ import {
   PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
+import ColorModeButton from "../ColorModeButton";
 import MagicalDivider from "../MagicalDivider";
 
 const links = [
@@ -42,31 +44,38 @@ export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {
           </NextLink>
         </Heading>
 
-        <Wrap as="nav" spacingX={4} spacingY={1}>
-          {links.map(({ label, path }) => (
-            <WrapItem key={path}>
-              <Text size="md" color="neutral.600">
-                <NextLink passHref legacyBehavior href={path}>
-                  <Link
-                    variant="inheritColor"
-                    aria-current={
-                      path !== "/" && pathname?.startsWith(path)
-                        ? "page"
-                        : false
-                    }
-                    borderBottomWidth={
-                      path !== "/" && pathname?.startsWith(path) ? "1px" : "0px"
-                    }
-                    borderColor="currentColor"
-                  >
-                    {label}
-                  </Link>
-                </NextLink>
-              </Text>
-            </WrapItem>
-          ))}
-        </Wrap>
+        <Flex alignItems="center">
+          <Wrap as="nav" spacingX={4} spacingY={1} flexGrow={1}>
+            {links.map(({ label, path }) => (
+              <WrapItem key={path}>
+                <Text size="md" color="chakra-body-soft-headline">
+                  <NextLink passHref legacyBehavior href={path}>
+                    <Link
+                      variant="inheritColor"
+                      aria-current={
+                        path !== "/" && pathname?.startsWith(path)
+                          ? "page"
+                          : false
+                      }
+                      borderBottomWidth={
+                        path !== "/" && pathname?.startsWith(path)
+                          ? "1px"
+                          : "0px"
+                      }
+                      borderColor="currentColor"
+                    >
+                      {label}
+                    </Link>
+                  </NextLink>
+                </Text>
+              </WrapItem>
+            ))}
+          </Wrap>
+
+          <ColorModeButton />
+        </Flex>
       </Box>
+
       <MagicalDivider as="div" />
     </Container>
   );

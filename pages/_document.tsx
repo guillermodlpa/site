@@ -1,5 +1,7 @@
+import { ColorModeScript } from "@chakra-ui/react";
 import getConfig from "next/config";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import chakraUITheme from "../constants/theme";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -54,6 +56,9 @@ class MyDocument extends Document {
           ></script>
         </Head>
         <body>
+          <ColorModeScript
+            initialColorMode={chakraUITheme.config.initialColorMode}
+          />
           <Main />
           <NextScript />
         </body>
