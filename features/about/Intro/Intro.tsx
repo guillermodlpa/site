@@ -70,7 +70,7 @@ export default function Intro() {
             </NextLink>
 
             <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
-              <Text as={Link}>Join my Personal Newsletter</Text>
+              <Text as={Link}>Join my personal newsletter</Text>
             </NextLink>
           </Flex>
         </Box>
