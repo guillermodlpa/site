@@ -6,6 +6,7 @@ import { BlogPost, Categories } from "../../types/types";
 import BlogPostSummary from "./BlogPostSummary";
 import CategorySelector from "./CategorySelector";
 import RssFeedLink from "./RssFeedLink";
+import AuthorIntro from "./AuthorIntro";
 
 export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
   const renderAuthorAside = useBreakpointValue({ base: false, xl: true });
@@ -22,6 +23,8 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
 
   return (
     <Container pt={2} pb={10} maxWidth="container.md" position="relative">
+      <AuthorIntro />
+
       <Flex
         justifyContent="space-between"
         flexDirection={{ base: "column-reverse", md: "row" }}

@@ -19,7 +19,7 @@ export default function CalloutBlock({
       borderRadius="md"
     >
       <Flex pb={3}>
-        <Text flexShrink={0} pl={1} pr={3} fontSize="xl">
+        <Text flexShrink={0} pl={1} pr={3} fontSize="xl" as="span">
           {icon.emoji ?? ""}
         </Text>
         <Text flexGrow={1} fontSize="md">

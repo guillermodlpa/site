@@ -45,7 +45,7 @@ export default function Intro() {
           >
             <Image
               src={ProfilePicture}
-              alt="Portrait photo"
+              alt="Profile photo with a cat"
               sizes={generateImageSizesProp({
                 base: "33vw",
                 md: "15vw",
