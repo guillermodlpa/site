@@ -21,13 +21,16 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
             : blogPost.tags.length === 0
         );
 
+  const showRssFeedAtTheTop = useBreakpointValue({ base: false, md: true });
+
   return (
     <Container pt={2} pb={10} maxWidth="container.md" position="relative">
       <AuthorIntro />
 
       <Flex
         justifyContent="space-between"
-        flexDirection={{ base: "column-reverse", md: "row" }}
+        flexDirection={{ base: "column", md: "row" }}
+        alignItems="center"
         mb={6}
         gap={4}
       >
@@ -35,9 +38,11 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Text fontSize="xs" alignSelf="flex-end">
-          <RssFeedLink />
-        </Text>
+        {showRssFeedAtTheTop && (
+          <Text fontSize="xs">
+            <RssFeedLink />
+          </Text>
+        )}
       </Flex>
 
       {filteredBlogPosts.map((blogPost, index) => (
