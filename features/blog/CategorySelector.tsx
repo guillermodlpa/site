@@ -18,7 +18,7 @@ export default function CategorySelector({
   setSelectedCategory;
 }) {
   return (
-    <ButtonGroup isAttached size="sm" flexWrap="wrap">
+    <ButtonGroup isAttached size="md" flexWrap="wrap">
       {categoryButtons.map((categoryButton) => (
         <Button
           key={categoryButton.name}
@@ -26,7 +26,10 @@ export default function CategorySelector({
           aria-selected={
             selectedCategory === categoryButton.name ? true : false
           }
-          variant={selectedCategory === categoryButton.name ? "solid" : "ghost"}
+          variant={
+            selectedCategory === categoryButton.name ? "solid" : "outline"
+          }
+          mt={"-1px"}
           onClick={() => {
             setSelectedCategory(categoryButton.name);
             umami.trackEvent(`Apply filter: ${categoryButton.name}`);
