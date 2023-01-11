@@ -11,8 +11,7 @@ export type ProfessionalProject = {
   anchorId: string;
   Description: (props: any) => JSX.Element;
   technologies: string[];
-  url: string;
-  buttonLabel: string;
+  buttons: { url: string; buttonLabel: string }[];
   date: string;
   colors: {
     accent: string;
@@ -47,9 +46,9 @@ export type ProfessionalProject = {
 };
 
 const professionalProjects: ProfessionalProject[] = [
+  afterProject,
   splashProject,
   alacartadigitalProject,
-  afterProject,
 ];
 
 export default professionalProjects;

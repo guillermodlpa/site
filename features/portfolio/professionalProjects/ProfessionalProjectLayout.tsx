@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Flex, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRef } from "react";
 import { MDXProvider } from "@mdx-js/react";
@@ -22,8 +22,7 @@ export default function ProfessionalProjectLayout({
   subheadline,
   Description,
   technologies,
-  url,
-  buttonLabel,
+  buttons,
   date,
   colors,
   mobileImage,
@@ -192,9 +191,19 @@ export default function ProfessionalProjectLayout({
           />
 
           <Flex justifyContent={{ base: "center", md: "flex-end" }}>
-            <Button as={Link} href={url} isExternal {...buttonBrandProps}>
-              {buttonLabel}
-            </Button>
+            <ButtonGroup>
+              {buttons.map(({ url, buttonLabel }) => (
+                <Button
+                  key={url}
+                  as={Link}
+                  href={url}
+                  isExternal
+                  {...buttonBrandProps}
+                >
+                  {buttonLabel}
+                </Button>
+              ))}
+            </ButtonGroup>
           </Flex>
         </Box>
       </Flex>

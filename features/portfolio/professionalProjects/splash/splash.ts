@@ -22,8 +22,12 @@ const splashProject: ProfessionalProject = {
     "AWS",
     "MySQL",
   ],
-  url: "https://splashthat.com",
-  buttonLabel: "Go to Splash",
+  buttons: [
+    {
+      url: "https://splashthat.com",
+      buttonLabel: "Go to Splash",
+    },
+  ],
   date: "2014 - 2022",
   colors: {
     accent: "rgb(115, 76, 218)",

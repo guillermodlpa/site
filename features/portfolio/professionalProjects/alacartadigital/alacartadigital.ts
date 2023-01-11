@@ -21,8 +21,12 @@ const alacartadigitalProject: ProfessionalProject = {
     "ActiveCampaign",
     "Stripe",
   ],
-  url: "https://www.alacartadigital.es/",
-  buttonLabel: "Go to alacartadigital",
+  buttons: [
+    {
+      url: "https://www.alacartadigital.es/",
+      buttonLabel: "Go to alacartadigital",
+    },
+  ],
   date: "2020",
   colors: {
     accent: "#00CF6A",
