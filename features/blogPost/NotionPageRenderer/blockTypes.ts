@@ -12,3 +12,4 @@ export const CALLOUT = "callout";
 export const QUOTE = "quote";
 export const BOOKMARK = "bookmark";
 export const CODE = "code";
+export const VIDEO = "video";

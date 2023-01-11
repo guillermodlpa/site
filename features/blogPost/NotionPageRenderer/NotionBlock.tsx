@@ -14,6 +14,7 @@ import QuoteBlock from "./components/QuoteBlock";
 import ImageBlock from "./components/ImageBlock";
 import DividerBlock from "./components/DividerBlock";
 import CalloutBlock from "./components/CalloutBlock";
+import VideoBlock from "./components/VideoBlock";
 
 export default function NotionBlock({
   block,
@@ -86,6 +87,8 @@ export default function NotionBlock({
             {getPlainText(value.rich_text)}
           </CodeBlock>
         );
+      case BLOCK_TYPES.VIDEO:
+        return <VideoBlock url={value.file.url} />;
       default: {
         console.log("Unsupported block", block);
         return (

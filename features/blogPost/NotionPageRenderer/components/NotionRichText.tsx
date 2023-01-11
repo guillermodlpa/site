@@ -41,6 +41,7 @@ export default function NotionRichText({
             fontWeight={richText.annotations.bold ? "bold" : undefined}
             fontStyle={richText.annotations.italic ? "italic" : undefined}
             variant={richText.annotations.code ? "code" : undefined}
+            color={richText.annotations.color ?? undefined}
             sx={{ whiteSpace: "pre-line" }}
           >
             {richText.text.link?.url
