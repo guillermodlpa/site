@@ -11,3 +11,5 @@ public/sitemap.xml
 public/sitemap-*.xml
 public/atom.xml
 public/rss.xml
+
+.DS_Store
