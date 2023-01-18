@@ -6,7 +6,7 @@ const categoryButtons = [
   { name: "all", label: "All" },
   { name: "development", label: "Development" },
   { name: "management", label: "Management" },
-  { name: "remote work", label: "Remote Work" },
+  { name: "digital nomad", label: "Digital Nomad" },
   { name: "", label: "Others" },
 ];
 
