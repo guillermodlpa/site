@@ -13,6 +13,7 @@ function NotionPageRenderer({ blocks }: { blocks: GetBlockResponse[] }) {
       {blocksWithNumberedListItemCounters.map((block, index) => (
         <NotionBlock
           block={block}
+          parentBlock={undefined}
           key={block.id}
           likelyAboveTheFold={index < 10}
         />
