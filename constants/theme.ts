@@ -84,9 +84,13 @@ const theme = {
         _dark: "whiteAlpha.600",
         _light: "neutral.500",
       },
-      "chakra-border-color": {
+      border: {
         _dark: "neutral.900",
         _light: "neutral.100",
+      },
+      imageBorder: {
+        _dark: "neutral.700",
+        _light: "neutral.50",
       },
       "chakra-placeholder-color": {
         _dark: "whiteAlpha.400",
@@ -105,10 +109,6 @@ const theme = {
       "callout-background-focused": {
         _dark: "whiteAlpha.400",
         _light: "blackAlpha.200",
-      },
-      border: {
-        _dark: "neutral.900",
-        _light: "neutral.100",
       },
     },
   },
@@ -240,6 +240,27 @@ const theme = {
             borderColor: "secondary",
             boxShadow: "0 0 0 1px var(--chakra-colors-secondary)",
           },
+        },
+      },
+    },
+    Table: {
+      baseStyle: {
+        th: {
+          textTransform: "initial",
+          letterSpacing: "inherit",
+          fontFamily: "inherit",
+          backgroundColor: "callout-background",
+          borderWidth: "1px",
+          color: "chakra-body-soft-headline",
+        },
+        td: {
+          borderWidth: "1px",
+        },
+      },
+      sizes: {
+        sm: {
+          th: { fontSize: "xs" },
+          td: { fontSize: "xs" },
         },
       },
     },

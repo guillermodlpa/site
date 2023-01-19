@@ -13,3 +13,5 @@ export const QUOTE = "quote";
 export const BOOKMARK = "bookmark";
 export const CODE = "code";
 export const VIDEO = "video";
+export const TABLE = "table";
+export const TABLE_ROW = "table_row";

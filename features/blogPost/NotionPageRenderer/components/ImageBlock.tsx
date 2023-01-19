@@ -45,7 +45,7 @@ export default function ImageBlock({
 
   const renderedWidth = useGetRenderedWidth(dimensions?.width);
   const renderedHeight = (dimensions.height / dimensions.width) * renderedWidth;
-  const borderColor = useToken("semanticTokens", "colors.border");
+  const borderColor = useToken("semanticTokens", "colors.imageBorder");
   return (
     <Box display="flex" justifyContent="center" mb={8}>
       <figure>

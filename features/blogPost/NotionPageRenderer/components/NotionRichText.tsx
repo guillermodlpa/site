@@ -16,6 +16,22 @@ function wrapWithLink(content: string, href: string) {
   );
 }
 
+function getColorName(color: string) {
+  switch (color) {
+    case "red":
+    case "gray":
+    case "green":
+    case "orange":
+    case "blue":
+    case "pink":
+    case "purple":
+    case "yellow":
+      return `${color}.500`;
+    default:
+      return color;
+  }
+}
+
 export default function NotionRichText({
   richTextItems,
 }: {
@@ -41,7 +57,11 @@ export default function NotionRichText({
             fontWeight={richText.annotations.bold ? "bold" : undefined}
             fontStyle={richText.annotations.italic ? "italic" : undefined}
             variant={richText.annotations.code ? "code" : undefined}
-            color={richText.annotations.color ?? undefined}
+            color={
+              richText.annotations.color
+                ? getColorName(richText.annotations.color)
+                : undefined
+            }
             sx={{ whiteSpace: "pre-line" }}
           >
             {richText.text.link?.url

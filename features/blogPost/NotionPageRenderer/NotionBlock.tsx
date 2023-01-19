@@ -1,4 +1,12 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Th,
+  Tr,
+} from "@chakra-ui/react";
 import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import CodeBlock from "./components/CodeBlock";
@@ -15,12 +23,15 @@ import ImageBlock from "./components/ImageBlock";
 import DividerBlock from "./components/DividerBlock";
 import CalloutBlock from "./components/CalloutBlock";
 import VideoBlock from "./components/VideoBlock";
+import NotionRichText from "./components/NotionRichText";
 
 export default function NotionBlock({
   block,
+  parentBlock,
   likelyAboveTheFold,
 }: {
   block: GetBlockResponse;
+  parentBlock: GetBlockResponse | undefined;
   likelyAboveTheFold: boolean;
 }) {
   const type = "type" in block ? block.type : null;
@@ -62,6 +73,7 @@ export default function NotionBlock({
         return <DividerBlock />;
       case BLOCK_TYPES.COLUMN_LIST:
       case BLOCK_TYPES.COLUMN:
+      case BLOCK_TYPES.TABLE:
         // These are just wrappers over children
         return null;
       case BLOCK_TYPES.CALLOUT:
@@ -71,6 +83,7 @@ export default function NotionBlock({
               <NotionBlock
                 key={child.id}
                 block={child}
+                parentBlock={undefined}
                 likelyAboveTheFold={false}
               />
             ))}
@@ -89,6 +102,27 @@ export default function NotionBlock({
         );
       case BLOCK_TYPES.VIDEO:
         return <VideoBlock url={value.file.url} />;
+
+      case BLOCK_TYPES.TABLE_ROW: {
+        return (
+          <Tr>
+            {value.cells.map((cell, index) => {
+              const hasRowHeader =
+                parentBlock &&
+                "type" in parentBlock &&
+                parentBlock.type === BLOCK_TYPES.TABLE &&
+                parentBlock[BLOCK_TYPES.TABLE].has_row_header;
+              const isRowHeader = hasRowHeader && index === 0;
+              const TableCell = isRowHeader ? Th : Td;
+              return (
+                <TableCell key={index}>
+                  <NotionRichText richTextItems={cell} />
+                </TableCell>
+              );
+            })}
+          </Tr>
+        );
+      }
       default: {
         console.log("Unsupported block", block);
         return (
@@ -125,6 +159,15 @@ export default function NotionBlock({
       // The callout renders the children internally
       case BLOCK_TYPES.CALLOUT:
         return null;
+      case BLOCK_TYPES.TABLE:
+        // console.log(block);
+        return (
+          <TableContainer mb={8}>
+            <Table size="sm" width="auto">
+              <Tbody>{children}</Tbody>
+            </Table>
+          </TableContainer>
+        );
       default: {
         return <Box ml={8}>{children}</Box>;
       }
@@ -141,6 +184,7 @@ export default function NotionBlock({
             <NotionBlock
               key={child.id}
               block={child}
+              parentBlock={block}
               likelyAboveTheFold={false}
             />
           ))
