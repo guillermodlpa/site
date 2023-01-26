@@ -30,7 +30,7 @@ const handleGet = async (
         imageSrc: unfurlResponse.open_graph?.images?.[0]?.url ?? null,
       };
       return res
-        .setHeader("Cache-Control", `public, s-maxage=${CACHE_RESULT_SECONDS}`)
+        .setHeader("Cache-Control", `public, max-age=${CACHE_RESULT_SECONDS}`)
         .json(response);
     })
     .catch((error) => {
