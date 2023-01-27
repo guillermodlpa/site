@@ -12,6 +12,7 @@ import useScrollThreshold from "./useScrollThreshold";
 const ASIDE_WIDTH = 150;
 
 const links = [
+  { label: "Home", path: "/" },
   { label: "Blog", path: PATH_BLOG },
   { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "Contact", path: PATH_CONTACT },
