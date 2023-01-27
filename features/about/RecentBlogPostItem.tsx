@@ -15,17 +15,7 @@ import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
 
-// note: we should only see future posts in dev mode
-function isNotPublishedYet(date: Date | string): boolean {
-  if (process.env.NODE_ENV !== "development") {
-    return false;
-  }
-  const dateObject = date instanceof Date ? date : new Date(date);
-  const valid = !isNaN(dateObject as unknown as number);
-  return valid ? dateObject.getTime() > new Date().getTime() : false;
-}
-
-export default function BlogPostSummary({
+export default function RecentBlogPostItem({
   slug,
   title,
   imageSrc,
@@ -36,7 +26,6 @@ export default function BlogPostSummary({
 }: BlogPost & { preloadImage: boolean }) {
   return (
     <LinkBox
-      opacity={isNotPublishedYet(datePublished) ? 0.25 : undefined}
       as="article"
       transitionProperty="common"
       transitionDuration="faster"
@@ -48,15 +37,15 @@ export default function BlogPostSummary({
       }}
       px={2}
       mx={-2}
-      py={5}
+      py={2}
     >
-      <Flex gap={8} flexDirection={["column", undefined, "row"]}>
+      <Flex gap={6} flexDirection={["column", undefined, "row"]}>
         {imageSrc && (
           <Box
             sx={{
               position: "relative",
               flexShrink: 0,
-              width: { base: "100%", md: "25%" },
+              width: { base: "50%", md: "15%" },
               maxWidth: { base: "30rem", md: "none" },
               height: { base: "40vw", md: "auto" },
               margin: "0 auto",
@@ -76,8 +65,8 @@ export default function BlogPostSummary({
             />
           </Box>
         )}
-        <Flex flexDirection="column" gap={4} flexGrow={1}>
-          <Heading as="h2" size="md">
+        <Flex flexDirection="column" gap={2} flexGrow={1} py={3}>
+          <Heading as="h3" size="sm">
             <NextLink href={getBlogPostPath(slug)} passHref legacyBehavior>
               <LinkOverlay
                 color="inherit"
@@ -89,7 +78,7 @@ export default function BlogPostSummary({
             </NextLink>
           </Heading>
 
-          <Text fontSize="md">
+          <Text fontSize="sm">
             <Text
               as="time"
               variant="secondaryText"
@@ -107,8 +96,6 @@ export default function BlogPostSummary({
               </>
             )}
           </Text>
-
-          <Text fontSize="md">{excerpt}</Text>
         </Flex>
       </Flex>
     </LinkBox>

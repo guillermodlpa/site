@@ -1,6 +1,6 @@
 import { AspectRatio, Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import MagicalDivider from "../../../components/MagicalDivider";
+import MagicalDivider from "../../components/MagicalDivider";
 
 function getResponsiveSpacing(mdSpacing: number) {
   return {

@@ -2,12 +2,19 @@ import { Box, Flex, Heading, Link, Tag, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import { PATH_CONTACT, PATH_NEWSLETTER } from "../../../constants/paths";
-import generateImageSizesProp from "../../../utils/generateImageSizesProp";
+import {
+  PATH_BLOG,
+  PATH_CONTACT,
+  PATH_NEWSLETTER,
+} from "../../constants/paths";
+import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import IntroContent from "./intro-content.mdx";
 import ProfilePicture from "./profile-picture-2.jpeg";
-import SocialLinks from "../../../components/SocialLinks";
+import SocialLinks from "../../components/SocialLinks";
 import BusinessCard from "./BusinessCard";
+import { BlogPost } from "../../types/types";
+import RecentBlogPostItem from "./RecentBlogPostItem";
+import MagicalDivider from "../../components/MagicalDivider";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -64,7 +71,11 @@ const technologyTags = [
   "Cypress",
 ];
 
-export default function Intro() {
+export default function Intro({
+  recentBlogPosts,
+}: {
+  recentBlogPosts: BlogPost[];
+}) {
   return (
     <Box
       as="section"
@@ -130,11 +141,47 @@ export default function Intro() {
         </Box>
       </Flex>
 
+      {recentBlogPosts.length > 0 && (
+        <Box mt={16}>
+          <Box mb={4}>
+            <Heading as="h3" size="lg" display="inline" mr={4}>
+              Recent blog posts
+            </Heading>
+          </Box>
+
+          <Box>
+            {recentBlogPosts.map((post, index) => (
+              <>
+                <RecentBlogPostItem
+                  key={post.id}
+                  preloadImage={false}
+                  {...post}
+                />
+                {index !== recentBlogPosts.length - 1 && (
+                  <MagicalDivider
+                    height="1px"
+                    mb={{ base: 5, md: 3 }}
+                    mt={{ base: 5, md: 5 }}
+                    width="full"
+                  />
+                )}
+              </>
+            ))}
+          </Box>
+
+          <Text mt={10} textAlign="center">
+            <NextLink passHref legacyBehavior href={PATH_BLOG}>
+              <Text as={Link}>View all blog posts</Text>
+            </NextLink>
+          </Text>
+        </Box>
+      )}
+
       <Flex
         flexDirection="row"
         wrap="wrap"
         gap={2}
-        mt={16}
+        mt={20}
         justifyContent="center"
       >
         {technologyTags.map((tag) => (

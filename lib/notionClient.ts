@@ -66,9 +66,11 @@ const notion = new Client({
     process.env.NODE_ENV === "development" ? LogLevel.DEBUG : LogLevel.WARN,
 });
 
-export async function fetchBlogPosts(): Promise<BlogPost[]> {
+export async function fetchBlogPosts({
+  pageSize = 100,
+}: { pageSize?: number } = {}): Promise<BlogPost[]> {
   const result = await notion.databases.query({
-    page_size: 100,
+    page_size: pageSize,
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
     filter: {
       and: [
