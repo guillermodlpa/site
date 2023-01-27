@@ -8,7 +8,9 @@ function ContactPage() {
     <>
       <PageMeta
         canonicalPath={PATH_CONTACT}
-        title={"Contact Guillermo de la Puente - Freelance Frontend Engineer"}
+        title={
+          "Contact Guillermo de la Puente - Freelance Software Engineer & Manager"
+        }
         description={
           "Get in touch to discuss opportunities and talk about projects. Frontend Engineer that builds successful, fast, high quality web applications."
         }

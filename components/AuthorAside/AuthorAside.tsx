@@ -51,7 +51,7 @@ export default function AuthorAside() {
             mb={2}
             fontSize="sm"
             textAlign="right"
-          >{`Freelance Frontend Engineer & Manager`}</Text>
+          >{`Freelance Software Engineer & Manager`}</Text>
 
           {links.map(({ label, path }) => (
             <Text key={path} fontSize="sm" textAlign="right" mb={1}>

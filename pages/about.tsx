@@ -11,9 +11,9 @@ function AboutPage({ recentBlogPosts }: { recentBlogPosts: BlogPost[] }) {
     <>
       <PageMeta
         canonicalPath={PATH_ABOUT}
-        title={"About Guillermo de la Puente - Freelance Frontend Engineer"}
+        title={"Guillermo de la Puente - Freelance Software Engineer & Manager"}
         description={
-          "Frontend Engineer that builds successful, fast, high quality web applications."
+          "Freelance Software Engineer & Manager that builds successful, fast, high quality web applications."
         }
         ogType="profile"
       />

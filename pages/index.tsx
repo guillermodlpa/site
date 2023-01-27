@@ -10,7 +10,7 @@ function HomePage() {
           "Guillermo de la Puente - Freelance Frontend Engineer - TypeScript, React, Node"
         }
         description={
-          "Frontend Engineer that builds successful, fast, high quality web applications."
+          "Freelance Software Engineer & Manager that builds successful, fast, high quality web applications."
         }
       />
       <Home />

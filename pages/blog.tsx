@@ -19,7 +19,7 @@ function BlogPage({ blogPosts }: { blogPosts: BlogPost[] }) {
     <>
       <PageMeta
         canonicalPath={PATH_BLOG}
-        title="Blog - Guillermo de la Puente - Freelance Frontend Engineer"
+        title="Blog - Guillermo de la Puente - Freelance Software Engineer & Manager"
         description={description}
       />
       <Blog blogPosts={blogPosts} />
