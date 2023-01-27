@@ -13,7 +13,6 @@ const markdownComponents = {
 export default function Newsletter() {
   return (
     <Box
-      as="section"
       px={4}
       py={16}
       position="relative"

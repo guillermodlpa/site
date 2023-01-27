@@ -12,7 +12,7 @@ function PortfolioPage() {
           "Portfolio - Guillermo de la Puente - Freelance Software Engineer & Manager"
         }
         description={
-          "High quality web applications and experiments. Splash, alacartadigital, After..."
+          "High quality web applications and experiments. Splash, alacartadigital, After Memorials..."
         }
       />
       <Portfolio />

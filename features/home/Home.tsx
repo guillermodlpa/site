@@ -3,7 +3,6 @@ import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
 import {
-  PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
   PATH_NEWSLETTER,
@@ -56,11 +55,6 @@ function Home() {
             <WrapItem>
               <NextLink href={PATH_PORTFOLIO} passHref legacyBehavior>
                 <Link fontSize="xl">Portfolio</Link>
-              </NextLink>
-            </WrapItem>
-            <WrapItem>
-              <NextLink href={PATH_ABOUT} passHref legacyBehavior>
-                <Link fontSize="xl">About</Link>
               </NextLink>
             </WrapItem>
             <WrapItem>

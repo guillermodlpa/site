@@ -12,7 +12,7 @@ function ContactPage() {
           "Contact Guillermo de la Puente - Freelance Software Engineer & Manager"
         }
         description={
-          "Get in touch to discuss opportunities and talk about projects. Frontend Engineer that builds successful, fast, high quality web applications."
+          "Get in touch to discuss opportunities and talk about projects. Building successful, fast, high quality web applications."
         }
       />
       <Contact />

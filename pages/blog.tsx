@@ -35,11 +35,11 @@ export async function getStaticProps(context) {
   const blogPosts = await fetchBlogPosts();
 
   // Next doesn't like `undefined` values
-  const parsedBlocks = recursivelyNullifyUndefinedValues(blogPosts);
+  const parsedBlogPosts = recursivelyNullifyUndefinedValues(blogPosts);
 
   return {
     props: {
-      blogPosts: parsedBlocks,
+      blogPosts: parsedBlogPosts,
     },
   };
 }

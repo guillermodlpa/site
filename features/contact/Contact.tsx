@@ -82,7 +82,7 @@ export default function Contact() {
   }
 
   return (
-    <Container py={10}>
+    <Container py={10} as="main">
       <Heading mb={2} as="h1" size="xl">
         Get in touch
       </Heading>

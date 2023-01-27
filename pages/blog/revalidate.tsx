@@ -10,7 +10,7 @@ export default function BlogRevalidatePage() {
         canonicalPath={PATH_BLOG_REVALIDATE}
         title={"Blog Revalidation"}
         description={
-          "Freelance Software Engineer & Manager that builds successful, fast, high quality web applications."
+          "Building successful, fast, high quality web applications."
         }
         ogType="profile"
       />

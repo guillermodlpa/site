@@ -25,6 +25,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/about",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/blog/understanding-collaboration-good-and-bad",
         destination: "/blog/what-do-collaborative-teams-have-in-common",
         permanent: true,

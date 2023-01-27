@@ -16,7 +16,7 @@ export default function BlogLayout({
     <>
       <AppNav fullWidth={fullWidth} />
 
-      {children}
+      <main>{children}</main>
 
       <AppFooter fullWidth={fullWidth} />
     </>

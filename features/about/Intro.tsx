@@ -78,14 +78,12 @@ export default function Intro({
 }) {
   return (
     <Box
-      as="section"
       px={4}
       py={{ base: 10, md: 16 }}
       position="relative"
       overflow="hidden"
       maxWidth="container.md"
       margin="0 auto"
-      data-group /* to apply _groupHover to child elements */
     >
       <Flex
         height="full"
@@ -120,29 +118,33 @@ export default function Intro({
         <Box flexGrow={1}>
           <BusinessCard />
 
-          <MDXProvider components={markdownComponents}>
-            <IntroContent />
-          </MDXProvider>
+          <Box as="section">
+            <MDXProvider components={markdownComponents}>
+              <IntroContent />
+            </MDXProvider>
 
-          <Flex
-            mt={8}
-            justifyContent={{ base: "center", md: "flex-start" }}
-            gap={4}
-            flexWrap="wrap"
-          >
-            <NextLink passHref legacyBehavior href={PATH_CONTACT}>
-              <Text as={Link}>Get in touch</Text>
-            </NextLink>
+            <Flex
+              mt={8}
+              justifyContent={{ base: "center", md: "flex-start" }}
+              gap={4}
+              flexWrap="wrap"
+            >
+              <NextLink passHref legacyBehavior href={PATH_CONTACT}>
+                <Text as={Link}>Get in touch</Text>
+              </NextLink>
 
-            <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
-              <Text as={Link}>Join my personal newsletter</Text>
-            </NextLink>
-          </Flex>
+              <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
+                <Text as={Link}>Join my personal newsletter</Text>
+              </NextLink>
+            </Flex>
+          </Box>
         </Box>
       </Flex>
 
+      <MagicalDivider mt={16} mb={16} height="2px" />
+
       {recentBlogPosts.length > 0 && (
-        <Box mt={16}>
+        <Box as="section">
           <Box mb={4}>
             <Heading as="h3" size="lg" display="inline" mr={4}>
               Recent blog posts
@@ -178,6 +180,7 @@ export default function Intro({
       )}
 
       <Flex
+        as="section"
         flexDirection="row"
         wrap="wrap"
         gap={2}

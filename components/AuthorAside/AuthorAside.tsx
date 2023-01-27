@@ -1,7 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import {
-  PATH_ABOUT,
   PATH_BLOG,
   PATH_CONTACT,
   PATH_NEWSLETTER,
@@ -15,7 +14,6 @@ const ASIDE_WIDTH = 150;
 const links = [
   { label: "Blog", path: PATH_BLOG },
   { label: "Portfolio", path: PATH_PORTFOLIO },
-  { label: "About", path: PATH_ABOUT },
   { label: "Contact", path: PATH_CONTACT },
   { label: "Newsletter", path: PATH_NEWSLETTER },
 ];
