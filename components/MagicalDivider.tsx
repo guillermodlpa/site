@@ -31,6 +31,7 @@ export default function MagicalDivider({
       width={width}
       mx={mx}
       mb={mb}
+      flexShrink={0}
       sx={{
         background: `linear-gradient(90deg, #F0D690, #11c093, #4d53e0, #B161EC, #d233cf, #F0D690)`,
         backgroundSize: "600% 600%",

@@ -18,7 +18,7 @@ const afterProject: ProfessionalProject = {
     "React",
     "Next.js",
     "TypeScript",
-    "Postgres",
+    "PostgreSQL",
     "Sendinblue",
     "AWS",
     "Node.js",
