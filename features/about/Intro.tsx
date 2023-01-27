@@ -15,6 +15,7 @@ import BusinessCard from "./BusinessCard";
 import { BlogPost } from "../../types/types";
 import RecentBlogPostItem from "./RecentBlogPostItem";
 import MagicalDivider from "../../components/MagicalDivider";
+import React from "react";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -153,12 +154,8 @@ export default function Intro({
 
           <Box>
             {recentBlogPosts.map((post, index) => (
-              <>
-                <RecentBlogPostItem
-                  key={post.id}
-                  preloadImage={false}
-                  {...post}
-                />
+              <React.Fragment key={post.id}>
+                <RecentBlogPostItem preloadImage={false} {...post} />
                 {index !== recentBlogPosts.length - 1 && (
                   <MagicalDivider
                     height="1px"
@@ -167,7 +164,7 @@ export default function Intro({
                     width="full"
                   />
                 )}
-              </>
+              </React.Fragment>
             ))}
           </Box>
 
