@@ -126,6 +126,7 @@ export default function Contact() {
             <Input
               type="text"
               name="name"
+              size={{ base: "lg", md: "md" }}
               value={data.name}
               onChange={(event) =>
                 setData((data) => ({ ...data, name: event.target.value }))
@@ -137,6 +138,7 @@ export default function Contact() {
             <Input
               type="email"
               name="email"
+              size={{ base: "lg", md: "md" }}
               value={data.email}
               onChange={(event) =>
                 setData((data) => ({ ...data, email: event.target.value }))
@@ -153,6 +155,7 @@ export default function Contact() {
             <Input
               type="text"
               name="website"
+              size={{ base: "lg", md: "md" }}
               value={data.website}
               onChange={(event) =>
                 setData((data) => ({ ...data, website: event.target.value }))
@@ -164,6 +167,7 @@ export default function Contact() {
             <Textarea
               name="message"
               rows={5}
+              fontSize={{ base: "lg", md: "md" }}
               value={data.message}
               onChange={(event) =>
                 setData((data) => ({ ...data, message: event.target.value }))
