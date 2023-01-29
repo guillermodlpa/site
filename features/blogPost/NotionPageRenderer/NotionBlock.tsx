@@ -100,8 +100,17 @@ export default function NotionBlock({
             {getPlainText(value.rich_text)}
           </CodeBlock>
         );
-      case BLOCK_TYPES.VIDEO:
-        return <VideoBlock url={value.file.url} />;
+      case BLOCK_TYPES.VIDEO: {
+        const url = value.external?.url || value.file?.url;
+        return (
+          <VideoBlock
+            url={url}
+            showWarning={
+              process.env.NODE_ENV === "development" && value.type === "file"
+            }
+          />
+        );
+      }
 
       case BLOCK_TYPES.TABLE_ROW: {
         return (
