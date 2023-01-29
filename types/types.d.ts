@@ -8,5 +8,3 @@ export type BlogPost = {
   tags: string[];
   imageSrc: string | null;
 };
-
-export type Categories = "all" | "development" | "management" | "remote work";

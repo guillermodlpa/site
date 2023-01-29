@@ -2,22 +2,30 @@ import { Container, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 import React, { useState } from "react";
 import AuthorAside from "../../components/AuthorAside";
 import MagicalDivider from "../../components/MagicalDivider";
-import { BlogPost, Categories } from "../../types/types";
+import { BlogPost } from "../../types/types";
 import BlogPostSummary from "./BlogPostSummary";
 import CategorySelector from "./CategorySelector";
 import RssFeedLink from "./RssFeedLink";
 import AuthorIntro from "./AuthorIntro";
+import { BlogPostCategoryName } from "../../utils/blogPostCategories";
 
-export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
+export default function Blog({
+  blogPosts,
+  categoryName,
+}: {
+  blogPosts: BlogPost[];
+  categoryName: BlogPostCategoryName;
+}) {
+  const [activeCategoryName, setActiveCategoryName] = useState(categoryName);
+
   const renderAuthorAside = useBreakpointValue({ base: false, xl: true });
-  const [selectedCategory, setSelectedCategory] = useState<Categories>("all");
 
   const filteredBlogPosts =
-    selectedCategory === "all"
+    activeCategoryName === "all"
       ? blogPosts
       : blogPosts.filter((blogPost) =>
-          selectedCategory
-            ? blogPost.tags.includes(selectedCategory)
+          activeCategoryName !== "others"
+            ? blogPost.tags.includes(activeCategoryName)
             : blogPost.tags.length === 0
         );
 
@@ -35,8 +43,8 @@ export default function Blog({ blogPosts }: { blogPosts: BlogPost[] }) {
         gap={4}
       >
         <CategorySelector
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
+          categoryName={activeCategoryName}
+          setCategoryName={setActiveCategoryName}
         />
         {showRssFeedAtTheTop && (
           <Text fontSize="xs">

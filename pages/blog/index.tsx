@@ -1,12 +1,19 @@
-import PageMeta from "../components/PageMeta";
-import { PATH_BLOG } from "../constants/paths";
-import Blog from "../features/blog";
-import BlogLayout from "../layouts/BlogLayout";
-import { fetchBlogPosts } from "../lib/notionClient";
-import { BlogPost } from "../types/types";
-import recursivelyNullifyUndefinedValues from "../utils/recursivelyNullifyUndefinedValues";
+import PageMeta from "../../components/PageMeta";
+import { PATH_BLOG } from "../../constants/paths";
+import Blog from "../../features/blog";
+import BlogLayout from "../../layouts/BlogLayout";
+import { fetchBlogPosts } from "../../lib/notionClient";
+import { BlogPost } from "../../types/types";
+import { BlogPostCategoryName } from "../../utils/blogPostCategories";
+import recursivelyNullifyUndefinedValues from "../../utils/recursivelyNullifyUndefinedValues";
 
-function BlogPage({ blogPosts }: { blogPosts: BlogPost[] }) {
+function BlogPage({
+  blogPosts,
+  categoryName,
+}: {
+  blogPosts: BlogPost[];
+  categoryName: BlogPostCategoryName;
+}) {
   const description = blogPosts
     .slice(0, 5)
     .reduce(
@@ -22,7 +29,7 @@ function BlogPage({ blogPosts }: { blogPosts: BlogPost[] }) {
         title="Blog - Guillermo de la Puente - Freelance Software Engineer & Manager"
         description={description}
       />
-      <Blog blogPosts={blogPosts} />
+      <Blog blogPosts={blogPosts} categoryName={categoryName} />
     </>
   );
 }
@@ -33,6 +40,10 @@ BlogPage.getLayout = function getLayout(page: React.ReactElement) {
 
 export async function getStaticProps(context) {
   const blogPosts = await fetchBlogPosts();
+  const categoryName =
+    typeof context.params?.categoryName === "string"
+      ? context.params?.categoryName.replace(/\+/g, " ")
+      : "all";
 
   // Next doesn't like `undefined` values
   const parsedBlogPosts = recursivelyNullifyUndefinedValues(blogPosts);
@@ -40,6 +51,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       blogPosts: parsedBlogPosts,
+      categoryName,
     },
   };
 }

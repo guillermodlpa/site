@@ -1,37 +1,37 @@
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import umami from "../../lib/umami";
-import { Categories } from "../../types/types";
-
-const categoryButtons = [
-  { name: "all", label: "All" },
-  { name: "development", label: "Development" },
-  { name: "management", label: "Management" },
-  { name: "digital nomad", label: "Digital Nomad" },
-  { name: "", label: "Others" },
-];
+import blogPostCategories, {
+  BlogPostCategoryName,
+} from "../../utils/blogPostCategories";
+import NextLink from "next/link";
 
 export default function CategorySelector({
-  selectedCategory,
-  setSelectedCategory,
+  categoryName,
+  setCategoryName,
 }: {
-  selectedCategory: Categories;
-  setSelectedCategory;
+  categoryName: BlogPostCategoryName;
+  setCategoryName: (categoryName: BlogPostCategoryName) => void;
 }) {
   return (
-    <ButtonGroup isAttached size="md" flexWrap="wrap">
-      {categoryButtons.map((categoryButton) => (
+    <ButtonGroup
+      isAttached
+      size="md"
+      flexWrap="wrap"
+      data-selected-category-name={categoryName}
+    >
+      {blogPostCategories.map((categoryButton) => (
         <Button
           key={categoryButton.name}
           fontWeight="normal"
-          aria-selected={
-            selectedCategory === categoryButton.name ? true : false
-          }
-          variant={
-            selectedCategory === categoryButton.name ? "solid" : "outline"
-          }
+          data-category-name={categoryButton.name}
+          aria-selected={categoryName === categoryButton.name ? true : false}
+          variant={categoryName === categoryButton.name ? "solid" : "outline"}
           mt={"-1px"}
-          onClick={() => {
-            setSelectedCategory(categoryButton.name);
+          as={NextLink}
+          shallow
+          href={categoryButton.path}
+          onClick={(event) => {
+            setCategoryName(categoryButton.name);
             umami.trackEvent(`Apply filter: ${categoryButton.name}`);
           }}
           px={{ base: 2, md: 3 }}
