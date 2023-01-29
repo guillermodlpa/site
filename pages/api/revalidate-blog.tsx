@@ -42,9 +42,7 @@ const handlePost = async (
   });
 
   const paths = [getBlogPostPath(slug), PATH_BLOG];
-  for (const path of paths) {
-    await res.revalidate(path);
-  }
+  await paths.map((path) => res.revalidate(path));
 
   return res.status(200).send({ paths });
 };
