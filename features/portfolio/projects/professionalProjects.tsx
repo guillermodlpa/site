@@ -43,6 +43,7 @@ export type ProfessionalProject = {
     };
   } | null;
   backgroundOverlay: string | null;
+  path: string;
 };
 
 const professionalProjects: ProfessionalProject[] = [

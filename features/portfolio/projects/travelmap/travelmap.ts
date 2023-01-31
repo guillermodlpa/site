@@ -1,9 +1,10 @@
-import { PersonalProject } from "../personalProjects";
+import { PersonalProject } from "../../personalProjects/personalProjects";
 
 import Description from "./travelmap-description.mdx";
 import travelmapMobile from "./travelmap-mobile.png";
 import travelmapLogo from "./travelmap-logo.png";
 import travelmapBackground from "./travelmap-background.png";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
 
 const travelmapProject: PersonalProject = {
   name: "Travelmap",
@@ -53,6 +54,7 @@ const travelmapProject: PersonalProject = {
     },
   },
   backgroundOverlay: "rgba(228, 207, 188, 0.8) 30%",
+  path: getPortfolioProjectPath("travelmap"),
 };
 
 export default travelmapProject;

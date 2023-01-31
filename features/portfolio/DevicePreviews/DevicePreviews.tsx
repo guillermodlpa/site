@@ -13,11 +13,15 @@ export default function DevicePreviews({
   desktopImage,
   mobileAppBarColor,
   mb,
+  mt,
+  hoverScaleTransform = true,
 }: {
   mobileImage?: StaticImageData;
   desktopImage?: StaticImageData;
   mobileAppBarColor: string;
   mb?: any;
+  mt?: any;
+  hoverScaleTransform?: boolean;
 }) {
   const desktopFramePositioning =
     desktopImage && mobileImage
@@ -60,7 +64,7 @@ export default function DevicePreviews({
   }, [mobileContainerRef, desktopContainerRef]);
 
   return (
-    <Box position="relative" height={devicesContainerHeight} mb={mb}>
+    <Box position="relative" height={devicesContainerHeight} mb={mb} mt={mt}>
       {desktopImage && (
         <Box
           position="absolute"
@@ -68,10 +72,14 @@ export default function DevicePreviews({
           ref={desktopContainerRef}
           transform="scale(1)"
           transition="transform 0.25s ease"
-          _hover={{
-            transform: `scale(1.2)`,
-            zIndex: 1,
-          }}
+          _hover={
+            hoverScaleTransform
+              ? {
+                  transform: `scale(1.2)`,
+                  zIndex: 1,
+                }
+              : {}
+          }
         >
           <Box
             position="absolute"
@@ -109,10 +117,14 @@ export default function DevicePreviews({
           transform="translate(-50%, -50%) scale(1)"
           ref={mobileContainerRef}
           transition="transform 0.25s ease"
-          _hover={{
-            transform: `translate(-50%, -50%) scale(1.2)`,
-            zIndex: 1,
-          }}
+          _hover={
+            hoverScaleTransform
+              ? {
+                  transform: `translate(-50%, -50%) scale(1.2)`,
+                  zIndex: 1,
+                }
+              : {}
+          }
         >
           <Box
             height="91%"

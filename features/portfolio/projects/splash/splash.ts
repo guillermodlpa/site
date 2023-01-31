@@ -4,6 +4,7 @@ import Description from "./splash-description.mdx";
 import splashLogo from "./splash-logo.png";
 import splashDesktop from "./splash-desktop.png";
 import splashMobile from "./splash-mobile.png";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
 
 const splashProject: ProfessionalProject = {
   logo: splashLogo,
@@ -44,6 +45,7 @@ const splashProject: ProfessionalProject = {
   video: null,
   backgroundImage: null,
   backgroundOverlay: null,
+  path: getPortfolioProjectPath("splash"),
 };
 
 export default splashProject;

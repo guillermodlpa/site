@@ -1,4 +1,5 @@
-import { PersonalProject } from "../personalProjects";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
+import { PersonalProject } from "../../personalProjects/personalProjects";
 
 import Description from "./depor-travel-description.mdx";
 import deporTravelLogo from "./depor-travel-logo.png";
@@ -54,6 +55,7 @@ const deporTravelProject: PersonalProject = {
   },
   backgroundOverlay:
     "linear-gradient(135deg,rgba(30,33,33,.82) 1%,rgba(32,32,32,.14) 98%)",
+  path: getPortfolioProjectPath("depor.travel"),
 };
 
 export default deporTravelProject;

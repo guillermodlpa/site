@@ -21,7 +21,7 @@ function PortfolioPage() {
 }
 
 PortfolioPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout fullWidth>{page}</BlogLayout>;
+  return <BlogLayout>{page}</BlogLayout>;
 };
 
 export default PortfolioPage;

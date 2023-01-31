@@ -5,6 +5,7 @@ import alacartadigitalLogo from "./alacartadigital-logo.svg";
 import alacartadigitalDesktop from "./alacartadigital-desktop.png";
 import alacartadigitalMobile from "./alacartadigital-mobile.png";
 import alacartadigitalBackground from "./alacartadigital-background.png";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
 
 const alacartadigitalProject: ProfessionalProject = {
   logo: alacartadigitalLogo,
@@ -63,6 +64,7 @@ const alacartadigitalProject: ProfessionalProject = {
   },
   backgroundOverlay:
     "linear-gradient(50deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%)",
+  path: getPortfolioProjectPath("alacartadigital"),
 };
 
 export default alacartadigitalProject;
