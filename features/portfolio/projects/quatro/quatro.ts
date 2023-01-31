@@ -1,4 +1,5 @@
-import { PersonalProject } from "../personalProjects";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
+import { PersonalProject } from "../../personalProjects/personalProjects";
 
 import Description from "./quatro-description.mdx";
 import quatroLogo from "./quatro-logo.webp";
@@ -54,6 +55,7 @@ const quatroProject: PersonalProject = {
   Description,
   backgroundImage: null,
   backgroundOverlay: null,
+  path: getPortfolioProjectPath("quatro"),
 };
 
 export default quatroProject;

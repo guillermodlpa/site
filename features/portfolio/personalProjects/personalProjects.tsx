@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image";
-import quatroProject from "./quatro/quatro";
-import kikiriCoinProject from "./kikiricoin/kikiricoin";
-import travelmapProject from "./travelmap/travelmap";
-import notionPoweredBlogProject from "./notion-powered-blog/notion-powered-blog";
-import deporTravelProject from "./depor-travel/depor-travel";
+import quatroProject from "../projects/quatro/quatro";
+import kikiriCoinProject from "../projects/kikiricoin/kikiricoin";
+import travelmapProject from "../projects/travelmap/travelmap";
+import notionPoweredBlogProject from "../projects/notion-powered-blog/notion-powered-blog";
+import deporTravelProject from "../projects/depor-travel/depor-travel";
 
 export type PersonalProject = {
   name: string;
@@ -52,6 +52,7 @@ export type PersonalProject = {
     };
   } | null;
   backgroundOverlay: string | null;
+  path: string;
 };
 
 const personalProjects: PersonalProject[] = [

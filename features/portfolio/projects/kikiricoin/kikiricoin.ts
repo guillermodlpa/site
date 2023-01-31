@@ -1,9 +1,10 @@
-import { PersonalProject } from "../personalProjects";
+import { PersonalProject } from "../../personalProjects/personalProjects";
 
 import Description from "./kikiricoin-description.mdx";
 import kikiriCoinLogo from "./kikiricoin-logo.webp";
 import kikiriCoinMobile from "./kikiricoin-mobile.png";
 import kikiriCoinDesktop from "./kikiricoin-desktop.png";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
 
 const kikiriCoinProject: PersonalProject = {
   name: "KikiriCoin",
@@ -47,6 +48,7 @@ const kikiriCoinProject: PersonalProject = {
     },
   },
   backgroundOverlay: "rgba(255, 255, 255, 0.5)",
+  path: getPortfolioProjectPath("kikiricoin"),
 };
 
 export default kikiriCoinProject;

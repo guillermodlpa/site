@@ -1,4 +1,5 @@
-import { PersonalProject } from "../personalProjects";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
+import { PersonalProject } from "../../personalProjects/personalProjects";
 
 import Description from "./notion-powered-blog-description.mdx";
 import notionPoweredBlogLogo from "./notion-powered-blog-logo.png";
@@ -41,6 +42,7 @@ const notionPoweredBlogProject: PersonalProject = {
   Description,
   backgroundImage: null,
   backgroundOverlay: null,
+  path: getPortfolioProjectPath("notion-powered-blog"),
 };
 
 export default notionPoweredBlogProject;

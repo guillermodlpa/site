@@ -1,32 +1,35 @@
-import ProfessionalProjectLayout from "./professionalProjects/ProfessionalProjectLayout";
 import React from "react";
-import { Flex } from "@chakra-ui/react";
-import professionalProjects from "./professionalProjects/professionalProjects";
+import { Container, GridItem, SimpleGrid } from "@chakra-ui/react";
 import MagicalDivider from "../../components/MagicalDivider";
-import personalProjects from "./personalProjects/personalProjects";
-import PersonalProjectLayout from "./personalProjects/PersonalProjectLayout";
 import PortfolioHeader from "./PortfolioHeader";
 import PersonalProjectsHeader from "./PersonalProjectsHeader";
+import ProjectCard from "./ProjectCard";
+import { personalProjects, professionalProjects } from "./projects/projects";
 
 export default function Portfolio() {
   return (
-    <>
+    <Container maxWidth="container.md">
       <PortfolioHeader />
 
-      {professionalProjects.map((project, index) => (
-        <React.Fragment key={project.name}>
-          <ProfessionalProjectLayout {...project} />
-        </React.Fragment>
-      ))}
+      <SimpleGrid spacingX={4} spacingY={6} columns={{ base: 1, md: 2 }}>
+        {professionalProjects.map((project, index) => (
+          <GridItem key={project.name}>
+            <ProjectCard {...project} />
+          </GridItem>
+        ))}
+      </SimpleGrid>
 
-      <MagicalDivider width="auto" mx={6} />
+      <MagicalDivider width="auto" height="2px" mt={16} mb={16} />
+
       <PersonalProjectsHeader />
 
-      <Flex flexWrap="wrap" justifyContent="center" mb={8}>
-        {personalProjects.map((project) => (
-          <PersonalProjectLayout key={project.name} {...project} />
+      <SimpleGrid spacingX={4} spacingY={6} columns={{ base: 1, md: 2 }}>
+        {personalProjects.map((project, index) => (
+          <GridItem key={project.name}>
+            <ProjectCard {...project} />
+          </GridItem>
         ))}
-      </Flex>
-    </>
+      </SimpleGrid>
+    </Container>
   );
 }

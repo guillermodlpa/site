@@ -5,6 +5,7 @@ import afterLogo from "./after-logo.png";
 import afterDesktop from "./after-desktop.png";
 import afterMobile from "./after-mobile.png";
 import afterBackground from "./after-background.png";
+import { getPortfolioProjectPath } from "../../../../constants/paths";
 
 const afterProject: ProfessionalProject = {
   logo: afterLogo,
@@ -67,6 +68,7 @@ const afterProject: ProfessionalProject = {
     },
   },
   backgroundOverlay: null,
+  path: getPortfolioProjectPath("after"),
 };
 
 export default afterProject;
