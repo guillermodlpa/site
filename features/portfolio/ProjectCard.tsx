@@ -12,7 +12,6 @@ import { useRef } from "react";
 import { getPortfolioProjectPath } from "../../constants/paths";
 import { Project } from "../../types/types";
 import DevicePreviews from "./DevicePreviews";
-import useParallax from "./hooks/useParallax";
 
 export default function ProjectCard({
   name,
@@ -30,10 +29,6 @@ export default function ProjectCard({
     logoImage?.src?.dark,
     logoImage?.src?.light
   );
-
-  const cardRef = useRef();
-  const backgroundRef = useRef();
-  useParallax(cardRef, backgroundRef);
 
   return (
     <LinkBox
@@ -53,7 +48,6 @@ export default function ProjectCard({
       transitionProperty="common"
       transitionDuration="normal"
       overflow="hidden"
-      ref={cardRef}
     >
       <Heading as="h1" fontSize="2xl">
         <NextLink href={getPortfolioProjectPath(slug)} passHref legacyBehavior>
@@ -87,7 +81,6 @@ export default function ProjectCard({
 
       {backgroundImage && (
         <Box
-          ref={backgroundRef}
           position="absolute"
           top={0}
           left={0}
