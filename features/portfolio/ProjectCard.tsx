@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import NextImage, { StaticImageData } from "next/image";
 import NextLink from "next/link";
-import { useRef } from "react";
 import { getPortfolioProjectPath } from "../../constants/paths";
 import { Project } from "../../types/types";
 import DevicePreviews from "./DevicePreviews";
@@ -47,6 +46,11 @@ export default function ProjectCard({
       cursor="pointer"
       transitionProperty="common"
       transitionDuration="normal"
+      sx={{
+        "a::before": {
+          zIndex: 10,
+        },
+      }}
       overflow="hidden"
     >
       <Heading as="h1" fontSize="2xl">
@@ -74,7 +78,6 @@ export default function ProjectCard({
         mobileImage={mobileImage}
         desktopImage={desktopImage}
         mobileAppBarColor={mobileAppBarColor}
-        hoverScaleTransform={false}
         mt={6}
         mb={4}
       />

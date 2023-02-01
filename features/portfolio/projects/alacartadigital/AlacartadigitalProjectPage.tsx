@@ -39,7 +39,6 @@ export default function AlacartadigitalProjectPage() {
         mobileImage={alacartadigital.mobileImage}
         desktopImage={alacartadigital.desktopImage}
         mobileAppBarColor={alacartadigital.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

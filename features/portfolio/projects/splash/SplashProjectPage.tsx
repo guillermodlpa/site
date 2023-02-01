@@ -39,7 +39,6 @@ export default function SplashProjectPage() {
         mobileImage={splash.mobileImage}
         desktopImage={splash.desktopImage}
         mobileAppBarColor={splash.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

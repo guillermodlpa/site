@@ -37,7 +37,6 @@ export default function QuatroProjectPage() {
         mobileImage={quatro.mobileImage}
         desktopImage={quatro.desktopImage}
         mobileAppBarColor={quatro.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

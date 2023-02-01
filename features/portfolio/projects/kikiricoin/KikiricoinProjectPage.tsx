@@ -28,7 +28,6 @@ export default function KikiricoinProjectPage() {
         mobileImage={kikiricoin.mobileImage}
         desktopImage={kikiricoin.desktopImage}
         mobileAppBarColor={kikiricoin.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">
