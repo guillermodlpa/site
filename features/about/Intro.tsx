@@ -17,6 +17,7 @@ import RecentBlogPostItem from "./RecentBlogPostItem";
 import MagicalDivider from "../../components/MagicalDivider";
 import React from "react";
 import TagCloud from "../../components/TagCloud";
+import technologyTags from "../../constants/technologyTags";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -32,46 +33,6 @@ const markdownComponents = {
     />
   ),
 };
-
-const technologyTags = [
-  "React",
-  "Node",
-  "Next.js",
-  "TypeScript",
-  "Express",
-  "Koa",
-  "AWS",
-  "Vercel",
-  "Firebase",
-  "Stripe API",
-  "Sendinblue",
-  "ActiveCampaign",
-  "Mailgun",
-  "PHP",
-  "CakePHP",
-  "Symfony",
-  "PostgreSQL",
-  "MySQL",
-  "Planetscale",
-  "Objection.js",
-  "Knex",
-  "Auth0",
-  "next-auth",
-  "next-i18n",
-  "Web3",
-  "Solidity",
-  "Polygon",
-  "Cloudinary",
-  "Filestack",
-  "Uploadcare",
-  "Webflow",
-  "Notion API",
-  "Google Sheets API",
-  "Google Calendar API",
-  "Jest",
-  "Testing Library",
-  "Cypress",
-];
 
 export default function Intro({
   recentBlogPosts,

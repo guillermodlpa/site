@@ -8,6 +8,8 @@ import {
   personalProjects,
   professionalProjects,
 } from "./projects/projectLists";
+import TagCloud from "../../components/TagCloud";
+import technologyTags from "../../constants/technologyTags";
 
 export default function Portfolio() {
   return (
@@ -33,6 +35,8 @@ export default function Portfolio() {
           </GridItem>
         ))}
       </SimpleGrid>
+
+      <TagCloud tags={technologyTags} mt={20} />
     </Container>
   );
 }
