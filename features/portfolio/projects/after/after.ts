@@ -1,74 +1,34 @@
-import { ProfessionalProject } from "../professionalProjects";
-
-import Description from "./after-description.mdx";
-import afterLogo from "./after-logo.png";
-import afterDesktop from "./after-desktop.png";
-import afterMobile from "./after-mobile.png";
+import { Project } from "../../../../types/types";
 import afterBackground from "./after-background.png";
-import { getPortfolioProjectPath } from "../../../../constants/paths";
+import afterDesktop from "./after-desktop.png";
+import afterLogo from "./after-logo.png";
+import afterMobile from "./after-mobile.png";
 
-const afterProject: ProfessionalProject = {
-  logo: afterLogo,
-  logoAlt: "after logo",
+const after: Project = {
   name: "After",
   anchorId: "after",
-  subheadline:
-    "Collaborate with family and friends to create beautiful, emotional memorials for your loved ones in minutes",
-  Description,
-  technologies: [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "PostgreSQL",
-    "Sendinblue",
-    "AWS",
-    "Node.js",
-    "Koa",
-    "Objection.js",
-    "Knex",
-  ],
-  buttons: [
-    { url: "https://after.io/", buttonLabel: "Go to After" },
-    {
-      url: "https://after.io/snowy-de-torrelodones",
-      buttonLabel: "View demo memorial",
-    },
-  ],
+  slug: "after",
   date: "2022 - 2023",
-  colors: {
-    accent: "#657287",
-    accentForeground: "white",
-    accentHightlighted: "#4e5b6f",
-    accentHightlightedForeground: "white",
-    subheadline: "#627389",
-    body: "#1A202C",
-    background: "white",
-    mobileAppBar: "black",
-  },
+  mobileAppBarColor: "black",
   mobileImage: afterMobile,
   desktopImage: afterDesktop,
-  video: [
-    {
-      type: "video/mp4",
-      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto/v1663607812/site/portfolio/demo-videos/after-demo_fosvre.mp4",
-    },
-    {
-      type: "video/webm",
-      src: "https://res.cloudinary.com/dwt7cth1hv/video/upload/q_auto,f_webm/v1663607812/site/portfolio/demo-videos/after-demo_fosvre.mp4",
-    },
-  ],
+  logoImage: {
+    src: { light: afterLogo, dark: afterLogo },
+    alt: "After",
+    width: 100,
+    style: { marginBottom: "0.3em" },
+  },
   backgroundImage: {
     src: afterBackground,
-    styles: {
+    alt: "Old photo illustration",
+    style: {
       bottom: "12%",
-      left: { base: "auto", md: "30%" },
-      right: { base: "2%", md: "auto" },
-      width: { base: "50%", md: "30%" },
+      left: "30%",
+      width: "30%",
       opacity: 0.25,
     },
   },
-  backgroundOverlay: null,
-  path: getPortfolioProjectPath("after"),
+  backgroundColor: null,
 };
 
-export default afterProject;
+export default after;

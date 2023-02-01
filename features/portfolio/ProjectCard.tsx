@@ -1,8 +1,18 @@
-import { Box, Heading, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
-import NextImage from "next/image";
+import {
+  Box,
+  Heading,
+  LinkBox,
+  LinkOverlay,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import NextImage, { StaticImageData } from "next/image";
 import NextLink from "next/link";
+import { useRef } from "react";
+import { getPortfolioProjectPath } from "../../constants/paths";
+import { Project } from "../../types/types";
 import DevicePreviews from "./DevicePreviews";
-import { Project } from "./projects/projects";
+import useParallax from "./hooks/useParallax";
 
 export default function ProjectCard({
   name,
@@ -14,8 +24,17 @@ export default function ProjectCard({
   desktopImage,
   logoImage,
   mobileAppBarColor,
-  path,
+  slug,
 }: Project) {
+  const logoImageSrc = useColorModeValue<StaticImageData, StaticImageData>(
+    logoImage?.src?.dark,
+    logoImage?.src?.light
+  );
+
+  const cardRef = useRef();
+  const backgroundRef = useRef();
+  useParallax(cardRef, backgroundRef);
+
   return (
     <LinkBox
       borderWidth="1px"
@@ -27,24 +46,26 @@ export default function ProjectCard({
       position="relative"
       _hover={{
         boxShadow: "lg",
+        transform: "translateY(-2px)",
       }}
       background={backgroundColor}
       cursor="pointer"
       transitionProperty="common"
       transitionDuration="normal"
       overflow="hidden"
+      ref={cardRef}
     >
-      <Heading>
-        <NextLink href={path} passHref legacyBehavior>
+      <Heading as="h1" fontSize="2xl">
+        <NextLink href={getPortfolioProjectPath(slug)} passHref legacyBehavior>
           <LinkOverlay
             color="inherit"
             transitionProperty="common"
             transitionDuration="normal"
             id={anchorId}
           >
-            {logoImage ? (
+            {logoImage && logoImageSrc ? (
               <>
-                <NextImage {...logoImage} />
+                <NextImage {...logoImage} src={logoImageSrc} />
                 <span style={{ display: "none" }}>{name}</span>
               </>
             ) : (
@@ -65,18 +86,27 @@ export default function ProjectCard({
       />
 
       {backgroundImage && (
-        <NextImage
-          {...backgroundImage}
-          style={{
-            userSelect: "none",
-            zIndex: -1,
-            position: "absolute",
-            ...backgroundImage.style,
-          }}
-          alt="Background"
-          placeholder="blur"
-          sizes="100vw"
-        />
+        <Box
+          ref={backgroundRef}
+          position="absolute"
+          top={0}
+          left={0}
+          bottom={0}
+          right={0}
+          zIndex={-1}
+          userSelect="none"
+        >
+          <NextImage
+            {...backgroundImage}
+            style={{
+              position: "absolute",
+              ...backgroundImage.style,
+            }}
+            alt="Background"
+            placeholder="blur"
+            sizes="100vw"
+          />
+        </Box>
       )}
     </LinkBox>
   );

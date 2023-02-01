@@ -16,6 +16,7 @@ import { BlogPost } from "../../types/types";
 import RecentBlogPostItem from "./RecentBlogPostItem";
 import MagicalDivider from "../../components/MagicalDivider";
 import React from "react";
+import TagCloud from "../../components/TagCloud";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -176,20 +177,7 @@ export default function Intro({
         </Box>
       )}
 
-      <Flex
-        as="section"
-        flexDirection="row"
-        wrap="wrap"
-        gap={2}
-        mt={20}
-        justifyContent="center"
-      >
-        {technologyTags.map((tag) => (
-          <Tag key={tag} variant="outline" width="auto">
-            {tag}
-          </Tag>
-        ))}
-      </Flex>
+      <TagCloud tags={technologyTags} mt={20} />
     </Box>
   );
 }
