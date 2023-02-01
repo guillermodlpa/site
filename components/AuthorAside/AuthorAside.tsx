@@ -6,7 +6,7 @@ import {
   PATH_NEWSLETTER,
   PATH_PORTFOLIO,
 } from "../../constants/paths";
-import OpacitySlideFade from "../../features/portfolio/OpacitySlideFade";
+import OpacitySlideFade from "../OpacitySlideFade";
 import useScrollThreshold from "./useScrollThreshold";
 
 const ASIDE_WIDTH = 150;
