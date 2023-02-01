@@ -1,5 +1,5 @@
 import { Box, BoxProps } from "@chakra-ui/react";
-import Image, { StaticImageData } from "next/image";
+import NextImage, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
@@ -12,12 +12,13 @@ export default function DevicePreviews({
   mobileImage,
   desktopImage,
   mobileAppBarColor,
-
+  sizes = generateImageSizesProp({ base: "100vw", md: "600px" }),
   ...rest
 }: {
   mobileImage?: StaticImageData;
   desktopImage?: StaticImageData;
   mobileAppBarColor: string;
+  sizes?: string;
 } & BoxProps) {
   const desktopFramePositioning =
     desktopImage && mobileImage
@@ -77,21 +78,19 @@ export default function DevicePreviews({
             height="89%"
             width="76%"
           >
-            <Image
+            <NextImage
               src={desktopImage}
               alt="screenshot"
               placeholder="blur"
-              sizes={generateImageSizesProp({
-                base: "50vw",
-                md: "25vw",
-              })}
+              sizes={sizes}
             />
           </Box>
-          <Image
+          <NextImage
             src={macFrame}
             alt="laptop frame"
             // this is so the frame shows above the absolute positioned images above
             style={{ transform: "translate(0, 0)" }}
+            sizes={sizes}
           />
         </Box>
       )}
@@ -124,21 +123,19 @@ export default function DevicePreviews({
             height="90%"
             width="85%"
           >
-            <Image
+            <NextImage
               src={mobileImage}
               alt="screenshot"
               placeholder="blur"
-              sizes={generateImageSizesProp({
-                base: "40vw",
-                md: "20vw",
-              })}
+              sizes={sizes}
             />
           </Box>
-          <Image
+          <NextImage
             src={iphoneFrame}
             alt="phone frame"
             // this is so the frame shows above the absolute positioned images above
             style={{ transform: "translate(0, 0)" }}
+            sizes={sizes}
           />
         </Box>
       )}

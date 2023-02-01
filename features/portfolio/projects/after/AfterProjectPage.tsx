@@ -9,6 +9,7 @@ import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
 import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import generateImageSizesProp from "../../../../utils/generateImageSizesProp";
 
 const tags = [
   "React",
