@@ -22,8 +22,8 @@ const after: Project = {
     src: afterBackground,
     alt: "Old photo illustration",
     style: {
-      bottom: "12%",
-      left: "30%",
+      top: "12%",
+      right: "10%",
       width: "30%",
       opacity: 0.25,
     },
