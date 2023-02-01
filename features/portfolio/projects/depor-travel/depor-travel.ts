@@ -1,61 +1,35 @@
-import { getPortfolioProjectPath } from "../../../../constants/paths";
-import { PersonalProject } from "../../personalProjects/personalProjects";
-
-import Description from "./depor-travel-description.mdx";
-import deporTravelLogo from "./depor-travel-logo.png";
+import deporTravelLogoLight from "./depor-travel-logo-light.png";
+import deporTravelLogoDark from "./depor-travel-logo-dark.png";
 import deporTravelDesktop from "./depor-travel-desktop.png";
 import deporTravelMobile from "./depor-travel-mobile.png";
 import deporTravelBackground from "./depor-travel-background.jpeg";
+import { Project } from "../../../../types/types";
 
-const deporTravelProject: PersonalProject = {
+const deporTravel: Project = {
   name: "depor.travel",
-  type: "Startup",
   anchorId: "depor-travel",
+  slug: "depor-travel",
   date: "2022",
-  logo: deporTravelLogo,
-  logoAlt: "depor.travel",
-  subheadline: "Travel and sport.\nTwo passions, one portal",
-  technologies: ["Next.js", "next-i18n", "Google Sheets", "Webflow"],
-  colors: {
-    accent: "#ef3d21",
-    accentForeground: "white",
-    accentHightlighted: "#d80f1e",
-    accentHightlightedForeground: "white",
-    subheadline: "white",
-    body: "white",
-    background: "white",
-    mobileAppBar: "white",
-  },
-  buttons: [
-    {
-      url: "https://depor.travel",
-      label: "Go to depor.travel",
-      secondary: false,
-    },
-    {
-      url: "https://github.com/guillermodlpa/deportravel-squeeze-page",
-      label: "Squeeze Page Source Code",
-      secondary: true,
-    },
-  ],
+  mobileAppBarColor: "white",
   mobileImage: deporTravelMobile,
   desktopImage: deporTravelDesktop,
-  Description,
+  logoImage: {
+    src: { light: deporTravelLogoLight, dark: deporTravelLogoDark },
+    alt: "depor.travel",
+    width: 150,
+  },
+  backgroundColor: null,
   backgroundImage: {
     src: deporTravelBackground,
-    fill: true,
-    objectFit: "cover",
-    styles: {
-      height: "100%",
+    alt: "Cyclist",
+    style: {
       width: "100%",
+      height: "100%",
       top: 0,
-      left: "auto",
-      right: 0,
+      left: 0,
+      objectFit: "cover",
     },
   },
-  backgroundOverlay:
-    "linear-gradient(135deg,rgba(30,33,33,.82) 1%,rgba(32,32,32,.14) 98%)",
-  path: getPortfolioProjectPath("depor.travel"),
 };
 
-export default deporTravelProject;
+export default deporTravel;

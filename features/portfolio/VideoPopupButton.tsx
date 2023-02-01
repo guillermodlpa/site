@@ -23,7 +23,7 @@ export default function VideoPopupButton({
   return (
     <>
       <Button {...buttonProps} onClick={() => onOpen()}>
-        Ver video
+        Ver demo video
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />

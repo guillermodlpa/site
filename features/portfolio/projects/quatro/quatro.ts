@@ -1,61 +1,23 @@
-import { getPortfolioProjectPath } from "../../../../constants/paths";
-import { PersonalProject } from "../../personalProjects/personalProjects";
-
-import Description from "./quatro-description.mdx";
 import quatroLogo from "./quatro-logo.webp";
 import quatroDesktop from "./quatro-desktop.png";
+import { Project } from "../../../../types/types";
 
-const quatroProject: PersonalProject = {
+const quatro: Project = {
   name: "Quatro",
-  type: "Startup",
   anchorId: "quatro",
+  slug: "quatro",
   date: "2020 - 2021",
-  logo: quatroLogo,
-  logoAlt: "Quatro logo",
-  subheadline: "A Task Manager that prioritizes your day for you",
-  technologies: [
-    "React",
-    "Firebase Firestore",
-    "Firebase Hosting",
-    "Firebase Functions",
-    "Google Calendar API",
-    "Mailgun",
-    "ActiveCampaign",
-    "ToDesktop",
-  ],
-  colors: {
-    accent: "#263573",
-    accentForeground: "white",
-    accentHightlighted: "rgba(38, 53, 115, 0.5)",
-    accentHightlightedForeground: "white",
-    subheadline: "#605E5E",
-    body: "rgb(82, 82, 82)",
-    background: "rgb(250, 250, 250)",
-    mobileAppBar: "white",
-  },
-  buttons: [
-    {
-      url: "https://github.com/usequatro",
-      label: "Source code",
-      secondary: false,
-    },
-    {
-      url: "https://vimeo.com/495868077",
-      label: "Promotional Video",
-      secondary: true,
-    },
-    {
-      url: "https://github.com/usequatro/quatro-docs",
-      label: "Technical Docs",
-      secondary: true,
-    },
-  ],
+  mobileAppBarColor: "white",
   mobileImage: null,
   desktopImage: quatroDesktop,
-  Description,
+  logoImage: {
+    src: { light: quatroLogo, dark: quatroLogo },
+    alt: "Quatro",
+    width: 150,
+    style: { marginBottom: "0.1em" },
+  },
   backgroundImage: null,
-  backgroundOverlay: null,
-  path: getPortfolioProjectPath("quatro"),
+  backgroundColor: null,
 };
 
-export default quatroProject;
+export default quatro;

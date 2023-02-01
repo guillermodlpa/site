@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
 import Image, { StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
@@ -12,17 +12,14 @@ export default function DevicePreviews({
   mobileImage,
   desktopImage,
   mobileAppBarColor,
-  mb,
-  mt,
   hoverScaleTransform = true,
+  ...rest
 }: {
   mobileImage?: StaticImageData;
   desktopImage?: StaticImageData;
   mobileAppBarColor: string;
-  mb?: any;
-  mt?: any;
   hoverScaleTransform?: boolean;
-}) {
+} & BoxProps) {
   const desktopFramePositioning =
     desktopImage && mobileImage
       ? { top: "20%", left: "30%" }
@@ -64,7 +61,7 @@ export default function DevicePreviews({
   }, [mobileContainerRef, desktopContainerRef]);
 
   return (
-    <Box position="relative" height={devicesContainerHeight} mb={mb} mt={mt}>
+    <Box position="relative" height={devicesContainerHeight} {...rest}>
       {desktopImage && (
         <Box
           position="absolute"

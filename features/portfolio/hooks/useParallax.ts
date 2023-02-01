@@ -3,7 +3,8 @@ import useInViewport from "./useInViewport";
 
 export default function useParallax(
   stableRef: MutableRefObject<HTMLElement>,
-  transformedRef: MutableRefObject<HTMLElement>
+  transformedRef: MutableRefObject<HTMLElement>,
+  factor = 10
 ) {
   const inViewport = useInViewport(stableRef);
 
@@ -21,12 +22,12 @@ export default function useParallax(
       const offset = top + height / 2 - viewportSize / 2;
 
       transformedRef.current.style.transform = `translateY(${Math.round(
-        -offset / 5
+        -offset / factor
       )}px)`;
     }
     window.addEventListener("scroll", handle);
     return function cleanUp() {
       window.removeEventListener("scroll", handle);
     };
-  }, [inViewport, stableRef, transformedRef]);
+  }, [inViewport, stableRef, transformedRef, factor]);
 }
