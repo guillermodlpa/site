@@ -10,7 +10,7 @@ import { allProjects } from "./projectLists";
 
 function BackToPortfolioLink() {
   return (
-    <NextLink href={PATH_PORTFOLIO}>
+    <NextLink href={PATH_PORTFOLIO} passHref legacyBehavior>
       <Link>Back to portfolio</Link>
     </NextLink>
   );

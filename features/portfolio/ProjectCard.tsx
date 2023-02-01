@@ -10,6 +10,7 @@ import NextImage, { StaticImageData } from "next/image";
 import NextLink from "next/link";
 import { getPortfolioProjectPath } from "../../constants/paths";
 import { Project } from "../../types/types";
+import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import DevicePreviews from "./DevicePreviews";
 
 export default function ProjectCard({
@@ -80,6 +81,7 @@ export default function ProjectCard({
         mobileAppBarColor={mobileAppBarColor}
         mt={6}
         mb={4}
+        sizes={generateImageSizesProp({ base: "75vw", md: "250px" })}
       />
 
       {backgroundImage && (
