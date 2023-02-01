@@ -28,7 +28,6 @@ export default function NotionPoweredBlogProjectPage() {
         mobileImage={notionPoweredBlog.mobileImage}
         desktopImage={notionPoweredBlog.desktopImage}
         mobileAppBarColor={notionPoweredBlog.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

@@ -37,7 +37,6 @@ export default function DeporTravelProjectPage() {
         mobileImage={deporTravel.mobileImage}
         desktopImage={deporTravel.desktopImage}
         mobileAppBarColor={deporTravel.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

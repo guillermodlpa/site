@@ -12,13 +12,12 @@ export default function DevicePreviews({
   mobileImage,
   desktopImage,
   mobileAppBarColor,
-  hoverScaleTransform = true,
+
   ...rest
 }: {
   mobileImage?: StaticImageData;
   desktopImage?: StaticImageData;
   mobileAppBarColor: string;
-  hoverScaleTransform?: boolean;
 } & BoxProps) {
   const desktopFramePositioning =
     desktopImage && mobileImage
@@ -67,16 +66,6 @@ export default function DevicePreviews({
           position="absolute"
           {...desktopFramePositioning}
           ref={desktopContainerRef}
-          transform="scale(1)"
-          transition="transform 0.25s ease"
-          _hover={
-            hoverScaleTransform
-              ? {
-                  transform: `scale(1.2)`,
-                  zIndex: 1,
-                }
-              : {}
-          }
         >
           <Box
             position="absolute"
@@ -111,17 +100,8 @@ export default function DevicePreviews({
         <Box
           position="absolute"
           {...mobileFramePositioning}
-          transform="translate(-50%, -50%) scale(1)"
+          transform="translate(-50%, -50%)"
           ref={mobileContainerRef}
-          transition="transform 0.25s ease"
-          _hover={
-            hoverScaleTransform
-              ? {
-                  transform: `translate(-50%, -50%) scale(1.2)`,
-                  zIndex: 1,
-                }
-              : {}
-          }
         >
           <Box
             height="91%"

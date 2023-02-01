@@ -43,7 +43,6 @@ export default function AfterProjectPage() {
         mobileImage={after.mobileImage}
         desktopImage={after.desktopImage}
         mobileAppBarColor={after.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">

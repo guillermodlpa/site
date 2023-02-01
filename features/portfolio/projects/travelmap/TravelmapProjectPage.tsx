@@ -35,7 +35,6 @@ export default function TravelmapProjectPage() {
         mobileImage={travelmap.mobileImage}
         desktopImage={travelmap.desktopImage}
         mobileAppBarColor={travelmap.mobileAppBarColor}
-        hoverScaleTransform={false}
       />
 
       <Text mb={4} fontSize="md">
