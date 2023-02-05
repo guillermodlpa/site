@@ -42,7 +42,7 @@ export default function Intro({
   return (
     <Box
       px={4}
-      py={{ base: 10, md: 16 }}
+      py={10}
       position="relative"
       overflow="hidden"
       maxWidth="container.md"

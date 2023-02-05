@@ -14,7 +14,7 @@ export default function Newsletter() {
   return (
     <Box
       px={4}
-      py={16}
+      py={10}
       position="relative"
       overflow="hidden"
       maxWidth="container.md"
