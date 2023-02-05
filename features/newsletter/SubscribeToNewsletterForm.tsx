@@ -117,6 +117,7 @@ export default function SubscribeToNewsletterForm() {
             <Input
               type="text"
               name="name"
+              size={{ base: "lg", md: "md" }}
               value={data.name}
               onChange={(event) =>
                 setData((data) => ({ ...data, name: event.target.value }))
@@ -128,6 +129,7 @@ export default function SubscribeToNewsletterForm() {
             <Input
               type="email"
               name="email"
+              size={{ base: "lg", md: "md" }}
               value={data.email}
               onChange={(event) =>
                 setData((data) => ({ ...data, email: event.target.value }))
