@@ -35,7 +35,11 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       <ChakraProvider theme={theme}>
-        <AnimatePresence initial={false} mode="wait">
+        <AnimatePresence
+          initial={false}
+          mode="wait"
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
           <Component {...pageProps} />
         </AnimatePresence>
       </ChakraProvider>
