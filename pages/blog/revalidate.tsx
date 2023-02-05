@@ -1,11 +1,11 @@
 import PageMeta from "../../components/PageMeta";
 import { PATH_BLOG_REVALIDATE } from "../../constants/paths";
 import BlogRevalidate from "../../features/blogRevalidate";
-import BlogLayout from "../../layouts/BlogLayout";
+import Layout from "../../layouts/Layout";
 
 export default function BlogRevalidatePage() {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={PATH_BLOG_REVALIDATE}
         title={"Blog Revalidation"}
@@ -15,10 +15,6 @@ export default function BlogRevalidatePage() {
         ogType="profile"
       />
       <BlogRevalidate />
-    </>
+    </Layout>
   );
 }
-
-BlogRevalidatePage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};

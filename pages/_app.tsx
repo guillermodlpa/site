@@ -1,11 +1,10 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
 import Script from "next/script";
 import theme from "../constants/theme";
 
 function MyApp({ Component, pageProps }) {
-  const getLayout = Component.getLayout ?? ((page) => page);
-
   return (
     <>
       <Head>
@@ -36,7 +35,9 @@ function MyApp({ Component, pageProps }) {
       </Script>
 
       <ChakraProvider theme={theme}>
-        {getLayout(<Component {...pageProps} />)}
+        <AnimatePresence initial={false} mode="wait">
+          <Component {...pageProps} />
+        </AnimatePresence>
       </ChakraProvider>
     </>
   );

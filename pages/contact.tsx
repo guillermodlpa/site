@@ -1,11 +1,11 @@
 import PageMeta from "../components/PageMeta";
 import { PATH_CONTACT } from "../constants/paths";
 import Contact from "../features/contact";
-import BlogLayout from "../layouts/BlogLayout";
+import Layout from "../layouts/Layout";
 
 function ContactPage() {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={PATH_CONTACT}
         title={
@@ -16,12 +16,8 @@ function ContactPage() {
         }
       />
       <Contact />
-    </>
+    </Layout>
   );
 }
-
-ContactPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export default ContactPage;

@@ -18,7 +18,7 @@ import splash from "../../features/portfolio/projects/splash/splash";
 import SplashProjectPage from "../../features/portfolio/projects/splash/SplashProjectPage";
 import travelmap from "../../features/portfolio/projects/travelmap/travelmap";
 import TravelmapProjectPage from "../../features/portfolio/projects/travelmap/TravelmapProjectPage";
-import BlogLayout from "../../layouts/BlogLayout";
+import Layout from "../../layouts/Layout";
 import { Project } from "../../types/types";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } =
@@ -37,7 +37,7 @@ export default function PortfolioPage({ project }: { project: Project }) {
   const Component = projectComponentsByName[project.slug];
 
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={getPortfolioProjectPath(project.slug)}
         title={`${project.name} - Guillermo de la Puente - Freelance Software Engineer & Manager`}
@@ -47,13 +47,9 @@ export default function PortfolioPage({ project }: { project: Project }) {
       />
 
       <Component />
-    </>
+    </Layout>
   );
 }
-
-PortfolioPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export async function getStaticPaths() {
   const paths = allProjects.map((project) => ({

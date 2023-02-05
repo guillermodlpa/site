@@ -2,7 +2,7 @@ import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import PageMeta from "../../components/PageMeta";
 import { getBlogPostPath } from "../../constants/paths";
 import BlogPost from "../../features/blogPost";
-import BlogLayout from "../../layouts/BlogLayout";
+import Layout from "../../layouts/Layout";
 import {
   fetchAllBlocks,
   fetchBlogPostBySlug,
@@ -19,7 +19,7 @@ function BlogPostPage({
   blocks: GetBlockResponse[];
 }) {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={getBlogPostPath(blogPost.slug)}
         title={`${blogPost.title} - Guillermo de la Puente`}
@@ -38,13 +38,9 @@ function BlogPostPage({
         }}
       />
       <BlogPost blogPost={blogPost} blocks={blocks} />
-    </>
+    </Layout>
   );
 }
-
-BlogPostPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export async function getStaticPaths() {
   const blogPosts = await fetchBlogPosts();

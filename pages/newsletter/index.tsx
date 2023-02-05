@@ -1,11 +1,11 @@
 import PageMeta from "../../components/PageMeta";
 import { PATH_NEWSLETTER } from "../../constants/paths";
 import Newsletter from "../../features/newsletter/Newsletter";
-import BlogLayout from "../../layouts/BlogLayout";
+import Layout from "../../layouts/Layout";
 
 function NewsletterPage() {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={PATH_NEWSLETTER}
         title={
@@ -16,12 +16,8 @@ function NewsletterPage() {
         }
       />
       <Newsletter />
-    </>
+    </Layout>
   );
 }
-
-NewsletterPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export default NewsletterPage;

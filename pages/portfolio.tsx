@@ -1,11 +1,11 @@
 import PageMeta from "../components/PageMeta";
 import { PATH_PORTFOLIO } from "../constants/paths";
 import Portfolio from "../features/portfolio";
-import BlogLayout from "../layouts/BlogLayout";
+import Layout from "../layouts/Layout";
 
 function PortfolioPage() {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={PATH_PORTFOLIO}
         title={
@@ -16,12 +16,8 @@ function PortfolioPage() {
         }
       />
       <Portfolio />
-    </>
+    </Layout>
   );
 }
-
-PortfolioPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export default PortfolioPage;

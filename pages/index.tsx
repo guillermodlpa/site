@@ -1,13 +1,13 @@
 import PageMeta from "../components/PageMeta";
 import About from "../features/about";
-import BlogLayout from "../layouts/BlogLayout";
+import Layout from "../layouts/Layout";
 import { fetchBlogPosts } from "../lib/notionClient";
 import { BlogPost } from "../types/types";
 import recursivelyNullifyUndefinedValues from "../utils/recursivelyNullifyUndefinedValues";
 
 function HomePage({ recentBlogPosts }: { recentBlogPosts: BlogPost[] }) {
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={"/"}
         title={"Guillermo de la Puente - Freelance Software Engineer & Manager"}
@@ -17,13 +17,9 @@ function HomePage({ recentBlogPosts }: { recentBlogPosts: BlogPost[] }) {
         ogType="profile"
       />
       <About recentBlogPosts={recentBlogPosts} />
-    </>
+    </Layout>
   );
 }
-
-HomePage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export async function getStaticProps(context) {
   const blogPosts = await fetchBlogPosts({ pageSize: 3 });

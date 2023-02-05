@@ -1,7 +1,7 @@
 import PageMeta from "../../components/PageMeta";
 import { PATH_BLOG } from "../../constants/paths";
 import Blog from "../../features/blog";
-import BlogLayout from "../../layouts/BlogLayout";
+import Layout from "../../layouts/Layout";
 import { fetchBlogPosts } from "../../lib/notionClient";
 import { BlogPost } from "../../types/types";
 import { BlogPostCategoryName } from "../../utils/blogPostCategories";
@@ -23,20 +23,16 @@ function BlogPage({
     )
     .trim();
   return (
-    <>
+    <Layout>
       <PageMeta
         canonicalPath={PATH_BLOG}
         title="Blog - Guillermo de la Puente - Freelance Software Engineer & Manager"
         description={description}
       />
       <Blog blogPosts={blogPosts} categoryName={categoryName} />
-    </>
+    </Layout>
   );
 }
-
-BlogPage.getLayout = function getLayout(page: React.ReactElement) {
-  return <BlogLayout>{page}</BlogLayout>;
-};
 
 export async function getStaticProps(context) {
   const blogPosts = await fetchBlogPosts();
