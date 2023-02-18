@@ -69,9 +69,8 @@ export default function BlogPostSummary({
               alt={"Blog post thumbnail"}
               priority={preloadImage}
               sizes={generateImageSizesProp({
-                base: "95vw",
-                sm: "25vw",
-                lg: "15vw",
+                base: "90vw",
+                md: "200px",
               })}
             />
           </Box>
