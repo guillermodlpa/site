@@ -10,7 +10,7 @@ import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
 import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
 
-const tags = ["Next.js", "Notion API", "SEO", "RSS"];
+const tags = ["Next.js", "Notion API", "SEO", "RSS", "Umami"];
 
 export default function NotionPoweredBlogProjectPage() {
   const markdownComponents = useMarkdownComponents();

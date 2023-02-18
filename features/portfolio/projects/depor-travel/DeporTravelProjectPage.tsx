@@ -17,6 +17,7 @@ const tags = [
   "Webflow",
   "Google AdWords",
   "Instagram Ads",
+  "Umami",
 ];
 
 export default function DeporTravelProjectPage() {
@@ -56,7 +57,7 @@ export default function DeporTravelProjectPage() {
           href="https://depor.travel/"
           colorScheme="primary"
         >
-          Visit depor.travel
+          Visit RIP page
         </Button>
         <Button
           as={Link}
