@@ -4,11 +4,11 @@ import {
   Link,
   LinkBox,
   LinkOverlay,
-  Skeleton,
   Text,
   Image as ChakraImage,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
+import useHasBeenInViewport from "../utils/useHasBeenInViewport";
 
 type RequestStatus = "iddle" | "loading" | "success" | "error";
 
@@ -19,10 +19,13 @@ type UrlData = {
   imageSrc: string | null;
 };
 
-function useUnfurlUrl(url: string) {
+function useUnfurlUrl(url: string, enabled: boolean) {
   const [status, setStatus] = useState<RequestStatus>("iddle");
   const [data, setData] = useState<null | UrlData>(null);
   useEffect(() => {
+    if (!enabled) {
+      return;
+    }
     setStatus("loading");
     const encoded = encodeURIComponent(url);
     fetch(`/api/bookmark/${encoded}`)
@@ -39,33 +42,30 @@ function useUnfurlUrl(url: string) {
         console.error(error);
         setStatus("error");
       });
-  }, [url]);
+  }, [url, enabled]);
 
   return { status, data };
 }
 
-function ErrorFallback({ url }: { url: string }) {
-  return (
-    <Box display="flex" mb={4} backgroundColor={"callout-background"} p={3}>
-      <Text wordBreak="break-word">
-        <Link isExternal href={url}>
-          {url}
-        </Link>
-      </Text>
-    </Box>
-  );
-}
-
-function LoadingSkeleton() {
-  return (
-    <Skeleton
-      height="124px"
-      mb={4}
-      startColor="blackAlpha.100"
-      endColor="blackAlpha.300"
-    />
-  );
-}
+const BookmarkFallback = forwardRef<HTMLDivElement, { url: string }>(
+  function BookmarkFallbackInner({ url }, ref) {
+    return (
+      <Box
+        display="flex"
+        mb={4}
+        backgroundColor={"callout-background"}
+        p={3}
+        ref={ref}
+      >
+        <Text wordBreak="break-word">
+          <Link isExternal href={url}>
+            {url}
+          </Link>
+        </Text>
+      </Box>
+    );
+  }
+);
 
 function UnfurledUrlPreview({
   url,
@@ -168,13 +168,14 @@ function UnfurledUrlPreview({
 }
 
 export default function BookmarkBlock({ url }: { url: string }) {
-  const { data, status } = useUnfurlUrl(url);
+  const ref = useRef();
+  const enabled = useHasBeenInViewport(ref);
 
-  if (status === "error") {
-    return <ErrorFallback url={url} />;
-  }
+  const { data, status } = useUnfurlUrl(url, enabled);
+
   if (status === "success") {
     return <UnfurledUrlPreview url={url} urlData={data} />;
   }
-  return <LoadingSkeleton />;
+
+  return <BookmarkFallback url={url} ref={ref} />;
 }

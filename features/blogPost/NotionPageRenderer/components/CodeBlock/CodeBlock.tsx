@@ -1,13 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
-import {
-  createContext,
-  MutableRefObject,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { createContext, useContext, useRef } from "react";
+import useHasBeenInViewport from "../../utils/useHasBeenInViewport";
 import NotionRichText from "../NotionRichText";
 import LightPreformattedBlock from "./LightPreformattedBlock";
 
@@ -22,33 +16,6 @@ const HeavyHighlightedBlock = dynamic(() => import("./HeavyHighlightedBlock"), {
     return <LightPreformattedBlock>{value}</LightPreformattedBlock>;
   },
 });
-
-function useHasBeenInViewport(ref: MutableRefObject<HTMLElement>) {
-  const [inViewport, setInViewport] = useState(false);
-  useEffect(() => {
-    if (!ref.current) {
-      return;
-    }
-    const callback: IntersectionObserverCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setInViewport(true);
-        }
-      });
-    };
-    const observer = new IntersectionObserver(callback, {
-      root: null, // viewport
-      rootMargin: "0px",
-      threshold: 0,
-    });
-    observer.observe(ref.current);
-
-    return function cleanUp() {
-      observer.disconnect();
-    };
-  }, [ref]);
-  return inViewport;
-}
 
 export default function CodeBlock({
   language,
