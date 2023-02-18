@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import * as BLOCK_TYPES from "./blockTypes";
 import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
-import CodeBlock from "./components/CodeBlock";
 import BookmarkBlock from "./components/BookmarkBlock";
 import getPlainText from "./utils/getPlainText";
 import ParagraphBlock from "./components/ParagraphBlock";
@@ -24,6 +23,7 @@ import DividerBlock from "./components/DividerBlock";
 import CalloutBlock from "./components/CalloutBlock";
 import VideoBlock from "./components/VideoBlock";
 import NotionRichText from "./components/NotionRichText";
+import CodeBlock from "./components/CodeBlock";
 
 export default function NotionBlock({
   block,
