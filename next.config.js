@@ -56,6 +56,9 @@ const withMDX = require("@next/mdx")({
     rehypePlugins: [],
     providerImportSource: "@mdx-js/react", // for using MDXProvider
   },
+  experimental: {
+    mdxRs: true,
+  },
 });
 
 module.exports = withMDX(nextConfig);
