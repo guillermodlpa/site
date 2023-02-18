@@ -72,6 +72,7 @@ export default function Intro({
                 base: "33vw",
                 md: "15vw",
               })}
+              priority
             />
           </Box>
 
