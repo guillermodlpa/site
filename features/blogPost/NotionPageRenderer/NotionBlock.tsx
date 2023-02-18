@@ -194,7 +194,7 @@ export default function NotionBlock({
               key={child.id}
               block={child}
               parentBlock={block}
-              likelyAboveTheFold={false}
+              likelyAboveTheFold={likelyAboveTheFold}
             />
           ))
         )}
