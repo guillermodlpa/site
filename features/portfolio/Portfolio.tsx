@@ -2,7 +2,7 @@ import React from "react";
 import { Container, GridItem, SimpleGrid } from "@chakra-ui/react";
 import MagicalDivider from "../../components/MagicalDivider";
 import PortfolioHeader from "./PortfolioHeader";
-import PersonalProjectsHeader from "./PersonalProjectsHeader";
+import SecondarySectionHeader from "./SecondarySectionHeader";
 import ProjectCard from "./ProjectCard";
 import {
   personalProjects,
@@ -10,6 +10,7 @@ import {
 } from "./projects/projectLists";
 import TagCloud from "../../components/TagCloud";
 import technologyTags from "../../constants/technologyTags";
+import OpenSourceSection from "./OpenSourceSection";
 
 export default function Portfolio() {
   return (
@@ -26,7 +27,9 @@ export default function Portfolio() {
 
       <MagicalDivider width="auto" height="2px" mt={16} mb={16} />
 
-      <PersonalProjectsHeader />
+      <SecondarySectionHeader>
+        {`Startup Projects & Experiments`}
+      </SecondarySectionHeader>
 
       <SimpleGrid spacingX={4} spacingY={6} columns={{ base: 1, md: 2 }}>
         {personalProjects.map((project, index) => (
@@ -35,6 +38,10 @@ export default function Portfolio() {
           </GridItem>
         ))}
       </SimpleGrid>
+
+      <MagicalDivider width="auto" height="2px" mt={16} mb={16} />
+
+      <OpenSourceSection />
 
       <TagCloud tags={technologyTags} mt={20} />
     </Container>
