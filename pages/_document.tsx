@@ -1,6 +1,7 @@
 import { ColorModeScript } from "@chakra-ui/react";
 import getConfig from "next/config";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 import chakraUITheme from "../constants/theme";
 
 const { publicRuntimeConfig } = getConfig();
@@ -47,13 +48,12 @@ class MyDocument extends Document {
 
           <FaviconTags />
 
-          <script
-            async
-            defer
+          <Script
+            strategy="lazyOnload"
             data-website-id={publicRuntimeConfig.UMAMI_WEBSITE_ID}
             data-domains="guillermodlpa.com"
             src="https://umami-pvn48eb4t-guillermodlpa.vercel.app/umami.js"
-          ></script>
+          />
         </Head>
         <body>
           <ColorModeScript
