@@ -5,10 +5,11 @@ import {
   AlertTitle,
   Box,
   Button,
-  Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
+  Grid,
+  GridItem,
   Input,
   Link,
   ListItem,
@@ -48,6 +49,7 @@ export default function SubscribeToNewsletterForm() {
   const [data, setData] = useState({
     name: "",
     email: "",
+    relationship: "",
   });
 
   function handleSubmit(event: FormEvent) {
@@ -92,6 +94,7 @@ export default function SubscribeToNewsletterForm() {
               <UnorderedList listStyleType="none" ml={0} mb={4}>
                 <ListItem fontSize="sm">{data.name}</ListItem>
                 <ListItem fontSize="sm">{data.email}</ListItem>
+                <ListItem fontSize="sm">{data.relationship}</ListItem>
               </UnorderedList>
 
               <Text mb={2}>
@@ -103,49 +106,74 @@ export default function SubscribeToNewsletterForm() {
           </Box>
         </Alert>
       ) : (
-        <Flex
-          gap={4}
-          width="fit-content"
+        <Grid
+          columnGap={4}
+          rowGap={8}
+          templateColumns={"1fr 1fr"}
           mx="auto"
-          alignItems="flex-end"
-          flexDirection={{ base: "column", sm: "row" }}
-          justifyContent="flex-end"
-          flexWrap="wrap"
+          width={{ base: "full", md: "66%" }}
         >
-          <FormControl isRequired width="fit-content">
-            <FormLabel requiredIndicator={<></>}>Name</FormLabel>
-            <Input
-              type="text"
-              name="name"
-              size={{ base: "lg", md: "md" }}
-              value={data.name}
-              onChange={(event) =>
-                setData((data) => ({ ...data, name: event.target.value }))
-              }
-            />
-          </FormControl>
-          <FormControl isRequired width="fit-content">
-            <FormLabel requiredIndicator={<></>}>Email</FormLabel>
-            <Input
-              type="email"
-              name="email"
-              size={{ base: "lg", md: "md" }}
-              value={data.email}
-              onChange={(event) =>
-                setData((data) => ({ ...data, email: event.target.value }))
-              }
-            />
-          </FormControl>
+          <GridItem>
+            <FormControl isRequired>
+              <FormLabel requiredIndicator={<></>}>Name</FormLabel>
+              <Input
+                type="text"
+                name="name"
+                size={{ base: "lg", md: "md" }}
+                value={data.name}
+                onChange={(event) =>
+                  setData((data) => ({ ...data, name: event.target.value }))
+                }
+              />
+            </FormControl>
+          </GridItem>
 
-          <Button
-            flexShrink={0}
-            type="submit"
-            colorScheme="primary"
-            isLoading={formStatus === FormStatus.SUBMITTING}
-          >
-            Subscribe
-          </Button>
-        </Flex>
+          <GridItem>
+            <FormControl isRequired>
+              <FormLabel requiredIndicator={<></>}>Email</FormLabel>
+              <Input
+                type="email"
+                name="email"
+                size={{ base: "lg", md: "md" }}
+                value={data.email}
+                onChange={(event) =>
+                  setData((data) => ({ ...data, email: event.target.value }))
+                }
+              />
+            </FormControl>
+          </GridItem>
+
+          <GridItem colSpan={2}>
+            <FormControl isRequired>
+              <FormLabel requiredIndicator={<></>}>
+                How do we know each other? / How have you found me?
+              </FormLabel>
+              <Input
+                type="text"
+                name="relationship"
+                size={{ base: "lg", md: "md" }}
+                value={data.relationship}
+                onChange={(event) =>
+                  setData((data) => ({
+                    ...data,
+                    relationship: event.target.value,
+                  }))
+                }
+              />
+            </FormControl>
+          </GridItem>
+
+          <GridItem colSpan={2} textAlign={"center"}>
+            <Button
+              flexShrink={0}
+              type="submit"
+              colorScheme="primary"
+              isLoading={formStatus === FormStatus.SUBMITTING}
+            >
+              Subscribe
+            </Button>
+          </GridItem>
+        </Grid>
       )}
 
       {formStatus === FormStatus.ERROR && (
