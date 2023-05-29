@@ -1,4 +1,11 @@
-import { Box, Flex, Heading, Link, Tag, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Link,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -9,7 +16,8 @@ import {
 } from "../../constants/paths";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import IntroContent from "./intro-content.mdx";
-import ProfilePicture from "./profile-picture-2.jpeg";
+import ProfilePicturePortrait from "./guillermo_de_la_puente-portrait.png";
+import ProfilePictureSquare from "./guillermo_de_la_puente-square.png";
 import SocialLinks from "../../components/SocialLinks";
 import BusinessCard from "./BusinessCard";
 import { BlogPost } from "../../types/types";
@@ -39,6 +47,8 @@ export default function Intro({
 }: {
   recentBlogPosts: BlogPost[];
 }) {
+  const isPortrait = useBreakpointValue({ base: false, md: true }) ?? false;
+
   return (
     <Box
       px={4}
@@ -55,7 +65,7 @@ export default function Intro({
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: 8, md: 16 }}
       >
-        <Box width={{ base: "75%", md: "33%" }} flexShrink={0}>
+        <Box width={{ base: "66%", md: "33%" }} flexShrink={0}>
           <Box
             width="95%"
             margin="0 auto"
@@ -66,8 +76,8 @@ export default function Intro({
             }}
           >
             <Image
-              src={ProfilePicture}
-              alt="Profile photo with a cat"
+              src={isPortrait ? ProfilePicturePortrait : ProfilePictureSquare}
+              alt="Guillermo de la Puente over a peach color background"
               sizes={generateImageSizesProp({
                 base: "33vw",
                 md: "15vw",

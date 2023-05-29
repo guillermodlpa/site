@@ -1,7 +1,7 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
-import ProfilePictureFace from "./profile-picture-2-face.jpeg";
+import ProfilePictureFace from "./guillermo_de_la_puente-face.png";
 import AuthorIntroContent from "./author-intro-content.mdx";
 import { MDXProvider } from "@mdx-js/react";
 
@@ -36,7 +36,7 @@ export default function AuthorIntro() {
         >
           <Image
             src={ProfilePictureFace}
-            alt="Face photo"
+            alt="Portrait photo of Guillermo de la Puente"
             sizes={generateImageSizesProp(imageSize)}
           />
         </Box>
