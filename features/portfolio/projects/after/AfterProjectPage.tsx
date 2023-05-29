@@ -9,7 +9,6 @@ import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
 import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
-import generateImageSizesProp from "../../../../utils/generateImageSizesProp";
 
 const tags = [
   "React",
@@ -17,13 +16,25 @@ const tags = [
   "TypeScript",
   "PostgreSQL",
   "Stripe",
-  "Sendinblue",
-  "AWS",
+  "Brevo (Sendinblue)",
   "Node.js",
   "Koa",
   "Objection.js",
   "Knex",
   "SEO",
+  "AWS",
+  "AWS EC2",
+  "AWS ALB",
+  "AWS ECS",
+  "AWS CloudFormation",
+  "AWS Fargate",
+  "AWS Lambda",
+  "AWS S3",
+  "AWS Route53",
+  "AWS CloudFront",
+  "AWS RDS",
+  "AWS IAM",
+  "AWS CloudWatch",
 ];
 
 export default function AfterProjectPage() {
@@ -70,7 +81,7 @@ export default function AfterProjectPage() {
           isExternal
           href="https://after.io/snowy-de-torrelodones"
         >
-          View demo memorial
+          View the memorial I use for tests
         </Button>
       </ProjectPageButtonGroup>
 
