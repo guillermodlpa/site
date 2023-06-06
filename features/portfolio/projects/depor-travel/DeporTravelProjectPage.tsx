@@ -54,7 +54,7 @@ export default function DeporTravelProjectPage() {
         <Button
           as={Link}
           isExternal
-          href="https://depor.travel/"
+          href="https://deportravel.guillermodlpa.com/"
           colorScheme="primary"
         >
           Visit RIP page
