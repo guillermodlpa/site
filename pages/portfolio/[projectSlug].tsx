@@ -20,6 +20,8 @@ import travelmap from "../../features/portfolio/projects/travelmap/travelmap";
 import TravelmapProjectPage from "../../features/portfolio/projects/travelmap/TravelmapProjectPage";
 import Layout from "../../layouts/Layout";
 import { Project } from "../../types/types";
+import rossaCalendar from "../../features/portfolio/projects/rossa-calendar/rossa-calendar";
+import RossaCalendarProjectPage from "../../features/portfolio/projects/rossa-calendar/RossaCalendarProjectPage";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } =
   {
@@ -31,6 +33,7 @@ const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } =
     [travelmap.slug]: TravelmapProjectPage,
     [notionPoweredBlog.slug]: NotionPoweredBlogProjectPage,
     [deporTravel.slug]: DeporTravelProjectPage,
+    [rossaCalendar.slug]: RossaCalendarProjectPage,
   };
 
 export default function PortfolioPage({ project }: { project: Project }) {

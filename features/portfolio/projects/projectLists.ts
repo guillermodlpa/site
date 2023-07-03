@@ -7,8 +7,14 @@ import travelmap from "./travelmap/travelmap";
 import notionPoweredBlog from "./notion-powered-blog/notion-powered-blog";
 import deporTravel from "./depor-travel/depor-travel";
 import { Project } from "../../../types/types";
+import rossaCalendar from "./rossa-calendar/rossa-calendar";
 
-export const professionalProjects: Project[] = [after, splash, alacartadigital];
+export const professionalProjects: Project[] = [
+  after,
+  rossaCalendar,
+  splash,
+  alacartadigital,
+];
 
 export const personalProjects: Project[] = [
   quatro,

@@ -8,6 +8,7 @@ const technologyTags = [
   "Koa",
   "Vercel",
   "Firebase",
+  "TanStack Query",
   "Stripe API",
   "Brevo (Sendinblue)",
   "ActiveCampaign",
