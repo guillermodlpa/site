@@ -15,7 +15,7 @@ const rossaCalendar: Project = {
     src: { light: rossaLogo, dark: rossaLogo },
     alt: "Rossa",
     width: 100,
-    style: { marginBottom: "0.3em" },
+    style: { width: "auto", height: "50px", marginBottom: "0.3em" },
   },
   backgroundImage: null,
   backgroundColor: null,

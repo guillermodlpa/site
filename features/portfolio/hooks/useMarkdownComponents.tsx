@@ -1,4 +1,4 @@
-import { Link, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Link, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { useMemo } from "react";
 
 export default function useMarkdownComponents({
@@ -44,6 +44,9 @@ export default function useMarkdownComponents({
           borderRadius="3px"
           {...props}
         />
+      ),
+      blockquote: (props) => (
+        <Box as="blockquote" ml={2} pl={4} borderLeftWidth={"2px"} {...props} />
       ),
     }),
     [
