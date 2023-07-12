@@ -38,6 +38,7 @@ export default function ProjectCard({
       as="article"
       py={6}
       px={6}
+      height="100%"
       position="relative"
       _hover={{
         boxShadow: "lg",
