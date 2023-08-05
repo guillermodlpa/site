@@ -6,6 +6,7 @@ export type BlogPost = {
   datePublished: string;
   dateUpdated: string | null;
   tags: string[];
+  originalNotionImageSrc: string | null;
   imageSrc: string | null;
 };
 

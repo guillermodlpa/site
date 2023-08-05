@@ -7,6 +7,8 @@ import getConfig from "next/config";
 import { BlogPost } from "../types/types";
 import probeImageSize from "./probeImageSize";
 
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig();
+
 // These are custom properties defined in the Notion database, that we use here to filter, sort, and show info
 const PROPERTY_SLUG = "Slug";
 const PROPERTY_EXCERPT = "Excerpt";
@@ -46,6 +48,7 @@ function transformNotionPageIntoBlogPost(
   if (!("properties" in page)) {
     return null;
   }
+  const cover = getCover(page);
   return {
     id: page.id,
     slug: getTextValue(page.properties[PROPERTY_SLUG]),
@@ -54,11 +57,12 @@ function transformNotionPageIntoBlogPost(
     dateUpdated: getDateValue(page.properties[PROPERTY_DATE_UPDATED]) || null,
     tags: getMultiSelectValues(page.properties[PROPERTY_TAGS]),
     title: getTitleValue(page.properties[PROPERTY_NAME]),
-    imageSrc: getCover(page),
+    originalNotionImageSrc: cover,
+    imageSrc: cover
+      ? `https://${publicRuntimeConfig.VERCEL_URL}/notion-resources/pages/${page.id}/cover`
+      : null,
   };
 }
-
-const { serverRuntimeConfig } = getConfig();
 
 const notion = new Client({
   auth: serverRuntimeConfig.NOTION_TOKEN,
@@ -96,6 +100,14 @@ export async function fetchBlogPosts({
   const blogPosts = results.map(transformNotionPageIntoBlogPost);
 
   return blogPosts;
+}
+
+export async function fetchBlogPostByPageId(pageId: string) {
+  const result = await notion.pages.retrieve({
+    page_id: pageId,
+  });
+  const blogPost = transformNotionPageIntoBlogPost(result);
+  return blogPost;
 }
 
 export async function fetchBlogPostBySlug(
