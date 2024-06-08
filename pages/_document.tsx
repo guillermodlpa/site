@@ -47,13 +47,6 @@ class MyDocument extends Document {
           /> */}
 
           <FaviconTags />
-
-          <Script
-            strategy="lazyOnload"
-            data-website-id={publicRuntimeConfig.UMAMI_WEBSITE_ID}
-            data-domains="guillermodlpa.com"
-            src="https://umami-pvn48eb4t-guillermodlpa.vercel.app/umami.js"
-          />
         </Head>
         <body>
           <ColorModeScript
