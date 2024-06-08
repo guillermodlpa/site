@@ -1,5 +1,4 @@
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import umami from "../../lib/umami";
 import blogPostCategories, {
   BlogPostCategoryName,
 } from "../../utils/blogPostCategories";
@@ -32,7 +31,6 @@ export default function CategorySelector({
           href={categoryButton.path}
           onClick={(event) => {
             setCategoryName(categoryButton.name);
-            umami.trackEvent(`Apply filter: ${categoryButton.name}`);
           }}
           px={{ base: 2, md: 3 }}
         >
