@@ -4,6 +4,7 @@ import {
   PartialDatabaseObjectResponse,
   PartialPageObjectResponse,
   PageObjectResponse,
+  DatabaseObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
 import { BlogPost } from "../types/types";
