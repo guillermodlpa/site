@@ -18,7 +18,7 @@ function BlogPostPage({
     <Layout>
       <PageMeta
         canonicalPath={getBlogPostPath(blogPost.slug)}
-        title={`${blogPost.title} - Guillermo de la Puente`}
+        title={`${blogPost.title}`}
         description={blogPost.excerpt}
         ogType="article"
         ogImageUrl={blogPost.imageSrc}

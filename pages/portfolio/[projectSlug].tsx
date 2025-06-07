@@ -42,7 +42,7 @@ export default function PortfolioPage({ project }: { project: Project }) {
     <Layout>
       <PageMeta
         canonicalPath={getPortfolioProjectPath(project.slug)}
-        title={`${project.name} - Guillermo de la Puente - Freelance Software Engineer & Manager`}
+        title={`${project.name}, freelance project by Guillermo de la Puente`}
         description={
           "Portfolio of high quality web applications and experiments. Splash, alacartadigital, After Memorials..."
         }

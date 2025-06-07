@@ -8,9 +8,7 @@ function NewsletterPage() {
     <Layout>
       <PageMeta
         canonicalPath={PATH_NEWSLETTER}
-        title={
-          "Personal Newsletter - Guillermo de la Puente - Freelance Software Engineer & Manager"
-        }
+        title={"Personal Newsletter"}
         description={
           "Join my personal newsletter of project and life updates, as an experiment to stay truly connected, without the noise of mainstream social media platforms."
         }
