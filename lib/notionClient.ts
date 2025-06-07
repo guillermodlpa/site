@@ -5,6 +5,9 @@ import {
   PartialPageObjectResponse,
   PageObjectResponse,
   DatabaseObjectResponse,
+  BlockObjectResponse,
+  PartialBlockObjectResponse,
+  ImageBlockObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
 import { BlogPost } from "../types/types";
@@ -139,11 +142,14 @@ export async function fetchBlogPostBySlug(
 }
 
 async function addDimensionsToImageBlocks(
-  blocks: GetBlockResponse[]
+  blocks: (PartialBlockObjectResponse | BlockObjectResponse)[]
 ): Promise<void[]> {
   return await Promise.all(
     blocks
-      .filter((block) => "type" in block && block.type === "image")
+      .filter(
+        (block): block is ImageBlockObjectResponse =>
+          "type" in block && block.type === "image"
+      )
       .map(async (block) => {
         const type = block.type;
         const value = block[type];
