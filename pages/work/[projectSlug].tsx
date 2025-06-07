@@ -26,8 +26,11 @@ import marte from "../../features/work/projects/marte/marte";
 import MarteProjectPage from "../../features/work/projects/marte/MarteProjectPage";
 import avocaty from "../../features/work/projects/avocaty/avocaty";
 import AvocatyProjectPage from "../../features/work/projects/avocaty/AvocatyProjectPage";
+import haddock from "../../features/work/projects/haddock/haddock";
+import HaddockProjectPage from "../../features/work/projects/haddock/HaddockProjectPage";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } = {
+  [haddock.slug]: HaddockProjectPage,
   [avocaty.slug]: AvocatyProjectPage,
   [after.slug]: AfterProjectPage,
   [splash.slug]: SplashProjectPage,
