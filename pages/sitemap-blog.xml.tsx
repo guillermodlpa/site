@@ -5,7 +5,7 @@
  */
 
 import type { GetServerSideProps } from "next";
-import { type ISitemapField, getServerSideSitemap } from "next-sitemap";
+import { type ISitemapField, getServerSideSitemapLegacy } from "next-sitemap";
 import getConfig from "next/config";
 import { getBlogPostPath } from "../constants/paths";
 import { fetchBlogPosts } from "../lib/notionClient";
@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     `public, s-maxage=${cacheMaxAgeUntilStaleSeconds}, stale-while-revalidate=${cacheMaxAgeStaleDataReturnSeconds}`,
   );
 
-  return getServerSideSitemap(ctx, [...blogCategoryFields, ...blogPostFields]);
+  return getServerSideSitemapLegacy(ctx, [...blogCategoryFields, ...blogPostFields]);
 };
 
 // Default export to prevent next.js errors

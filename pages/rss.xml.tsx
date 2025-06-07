@@ -5,7 +5,6 @@
  */
 
 import type { GetServerSideProps } from "next";
-import { getServerSideSitemap } from "next-sitemap";
 import getConfig from "next/config";
 import RSS from "rss";
 import { PATH_RSS, getBlogPostPath } from "../constants/paths";
