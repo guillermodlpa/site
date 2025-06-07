@@ -1,8 +1,17 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { type NextRouter, useRouter } from "next/router";
 import theme from "../constants/theme";
+
+function getPageTransitionKey(router: NextRouter) {
+  if (router.pathname === "/blog/category/[categoryName]") {
+    // exception here for not showing page transition animation when changing
+    // the selected blog category
+    return "/blog";
+  }
+  return router.asPath;
+}
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -24,7 +33,7 @@ function MyApp({ Component, pageProps }) {
 
       <ChakraProvider theme={theme}>
         <AnimatePresence initial={false} mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
-          <Component {...pageProps} key={router.asPath} />
+          <Component {...pageProps} key={getPageTransitionKey(router)} />
         </AnimatePresence>
       </ChakraProvider>
     </>
