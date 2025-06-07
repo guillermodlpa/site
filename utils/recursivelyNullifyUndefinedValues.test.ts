@@ -2,12 +2,11 @@ import recursivelyNullifyUndefinedValues from "./recursivelyNullifyUndefinedValu
 
 describe("recursivelyNullifyUndefinedValues", () => {
   it("should update nested undefined values to null", () => {
-    const date = new Date();
     const input = {
       name: "Daniel",
       age: 50,
       gender: undefined,
-      birthday: date,
+      birthday: false,
       courseCount: 0,
       foods: [
         { id: 1, mainIngredient: null },
@@ -19,7 +18,7 @@ describe("recursivelyNullifyUndefinedValues", () => {
       name: "Daniel",
       age: 50,
       gender: null,
-      birthday: date,
+      birthday: false,
       courseCount: 0,
       foods: [
         { id: 1, mainIngredient: null },
