@@ -13,3 +13,5 @@ public/atom.xml
 public/rss.xml
 
 .DS_Store
+
+.tsconfig.tsbuildinfo
