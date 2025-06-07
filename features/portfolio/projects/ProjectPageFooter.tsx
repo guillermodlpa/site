@@ -33,7 +33,9 @@ export default function ProjectPageFooter({
         <GridItem textAlign="left">
           {previousProject ? (
             <Link as={NextLink} href={getPortfolioProjectPath(previousProject.slug)}>
-              {"Previous project: "}
+              <span role="img" aria-label="previous project">
+                {"< "}
+              </span>
               {previousProject.name}
             </Link>
           ) : (
@@ -50,8 +52,10 @@ export default function ProjectPageFooter({
         <GridItem textAlign="right">
           {nextProject ? (
             <Link as={NextLink} href={getPortfolioProjectPath(nextProject.slug)}>
-              {"Next project: "}
               {nextProject.name}
+              <span role="img" aria-label="next project">
+                {" >"}
+              </span>
             </Link>
           ) : (
             <></>

@@ -22,12 +22,15 @@ import TravelmapProjectPage from "../../features/portfolio/projects/travelmap/Tr
 import travelmap from "../../features/portfolio/projects/travelmap/travelmap";
 import Layout from "../../layouts/Layout";
 import type { Project } from "../../types/types";
+import marte from "../../features/portfolio/projects/marte/marte";
+import MarteProjectPage from "../../features/portfolio/projects/marte/MarteProjectPage";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } = {
   [after.slug]: AfterProjectPage,
   [splash.slug]: SplashProjectPage,
   [alacartadigital.slug]: AlacartadigitalProjectPage,
   [quatro.slug]: QuatroProjectPage,
+  [marte.slug]: MarteProjectPage,
   [kikiricoin.slug]: KikiricoinProjectPage,
   [travelmap.slug]: TravelmapProjectPage,
   [notionPoweredBlog.slug]: NotionPoweredBlogProjectPage,

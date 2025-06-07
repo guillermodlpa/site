@@ -12,7 +12,7 @@ export default function DevicePreviews({
   mobileImage,
   desktopImage,
   mobileAppBarColor,
-  sizes = generateImageSizesProp({ base: "100vw", md: "600px" }),
+  sizes = generateImageSizesProp({ base: "100vw", md: "800px" }),
   ...rest
 }: {
   mobileImage?: StaticImageData;
