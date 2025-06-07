@@ -10,7 +10,6 @@ import { PATH_BLOG, PATH_CONTACT } from "../../constants/paths";
 import technologyTags from "../../constants/technologyTags";
 import type { BlogPost } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
-import BusinessCard from "./BusinessCard";
 import RecentBlogPostItem from "./RecentBlogPostItem";
 import ProfilePicturePortrait from "./guillermo_de_la_puente.png";
 import IntroContent from "./intro-content.mdx";
@@ -88,8 +87,6 @@ export default function Intro({
         </Box>
 
         <Box flexGrow={1}>
-          <BusinessCard />
-
           <Box as="section">
             <MDXProvider components={markdownComponents}>
               <IntroContent />
