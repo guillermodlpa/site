@@ -1,7 +1,9 @@
 import { Client, LogLevel } from "@notionhq/client";
 import {
   GetBlockResponse,
-  GetPageResponse,
+  PartialDatabaseObjectResponse,
+  PartialPageObjectResponse,
+  PageObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
 import { BlogPost } from "../types/types";
@@ -41,7 +43,11 @@ function getCover(page: any): string | null {
   }
 }
 function transformNotionPageIntoBlogPost(
-  page: GetPageResponse
+  page:
+    | PageObjectResponse
+    | PartialPageObjectResponse
+    | PartialDatabaseObjectResponse
+    | DatabaseObjectResponse
 ): null | BlogPost {
   if (!("properties" in page)) {
     return null;
@@ -138,7 +144,6 @@ async function addDimensionsToImageBlocks(
     blocks
       .filter((block) => "type" in block && block.type === "image")
       .map(async (block) => {
-        // @ts-ignore
         const type = block.type;
         const value = block[type];
         const src =
@@ -154,6 +159,7 @@ async function addDimensionsToImageBlocks(
           .then(({ width, height }) => {
             block[type] = {
               ...value,
+              // @ts-expect-error dim is not included in the image block type of Notion
               dim: { width, height },
             };
           })

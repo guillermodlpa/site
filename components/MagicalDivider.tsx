@@ -1,4 +1,5 @@
-import { As, Box, Divider, keyframes } from "@chakra-ui/react";
+import { Box, BoxProps, Divider } from "@chakra-ui/react";
+import { keyframes } from "@emotion/react";
 
 const BackgroundPositionOscilation = keyframes`
   0%{background-position:0% 0%}
@@ -14,7 +15,7 @@ export default function MagicalDivider({
   mx = "auto",
   width = "100%",
 }: {
-  as?: As;
+  as?: BoxProps["as"];
   height?: number | string;
   mt?: any;
   mb?: any;
