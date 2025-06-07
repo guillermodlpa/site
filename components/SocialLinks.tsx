@@ -1,7 +1,6 @@
 import { Link, Wrap, WrapItem, type WrapProps } from "@chakra-ui/react";
 import GitHubLogo from "./icons/GitHubLogo";
 import LinkedInLogo from "./icons/LinkedInLogo";
-import TwitterLogo from "./icons/TwitterLogo";
 
 const socialLinks = [
   {
@@ -13,11 +12,6 @@ const socialLinks = [
     href: "https://github.com/guillermodlpa",
     label: "Guillermo's GitHub profile",
     Icon: GitHubLogo,
-  },
-  {
-    href: "https://twitter.com/guillermodlpa",
-    label: "Guillermo's Twitter feed",
-    Icon: TwitterLogo,
   },
 ];
 
