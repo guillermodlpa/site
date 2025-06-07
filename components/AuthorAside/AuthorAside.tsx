@@ -1,11 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import {
-  PATH_BLOG,
-  PATH_CONTACT,
-  PATH_NEWSLETTER,
-  PATH_PORTFOLIO,
-} from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER, PATH_PORTFOLIO } from "../../constants/paths";
 import OpacitySlideFade from "../OpacitySlideFade";
 import useScrollThreshold from "./useScrollThreshold";
 
@@ -32,31 +27,20 @@ export default function AuthorAside() {
       height="100%"
       transform="translateX(100%)"
     >
-      <Flex
-        flexDirection="column"
-        alignItems="stretch"
-        pt={8}
-        position="sticky"
-        top={0}
-      >
+      <Flex flexDirection="column" alignItems="stretch" pt={8} position="sticky" top={0}>
         <OpacitySlideFade in={visible}>
-          <Text
-            mb={2}
-            fontSize="sm"
-            textAlign="right"
-            color="chakra-body-text-secondary"
-          >{`Guillermo de la Puente`}</Text>
-          <Text
-            mb={2}
-            fontSize="sm"
-            textAlign="right"
-          >{`Freelance Software Engineer & Manager`}</Text>
+          <Text mb={2} fontSize="sm" textAlign="right" color="chakra-body-text-secondary">
+            {"Guillermo de la Puente"}
+          </Text>
+          <Text mb={2} fontSize="sm" textAlign="right">
+            {"Freelance Software Engineer & Manager"}
+          </Text>
 
           {links.map(({ label, path }) => (
             <Text key={path} fontSize="sm" textAlign="right" mb={1}>
-              <NextLink passHref legacyBehavior href={path}>
-                <Link>{label}</Link>
-              </NextLink>
+              <Link as={NextLink} href={path}>
+                {label}
+              </Link>
             </Text>
           ))}
         </OpacitySlideFade>

@@ -1,6 +1,6 @@
-import { Link, Wrap, WrapItem, WrapProps } from "@chakra-ui/react";
-import LinkedInLogo from "./icons/LinkedInLogo";
+import { Link, Wrap, WrapItem, type WrapProps } from "@chakra-ui/react";
 import GitHubLogo from "./icons/GitHubLogo";
+import LinkedInLogo from "./icons/LinkedInLogo";
 import TwitterLogo from "./icons/TwitterLogo";
 
 const socialLinks = [

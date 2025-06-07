@@ -1,8 +1,8 @@
+import type { Project } from "../../../../types/types";
+import splashDesktop from "./splash-desktop.png";
 import splashLogoDark from "./splash-logo-dark.png";
 import splashLogoLight from "./splash-logo-light.png";
-import splashDesktop from "./splash-desktop.png";
 import splashMobile from "./splash-mobile.png";
-import { Project } from "../../../../types/types";
 
 const splash: Project = {
   name: "Splash",

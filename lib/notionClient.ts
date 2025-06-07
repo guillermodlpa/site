@@ -1,16 +1,17 @@
 import { Client, LogLevel } from "@notionhq/client";
-import {
+import type {
+  BlockObjectResponse,
+  DatabaseObjectResponse,
   GetBlockResponse,
+  ImageBlockObjectResponse,
+  PageObjectResponse,
+  PartialBlockObjectResponse,
   PartialDatabaseObjectResponse,
   PartialPageObjectResponse,
-  PageObjectResponse,
-  DatabaseObjectResponse,
-  BlockObjectResponse,
-  PartialBlockObjectResponse,
-  ImageBlockObjectResponse,
+  RichTextItemResponse,
 } from "@notionhq/client/build/src/api-endpoints";
 import getConfig from "next/config";
-import { BlogPost } from "../types/types";
+import type { BlogPost } from "../types/types";
 import probeImageSize from "./probeImageSize";
 
 // These are custom properties defined in the Notion database, that we use here to filter, sort, and show info
@@ -23,20 +24,39 @@ const PROPERTY_DATE_UPDATED = "Date Updated";
 const PROPERTY_TAGS = "Tags";
 const PROPERTY_NAME = "Name";
 
-function getTextValue(property: any): string | undefined {
+type NotionPageObject = PageObjectResponse | PartialDatabaseObjectResponse | DatabaseObjectResponse;
+
+type NotionPageProperty = NotionPageObject["properties"][string];
+
+function getTextValue(property: NotionPageProperty): string | undefined {
+  if (!("rich_text" in property)) {
+    return undefined;
+  }
   return property?.rich_text?.[0]?.plain_text ?? undefined;
 }
-function getDateValue(property: any): string | undefined {
+function getDateValue(property: NotionPageProperty): string | undefined {
+  if (!("date" in property)) {
+    return undefined;
+  }
   return property?.date?.start ?? undefined;
 }
-function getMultiSelectValues(property: any): string[] | undefined {
-  return property.multi_select.map((item) => item.name) ?? undefined;
+function getMultiSelectValues(property: NotionPageProperty): string[] | undefined {
+  if (!("multi_select" in property)) {
+    return undefined;
+  }
+  const options = Array.isArray(property.multi_select)
+    ? property.multi_select
+    : property.multi_select.options;
+  return options.map((item) => item.name) ?? undefined;
 }
-function getTitleValue(property: any): string | undefined {
+function getTitleValue(property: NotionPageProperty): string | undefined {
+  if (!("title" in property)) {
+    return undefined;
+  }
   return property?.title?.map((item) => item.plain_text).join("") ?? undefined;
 }
-function getCover(page: any): string | null {
-  if (!page.cover) {
+function getCover(page: NotionPageObject): string | null {
+  if (!("cover" in page) || !page.cover) {
     return null;
   }
   if (page.cover.type === "external") {
@@ -51,7 +71,7 @@ function transformNotionPageIntoBlogPost(
     | PageObjectResponse
     | PartialPageObjectResponse
     | PartialDatabaseObjectResponse
-    | DatabaseObjectResponse
+    | DatabaseObjectResponse,
 ): null | BlogPost {
   if (!("properties" in page)) {
     return null;
@@ -72,8 +92,7 @@ const { serverRuntimeConfig } = getConfig();
 
 const notion = new Client({
   auth: serverRuntimeConfig.NOTION_TOKEN,
-  logLevel:
-    process.env.NODE_ENV === "development" ? LogLevel.DEBUG : LogLevel.WARN,
+  logLevel: process.env.NODE_ENV === "development" ? LogLevel.DEBUG : LogLevel.WARN,
 });
 
 export async function fetchBlogPosts({
@@ -86,9 +105,7 @@ export async function fetchBlogPosts({
       and: [
         {
           property:
-            process.env.VERCEL_ENV === "production"
-              ? PROPERTY_PRODUCTION
-              : PROPERTY_PREVIEW,
+            process.env.VERCEL_ENV === "production" ? PROPERTY_PRODUCTION : PROPERTY_PREVIEW,
           checkbox: { equals: true },
         },
         {
@@ -108,9 +125,7 @@ export async function fetchBlogPosts({
   return blogPosts;
 }
 
-export async function fetchBlogPostBySlug(
-  slug: string
-): Promise<BlogPost | undefined> {
+export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
   const result = await notion.databases.query({
     database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
     page_size: 1,
@@ -118,9 +133,7 @@ export async function fetchBlogPostBySlug(
       and: [
         {
           property:
-            process.env.VERCEL_ENV === "production"
-              ? PROPERTY_PRODUCTION
-              : PROPERTY_PREVIEW,
+            process.env.VERCEL_ENV === "production" ? PROPERTY_PRODUCTION : PROPERTY_PREVIEW,
           checkbox: {
             equals: true,
           },
@@ -142,13 +155,12 @@ export async function fetchBlogPostBySlug(
 }
 
 async function addDimensionsToImageBlocks(
-  blocks: (PartialBlockObjectResponse | BlockObjectResponse)[]
-): Promise<void[]> {
-  return await Promise.all(
+  blocks: (PartialBlockObjectResponse | BlockObjectResponse)[],
+): Promise<void> {
+  await Promise.all(
     blocks
       .filter(
-        (block): block is ImageBlockObjectResponse =>
-          "type" in block && block.type === "image"
+        (block): block is ImageBlockObjectResponse => "type" in block && block.type === "image",
       )
       .map(async (block) => {
         const type = block.type;
@@ -157,8 +169,8 @@ async function addDimensionsToImageBlocks(
           value.type === "external"
             ? value.external.url
             : value.type === "file"
-            ? value.file.url
-            : null;
+              ? value.file.url
+              : null;
         if (!src) {
           return;
         }
@@ -175,13 +187,11 @@ async function addDimensionsToImageBlocks(
             // Not a huge deal. If this fails, we won't have these and resort back to regular images
             return;
           });
-      })
+      }),
   );
 }
 
-export async function fetchAllBlocks(
-  pageIdOrBlockId: string
-): Promise<GetBlockResponse[]> {
+export async function fetchAllBlocks(pageIdOrBlockId: string): Promise<GetBlockResponse[]> {
   const result = await notion.blocks.children.list({
     block_id: pageIdOrBlockId,
   });
@@ -197,18 +207,12 @@ export async function fetchAllBlocks(
           id: block.id,
           children: await fetchAllBlocks(block.id),
         };
-      })
+      }),
   );
   const blocksWithChildren = blocks.map((block) => {
     // Add child blocks if the block should contain children but none exists
-    if (
-      "has_children" in block &&
-      block.has_children &&
-      !block[block.type].children
-    ) {
-      block[block.type].children = childBlocks.find(
-        ({ id }) => id === block.id
-      )?.children;
+    if ("has_children" in block && block.has_children && !block[block.type].children) {
+      block[block.type].children = childBlocks.find(({ id }) => id === block.id)?.children;
     }
     return block;
   });

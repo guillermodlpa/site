@@ -3,8 +3,8 @@ import { PATH_BLOG } from "../../constants/paths";
 import Blog from "../../features/blog";
 import Layout from "../../layouts/Layout";
 import { fetchBlogPosts } from "../../lib/notionClient";
-import { BlogPost } from "../../types/types";
-import { BlogPostCategoryName } from "../../utils/blogPostCategories";
+import type { BlogPost } from "../../types/types";
+import type { BlogPostCategoryName } from "../../utils/blogPostCategories";
 import recursivelyNullifyUndefinedValues from "../../utils/recursivelyNullifyUndefinedValues";
 
 function BlogPage({
@@ -16,11 +16,7 @@ function BlogPage({
 }) {
   const description = blogPosts
     .slice(0, 5)
-    .reduce(
-      (memo, blogPost) =>
-        memo ? `${memo}, "${blogPost.title}"` : `"${blogPost.title}"`,
-      ""
-    )
+    .reduce((memo, blogPost) => (memo ? `${memo}, "${blogPost.title}"` : `"${blogPost.title}"`), "")
     .trim();
   return (
     <Layout>

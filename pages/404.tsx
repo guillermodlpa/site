@@ -1,6 +1,6 @@
 import { Center, Heading, Link, Text } from "@chakra-ui/react";
-import { PATH_BLOG } from "../constants/paths";
 import NextLink from "next/link";
+import { PATH_BLOG } from "../constants/paths";
 import Layout from "../layouts/Layout";
 
 function NotFoundPage() {
@@ -10,9 +10,9 @@ function NotFoundPage() {
         <Heading>Not found</Heading>
         <Text>This page could not be found.</Text>
         <Text>
-          <NextLink href={PATH_BLOG} passHref legacyBehavior>
-            <Link>Go to blog</Link>
-          </NextLink>
+          <Link as={NextLink} href={PATH_BLOG}>
+            Go to blog
+          </Link>
         </Text>
       </Center>
     </Layout>

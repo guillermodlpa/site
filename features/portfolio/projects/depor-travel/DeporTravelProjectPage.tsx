@@ -1,14 +1,14 @@
-import deporTravel from "./depor-travel";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import deporTravel from "./depor-travel";
+import Description from "./description.mdx";
 
 const tags = [
   "Next.js",
@@ -27,9 +27,7 @@ export default function DeporTravelProjectPage() {
     <ProjectPageMainContainer>
       <ProjectPageHeader
         name={deporTravel.name}
-        subheadline={
-          "A platform to find organized sport trips around the world"
-        }
+        subheadline={"A platform to find organized sport trips around the world"}
         logo={{ ...deporTravel.logoImage, width: 225 }}
       />
 

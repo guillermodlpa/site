@@ -2,12 +2,7 @@ import { Box, Heading, Link, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
-import {
-  PATH_BLOG,
-  PATH_CONTACT,
-  PATH_NEWSLETTER,
-  PATH_PORTFOLIO,
-} from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER, PATH_PORTFOLIO } from "../../constants/paths";
 
 function Home() {
   return (
@@ -30,17 +25,12 @@ function Home() {
       >
         <MagicalDivider as="div" />
 
-        <Box
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          my={"12.5vh"}
-        >
+        <Box display="flex" flexDirection="column" justifyContent="center" my={"12.5vh"}>
           <Heading as="h1" size="3xl" mb={8}>
             Guillermo de la Puente
           </Heading>
           <Heading as="h2" size="lg" mb={2}>
-            {`Freelance Frontend Engineer & Manager`}
+            {"Freelance Frontend Engineer & Manager"}
           </Heading>
           <Text variant="secondaryText" size="md" mb={6}>
             TypeScript, React, Node
@@ -48,24 +38,24 @@ function Home() {
 
           <Wrap as="nav" spacing={4} mb={8}>
             <WrapItem>
-              <NextLink href={PATH_BLOG} passHref legacyBehavior>
-                <Link fontSize="xl">Blog</Link>
-              </NextLink>
+              <Link as={NextLink} href={PATH_BLOG} fontSize="xl">
+                Blog
+              </Link>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_PORTFOLIO} passHref legacyBehavior>
-                <Link fontSize="xl">Portfolio</Link>
-              </NextLink>
+              <Link as={NextLink} href={PATH_PORTFOLIO} fontSize="xl">
+                Portfolio
+              </Link>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_CONTACT} passHref legacyBehavior>
-                <Link fontSize="xl">Contact</Link>
-              </NextLink>
+              <Link as={NextLink} href={PATH_CONTACT} fontSize="xl">
+                Contact
+              </Link>
             </WrapItem>
             <WrapItem>
-              <NextLink href={PATH_NEWSLETTER} passHref legacyBehavior>
-                <Link fontSize="xl">Newsletter</Link>
-              </NextLink>
+              <Link as={NextLink} href={PATH_NEWSLETTER} fontSize="xl">
+                Newsletter
+              </Link>
             </WrapItem>
           </Wrap>
 

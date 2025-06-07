@@ -11,9 +11,7 @@ export default function ColorModeButton() {
       color="chakra-body-text-secondary"
       size="sm"
       icon={colorMode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
-      aria-label={
-        colorMode === "dark" ? "Switch to light mode" : "Switch to dark mode"
-      }
+      aria-label={colorMode === "dark" ? "Switch to light mode" : "Switch to dark mode"}
       flexShrink={0}
       onClick={toggleColorMode}
     />

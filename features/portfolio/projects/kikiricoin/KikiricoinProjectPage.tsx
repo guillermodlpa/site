@@ -1,14 +1,14 @@
-import kikiricoin from "./kikiricoin";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import Description from "./description.mdx";
+import kikiricoin from "./kikiricoin";
 
 const tags = ["Web3", "Solidity", "Polygon", "React", "Next.js", "Cypress"];
 

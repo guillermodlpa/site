@@ -5,10 +5,8 @@ import getPlainText from "../utils/getPlainText";
 import NotionRichText from "./NotionRichText";
 
 function useGetRenderedWidth(originalWidth: number | undefined) {
-  const contentMaxWidth = parseInt(useToken("sizes", "container.md"), 10);
-  const [renderedWidth, setRenderedWidth] = useState(
-    Math.min(originalWidth, contentMaxWidth)
-  );
+  const contentMaxWidth = Number.parseInt(useToken("sizes", "container.md"), 10);
+  const [renderedWidth, setRenderedWidth] = useState(Math.min(originalWidth, contentMaxWidth));
   useEffect(() => {
     function checkWindowWidth() {
       if (
@@ -39,9 +37,7 @@ export default function ImageBlock({
   priority: boolean;
   captionRichTextItems: RichTextItem[] | null;
 }) {
-  const alt = captionRichTextItems
-    ? getPlainText(captionRichTextItems)
-    : "Blog post image";
+  const alt = captionRichTextItems ? getPlainText(captionRichTextItems) : "Blog post image";
 
   const renderedWidth = useGetRenderedWidth(dimensions?.width);
   const renderedHeight = (dimensions.height / dimensions.width) * renderedWidth;

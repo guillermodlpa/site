@@ -1,15 +1,15 @@
-import alacartadigital from "./alacartadigital";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
+import VideoPopupButton from "../../VideoPopupButton";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
-import VideoPopupButton from "../../VideoPopupButton";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import alacartadigital from "./alacartadigital";
+import Description from "./description.mdx";
 
 const tags = [
   "React",
@@ -52,12 +52,7 @@ export default function AlacartadigitalProjectPage() {
       </MDXProvider>
 
       <ProjectPageButtonGroup>
-        <Button
-          as={Link}
-          isExternal
-          href="https://www.alacartadigital.es/"
-          colorScheme="primary"
-        >
+        <Button as={Link} isExternal href="https://www.alacartadigital.es/" colorScheme="primary">
           Visit alacartadigital
         </Button>
         <VideoPopupButton

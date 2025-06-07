@@ -1,14 +1,14 @@
-import notionPoweredBlog from "./notion-powered-blog";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import Description from "./description.mdx";
+import notionPoweredBlog from "./notion-powered-blog";
 
 const tags = ["Next.js", "Notion API", "SEO", "RSS", "Umami"];
 
@@ -41,20 +41,11 @@ export default function NotionPoweredBlogProjectPage() {
       </MDXProvider>
 
       <ProjectPageButtonGroup>
-        <Button
-          as={Link}
-          isExternal
-          href="https://guillermodlpa.com/blog"
-          colorScheme="primary"
-        >
+        <Button as={Link} isExternal href="https://guillermodlpa.com/blog" colorScheme="primary">
           Visit blog
         </Button>
 
-        <Button
-          as={Link}
-          isExternal
-          href="https://github.com/guillermodlpa/site"
-        >
+        <Button as={Link} isExternal href="https://github.com/guillermodlpa/site">
           View source code
         </Button>
       </ProjectPageButtonGroup>

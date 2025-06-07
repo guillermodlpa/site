@@ -1,15 +1,8 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  LinkBox,
-  LinkOverlay,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { getBlogPostPath } from "../../constants/paths";
-import { BlogPost } from "../../types/types";
+import type { BlogPost } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
@@ -67,15 +60,15 @@ export default function RecentBlogPostItem({
         )}
         <Flex flexDirection="column" gap={2} flexGrow={1} py={3}>
           <Heading as="h3" size="sm">
-            <NextLink href={getBlogPostPath(slug)} passHref legacyBehavior>
-              <LinkOverlay
-                color="inherit"
-                transitionProperty="common"
-                transitionDuration="faster"
-              >
-                {title}
-              </LinkOverlay>
-            </NextLink>
+            <LinkOverlay
+              as={NextLink}
+              href={getBlogPostPath(slug)}
+              color="inherit"
+              transitionProperty="common"
+              transitionDuration="faster"
+            >
+              {title}
+            </LinkOverlay>
           </Heading>
 
           <Text fontSize="sm">
@@ -88,12 +81,10 @@ export default function RecentBlogPostItem({
               {formatDateInUTCForUser(datePublished)}
             </Text>
             {tags.length > 0 && (
-              <>
-                <Text as="span" variant="secondaryText" fontSize="inherit">
-                  {` / `}
-                  {tags.map(capitalizeString).join(", ")}
-                </Text>
-              </>
+              <Text as="span" variant="secondaryText" fontSize="inherit">
+                {" / "}
+                {tags.map(capitalizeString).join(", ")}
+              </Text>
             )}
           </Text>
         </Flex>

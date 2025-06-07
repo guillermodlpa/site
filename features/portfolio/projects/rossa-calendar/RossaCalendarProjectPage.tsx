@@ -1,14 +1,14 @@
-import rossaCalendar from "./rossa-calendar";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import Description from "./description.mdx";
+import rossaCalendar from "./rossa-calendar";
 
 const tags = ["React", "Vite", "TypeScript", "Tailwind CSS", "TanStack Query"];
 
@@ -19,9 +19,7 @@ export default function RossaCalendarProjectPage() {
     <ProjectPageMainContainer>
       <ProjectPageHeader
         name={rossaCalendar.name}
-        subheadline={
-          "Airbnb-style calendar to manage bookings across rooms and properties"
-        }
+        subheadline={"Airbnb-style calendar to manage bookings across rooms and properties"}
         logo={rossaCalendar.logoImage}
       />
 
@@ -43,12 +41,7 @@ export default function RossaCalendarProjectPage() {
       </MDXProvider>
 
       <ProjectPageButtonGroup>
-        <Button
-          as={Link}
-          isExternal
-          href="https://rossa.app/"
-          colorScheme="primary"
-        >
+        <Button as={Link} isExternal href="https://rossa.app/" colorScheme="primary">
           Rossa homepage
         </Button>
       </ProjectPageButtonGroup>

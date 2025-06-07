@@ -1,14 +1,14 @@
-import after from "./after";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import after from "./after";
+import Description from "./description.mdx";
 
 const tags = [
   "React",
@@ -68,19 +68,10 @@ export default function AfterProjectPage() {
       </MDXProvider>
 
       <ProjectPageButtonGroup>
-        <Button
-          as={Link}
-          isExternal
-          href="https://after.io"
-          colorScheme="primary"
-        >
+        <Button as={Link} isExternal href="https://after.io" colorScheme="primary">
           Visit After
         </Button>
-        <Button
-          as={Link}
-          isExternal
-          href="https://after.io/snowy-de-torrelodones"
-        >
+        <Button as={Link} isExternal href="https://after.io/snowy-de-torrelodones">
           View the memorial I use for tests
         </Button>
       </ProjectPageButtonGroup>

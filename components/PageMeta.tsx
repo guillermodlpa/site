@@ -59,27 +59,20 @@ export default function PageMeta({
       {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
       {ogArticleTags &&
         Object.entries(ogArticleTags)
-          .filter(([key, value]) => value != undefined)
+          .filter(([key, value]) => value !== undefined)
           .map(([key, value]) =>
             Array.isArray(value) ? (
               value.map((singleValue) => (
-                <meta
-                  key={key}
-                  property={`og:article:${key}`}
-                  content={singleValue}
-                />
+                <meta key={key} property={`og:article:${key}`} content={singleValue} />
               ))
             ) : (
               <meta key={key} property={`og:article:${key}`} content={value} />
-            )
+            ),
           )}
       <meta property="og:site_name" content="Guillermo de la Puente" />
 
       {robots && (
-        <meta
-          name="robots"
-          content={typeof robots === "string" ? robots : robots.join(", ")}
-        />
+        <meta name="robots" content={typeof robots === "string" ? robots : robots.join(", ")} />
       )}
 
       <meta name="twitter:card" content="summary" />

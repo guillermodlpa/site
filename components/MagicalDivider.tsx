@@ -1,4 +1,4 @@
-import { Box, BoxProps, Divider } from "@chakra-ui/react";
+import { Box, type BoxProps, Divider } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 
 const BackgroundPositionOscilation = keyframes`
@@ -17,10 +17,10 @@ export default function MagicalDivider({
 }: {
   as?: BoxProps["as"];
   height?: number | string;
-  mt?: any;
-  mb?: any;
-  mx?: any;
-  width?: any;
+  mt?: BoxProps["mt"];
+  mb?: BoxProps["mb"];
+  mx?: BoxProps["mx"];
+  width?: BoxProps["width"];
 }) {
   const Component = as === "hr" ? Divider : Box;
   return (
@@ -34,7 +34,7 @@ export default function MagicalDivider({
       mb={mb}
       flexShrink={0}
       sx={{
-        background: `linear-gradient(90deg, #af6ae2, #B161EC, #d233cf, #F0D690, #11c093, #af6ae2)`,
+        background: "linear-gradient(90deg, #af6ae2, #B161EC, #d233cf, #F0D690, #11c093, #af6ae2)",
         backgroundSize: "600% 600%",
         animation: `${BackgroundPositionOscilation} 40s ease infinite 0.5s`,
       }}

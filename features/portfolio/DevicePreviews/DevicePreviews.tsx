@@ -1,5 +1,5 @@
-import { Box, BoxProps } from "@chakra-ui/react";
-import NextImage, { StaticImageData } from "next/image";
+import { Box, type BoxProps } from "@chakra-ui/react";
+import NextImage, { type StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
 
@@ -21,34 +21,29 @@ export default function DevicePreviews({
   sizes?: string;
 } & BoxProps) {
   const desktopFramePositioning =
-    desktopImage && mobileImage
-      ? { top: "20%", left: "30%" }
-      : { top: "0%", left: "0%" };
+    desktopImage && mobileImage ? { top: "20%", left: "30%" } : { top: "0%", left: "0%" };
   const mobileFramePositioning =
     desktopImage && mobileImage
       ? { width: "30%", left: "30%", top: "50%" }
       : { width: "40%", left: "50%", top: "50%" };
 
-  const mobileContainerRef = useRef<HTMLDivElement>();
-  const desktopContainerRef = useRef<HTMLDivElement>();
-  const [devicesContainerHeight, setDevicesContainerHeight] = useState<number>(
-    TENTATIVE_INITIAL_HEIGHT
-  );
+  const mobileContainerRef = useRef<HTMLDivElement>(null);
+  const desktopContainerRef = useRef<HTMLDivElement>(null);
+  const [devicesContainerHeight, setDevicesContainerHeight] =
+    useState<number>(TENTATIVE_INITIAL_HEIGHT);
   useEffect(() => {
     function apply() {
-      const mobileBoundingRect =
-        mobileContainerRef.current?.getBoundingClientRect();
-      const desktopBoundingRect =
-        desktopContainerRef.current?.getBoundingClientRect();
+      const mobileBoundingRect = mobileContainerRef.current?.getBoundingClientRect();
+      const desktopBoundingRect = desktopContainerRef.current?.getBoundingClientRect();
       const top = Math.min(
         ...[mobileBoundingRect?.top, desktopBoundingRect?.top].filter(
-          (value) => value != undefined
-        )
+          (value) => value !== undefined,
+        ),
       );
       const bottom = Math.max(
         ...[mobileBoundingRect?.bottom, desktopBoundingRect?.bottom].filter(
-          (value) => value != undefined
-        )
+          (value) => value !== undefined,
+        ),
       );
       const height = Math.ceil(bottom - top);
       setDevicesContainerHeight(height);
@@ -58,16 +53,12 @@ export default function DevicePreviews({
     return function cleanUp() {
       window.removeEventListener("resize", apply);
     };
-  }, [mobileContainerRef, desktopContainerRef]);
+  }, []);
 
   return (
     <Box position="relative" height={devicesContainerHeight} {...rest}>
       {desktopImage && (
-        <Box
-          position="absolute"
-          {...desktopFramePositioning}
-          ref={desktopContainerRef}
-        >
+        <Box position="absolute" {...desktopFramePositioning} ref={desktopContainerRef}>
           <Box
             position="absolute"
             top="50%"
@@ -78,12 +69,7 @@ export default function DevicePreviews({
             height="89%"
             width="76%"
           >
-            <NextImage
-              src={desktopImage}
-              alt="screenshot"
-              placeholder="blur"
-              sizes={sizes}
-            />
+            <NextImage src={desktopImage} alt="screenshot" placeholder="blur" sizes={sizes} />
           </Box>
           <NextImage
             src={macFrame}
@@ -123,12 +109,7 @@ export default function DevicePreviews({
             height="90%"
             width="85%"
           >
-            <NextImage
-              src={mobileImage}
-              alt="screenshot"
-              placeholder="blur"
-              sizes={sizes}
-            />
+            <NextImage src={mobileImage} alt="screenshot" placeholder="blur" sizes={sizes} />
           </Box>
           <NextImage
             src={iphoneFrame}

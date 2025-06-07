@@ -8,9 +8,7 @@ function PortfolioPage() {
     <Layout>
       <PageMeta
         canonicalPath={PATH_PORTFOLIO}
-        title={
-          "Portfolio - Guillermo de la Puente - Freelance Software Engineer & Manager"
-        }
+        title={"Portfolio - Guillermo de la Puente - Freelance Software Engineer & Manager"}
         description={
           "High quality web applications and experiments. Splash, alacartadigital, After Memorials..."
         }

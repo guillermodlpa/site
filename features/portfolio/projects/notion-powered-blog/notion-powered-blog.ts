@@ -1,4 +1,4 @@
-import { Project } from "../../../../types/types";
+import type { Project } from "../../../../types/types";
 import notionPoweredBlogDesktop from "./notion-powered-blog-desktop.png";
 import notionPoweredBlogMobile from "./notion-powered-blog-mobile.png";
 

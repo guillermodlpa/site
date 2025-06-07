@@ -17,29 +17,26 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import getConfig from "next/config";
-import { FormEvent, useState } from "react";
 import NextLink from "next/link";
+import { type FormEvent, useState } from "react";
 import { PATH_BLOG } from "../../constants/paths";
 
 const { publicRuntimeConfig } = getConfig();
 
 enum FormStatus {
-  IDDLE,
-  SUBMITTING,
-  ERROR,
-  SUBMITTED,
+  IDDLE = 0,
+  SUBMITTING = 1,
+  ERROR = 2,
+  SUBMITTED = 3,
 }
 
-// FormBold fails with a server error when we send an empty value for a key
-function removeEmptyValues(params: { [key: string]: string }): {
-  [key: string]: string;
-} {
+function filterEmptyParams(params: Record<string, string>) {
   const filteredParams = {};
-  Object.entries(params).forEach(([key, value]) => {
+  for (const [key, value] of Object.entries(params)) {
     if (value.trim() !== "") {
       filteredParams[key] = value;
     }
-  });
+  }
   return filteredParams;
 }
 
@@ -65,7 +62,7 @@ export default function SubscribeToNewsletterForm() {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(removeEmptyValues(data)),
+      body: JSON.stringify(filterEmptyParams(data)),
     })
       .then((response) => {
         if (!response.ok) {
@@ -89,7 +86,7 @@ export default function SubscribeToNewsletterForm() {
             </AlertTitle>
             <AlertDescription maxWidth="sm">
               <Text mb={2}>{`Thank you! I'll be in touch.`}</Text>
-              <Text mb={1}>{`Your submission:`}</Text>
+              <Text mb={1}>{"Your submission:"}</Text>
 
               <UnorderedList listStyleType="none" ml={0} mb={4}>
                 <ListItem fontSize="sm">{data.name}</ListItem>
@@ -98,9 +95,9 @@ export default function SubscribeToNewsletterForm() {
               </UnorderedList>
 
               <Text mb={2}>
-                <NextLink href={PATH_BLOG} passHref legacyBehavior>
-                  <Link>Check out my blog</Link>
-                </NextLink>
+                <Link as={NextLink} href={PATH_BLOG}>
+                  Check out my blog
+                </Link>
               </Text>
             </AlertDescription>
           </Box>
@@ -115,43 +112,34 @@ export default function SubscribeToNewsletterForm() {
         >
           <GridItem>
             <FormControl isRequired>
-              <FormLabel requiredIndicator={<></>}>Name</FormLabel>
+              <FormLabel>Name</FormLabel>
               <Input
                 type="text"
                 name="name"
-                size={{ base: "lg", md: "md" }}
                 value={data.name}
-                onChange={(event) =>
-                  setData((data) => ({ ...data, name: event.target.value }))
-                }
+                onChange={(event) => setData((data) => ({ ...data, name: event.target.value }))}
               />
             </FormControl>
           </GridItem>
 
           <GridItem>
             <FormControl isRequired>
-              <FormLabel requiredIndicator={<></>}>Email</FormLabel>
+              <FormLabel>Email</FormLabel>
               <Input
                 type="email"
                 name="email"
-                size={{ base: "lg", md: "md" }}
                 value={data.email}
-                onChange={(event) =>
-                  setData((data) => ({ ...data, email: event.target.value }))
-                }
+                onChange={(event) => setData((data) => ({ ...data, email: event.target.value }))}
               />
             </FormControl>
           </GridItem>
 
           <GridItem colSpan={2}>
             <FormControl isRequired>
-              <FormLabel requiredIndicator={<></>}>
-                How do we know each other? / How have you found me?
-              </FormLabel>
+              <FormLabel>How do we know each other? / How have you found me?</FormLabel>
               <Input
                 type="text"
                 name="relationship"
-                size={{ base: "lg", md: "md" }}
                 value={data.relationship}
                 onChange={(event) =>
                   setData((data) => ({

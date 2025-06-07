@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
-import NexImage, { StaticImageData } from "next/image";
+import NexImage, { type StaticImageData } from "next/image";
 
 export default function ProjectPageHeader({
   name,
@@ -24,11 +24,7 @@ export default function ProjectPageHeader({
       <Heading as="h1" fontSize="5xl" textAlign="center" mb={4}>
         {logo ? (
           <>
-            <NexImage
-              {...logo}
-              src={logoSrc}
-              style={{ margin: "0 auto", ...(logo.style || {}) }}
-            />
+            <NexImage {...logo} src={logoSrc} style={{ margin: "0 auto", ...(logo.style || {}) }} />
             <Box as="span" display="none">
               {name}
             </Box>

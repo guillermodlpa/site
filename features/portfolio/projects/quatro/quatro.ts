@@ -1,6 +1,6 @@
-import quatroLogo from "./quatro-logo.webp";
+import type { Project } from "../../../../types/types";
 import quatroDesktop from "./quatro-desktop.png";
-import { Project } from "../../../../types/types";
+import quatroLogo from "./quatro-logo.webp";
 
 const quatro: Project = {
   name: "Quatro",

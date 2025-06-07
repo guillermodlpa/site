@@ -1,17 +1,15 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import generateImageSizesProp from "../../../utils/generateImageSizesProp";
-import ProfilePictureFace from "./guillermo_de_la_puente-face.png";
 import AuthorIntroContent from "./author-intro-content.mdx";
-import { MDXProvider } from "@mdx-js/react";
+import ProfilePictureFace from "./guillermo_de_la_puente-face.png";
 
 const markdownComponents = {
   p: (props) => <Text mb={1} fontSize="md" {...props} />,
   a: (props) => (
     <Link
-      isExternal={
-        props.href && !props.href.startsWith("/") && !props.href.startsWith("#")
-      }
+      isExternal={props.href && !props.href.startsWith("/") && !props.href.startsWith("#")}
       {...props}
     />
   ),
@@ -28,12 +26,7 @@ export default function AuthorIntro() {
         alignItems={{ base: "center", md: "flex-start" }}
         gap={4}
       >
-        <Box
-          width={imageSize}
-          flexShrink={0}
-          borderRadius="lg"
-          overflow="hidden"
-        >
+        <Box width={imageSize} flexShrink={0} borderRadius="lg" overflow="hidden">
           <Image
             src={ProfilePictureFace}
             alt="Portrait photo of Guillermo de la Puente"

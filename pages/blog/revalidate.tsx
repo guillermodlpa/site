@@ -9,9 +9,7 @@ export default function BlogRevalidatePage() {
       <PageMeta
         canonicalPath={PATH_BLOG_REVALIDATE}
         title={"Blog Revalidation"}
-        description={
-          "Building successful, fast, high quality web applications."
-        }
+        description={"Building successful, fast, high quality web applications."}
         ogType="profile"
       />
       <BlogRevalidate />

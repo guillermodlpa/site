@@ -1,9 +1,6 @@
 const ELLIPSIS_CHARACTER = "…";
 
-export default function truncateString(
-  value: string,
-  characterLimit: number
-): string {
+export default function truncateString(value: string, characterLimit: number): string {
   if (value.length <= characterLimit) {
     return value;
   }

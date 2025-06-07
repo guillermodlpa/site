@@ -1,29 +1,21 @@
-import {
-  Box,
-  Table,
-  TableContainer,
-  Tbody,
-  Td,
-  Th,
-  Tr,
-} from "@chakra-ui/react";
+import { Box, Table, TableContainer, Tbody, Td, Th, Tr } from "@chakra-ui/react";
+import type { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import * as BLOCK_TYPES from "./blockTypes";
-import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import BookmarkBlock from "./components/BookmarkBlock";
-import getPlainText from "./utils/getPlainText";
-import ParagraphBlock from "./components/ParagraphBlock";
+import BulletedListItemBlock from "./components/BulletedListItemBlock";
+import CalloutBlock from "./components/CalloutBlock";
+import CodeBlock from "./components/CodeBlock";
+import DividerBlock from "./components/DividerBlock";
 import Heading1Block from "./components/Heading1Block";
 import Heading2Block from "./components/Heading2Block";
 import Heading3Block from "./components/Heading3Block";
-import BulletedListItemBlock from "./components/BulletedListItemBlock";
-import NumberedListItemBlock from "./components/NumberedListItemBlock";
-import QuoteBlock from "./components/QuoteBlock";
 import ImageBlock from "./components/ImageBlock";
-import DividerBlock from "./components/DividerBlock";
-import CalloutBlock from "./components/CalloutBlock";
-import VideoBlock from "./components/VideoBlock";
 import NotionRichText from "./components/NotionRichText";
-import CodeBlock from "./components/CodeBlock";
+import NumberedListItemBlock from "./components/NumberedListItemBlock";
+import ParagraphBlock from "./components/ParagraphBlock";
+import QuoteBlock from "./components/QuoteBlock";
+import VideoBlock from "./components/VideoBlock";
+import getPlainText from "./utils/getPlainText";
 
 export default function NotionBlock({
   block,
@@ -50,20 +42,13 @@ export default function NotionBlock({
       case BLOCK_TYPES.BULLETED_LIST_ITEM:
         return <BulletedListItemBlock richTextItems={value.rich_text} />;
       case BLOCK_TYPES.NUMBERED_LIST_ITEM:
-        return (
-          <NumberedListItemBlock
-            richTextItems={value.rich_text}
-            position={value.counter}
-          />
-        );
+        return <NumberedListItemBlock richTextItems={value.rich_text} position={value.counter} />;
       case BLOCK_TYPES.QUOTE:
         return <QuoteBlock richTextItems={value.rich_text} />;
       case BLOCK_TYPES.IMAGE:
         return (
           <ImageBlock
-            src={
-              value.type === "external" ? value.external.url : value.file.url
-            }
+            src={value.type === "external" ? value.external.url : value.file.url}
             priority={likelyAboveTheFold}
             dimensions={value.dim}
             captionRichTextItems={value.caption}
@@ -93,10 +78,7 @@ export default function NotionBlock({
         return <BookmarkBlock url={value.url} />;
       case BLOCK_TYPES.CODE:
         return (
-          <CodeBlock
-            language={value.language}
-            captionRichTextItems={value.caption}
-          >
+          <CodeBlock language={value.language} captionRichTextItems={value.caption}>
             {getPlainText(value.rich_text)}
           </CodeBlock>
         );
@@ -105,9 +87,7 @@ export default function NotionBlock({
         return (
           <VideoBlock
             url={url}
-            showWarning={
-              process.env.NODE_ENV === "development" && value.type === "file"
-            }
+            showWarning={process.env.NODE_ENV === "development" && value.type === "file"}
           />
         );
       }
@@ -119,12 +99,12 @@ export default function NotionBlock({
               const hasRowHeader =
                 parentBlock &&
                 "type" in parentBlock &&
-                parentBlock.type === BLOCK_TYPES.TABLE &&
-                parentBlock[BLOCK_TYPES.TABLE].has_row_header;
-              const isRowHeader = hasRowHeader && index === 0;
+                parentBlock.type === "table_row" &&
+                parentBlock.table_row.cells[0] === cell;
+              const isRowHeader = hasRowHeader;
               const TableCell = isRowHeader ? Th : Td;
               return (
-                <TableCell key={index}>
+                <TableCell key={`${value.id}-cell-${index}`}>
                   <NotionRichText richTextItems={cell} />
                 </TableCell>
               );
@@ -152,11 +132,7 @@ export default function NotionBlock({
           <Box
             sx={{
               display: ["block", "block", "grid"],
-              gridTemplateColumns: [
-                undefined,
-                undefined,
-                children.map(() => "1fr").join(" "),
-              ],
+              gridTemplateColumns: [undefined, undefined, children.map(() => "1fr").join(" ")],
               gap: [4, 4, null],
             }}
           >
@@ -196,7 +172,7 @@ export default function NotionBlock({
               parentBlock={block}
               likelyAboveTheFold={likelyAboveTheFold}
             />
-          ))
+          )),
         )}
     </>
   );

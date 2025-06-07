@@ -1,9 +1,9 @@
+import type { Project } from "../../../../types/types";
+import alacartadigitalBackground from "./alacartadigital-background.png";
+import alacartadigitalDesktop from "./alacartadigital-desktop.png";
 import alacartadigitalLogoDark from "./alacartadigital-logo-dark.svg";
 import alacartadigitalLogoLight from "./alacartadigital-logo-light.svg";
-import alacartadigitalDesktop from "./alacartadigital-desktop.png";
 import alacartadigitalMobile from "./alacartadigital-mobile.png";
-import alacartadigitalBackground from "./alacartadigital-background.png";
-import { Project } from "../../../../types/types";
 
 const alacartadigital: Project = {
   name: "alacartadigital",

@@ -1,17 +1,9 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Link,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
-import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
+import { Box, Container, Flex, Heading, Link, Text, useBreakpointValue } from "@chakra-ui/react";
+import type { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import NextLink from "next/link";
 import AuthorAside from "../../components/AuthorAside";
 import { PATH_BLOG } from "../../constants/paths";
-import { BlogPost as BlogPostType } from "../../types/types";
+import type { BlogPost as BlogPostType } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
@@ -35,17 +27,15 @@ export default function BlogPost({
         </Heading>
 
         {blogPost.tags.length > 0 && (
-          <>
-            <Text as="p" variant="secondaryText" mb={1} fontSize="md">
-              {blogPost.tags.map(capitalizeString).join(", ")}
-            </Text>
-          </>
+          <Text as="p" variant="secondaryText" mb={1} fontSize="md">
+            {blogPost.tags.map(capitalizeString).join(", ")}
+          </Text>
         )}
 
         <Flex alignItems="flex-start">
           <Box flexGrow={1}>
             <Text variant="secondaryText" mb={4} as="span" fontSize="md">
-              {`Published on `}
+              {"Published on "}
               <time dateTime={formatDateForAttribute(blogPost.datePublished)}>
                 {formatDateInUTCForUser(blogPost.datePublished)}
               </time>
@@ -53,7 +43,7 @@ export default function BlogPost({
 
             {blogPost.dateUpdated && (
               <Text variant="secondaryText" mb={4} as="span" fontSize="md">
-                {` / Updated on `}
+                {" / Updated on "}
                 <time dateTime={formatDateForAttribute(blogPost.dateUpdated)}>
                   {formatDateInUTCForUser(blogPost.dateUpdated)}
                 </time>
@@ -71,9 +61,9 @@ export default function BlogPost({
 
       <Box as="footer" mt={16} mb={4}>
         <Text textAlign="center">
-          <NextLink href={PATH_BLOG} passHref legacyBehavior>
-            <Link>Back to all posts</Link>
-          </NextLink>
+          <Link as={NextLink} href={PATH_BLOG}>
+            Back to all posts
+          </Link>
         </Text>
       </Box>
       {renderAuthorAside && <AuthorAside />}

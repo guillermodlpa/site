@@ -18,7 +18,4 @@ type RichTextItemText = {
   href: string | null;
 };
 
-type RichTextItem =
-  | RichTextItemText
-  | { type: "mention" }
-  | { type: "equation" };
+type RichTextItem = RichTextItemText | { type: "mention" } | { type: "equation" };

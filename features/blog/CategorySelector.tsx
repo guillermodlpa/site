@@ -1,8 +1,6 @@
 import { Button, ButtonGroup } from "@chakra-ui/react";
-import blogPostCategories, {
-  BlogPostCategoryName,
-} from "../../utils/blogPostCategories";
 import NextLink from "next/link";
+import blogPostCategories, { type BlogPostCategoryName } from "../../utils/blogPostCategories";
 
 export default function CategorySelector({
   categoryName,
@@ -12,18 +10,13 @@ export default function CategorySelector({
   setCategoryName: (categoryName: BlogPostCategoryName) => void;
 }) {
   return (
-    <ButtonGroup
-      isAttached
-      size="md"
-      flexWrap="wrap"
-      data-selected-category-name={categoryName}
-    >
+    <ButtonGroup isAttached size="md" flexWrap="wrap" data-selected-category-name={categoryName}>
       {blogPostCategories.map((categoryButton) => (
         <Button
           key={categoryButton.name}
           fontWeight="normal"
           data-category-name={categoryButton.name}
-          aria-selected={categoryName === categoryButton.name ? true : false}
+          aria-selected={categoryName === categoryButton.name}
           variant={categoryName === categoryButton.name ? "solid" : "outline"}
           mt={"-1px"}
           as={NextLink}

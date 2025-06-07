@@ -1,11 +1,11 @@
 import {
   Box,
+  Image as ChakraImage,
   Flex,
   Link,
   LinkBox,
   LinkOverlay,
   Text,
-  Image as ChakraImage,
 } from "@chakra-ui/react";
 import { forwardRef, useEffect, useRef, useState } from "react";
 import useHasBeenInViewport from "../utils/useHasBeenInViewport";
@@ -47,25 +47,20 @@ function useUnfurlUrl(url: string, enabled: boolean) {
   return { status, data };
 }
 
-const BookmarkFallback = forwardRef<HTMLDivElement, { url: string }>(
-  function BookmarkFallbackInner({ url }, ref) {
-    return (
-      <Box
-        display="flex"
-        mb={4}
-        backgroundColor={"callout-background"}
-        p={3}
-        ref={ref}
-      >
-        <Text wordBreak="break-word">
-          <Link isExternal href={url}>
-            {url}
-          </Link>
-        </Text>
-      </Box>
-    );
-  }
-);
+const BookmarkFallback = forwardRef<HTMLDivElement, { url: string }>(function BookmarkFallbackInner(
+  { url },
+  ref,
+) {
+  return (
+    <Box display="flex" mb={4} backgroundColor={"callout-background"} p={3} ref={ref}>
+      <Text wordBreak="break-word">
+        <Link isExternal href={url}>
+          {url}
+        </Link>
+      </Text>
+    </Box>
+  );
+});
 
 function UnfurledUrlPreview({
   url,
@@ -109,19 +104,9 @@ function UnfurledUrlPreview({
           </Box>
         )}
 
-        <Flex
-          flexDirection="column"
-          gap={1}
-          p={3}
-          width={urlData.imageSrc ? "66%" : "100%"}
-        >
+        <Flex flexDirection="column" gap={1} p={3} width={urlData.imageSrc ? "66%" : "100%"}>
           {urlData.title && (
-            <Text
-              whiteSpace="nowrap"
-              textOverflow="ellipsis"
-              overflow="hidden"
-              fontSize="md"
-            >
+            <Text whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden" fontSize="md">
               {urlData.title}
             </Text>
           )}
@@ -150,12 +135,7 @@ function UnfurledUrlPreview({
                 alt="Website icon"
               />
             )}
-            <Text
-              whiteSpace="nowrap"
-              textOverflow="ellipsis"
-              overflow="hidden"
-              fontSize="md"
-            >
+            <Text whiteSpace="nowrap" textOverflow="ellipsis" overflow="hidden" fontSize="md">
               <Link isExternal href={url} as={LinkOverlay}>
                 {url}
               </Link>
@@ -168,7 +148,7 @@ function UnfurledUrlPreview({
 }
 
 export default function BookmarkBlock({ url }: { url: string }) {
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>(null);
   const enabled = useHasBeenInViewport(ref);
 
   const { data, status } = useUnfurlUrl(url, enabled);

@@ -1,15 +1,8 @@
-import {
-  Box,
-  Heading,
-  LinkBox,
-  LinkOverlay,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import NextImage, { StaticImageData } from "next/image";
+import { Box, Heading, LinkBox, LinkOverlay, Text, useColorModeValue } from "@chakra-ui/react";
+import NextImage, { type StaticImageData } from "next/image";
 import NextLink from "next/link";
 import { getPortfolioProjectPath } from "../../constants/paths";
-import { Project } from "../../types/types";
+import type { Project } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import DevicePreviews from "./DevicePreviews";
 
@@ -27,7 +20,7 @@ export default function ProjectCard({
 }: Project) {
   const logoImageSrc = useColorModeValue<StaticImageData, StaticImageData>(
     logoImage?.src?.dark,
-    logoImage?.src?.light
+    logoImage?.src?.light,
   );
 
   return (
@@ -56,23 +49,23 @@ export default function ProjectCard({
       overflow="hidden"
     >
       <Heading as="h1" fontSize="2xl">
-        <NextLink href={getPortfolioProjectPath(slug)} passHref legacyBehavior>
-          <LinkOverlay
-            color="inherit"
-            transitionProperty="common"
-            transitionDuration="normal"
-            id={anchorId}
-          >
-            {logoImage && logoImageSrc ? (
-              <>
-                <NextImage {...logoImage} src={logoImageSrc} />
-                <span style={{ display: "none" }}>{name}</span>
-              </>
-            ) : (
-              name
-            )}
-          </LinkOverlay>
-        </NextLink>
+        <LinkOverlay
+          as={NextLink}
+          href={getPortfolioProjectPath(slug)}
+          color="inherit"
+          transitionProperty="common"
+          transitionDuration="normal"
+          id={anchorId}
+        >
+          {logoImage && logoImageSrc ? (
+            <>
+              <NextImage {...logoImage} src={logoImageSrc} />
+              <span style={{ display: "none" }}>{name}</span>
+            </>
+          ) : (
+            name
+          )}
+        </LinkOverlay>
       </Heading>
       <Text color="chakra-body-text-secondary">{date}</Text>
 

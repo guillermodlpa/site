@@ -1,4 +1,4 @@
-import { ListItem, Text, OrderedList } from "@chakra-ui/react";
+import { ListItem, OrderedList, Text } from "@chakra-ui/react";
 import NotionRichText from "./NotionRichText";
 
 export default function NumberedListItemBlock({

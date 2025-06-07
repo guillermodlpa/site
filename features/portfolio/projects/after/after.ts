@@ -1,4 +1,4 @@
-import { Project } from "../../../../types/types";
+import type { Project } from "../../../../types/types";
 import afterBackground from "./after-background.png";
 import afterDesktop from "./after-desktop.png";
 import afterLogo from "./after-logo.png";

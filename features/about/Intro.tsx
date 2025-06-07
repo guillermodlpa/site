@@ -1,31 +1,20 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Link,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Text, useBreakpointValue } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import {
-  PATH_BLOG,
-  PATH_CONTACT,
-  PATH_NEWSLETTER,
-} from "../../constants/paths";
+import React from "react";
+import MagicalDivider from "../../components/MagicalDivider";
+import SocialLinks from "../../components/SocialLinks";
+import TagCloud from "../../components/TagCloud";
+import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER } from "../../constants/paths";
+import technologyTags from "../../constants/technologyTags";
+import type { BlogPost } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
-import IntroContent from "./intro-content.mdx";
+import BusinessCard from "./BusinessCard";
+import RecentBlogPostItem from "./RecentBlogPostItem";
 import ProfilePicturePortrait from "./guillermo_de_la_puente-portrait.png";
 import ProfilePictureSquare from "./guillermo_de_la_puente-square.png";
-import SocialLinks from "../../components/SocialLinks";
-import BusinessCard from "./BusinessCard";
-import { BlogPost } from "../../types/types";
-import RecentBlogPostItem from "./RecentBlogPostItem";
-import MagicalDivider from "../../components/MagicalDivider";
-import React from "react";
-import TagCloud from "../../components/TagCloud";
-import technologyTags from "../../constants/technologyTags";
+import IntroContent from "./intro-content.mdx";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,
@@ -34,9 +23,7 @@ const markdownComponents = {
   p: (props) => <Text mb={4} fontSize="md" {...props} />,
   a: (props) => (
     <Link
-      isExternal={
-        props.href && !props.href.startsWith("/") && !props.href.startsWith("#")
-      }
+      isExternal={props.href && !props.href.startsWith("/") && !props.href.startsWith("#")}
       {...props}
     />
   ),
@@ -72,7 +59,7 @@ export default function Intro({
             sx={{
               borderRadius: "1rem",
               overflow: "hidden",
-              filter: `brightness(1.01) contrast(1.02)`,
+              filter: "brightness(1.01) contrast(1.02)",
             }}
           >
             <Image
@@ -103,13 +90,17 @@ export default function Intro({
               gap={4}
               flexWrap="wrap"
             >
-              <NextLink passHref legacyBehavior href={PATH_CONTACT}>
-                <Text as={Link}>Get in touch</Text>
-              </NextLink>
+              <Text>
+                <Link as={NextLink} href={PATH_CONTACT}>
+                  Get in touch
+                </Link>
+              </Text>
 
-              <NextLink passHref legacyBehavior href={PATH_NEWSLETTER}>
-                <Text as={Link}>Join my personal newsletter</Text>
-              </NextLink>
+              <Text>
+                <Link as={NextLink} href={PATH_NEWSLETTER}>
+                  Join my personal newsletter
+                </Link>
+              </Text>
             </Flex>
           </Box>
         </Box>
@@ -142,9 +133,9 @@ export default function Intro({
           </Box>
 
           <Text mt={10} textAlign="center">
-            <NextLink passHref legacyBehavior href={PATH_BLOG}>
-              <Text as={Link}>View all blog posts</Text>
-            </NextLink>
+            <Link as={NextLink} href={PATH_BLOG}>
+              View all blog posts
+            </Link>
           </Text>
         </Box>
       )}

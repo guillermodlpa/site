@@ -1,6 +1,26 @@
+import { motion } from "framer-motion";
 import AppFooter from "../components/AppFooter";
 import AppNav from "../components/AppNav";
-import { motion } from "framer-motion";
+
+const variants = {
+  initial: { opacity: 0, transform: "translateY(5px)" },
+  animate: {
+    opacity: 1,
+    transform: "translateY(0px)",
+    transition: {
+      duration: 0.15,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+  exit: {
+    opacity: 0,
+    transform: "translateY(5px)",
+    transition: {
+      duration: 0.05,
+      ease: [0.4, 0, 1, 1],
+    },
+  },
+};
 
 /**
  * Using a common component as a layout for multiple NextPages enables
@@ -19,13 +39,14 @@ export default function Layout({
 
       {/* See https://blog.logrocket.com/advanced-page-transitions-next-js-framer-motion */}
       <motion.main
-        initial={{ y: 15, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 15, opacity: 0 }}
-        transition={{
-          type: "spring",
-          bounce: 0,
-          duration: 1,
+        variants={variants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        layout
+        style={{
+          willChange: "transform, opacity",
+          transform: "translateZ(0)",
         }}
       >
         {children}

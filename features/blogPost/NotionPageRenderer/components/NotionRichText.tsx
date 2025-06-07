@@ -45,24 +45,22 @@ export default function NotionRichText({
         .filter((richText) => richText.type === "text")
         .map((richText: RichTextItemText, index) => (
           <Text
-            key={`${index}`}
+            key={`${richText.plain_text}-${index}`}
             as={
               richText.annotations.code
                 ? "code"
                 : richText.annotations.bold
-                ? "strong"
-                : richText.annotations.italic
-                ? "i"
-                : "span"
+                  ? "strong"
+                  : richText.annotations.italic
+                    ? "i"
+                    : "span"
             }
             fontSize="inherit"
             fontWeight={richText.annotations.bold ? "bold" : undefined}
             fontStyle={richText.annotations.italic ? "italic" : undefined}
             variant={richText.annotations.code ? "code" : undefined}
             color={
-              richText.annotations.color
-                ? getColorName(richText.annotations.color)
-                : undefined
+              richText.annotations.color ? getColorName(richText.annotations.color) : undefined
             }
             sx={{ whiteSpace: "pre-line" }}
           >

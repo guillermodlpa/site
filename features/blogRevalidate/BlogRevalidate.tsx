@@ -22,10 +22,10 @@ import BookmarkBlock from "../blogPost/NotionPageRenderer/components/BookmarkBlo
 import BlogRevalidateDescription from "./blog-revalidate-description.mdx";
 
 enum FormStatus {
-  IDDLE,
-  SUBMITTING,
-  ERROR,
-  SUBMITTED,
+  IDDLE = 0,
+  SUBMITTING = 1,
+  ERROR = 2,
+  SUBMITTED = 3,
 }
 
 const markdownComponents = {
@@ -34,9 +34,7 @@ const markdownComponents = {
   li: (props) => <ListItem mb={2} {...props} />,
   a: (props) => (
     <Link
-      isExternal={
-        props.href && !props.href.startsWith("/") && !props.href.startsWith("#")
-      }
+      isExternal={props.href && !props.href.startsWith("/") && !props.href.startsWith("#")}
       {...props}
     />
   ),
@@ -93,20 +91,13 @@ export default function BlogRevalidate() {
           mt={8}
         >
           <FormControl width="fit-content" isRequired>
-            <FormLabel requiredIndicator={<></>}>Secret Passcode</FormLabel>
-            <Input
-              type="password"
-              name="blog_revalidation_passcode"
-              value={passcode}
-              onChange={(event) => setPasscode(event.target.value)}
-            />
+            <FormLabel>Secret Passcode</FormLabel>
+            <Input type="password" value={passcode} onChange={(e) => setPasscode(e.target.value)} />
           </FormControl>
 
           <FormControl width="fit-content" isRequired>
-            <FormLabel requiredIndicator={<></>}>Blog Post Slug</FormLabel>
-            <FormHelperText mb={2}>
-              /blog will also be revalidated
-            </FormHelperText>
+            <FormLabel>Blog Post Slug</FormLabel>
+            <FormHelperText mb={2}>/blog will also be revalidated</FormHelperText>
             <Input
               name="blog_post_path"
               placeholder="/how-to-generate-rss-feed-with-next-js"
@@ -115,11 +106,7 @@ export default function BlogRevalidate() {
             />
           </FormControl>
 
-          <Button
-            type="submit"
-            colorScheme="primary"
-            isLoading={status === FormStatus.SUBMITTING}
-          >
+          <Button type="submit" colorScheme="primary" isLoading={status === FormStatus.SUBMITTING}>
             Revalidate
           </Button>
 
@@ -142,13 +129,9 @@ export default function BlogRevalidate() {
       <MagicalDivider mt={16} mb={16} height="2px" width="66%" />
 
       <Box as="section">
-        <Text mb={4}>
-          Check out the implementation of the revalidation endpoint:
-        </Text>
+        <Text mb={4}>Check out the implementation of the revalidation endpoint:</Text>
         <BookmarkBlock
-          url={
-            "https://github.com/guillermodlpa/site/blob/main/pages/api/revalidate-blog.tsx"
-          }
+          url={"https://github.com/guillermodlpa/site/blob/main/pages/api/revalidate-blog.tsx"}
         />
       </Box>
     </Box>

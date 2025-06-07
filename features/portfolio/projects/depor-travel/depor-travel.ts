@@ -1,9 +1,9 @@
-import deporTravelLogoLight from "./depor-travel-logo-light.png";
-import deporTravelLogoDark from "./depor-travel-logo-dark.png";
-import deporTravelDesktop from "./depor-travel-desktop.png";
-import deporTravelMobile from "./depor-travel-mobile.png";
+import type { Project } from "../../../../types/types";
 import deporTravelBackground from "./depor-travel-background.jpeg";
-import { Project } from "../../../../types/types";
+import deporTravelDesktop from "./depor-travel-desktop.png";
+import deporTravelLogoDark from "./depor-travel-logo-dark.png";
+import deporTravelLogoLight from "./depor-travel-logo-light.png";
+import deporTravelMobile from "./depor-travel-mobile.png";
 
 const deporTravel: Project = {
   name: "depor.travel",

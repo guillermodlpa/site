@@ -12,13 +12,7 @@ function getResponsiveSpacing(mdSpacing: number) {
 export default function BusinessCard() {
   return (
     <AspectRatio ratio={3.5 / 2} mb={8}>
-      <Box
-        width="full"
-        height="full"
-        boxShadow="md"
-        borderRadius="lg"
-        borderWidth="1px"
-      >
+      <Box width="full" height="full" boxShadow="md" borderRadius="lg" borderWidth="1px">
         <Flex
           flexDirection="column"
           alignItems="flex-start"
@@ -32,18 +26,10 @@ export default function BusinessCard() {
         >
           <MagicalDivider mb={getResponsiveSpacing(6)} height={"3px"} />
           <Flex flexGrow={1} flexDirection="column" justifyContent="center">
-            <Heading
-              as="h1"
-              fontSize={{ base: "5vw", md: "lg" }}
-              mb={getResponsiveSpacing(4)}
-            >
+            <Heading as="h1" fontSize={{ base: "5vw", md: "lg" }} mb={getResponsiveSpacing(4)}>
               Guillermo de la Puente
             </Heading>
-            <Heading
-              as="h2"
-              fontSize={{ base: "4vw", md: "sm" }}
-              mb={getResponsiveSpacing(1)}
-            >
+            <Heading as="h2" fontSize={{ base: "4vw", md: "sm" }} mb={getResponsiveSpacing(1)}>
               Freelance Software Engineer & Manager
             </Heading>
             <Text
@@ -54,9 +40,9 @@ export default function BusinessCard() {
               TypeScript, React, Node
             </Text>
             <Text fontSize={{ base: "3vw", md: "xs" }} variant="secondaryText">
-              <NextLink href="/" passHref legacyBehavior>
-                <Link>https://guillermodlpa.com</Link>
-              </NextLink>
+              <Link as={NextLink} href="/">
+                https://guillermodlpa.com
+              </Link>
             </Text>
           </Flex>
           <MagicalDivider mt={getResponsiveSpacing(6)} height={"3px"} />

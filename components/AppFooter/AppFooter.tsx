@@ -1,12 +1,7 @@
 import { Box, Container, Link, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import {
-  PATH_BLOG,
-  PATH_CONTACT,
-  PATH_NEWSLETTER,
-  PATH_PORTFOLIO,
-} from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER, PATH_PORTFOLIO } from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
 import SocialLinks from "../SocialLinks";
 
@@ -25,34 +20,22 @@ export default function AppFooter({
 }) {
   const { pathname } = useRouter();
   return (
-    <Container
-      as="footer"
-      py={4}
-      maxWidth={fullWidth ? "full" : "container.md"}
-    >
+    <Container as="footer" py={4} maxWidth={fullWidth ? "full" : "container.md"}>
       <MagicalDivider as="div" />
 
       <Box py={4} display="flex" justifyContent="space-between">
-        <Wrap
-          spacingX={4}
-          spacingY={2}
-          direction={{ base: "column", md: "row" }}
-        >
+        <Wrap spacingX={4} spacingY={2} direction={{ base: "column", md: "row" }}>
           {links.map(({ label, path }) => (
             <WrapItem key={path}>
-              <NextLink passHref legacyBehavior href={path}>
-                <Link
-                  aria-current={
-                    path !== "/" && pathname?.startsWith(path) ? "page" : false
-                  }
-                  borderBottomWidth={
-                    path !== "/" && pathname?.startsWith(path) ? "1px" : "0px"
-                  }
-                  borderColor="currentColor"
-                >
-                  {label}
-                </Link>
-              </NextLink>
+              <Link
+                as={NextLink}
+                href={path}
+                aria-current={path !== "/" && pathname?.startsWith(path) ? "page" : false}
+                borderBottomWidth={path !== "/" && pathname?.startsWith(path) ? "1px" : "0px"}
+                borderColor="currentColor"
+              >
+                {label}
+              </Link>
             </WrapItem>
           ))}
         </Wrap>

@@ -1,9 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import theme from "../constants/theme";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -20,12 +23,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <ChakraProvider theme={theme}>
-        <AnimatePresence
-          initial={false}
-          mode="wait"
-          onExitComplete={() => window.scrollTo(0, 0)}
-        >
-          <Component {...pageProps} />
+        <AnimatePresence initial={false} mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+          <Component {...pageProps} key={router.asPath} />
         </AnimatePresence>
       </ChakraProvider>
     </>

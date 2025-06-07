@@ -1,15 +1,8 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  LinkBox,
-  LinkOverlay,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { getBlogPostPath } from "../../constants/paths";
-import { BlogPost } from "../../types/types";
+import type { BlogPost } from "../../types/types";
 import capitalizeString from "../../utils/capitalizeString";
 import formatDateForAttribute from "../../utils/formatDateForAttribute";
 import formatDateInUTCForUser from "../../utils/formatDateInUTCForUser";
@@ -21,7 +14,7 @@ function isNotPublishedYet(date: Date | string): boolean {
     return false;
   }
   const dateObject = date instanceof Date ? date : new Date(date);
-  const valid = !isNaN(dateObject as unknown as number);
+  const valid = !Number.isNaN(dateObject as unknown as number);
   return valid ? dateObject.getTime() > new Date().getTime() : false;
 }
 
@@ -77,15 +70,15 @@ export default function BlogPostSummary({
         )}
         <Flex flexDirection="column" gap={4} flexGrow={1}>
           <Heading as="h2" size="md">
-            <NextLink href={getBlogPostPath(slug)} passHref legacyBehavior>
-              <LinkOverlay
-                color="inherit"
-                transitionProperty="common"
-                transitionDuration="faster"
-              >
-                {title}
-              </LinkOverlay>
-            </NextLink>
+            <LinkOverlay
+              as={NextLink}
+              href={getBlogPostPath(slug)}
+              color="inherit"
+              transitionProperty="common"
+              transitionDuration="faster"
+            >
+              {title}
+            </LinkOverlay>
           </Heading>
 
           <Text fontSize="md">
@@ -98,12 +91,10 @@ export default function BlogPostSummary({
               {formatDateInUTCForUser(datePublished)}
             </Text>
             {tags.length > 0 && (
-              <>
-                <Text as="span" variant="secondaryText" fontSize="inherit">
-                  {` / `}
-                  {tags.map(capitalizeString).join(", ")}
-                </Text>
-              </>
+              <Text as="span" variant="secondaryText" fontSize="inherit">
+                {" / "}
+                {tags.map(capitalizeString).join(", ")}
+              </Text>
             )}
           </Text>
 

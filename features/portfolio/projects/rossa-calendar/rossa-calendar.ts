@@ -1,7 +1,7 @@
-import { Project } from "../../../../types/types";
+import type { Project } from "../../../../types/types";
 import rossaCalendarDesktopViewBooking from "./rossa-calendar-desktop-view-booking.png";
-import rossaLogo from "./rossa-logo.png";
 import rossaCalendarMobile from "./rossa-calendar-mobile.jpeg";
+import rossaLogo from "./rossa-logo.png";
 
 const rossaCalendar: Project = {
   name: "Rossa Booking Management Calendar",

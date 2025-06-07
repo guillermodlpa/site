@@ -1,4 +1,4 @@
-import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
+import type { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import { NUMBERED_LIST_ITEM } from "../blockTypes";
 
 /**
@@ -6,7 +6,7 @@ import { NUMBERED_LIST_ITEM } from "../blockTypes";
  * The Notion API doesn't return the info about the index to use for the list item
  */
 export default function addNumberedListItemCounters(
-  blocks: GetBlockResponse[]
+  blocks: GetBlockResponse[],
 ): GetBlockResponse[] {
   let counter = 0;
   const blocksWithCounters = blocks.map((block) => {

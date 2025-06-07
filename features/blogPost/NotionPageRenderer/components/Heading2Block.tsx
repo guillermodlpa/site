@@ -10,10 +10,7 @@ export default function Heading2Block({
 }: {
   richTextItems: RichTextItem[];
 }) {
-  const anchorId = useMemo(
-    () => makeAnchorId(getPlainText(richTextItems)),
-    [richTextItems]
-  );
+  const anchorId = useMemo(() => makeAnchorId(getPlainText(richTextItems)), [richTextItems]);
 
   return (
     <>

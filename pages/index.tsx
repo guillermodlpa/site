@@ -2,7 +2,7 @@ import PageMeta from "../components/PageMeta";
 import About from "../features/about";
 import Layout from "../layouts/Layout";
 import { fetchBlogPosts } from "../lib/notionClient";
-import { BlogPost } from "../types/types";
+import type { BlogPost } from "../types/types";
 import recursivelyNullifyUndefinedValues from "../utils/recursivelyNullifyUndefinedValues";
 
 function HomePage({ recentBlogPosts }: { recentBlogPosts: BlogPost[] }) {

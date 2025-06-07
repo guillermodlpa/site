@@ -14,7 +14,7 @@ const CACHE_RESULT_SECONDS = 60 * 60 * 24; // 1 day
 
 const handleGet = async (
   req: NextApiRequest,
-  res: NextApiResponse<SuccessResponse | ErrorResponse>
+  res: NextApiResponse<SuccessResponse | ErrorResponse>,
 ) => {
   const url = req.query.url;
   if (!url || typeof url !== "string") {

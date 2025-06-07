@@ -1,8 +1,8 @@
-import travelmapMobile from "./travelmap-mobile.png";
-import travelmapLogoLight from "./travelmap-logo-light.png";
-import travelmapLogoDark from "./travelmap-logo-dark.png";
+import type { Project } from "../../../../types/types";
 import travelmapBackground from "./travelmap-background.png";
-import { Project } from "../../../../types/types";
+import travelmapLogoDark from "./travelmap-logo-dark.png";
+import travelmapLogoLight from "./travelmap-logo-light.png";
+import travelmapMobile from "./travelmap-mobile.png";
 
 const travelmap: Project = {
   name: "Travelmap",

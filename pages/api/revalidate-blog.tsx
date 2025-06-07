@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import getConfig from "next/config";
-import { getBlogPostPath, PATH_BLOG } from "../../constants/paths";
 import uploadNotionImagesToCloudinary from "upload-notion-images-to-cloudinary";
+import { PATH_BLOG, getBlogPostPath } from "../../constants/paths";
 import { fetchBlogPostBySlug } from "../../lib/notionClient";
 
 type ErrorResponse = { error: string };
@@ -11,19 +11,15 @@ const { serverRuntimeConfig } = getConfig();
 
 const handlePost = async (
   req: NextApiRequest,
-  res: NextApiResponse<SuccessResponse | ErrorResponse>
+  res: NextApiResponse<SuccessResponse | ErrorResponse>,
 ) => {
   const passcode = req.headers["x-revalidation-passcode"];
   if (!passcode || passcode !== serverRuntimeConfig.REVALIDATION_PASSCODE) {
-    return res
-      .status(400)
-      .json({ error: "Invalid revalidation passcode header value" });
+    return res.status(400).json({ error: "Invalid revalidation passcode header value" });
   }
   const blogPostPath = req.body.blog_post_path;
   if (typeof blogPostPath !== "string") {
-    return res
-      .status(400)
-      .json({ error: "Invalid blog_post_path value, it must be a string" });
+    return res.status(400).json({ error: "Invalid blog_post_path value, it must be a string" });
   }
 
   const slug = blogPostPath.replace(/^\/blog\//, "").replace(/^\//, "");
@@ -48,15 +44,9 @@ const handlePost = async (
 };
 
 // Extendable handler to easily separate per method
-export default async function handle(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handle(req: NextApiRequest, res: NextApiResponse) {
   const handlers: {
-    [method: string]: (
-      req: NextApiRequest,
-      res: NextApiResponse
-    ) => Promise<void>;
+    [method: string]: (req: NextApiRequest, res: NextApiResponse) => Promise<void>;
   } = {
     POST: handlePost,
   };

@@ -1,14 +1,10 @@
-import { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
+import type { GetBlockResponse } from "@notionhq/client/build/src/api-endpoints";
 import PageMeta from "../../components/PageMeta";
 import { getBlogPostPath } from "../../constants/paths";
 import BlogPost from "../../features/blogPost";
 import Layout from "../../layouts/Layout";
-import {
-  fetchAllBlocks,
-  fetchBlogPostBySlug,
-  fetchBlogPosts,
-} from "../../lib/notionClient";
-import { BlogPost as BlogPostType } from "../../types/types";
+import { fetchAllBlocks, fetchBlogPostBySlug, fetchBlogPosts } from "../../lib/notionClient";
+import type { BlogPost as BlogPostType } from "../../types/types";
 import recursivelyNullifyUndefinedValues from "../../utils/recursivelyNullifyUndefinedValues";
 
 function BlogPostPage({
@@ -30,9 +26,7 @@ function BlogPostPage({
           published_time: blogPost.datePublished
             ? new Date(blogPost.datePublished).toISOString()
             : null,
-          modified_time: blogPost.dateUpdated
-            ? new Date(blogPost.dateUpdated).toISOString()
-            : null,
+          modified_time: blogPost.dateUpdated ? new Date(blogPost.dateUpdated).toISOString() : null,
           author: "Guillermo de la Puente",
           tags: blogPost.tags,
         }}

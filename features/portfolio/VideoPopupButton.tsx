@@ -1,6 +1,6 @@
 import {
   Button,
-  ButtonProps,
+  type ButtonProps,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -30,22 +30,14 @@ export default function VideoPopupButton({
         <ModalContent my={0}>
           <ModalCloseButton />
           <ModalBody maxHeight="90vh" py={8}>
-            <video
-              controls
-              autoPlay
-              style={{ maxHeight: "65vh", margin: "0 auto" }}
-            >
+            <video controls autoPlay style={{ maxHeight: "65vh", margin: "0 auto" }}>
               {videoSources.map(({ src, type }) => (
                 <source key={type} src={src} type={type} />
               ))}
+              <track kind="captions" src="" label="English" />
             </video>
 
-            <Text
-              fontSize="sm"
-              color="chakra-body-text-secondary"
-              textAlign="center"
-              mt={4}
-            >
+            <Text fontSize="sm" color="chakra-body-text-secondary" textAlign="center" mt={4}>
               {`This is a marketing video from ${name}'s website`}
             </Text>
           </ModalBody>

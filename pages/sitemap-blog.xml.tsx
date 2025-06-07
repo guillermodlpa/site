@@ -4,11 +4,11 @@
  * because we want to publish changes without redeploying and next-sitemap doesn't support ISG revalidation
  */
 
-import { getServerSideSitemap, ISitemapField } from "next-sitemap";
-import { GetServerSideProps } from "next";
-import { fetchBlogPosts } from "../lib/notionClient";
+import type { GetServerSideProps } from "next";
+import { type ISitemapField, getServerSideSitemap } from "next-sitemap";
 import getConfig from "next/config";
 import { getBlogPostPath } from "../constants/paths";
+import { fetchBlogPosts } from "../lib/notionClient";
 import blogPostCategories from "../utils/blogPostCategories";
 
 const { publicRuntimeConfig } = getConfig();
@@ -18,9 +18,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   const blogPostFields: ISitemapField[] = blogPosts.map((blogPost) => ({
     loc: `${publicRuntimeConfig.SITE_URL}${getBlogPostPath(blogPost.slug)}`,
-    lastmod: new Date(
-      blogPost.dateUpdated || blogPost.datePublished
-    ).toISOString(),
+    lastmod: new Date(blogPost.dateUpdated || blogPost.datePublished).toISOString(),
   }));
 
   const blogCategoryFields: ISitemapField[] = blogPostCategories
@@ -35,7 +33,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const cacheMaxAgeStaleDataReturnSeconds = 15 * 60 * 60; // 15 minutes
   ctx.res.setHeader(
     "Cache-Control",
-    `public, s-maxage=${cacheMaxAgeUntilStaleSeconds}, stale-while-revalidate=${cacheMaxAgeStaleDataReturnSeconds}`
+    `public, s-maxage=${cacheMaxAgeUntilStaleSeconds}, stale-while-revalidate=${cacheMaxAgeStaleDataReturnSeconds}`,
   );
 
   return getServerSideSitemap(ctx, [...blogCategoryFields, ...blogPostFields]);

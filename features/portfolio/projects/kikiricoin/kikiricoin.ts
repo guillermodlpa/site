@@ -1,6 +1,6 @@
-import kikiriCoinMobile from "./kikiricoin-mobile.png";
+import type { Project } from "../../../../types/types";
 import kikiriCoinDesktop from "./kikiricoin-desktop.png";
-import { Project } from "../../../../types/types";
+import kikiriCoinMobile from "./kikiricoin-mobile.png";
 
 const kikiricoin: Project = {
   name: "KikiriCoin",

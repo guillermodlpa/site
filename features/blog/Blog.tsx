@@ -2,12 +2,12 @@ import { Container, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
 import React, { useState } from "react";
 import AuthorAside from "../../components/AuthorAside";
 import MagicalDivider from "../../components/MagicalDivider";
-import { BlogPost } from "../../types/types";
+import type { BlogPost } from "../../types/types";
+import type { BlogPostCategoryName } from "../../utils/blogPostCategories";
+import AuthorIntro from "./AuthorIntro";
 import BlogPostSummary from "./BlogPostSummary";
 import CategorySelector from "./CategorySelector";
 import RssFeedLink from "./RssFeedLink";
-import AuthorIntro from "./AuthorIntro";
-import { BlogPostCategoryName } from "../../utils/blogPostCategories";
 
 export default function Blog({
   blogPosts,
@@ -26,7 +26,7 @@ export default function Blog({
       : blogPosts.filter((blogPost) =>
           activeCategoryName !== "others"
             ? blogPost.tags.includes(activeCategoryName)
-            : blogPost.tags.length === 0
+            : blogPost.tags.length === 0,
         );
 
   const showRssFeedAtTheTop = useBreakpointValue({ base: false, md: true });

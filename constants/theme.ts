@@ -183,20 +183,20 @@ const theme = {
     Link: {
       baseStyle: {
         transition: "color 0.25s ease",
-        color: `primary`,
+        color: "primary",
         _hover: {
-          color: `secondary`,
+          color: "secondary",
           textDecoration: "none",
         },
         _focus: {
-          color: `secondary`,
+          color: "secondary",
         },
       },
       variants: {
         inheritColor: {
           color: "inherit",
           _hover: {
-            color: `neutral.400`,
+            color: "neutral.400",
           },
         },
         inheritColorKeepHover: {

@@ -9,10 +9,7 @@ export default function Heading3Block({
 }: {
   richTextItems: RichTextItem[];
 }) {
-  const anchorId = useMemo(
-    () => makeAnchorId(getPlainText(richTextItems)),
-    [richTextItems]
-  );
+  const anchorId = useMemo(() => makeAnchorId(getPlainText(richTextItems)), [richTextItems]);
 
   return (
     <Heading as="h3" size="md" fontWeight={"bold"} my={8} id={anchorId}>

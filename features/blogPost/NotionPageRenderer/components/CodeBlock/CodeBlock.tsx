@@ -26,7 +26,7 @@ export default function CodeBlock({
   children: string;
   captionRichTextItems: RichTextItem[] | null;
 }) {
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>(null);
   const renderHighlighter = useHasBeenInViewport(ref);
 
   return (
@@ -35,9 +35,7 @@ export default function CodeBlock({
         {/* we don't want to render the highlighted code on the server
           because it makes the Lighthouse score much worse */}
         {renderHighlighter ? (
-          <HeavyHighlightedBlock language={language}>
-            {children}
-          </HeavyHighlightedBlock>
+          <HeavyHighlightedBlock language={language}>{children}</HeavyHighlightedBlock>
         ) : (
           <LightPreformattedBlock>{children}</LightPreformattedBlock>
         )}

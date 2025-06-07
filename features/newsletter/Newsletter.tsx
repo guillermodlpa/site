@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
-import NewsletterContent from "./newsletter-content.mdx";
 import SubscribeToNewsletterForm from "./SubscribeToNewsletterForm";
+import NewsletterContent from "./newsletter-content.mdx";
 
 const markdownComponents = {
   h1: (props) => <Heading as="h1" size="xl" mb={6} mt={2} {...props} />,

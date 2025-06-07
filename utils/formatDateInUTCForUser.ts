@@ -3,7 +3,7 @@
 function toLocaleUTCDateString(
   date: Date,
   locales?: Intl.LocalesArgument,
-  options?: Intl.DateTimeFormatOptions
+  options?: Intl.DateTimeFormatOptions,
 ): string {
   const timeDiff = date.getTimezoneOffset() * 60000;
   const adjustedDate = new Date(date.valueOf() + timeDiff);
@@ -12,7 +12,7 @@ function toLocaleUTCDateString(
 
 export default function formatDateInUTCForUser(date: Date | string): string {
   const dateObject = date instanceof Date ? date : new Date(date);
-  const valid = !isNaN(dateObject as unknown as number);
+  const valid = !Number.isNaN(dateObject as unknown as number);
   return valid
     ? toLocaleUTCDateString(dateObject, "en-US", {
         year: "numeric",

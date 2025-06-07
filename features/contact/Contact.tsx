@@ -20,29 +20,27 @@ import {
 } from "@chakra-ui/react";
 import getConfig from "next/config";
 import NextLink from "next/link";
-import { FormEvent, useState } from "react";
+import { type FormEvent, useState } from "react";
 import { PATH_BLOG } from "../../constants/paths";
 
 const { publicRuntimeConfig } = getConfig();
 
 // FormBold fails with a server error when we send an empty value for a key
-function removeEmptyValues(params: { [key: string]: string }): {
-  [key: string]: string;
-} {
+function filterEmptyParams(params: Record<string, string>) {
   const filteredParams = {};
-  Object.entries(params).forEach(([key, value]) => {
+  for (const [key, value] of Object.entries(params)) {
     if (value.trim() !== "") {
       filteredParams[key] = value;
     }
-  });
+  }
   return filteredParams;
 }
 
 enum FormStatus {
-  IDDLE,
-  SUBMITTING,
-  ERROR,
-  SUBMITTED,
+  IDDLE = 0,
+  SUBMITTING = 1,
+  ERROR = 2,
+  SUBMITTED = 3,
 }
 
 export default function Contact() {
@@ -67,7 +65,7 @@ export default function Contact() {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(removeEmptyValues(data)),
+      body: JSON.stringify(filterEmptyParams(data)),
     })
       .then((response) => {
         if (!response.ok) {
@@ -100,7 +98,7 @@ export default function Contact() {
             </AlertTitle>
             <AlertDescription maxWidth="sm">
               <Text mb={2}>{`Thank you. I'll get back to you soon.`}</Text>
-              <Text mb={1}>{`Your submission:`}</Text>
+              <Text mb={1}>{"Your submission:"}</Text>
 
               <UnorderedList listStyleType="none" ml={0} mb={4}>
                 <ListItem fontSize="sm">{data.name}</ListItem>
@@ -112,9 +110,9 @@ export default function Contact() {
               </UnorderedList>
 
               <Text mb={2}>
-                <NextLink href={PATH_BLOG} passHref legacyBehavior>
-                  <Link>Check out my blog</Link>
-                </NextLink>
+                <Link as={NextLink} href={PATH_BLOG}>
+                  Check out my blog
+                </Link>
               </Text>
             </AlertDescription>
           </Box>
@@ -122,27 +120,23 @@ export default function Contact() {
       ) : (
         <form onSubmit={handleSubmit}>
           <FormControl isRequired mb={4}>
-            <FormLabel requiredIndicator={<></>}>Your name</FormLabel>
+            <FormLabel>Your name</FormLabel>
             <Input
               type="text"
               name="name"
               size={{ base: "lg", md: "md" }}
               value={data.name}
-              onChange={(event) =>
-                setData((data) => ({ ...data, name: event.target.value }))
-              }
+              onChange={(event) => setData((data) => ({ ...data, name: event.target.value }))}
             />
           </FormControl>
           <FormControl isRequired mb={4}>
-            <FormLabel requiredIndicator={<></>}>Email</FormLabel>
+            <FormLabel>Email</FormLabel>
             <Input
               type="email"
               name="email"
               size={{ base: "lg", md: "md" }}
               value={data.email}
-              onChange={(event) =>
-                setData((data) => ({ ...data, email: event.target.value }))
-              }
+              onChange={(event) => setData((data) => ({ ...data, email: event.target.value }))}
             />
           </FormControl>
           <FormControl mb={4}>
@@ -157,21 +151,17 @@ export default function Contact() {
               name="website"
               size={{ base: "lg", md: "md" }}
               value={data.website}
-              onChange={(event) =>
-                setData((data) => ({ ...data, website: event.target.value }))
-              }
+              onChange={(event) => setData((data) => ({ ...data, website: event.target.value }))}
             />
           </FormControl>
           <FormControl mb={4} isRequired>
-            <FormLabel requiredIndicator={<></>}>Message</FormLabel>
+            <FormLabel>Message</FormLabel>
             <Textarea
               name="message"
               rows={5}
               fontSize={{ base: "lg", md: "md" }}
               value={data.message}
-              onChange={(event) =>
-                setData((data) => ({ ...data, message: event.target.value }))
-              }
+              onChange={(event) => setData((data) => ({ ...data, message: event.target.value }))}
             />
           </FormControl>
 

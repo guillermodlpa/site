@@ -18,20 +18,12 @@ export default function useMarkdownComponents({
 } = {}) {
   const markdownComponents = useMemo(
     () => ({
-      p: (props) => (
-        <Text mb={4} fontSize="md" color={colors.body} {...props} />
-      ),
+      p: (props) => <Text mb={4} fontSize="md" color={colors.body} {...props} />,
       ul: (props) => <UnorderedList {...props} ml={1} />,
-      li: (props) => (
-        <ListItem fontSize="md" mb={1} color={colors.body} {...props} />
-      ),
+      li: (props) => <ListItem fontSize="md" mb={1} color={colors.body} {...props} />,
       a: (props) => (
         <Link
-          isExternal={
-            props.href &&
-            !props.href.startsWith("/") &&
-            !props.href.startsWith("#")
-          }
+          isExternal={props.href && !props.href.startsWith("/") && !props.href.startsWith("#")}
           color={colors.accent}
           _hover={{
             color: colors.accentHightlighted,
@@ -49,12 +41,7 @@ export default function useMarkdownComponents({
         <Box as="blockquote" ml={2} pl={4} borderLeftWidth={"2px"} {...props} />
       ),
     }),
-    [
-      colors.body,
-      colors.accent,
-      colors.accentHightlighted,
-      colors.accentHightlightedForeground,
-    ]
+    [colors.body, colors.accent, colors.accentHightlighted, colors.accentHightlightedForeground],
   );
   return markdownComponents;
 }

@@ -1,14 +1,14 @@
-import splash from "./splash";
-import ProjectPageHeader from "../ProjectPageHeader";
-import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import DevicePreviews from "../../DevicePreviews";
-import { MDXProvider } from "@mdx-js/react";
 import { Box, Button, Link, Text } from "@chakra-ui/react";
-import Description from "./description.mdx";
+import { MDXProvider } from "@mdx-js/react";
+import TagCloud from "../../../../components/TagCloud";
+import DevicePreviews from "../../DevicePreviews";
 import useMarkdownComponents from "../../hooks/useMarkdownComponents";
 import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
-import TagCloud from "../../../../components/TagCloud";
 import ProjectPageFooter from "../ProjectPageFooter";
+import ProjectPageHeader from "../ProjectPageHeader";
+import ProjectPageMainContainer from "../ProjectPageMainContainer";
+import Description from "./description.mdx";
+import splash from "./splash";
 
 const tags = [
   "React",
@@ -28,9 +28,7 @@ export default function SplashProjectPage() {
     <ProjectPageMainContainer>
       <ProjectPageHeader
         name={splash.name}
-        subheadline={
-          "Event marketing platform for virtual, in-person, and hybrid event programs"
-        }
+        subheadline={"Event marketing platform for virtual, in-person, and hybrid event programs"}
         logo={{ ...splash.logoImage, width: 200 }}
       />
 
@@ -52,12 +50,7 @@ export default function SplashProjectPage() {
       </MDXProvider>
 
       <ProjectPageButtonGroup>
-        <Button
-          as={Link}
-          isExternal
-          href="https://splashthat.com/"
-          colorScheme="primary"
-        >
+        <Button as={Link} isExternal href="https://splashthat.com/" colorScheme="primary">
           Visit Splash
         </Button>
       </ProjectPageButtonGroup>

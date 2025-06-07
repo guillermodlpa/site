@@ -1,12 +1,14 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 
 type Handler = (req: NextApiRequest, res: NextApiResponse) => Promise<void>;
 
 type Method = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
 
-export default function createApiEndpointHandler(handlers: {
-  [method in Method]?: Handler;
-}) {
+export default function createApiEndpointHandler(
+  handlers: {
+    [method in Method]?: Handler;
+  },
+) {
   return async function handle(req: NextApiRequest, res: NextApiResponse) {
     try {
       return req.method && handlers[req.method]
