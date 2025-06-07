@@ -24,8 +24,11 @@ import Layout from "../../layouts/Layout";
 import type { Project } from "../../types/types";
 import marte from "../../features/work/projects/marte/marte";
 import MarteProjectPage from "../../features/work/projects/marte/MarteProjectPage";
+import avocaty from "../../features/work/projects/avocaty/avocaty";
+import AvocatyProjectPage from "../../features/work/projects/avocaty/AvocatyProjectPage";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } = {
+  [avocaty.slug]: AvocatyProjectPage,
   [after.slug]: AfterProjectPage,
   [splash.slug]: SplashProjectPage,
   [alacartadigital.slug]: AlacartadigitalProjectPage,

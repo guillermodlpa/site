@@ -13,7 +13,7 @@ const marte: Project = {
   logoImage: {
     src: { light: marteLogo, dark: marteLogo },
     alt: "Marte Website Builder logo",
-    width: 150,
+    width: 200,
     style: { marginBottom: "0.1em" },
   },
   backgroundImage: null,
