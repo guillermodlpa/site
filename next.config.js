@@ -6,7 +6,6 @@ const nextConfig = {
   publicRuntimeConfig: {
     SITE_URL: process.env.SITE_URL,
     FORMBOLD_CONTACT_FORM_ENDPOINT: process.env.FORMBOLD_CONTACT_FORM_ENDPOINT,
-    FORMBOLD_NEWSLETTER_FORM_ENDPOINT: process.env.FORMBOLD_NEWSLETTER_FORM_ENDPOINT,
   },
   serverRuntimeConfig: {
     NOTION_TOKEN: process.env.NOTION_TOKEN,

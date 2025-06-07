@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Heading, Link, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER, PATH_PORTFOLIO } from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_PORTFOLIO } from "../../constants/paths";
 import ColorModeButton from "../ColorModeButton";
 import MagicalDivider from "../MagicalDivider";
 
@@ -9,7 +9,6 @@ const links = [
   { label: "Blog", path: PATH_BLOG },
   { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "Contact", path: PATH_CONTACT },
-  { label: "Newsletter", path: PATH_NEWSLETTER },
 ];
 
 export default function AppNav({ fullWidth = false }: { fullWidth?: boolean }) {

@@ -6,7 +6,7 @@ import React from "react";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
 import TagCloud from "../../components/TagCloud";
-import { PATH_BLOG, PATH_CONTACT, PATH_NEWSLETTER } from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT } from "../../constants/paths";
 import technologyTags from "../../constants/technologyTags";
 import type { BlogPost } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
@@ -104,12 +104,6 @@ export default function Intro({
               <Text>
                 <Link as={NextLink} href={PATH_CONTACT}>
                   Get in touch
-                </Link>
-              </Text>
-
-              <Text>
-                <Link as={NextLink} href={PATH_NEWSLETTER}>
-                  Join my personal newsletter
                 </Link>
               </Text>
             </Flex>
