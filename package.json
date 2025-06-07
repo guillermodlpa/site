@@ -40,7 +40,7 @@
     "rss": "^1.2.2",
     "typescript": "^5.8.3",
     "unfurl.js": "^6.4.0",
-    "upload-notion-images-to-cloudinary": "^1.2.1"
+    "upload-notion-images-to-cloudinary": "^2.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
