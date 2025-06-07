@@ -14,4 +14,4 @@ public/rss.xml
 
 .DS_Store
 
-
+.tsconfig.tsbuildinfo
