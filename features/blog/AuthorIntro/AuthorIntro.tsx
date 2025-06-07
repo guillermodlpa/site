@@ -15,7 +15,8 @@ const markdownComponents = {
   ),
 };
 
-const imageSize = { base: "6rem" };
+const IMAGE_SIZE_PX = 96;
+const imageSize = { base: `${IMAGE_SIZE_PX}px` };
 
 export default function AuthorIntro() {
   return (
@@ -26,7 +27,7 @@ export default function AuthorIntro() {
         alignItems={{ base: "center", md: "flex-start" }}
         gap={4}
       >
-        <Box width={imageSize} flexShrink={0} borderRadius="lg" overflow="hidden">
+        <Box width={`${IMAGE_SIZE_PX}px`} flexShrink={0} borderRadius="lg" overflow="hidden">
           <Image
             src={ProfilePictureFace}
             alt="Portrait photo of Guillermo de la Puente"

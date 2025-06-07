@@ -12,8 +12,7 @@ import type { BlogPost } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import BusinessCard from "./BusinessCard";
 import RecentBlogPostItem from "./RecentBlogPostItem";
-import ProfilePicturePortrait from "./guillermo_de_la_puente-portrait.png";
-import ProfilePictureSquare from "./guillermo_de_la_puente-square.png";
+import ProfilePicturePortrait from "./guillermo_de_la_puente.png";
 import IntroContent from "./intro-content.mdx";
 
 const markdownComponents = {
@@ -28,6 +27,8 @@ const markdownComponents = {
     />
   ),
 };
+
+const DESKTOP_MEDIA_QUERY = "@media (min-width: 768px)";
 
 export default function Intro({
   recentBlogPosts,
@@ -62,14 +63,24 @@ export default function Intro({
               filter: "brightness(1.01) contrast(1.02)",
             }}
           >
-            <Image
-              src={isPortrait ? ProfilePicturePortrait : ProfilePictureSquare}
+            <Box
+              as={Image}
+              src={ProfilePicturePortrait}
               alt="Guillermo de la Puente over a peach color background"
               sizes={generateImageSizesProp({
-                base: "33vw",
+                base: "50vw",
                 md: "15vw",
               })}
               priority
+              sx={{
+                aspectRatio: "1 / 1",
+                objectFit: "cover",
+                objectPosition: "25% 20%",
+                [DESKTOP_MEDIA_QUERY]: {
+                  aspectRatio: "unset",
+                  objectPosition: "50% 50%",
+                },
+              }}
             />
           </Box>
 
