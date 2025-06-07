@@ -1,13 +1,13 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 
-export default function PortfolioHeader() {
+export default function WorkHeader() {
   return (
     <Box maxWidth="container.lg" margin="0 auto" pt={10} pb={16}>
       <Heading as="h1" size="xl" mb={2}>
-        Software Engineering Portfolio
+        Works
       </Heading>
       <Text fontSize="lg" color="chakra-body-text-secondary">
-        High quality applications, startup projects and experiments
+        A mix of full-time jobs, freelance collaborations, and startup experiments.
       </Text>
     </Box>
   );

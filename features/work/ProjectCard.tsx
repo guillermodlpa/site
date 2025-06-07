@@ -1,7 +1,7 @@
 import { Box, Heading, LinkBox, LinkOverlay, Text, useColorModeValue } from "@chakra-ui/react";
 import NextImage, { type StaticImageData } from "next/image";
 import NextLink from "next/link";
-import { getPortfolioProjectPath } from "../../constants/paths";
+import { getWorkProjectPath } from "../../constants/paths";
 import type { Project } from "../../types/types";
 import generateImageSizesProp from "../../utils/generateImageSizesProp";
 import DevicePreviews from "./DevicePreviews";
@@ -51,7 +51,7 @@ export default function ProjectCard({
       <Heading as="h1" fontSize="2xl">
         <LinkOverlay
           as={NextLink}
-          href={getPortfolioProjectPath(slug)}
+          href={getWorkProjectPath(slug)}
           color="inherit"
           transitionProperty="common"
           transitionDuration="normal"

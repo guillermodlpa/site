@@ -2,7 +2,7 @@ import { Box, Heading, Link, Text, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import MagicalDivider from "../../components/MagicalDivider";
 import SocialLinks from "../../components/SocialLinks";
-import { PATH_BLOG, PATH_CONTACT, PATH_PORTFOLIO } from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_WORK } from "../../constants/paths";
 
 function Home() {
   return (
@@ -43,8 +43,8 @@ function Home() {
               </Link>
             </WrapItem>
             <WrapItem>
-              <Link as={NextLink} href={PATH_PORTFOLIO} fontSize="xl">
-                Portfolio
+              <Link as={NextLink} href={PATH_WORK} fontSize="xl">
+                Work
               </Link>
             </WrapItem>
             <WrapItem>

@@ -1,14 +1,14 @@
 import { Box, Container, Link, Wrap, WrapItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { PATH_BLOG, PATH_CONTACT, PATH_PORTFOLIO } from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_WORK } from "../../constants/paths";
 import MagicalDivider from "../MagicalDivider";
 import SocialLinks from "../SocialLinks";
 
 const links = [
   { label: "Home", path: "/" },
+  { label: "Work", path: PATH_WORK },
   { label: "Blog", path: PATH_BLOG },
-  { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "Contact", path: PATH_CONTACT },
 ];
 

@@ -44,6 +44,17 @@ const nextConfig = {
         destination: "/blog/how-to-set-up-sendinblue-tracker-in-react-typescript-app",
         permanent: true,
       },
+      // I decided to rename "portfolio" to "work" in 2025 june
+      {
+        source: "/portfolio",
+        destination: "/work",
+        permanent: true,
+      },
+      {
+        source: "/portfolio/:path*",
+        destination: "/work/:path*",
+        permanent: true,
+      },
     ];
   },
 };

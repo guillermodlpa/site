@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { PATH_BLOG, PATH_CONTACT, PATH_PORTFOLIO } from "../../constants/paths";
+import { PATH_BLOG, PATH_CONTACT, PATH_WORK } from "../../constants/paths";
 import OpacitySlideFade from "../OpacitySlideFade";
 import useScrollThreshold from "./useScrollThreshold";
 
@@ -8,8 +8,8 @@ const ASIDE_WIDTH = 150;
 
 const links = [
   { label: "Home", path: "/" },
+  { label: "Work", path: PATH_WORK },
   { label: "Blog", path: PATH_BLOG },
-  { label: "Portfolio", path: PATH_PORTFOLIO },
   { label: "Contact", path: PATH_CONTACT },
 ];
 

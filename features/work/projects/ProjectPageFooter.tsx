@@ -1,14 +1,14 @@
 import { GridItem, Hide, Link, Show, SimpleGrid } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useMemo } from "react";
-import { PATH_PORTFOLIO, getPortfolioProjectPath } from "../../../constants/paths";
+import { PATH_WORK, getWorkProjectPath } from "../../../constants/paths";
 import type { Project } from "../../../types/types";
 import { allProjects } from "./projectLists";
 
-function BackToPortfolioLink() {
+function BackToWorkIndexPage() {
   return (
-    <Link as={NextLink} href={PATH_PORTFOLIO}>
-      Back to portfolio
+    <Link as={NextLink} href={PATH_WORK}>
+      Back to works page
     </Link>
   );
 }
@@ -32,7 +32,7 @@ export default function ProjectPageFooter({
       <SimpleGrid columns={{ base: 2, md: 3 }} width="full">
         <GridItem textAlign="left">
           {previousProject ? (
-            <Link as={NextLink} href={getPortfolioProjectPath(previousProject.slug)}>
+            <Link as={NextLink} href={getWorkProjectPath(previousProject.slug)}>
               <span role="img" aria-label="previous project">
                 {"< "}
               </span>
@@ -45,13 +45,13 @@ export default function ProjectPageFooter({
 
         <Show above="md">
           <GridItem textAlign="center">
-            <BackToPortfolioLink />
+            <BackToWorkIndexPage />
           </GridItem>
         </Show>
 
         <GridItem textAlign="right">
           {nextProject ? (
-            <Link as={NextLink} href={getPortfolioProjectPath(nextProject.slug)}>
+            <Link as={NextLink} href={getWorkProjectPath(nextProject.slug)}>
               {nextProject.name}
               <span role="img" aria-label="next project">
                 {" >"}
@@ -65,7 +65,7 @@ export default function ProjectPageFooter({
 
       <Hide above="md">
         <GridItem textAlign="center" mt={4}>
-          <BackToPortfolioLink />
+          <BackToWorkIndexPage />
         </GridItem>
       </Hide>
     </>

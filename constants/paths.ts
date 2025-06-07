@@ -1,8 +1,8 @@
 export const PATH_BLOG = "/blog";
 export const getBlogPostPath = (slug: string) => `/blog/${slug}`;
 
-export const PATH_PORTFOLIO = "/portfolio";
-export const getPortfolioProjectPath = (slug: string) => `/portfolio/${slug}`;
+export const PATH_WORK = "/work";
+export const getWorkProjectPath = (slug: string) => `/work/${slug}`;
 
 export const PATH_CONTACT = "/contact";
 

@@ -1,7 +1,7 @@
 {
   "name": "@guillermodlpa/site",
   "version": "2.0.0",
-  "description": "Personal site, blog and portfolio of Guillermo de la Puente",
+  "description": "Personal site, blog and work portfolio of Guillermo de la Puente",
   "private": true,
   "scripts": {
     "dev": "next dev",

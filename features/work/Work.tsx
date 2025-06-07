@@ -4,15 +4,15 @@ import MagicalDivider from "../../components/MagicalDivider";
 import TagCloud from "../../components/TagCloud";
 import technologyTags from "../../constants/technologyTags";
 import OpenSourceSection from "./OpenSourceSection";
-import PortfolioHeader from "./PortfolioHeader";
+import WorkHeader from "./WorkHeader";
 import ProjectCard from "./ProjectCard";
 import SecondarySectionHeader from "./SecondarySectionHeader";
 import { personalProjects, professionalProjects } from "./projects/projectLists";
 
-export default function Portfolio() {
+export default function Work() {
   return (
     <Container maxWidth="container.md" pb={20}>
-      <PortfolioHeader />
+      <WorkHeader />
 
       <SimpleGrid spacingX={4} spacingY={6} columns={{ base: 1, md: 2 }}>
         {professionalProjects.map((project, index) => (
