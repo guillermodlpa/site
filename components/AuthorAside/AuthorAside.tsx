@@ -28,13 +28,6 @@ export default function AuthorAside() {
     >
       <Flex flexDirection="column" alignItems="stretch" pt={8} position="sticky" top={0}>
         <OpacitySlideFade in={visible}>
-          <Text mb={2} fontSize="sm" textAlign="right" color="chakra-body-text-secondary">
-            {"Guillermo de la Puente"}
-          </Text>
-          <Text mb={2} fontSize="sm" textAlign="right">
-            {"Freelance Software Engineer & Manager"}
-          </Text>
-
           {links.map(({ label, path }) => (
             <Text key={path} fontSize="sm" textAlign="right" mb={1}>
               <Link as={NextLink} href={path}>

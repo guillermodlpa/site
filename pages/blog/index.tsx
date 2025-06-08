@@ -22,7 +22,7 @@ function BlogPage({
     <Layout>
       <PageMeta
         canonicalPath={PATH_BLOG}
-        title="Blog - Guillermo de la Puente - Freelance Software Engineer & Manager"
+        title="Blog - Management, development and other topics"
         description={description}
       />
       <Blog blogPosts={blogPosts} categoryName={categoryName} />
