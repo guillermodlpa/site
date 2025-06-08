@@ -10,9 +10,9 @@ function HomePage({ recentBlogPosts }: { recentBlogPosts: BlogPost[] }) {
     <Layout>
       <PageMeta
         canonicalPath={"/"}
-        title={"Guillermo de la Puente - Freelance Software Engineer & Manager"}
+        title={"Guillermo de la Puente"}
         description={
-          "Building successful, fast, high quality web applications. React, Next.js, Node, TypeScript..."
+          "Software engineer and product-minded tech leader with a passion for building high-quality web products that solve real problems."
         }
         ogType="profile"
       />
