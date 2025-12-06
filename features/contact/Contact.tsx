@@ -18,12 +18,11 @@ import {
   Textarea,
   UnorderedList,
 } from "@chakra-ui/react";
-import getConfig from "next/config";
 import NextLink from "next/link";
 import { type FormEvent, useState } from "react";
 import { PATH_BLOG } from "../../constants/paths";
 
-const { publicRuntimeConfig } = getConfig();
+const formboldEndpoint = process.env.NEXT_PUBLIC_FORMBOLD_CONTACT_FORM_ENDPOINT ?? "";
 
 // FormBold fails with a server error when we send an empty value for a key
 function filterEmptyParams(params: Record<string, string>) {
@@ -57,9 +56,13 @@ export default function Contact() {
     if (formStatus === FormStatus.SUBMITTING) {
       return;
     }
+    if (!formboldEndpoint) {
+      setFormStatus(FormStatus.ERROR);
+      return;
+    }
 
     setFormStatus(FormStatus.SUBMITTING);
-    fetch(publicRuntimeConfig.FORMBOLD_CONTACT_FORM_ENDPOINT, {
+    fetch(formboldEndpoint, {
       method: "POST",
       headers: {
         Accept: "application/json",

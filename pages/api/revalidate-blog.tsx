@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import getConfig from "next/config";
 import uploadNotionImagesToCloudinary from "upload-notion-images-to-cloudinary";
 import { PATH_BLOG, getBlogPostPath } from "../../constants/paths";
 import { fetchBlogPostBySlug } from "../../lib/notionClient";
@@ -7,14 +6,20 @@ import { fetchBlogPostBySlug } from "../../lib/notionClient";
 type ErrorResponse = { error: string };
 type SuccessResponse = { paths: string[] };
 
-const { serverRuntimeConfig } = getConfig();
+const revalidationPasscode = process.env.REVALIDATION_PASSCODE;
+const notionToken = process.env.NOTION_TOKEN;
+const cloudinaryUrl = process.env.CLOUDINARY_URL;
+const cloudinaryUploadFolder = process.env.CLOUDINARY_UPLOAD_FOLDER;
 
 const handlePost = async (
   req: NextApiRequest,
   res: NextApiResponse<SuccessResponse | ErrorResponse>,
 ) => {
+  if (!revalidationPasscode || !notionToken || !cloudinaryUrl || !cloudinaryUploadFolder) {
+    return res.status(500).json({ error: "Missing server configuration" });
+  }
   const passcode = req.headers["x-revalidation-passcode"];
-  if (!passcode || passcode !== serverRuntimeConfig.REVALIDATION_PASSCODE) {
+  if (!passcode || passcode !== revalidationPasscode) {
     return res.status(400).json({ error: "Invalid revalidation passcode header value" });
   }
   const blogPostPath = req.body.blog_post_path;
@@ -30,10 +35,10 @@ const handlePost = async (
   }
 
   await uploadNotionImagesToCloudinary({
-    notionToken: serverRuntimeConfig.NOTION_TOKEN,
+    notionToken,
     notionPageId: blogPost.id,
-    cloudinaryUrl: serverRuntimeConfig.CLOUDINARY_URL,
-    cloudinaryUploadFolder: serverRuntimeConfig.CLOUDINARY_UPLOAD_FOLDER,
+    cloudinaryUrl,
+    cloudinaryUploadFolder,
     logLevel: "debug",
   });
 

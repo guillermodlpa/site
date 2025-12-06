@@ -1,17 +1,12 @@
 import { Link, Text } from "@chakra-ui/react";
-import getConfig from "next/config";
 
-const { publicRuntimeConfig } = getConfig();
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
 function wrapWithLink(content: string, href: string) {
   return (
     <Link
       href={href}
-      isExternal={
-        !href.startsWith("/") &&
-        !href.startsWith("#") &&
-        !href.startsWith(publicRuntimeConfig.SITE_URL)
-      }
+      isExternal={!href.startsWith("/") && !href.startsWith("#") && !href.startsWith(siteUrl)}
     >
       {content}
     </Link>

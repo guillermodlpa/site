@@ -12,13 +12,20 @@ import rossaCalendar from "./rossa-calendar/rossa-calendar";
 import splash from "./splash/splash";
 import travelmap from "./travelmap/travelmap";
 
-export const professionalProjects: Project[] = [haddock, avocaty, after, rossaCalendar, splash, alacartadigital];
+export const professionalProjects: Project[] = [
+  haddock,
+  avocaty,
+  after,
+  rossaCalendar,
+  splash,
+  alacartadigital,
+];
 
 export const personalProjects: Project[] = [
   marte,
   deporTravel,
   notionPoweredBlog,
-  quatro, 
+  quatro,
   kikiricoin,
   travelmap,
 ];

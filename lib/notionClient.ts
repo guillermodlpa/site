@@ -10,7 +10,6 @@ import type {
   PartialPageObjectResponse,
   RichTextItemResponse,
 } from "@notionhq/client/build/src/api-endpoints";
-import getConfig from "next/config";
 import type { BlogPost } from "../types/types";
 import probeImageSize from "./probeImageSize";
 
@@ -23,6 +22,13 @@ const PROPERTY_DATE_PUBLISHED = "Date Published";
 const PROPERTY_DATE_UPDATED = "Date Updated";
 const PROPERTY_TAGS = "Tags";
 const PROPERTY_NAME = "Name";
+
+const notionToken = process.env.NOTION_TOKEN;
+const notionDatabaseId = process.env.NOTION_BLOG_DATABASE_ID;
+
+if (!notionToken || !notionDatabaseId) {
+  throw new Error("Missing required Notion environment variables");
+}
 
 type NotionPageObject = PageObjectResponse | PartialDatabaseObjectResponse | DatabaseObjectResponse;
 
@@ -88,10 +94,8 @@ function transformNotionPageIntoBlogPost(
   };
 }
 
-const { serverRuntimeConfig } = getConfig();
-
 const notion = new Client({
-  auth: serverRuntimeConfig.NOTION_TOKEN,
+  auth: notionToken,
   logLevel: process.env.NODE_ENV === "development" ? LogLevel.DEBUG : LogLevel.WARN,
 });
 
@@ -100,7 +104,7 @@ export async function fetchBlogPosts({
 }: { pageSize?: number } = {}): Promise<BlogPost[]> {
   const result = await notion.databases.query({
     page_size: pageSize,
-    database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
+    database_id: notionDatabaseId,
     filter: {
       and: [
         {
@@ -127,7 +131,7 @@ export async function fetchBlogPosts({
 
 export async function fetchBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
   const result = await notion.databases.query({
-    database_id: serverRuntimeConfig.NOTION_BLOG_DATABASE_ID,
+    database_id: notionDatabaseId,
     page_size: 1,
     filter: {
       and: [

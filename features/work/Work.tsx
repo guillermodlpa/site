@@ -1,12 +1,11 @@
 import { Container, GridItem, SimpleGrid } from "@chakra-ui/react";
-import React from "react";
 import MagicalDivider from "../../components/MagicalDivider";
 import TagCloud from "../../components/TagCloud";
 import technologyTags from "../../constants/technologyTags";
 import OpenSourceSection from "./OpenSourceSection";
-import WorkHeader from "./WorkHeader";
 import ProjectCard from "./ProjectCard";
 import SecondarySectionHeader from "./SecondarySectionHeader";
+import WorkHeader from "./WorkHeader";
 import { personalProjects, professionalProjects } from "./projects/projectLists";
 
 export default function Work() {

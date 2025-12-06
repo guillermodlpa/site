@@ -5,12 +5,11 @@
  */
 
 import type { GetServerSideProps } from "next";
-import getConfig from "next/config";
 import RSS from "rss";
 import { PATH_RSS, getBlogPostPath } from "../constants/paths";
 import { fetchBlogPosts } from "../lib/notionClient";
 
-const { publicRuntimeConfig } = getConfig();
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "";
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const blogPosts = await fetchBlogPosts();
@@ -21,8 +20,8 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       "I blog about frontend patterns and projects, management, and digital nomad lifestyle",
     language: "en",
     copyright: `©${new Date().getFullYear()} Guillermo de la Puente`,
-    site_url: publicRuntimeConfig.SITE_URL,
-    feed_url: `${publicRuntimeConfig.SITE_URL}${PATH_RSS}`,
+    site_url: siteUrl,
+    feed_url: `${siteUrl}${PATH_RSS}`,
   });
 
   for (const blogPost of blogPosts) {
@@ -30,7 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       guid: blogPost.id,
       title: blogPost.title,
       description: blogPost.excerpt,
-      url: `${publicRuntimeConfig.SITE_URL}${getBlogPostPath(blogPost.slug)}`,
+      url: `${siteUrl}${getBlogPostPath(blogPost.slug)}`,
       date: new Date(blogPost.datePublished),
       categories: blogPost.tags.map((tag) => tag),
       enclosure: {

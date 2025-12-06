@@ -1,9 +1,9 @@
 import type { Project } from "../../../../types/types";
-import qrSardineRecomendaciones from "./qr-el-botanico.png";
 import avocatyDesktop from "./avocaty-desktop.png";
 import logoDark from "./avocaty-logo-dark.png";
 import logoLight from "./avocaty-logo-light.png";
 import avocatyMobile from "./avocaty-mobile.png";
+import qrSardineRecomendaciones from "./qr-el-botanico.png";
 
 const avocaty: Project = {
   name: "Avocaty",

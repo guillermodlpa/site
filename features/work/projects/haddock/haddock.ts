@@ -1,7 +1,7 @@
 import type { Project } from "../../../../types/types";
 import haddockDesktop from "./haddock-desktop.png";
-import logoDark from "./haddock-logo.png";
 import logoLight from "./haddock-logo-white.svg";
+import logoDark from "./haddock-logo.png";
 import haddockMobile from "./haddock-mobile.png";
 
 const haddock: Project = {
