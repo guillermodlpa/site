@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
+import { type Variants, motion } from "framer-motion";
 import AppFooter from "../components/AppFooter";
 import AppNav from "../components/AppNav";
 
-const variants = {
+const variants: Variants = {
   initial: { opacity: 0, transform: "translateY(5px)" },
   animate: {
     opacity: 1,
     transform: "translateY(0px)",
     transition: {
       duration: 0.15,
-      ease: [0.4, 0, 0.2, 1],
+      ease: [0.4, 0, 0.2, 1] as const,
     },
   },
   exit: {
@@ -17,7 +17,7 @@ const variants = {
     transform: "translateY(5px)",
     transition: {
       duration: 0.05,
-      ease: [0.4, 0, 1, 1],
+      ease: [0.4, 0, 1, 1] as const,
     },
   },
 };

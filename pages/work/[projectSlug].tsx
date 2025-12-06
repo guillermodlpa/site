@@ -5,10 +5,16 @@ import AfterProjectPage from "../../features/work/projects/after/AfterProjectPag
 import after from "../../features/work/projects/after/after";
 import AlacartadigitalProjectPage from "../../features/work/projects/alacartadigital/AlacartadigitalProjectPage";
 import alacartadigital from "../../features/work/projects/alacartadigital/alacartadigital";
+import AvocatyProjectPage from "../../features/work/projects/avocaty/AvocatyProjectPage";
+import avocaty from "../../features/work/projects/avocaty/avocaty";
 import DeporTravelProjectPage from "../../features/work/projects/depor-travel/DeporTravelProjectPage";
 import deporTravel from "../../features/work/projects/depor-travel/depor-travel";
+import HaddockProjectPage from "../../features/work/projects/haddock/HaddockProjectPage";
+import haddock from "../../features/work/projects/haddock/haddock";
 import KikiricoinProjectPage from "../../features/work/projects/kikiricoin/KikiricoinProjectPage";
 import kikiricoin from "../../features/work/projects/kikiricoin/kikiricoin";
+import MarteProjectPage from "../../features/work/projects/marte/MarteProjectPage";
+import marte from "../../features/work/projects/marte/marte";
 import NotionPoweredBlogProjectPage from "../../features/work/projects/notion-powered-blog/NotionPoweredBlogProjectPage";
 import notionPoweredBlog from "../../features/work/projects/notion-powered-blog/notion-powered-blog";
 import { allProjects } from "../../features/work/projects/projectLists";
@@ -22,12 +28,6 @@ import TravelmapProjectPage from "../../features/work/projects/travelmap/Travelm
 import travelmap from "../../features/work/projects/travelmap/travelmap";
 import Layout from "../../layouts/Layout";
 import type { Project } from "../../types/types";
-import marte from "../../features/work/projects/marte/marte";
-import MarteProjectPage from "../../features/work/projects/marte/MarteProjectPage";
-import avocaty from "../../features/work/projects/avocaty/avocaty";
-import AvocatyProjectPage from "../../features/work/projects/avocaty/AvocatyProjectPage";
-import haddock from "../../features/work/projects/haddock/haddock";
-import HaddockProjectPage from "../../features/work/projects/haddock/HaddockProjectPage";
 
 const projectComponentsByName: { [key in Project["slug"]]: React.ElementType } = {
   [haddock.slug]: HaddockProjectPage,

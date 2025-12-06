@@ -6,25 +6,24 @@
 
 import type { GetServerSideProps } from "next";
 import { type ISitemapField, getServerSideSitemapLegacy } from "next-sitemap";
-import getConfig from "next/config";
 import { getBlogPostPath } from "../constants/paths";
 import { fetchBlogPosts } from "../lib/notionClient";
 import blogPostCategories from "../utils/blogPostCategories";
 
-const { publicRuntimeConfig } = getConfig();
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "";
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const blogPosts = await fetchBlogPosts();
 
   const blogPostFields: ISitemapField[] = blogPosts.map((blogPost) => ({
-    loc: `${publicRuntimeConfig.SITE_URL}${getBlogPostPath(blogPost.slug)}`,
+    loc: `${siteUrl}${getBlogPostPath(blogPost.slug)}`,
     lastmod: new Date(blogPost.dateUpdated || blogPost.datePublished).toISOString(),
   }));
 
   const blogCategoryFields: ISitemapField[] = blogPostCategories
     .filter((category) => category.name !== "all")
     .map((category) => ({
-      loc: `${publicRuntimeConfig.SITE_URL}${category.path}`,
+      loc: `${siteUrl}${category.path}`,
       lastmod: new Date().toISOString(),
       changefreq: "weekly",
     }));

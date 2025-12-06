@@ -3,22 +3,26 @@
  */
 const nextConfig = {
   reactStrictMode: true,
-  publicRuntimeConfig: {
-    SITE_URL: process.env.SITE_URL,
-    FORMBOLD_CONTACT_FORM_ENDPOINT: process.env.FORMBOLD_CONTACT_FORM_ENDPOINT,
-  },
-  serverRuntimeConfig: {
-    NOTION_TOKEN: process.env.NOTION_TOKEN,
-    NOTION_BLOG_DATABASE_ID: process.env.NOTION_BLOG_DATABASE_ID,
-    REVALIDATION_PASSCODE: process.env.REVALIDATION_PASSCODE,
+  env: {
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL,
+    NEXT_PUBLIC_FORMBOLD_CONTACT_FORM_ENDPOINT:
+      process.env.NEXT_PUBLIC_FORMBOLD_CONTACT_FORM_ENDPOINT ??
+      process.env.FORMBOLD_CONTACT_FORM_ENDPOINT,
   },
   images: {
-    domains: [
-      // Notion images
-      "s3.us-west-2.amazonaws.com",
-      "prod-files-secure.s3.us-west-2.amazonaws.com",
-      // Images moved to Cloudinary
-      "res.cloudinary.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "s3.us-west-2.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
     minimumCacheTTL: 112492800, // 6 months. trying here that Next.js doesn't clear cache for iamges, as the Notion links are temporary
   },

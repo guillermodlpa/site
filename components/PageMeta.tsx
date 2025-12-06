@@ -1,10 +1,8 @@
-import getConfig from "next/config";
 import Head from "next/head";
 import truncateString from "../utils/truncateString";
 
-const { publicRuntimeConfig } = getConfig();
-
 const META_DESCRIPTION_LIMIT = 155;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
 // https://ogp.me/#types
 type OgType = "website" | "article" | "profile";
@@ -40,10 +38,7 @@ export default function PageMeta({
   robots?: RobotsTag | RobotsTag[];
 }) {
   const truncatedContent = truncateString(description, META_DESCRIPTION_LIMIT);
-  const canonicalUrl =
-    canonicalPath.length > 0
-      ? `${publicRuntimeConfig.SITE_URL}${canonicalPath}`
-      : `${publicRuntimeConfig.SITE_URL}`;
+  const canonicalUrl = canonicalPath.length > 0 ? `${siteUrl}${canonicalPath}` : `${siteUrl}`;
 
   return (
     <Head>

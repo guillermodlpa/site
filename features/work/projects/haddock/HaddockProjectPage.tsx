@@ -7,8 +7,8 @@ import ProjectPageButtonGroup from "../ProjectPageButtonGroup";
 import ProjectPageFooter from "../ProjectPageFooter";
 import ProjectPageHeader from "../ProjectPageHeader";
 import ProjectPageMainContainer from "../ProjectPageMainContainer";
-import avocaty from "./haddock";
 import Description from "./description.mdx";
+import avocaty from "./haddock";
 
 const tags = [
   "OpenAI",
