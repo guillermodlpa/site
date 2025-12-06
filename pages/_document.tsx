@@ -28,6 +28,13 @@ class MyDocument extends Document {
           /> */}
 
           <FaviconTags />
+          {process.env.NEXT_PUBLIC_VERCEL_ENV === "production" && (
+            <script
+              defer
+              src="https://cloud.umami.is/script.js"
+              data-website-id="576f528f-c9fe-4fce-9317-9cc710a8c9aa"
+            />
+          )}
         </Head>
         <body>
           <ColorModeScript initialColorMode={chakraUITheme.config.initialColorMode} />
